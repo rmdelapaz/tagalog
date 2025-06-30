@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Tagalog Verbs - Actions Through Time</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #a8edea, #fed6e3); color: #333; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #a8edea; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .verb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; }
+        .verb-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .past { border-left: 4px solid #e74c3c; }
+        .present { border-left: 4px solid #f39c12; }
+        .future { border-left: 4px solid #2ecc71; }
+        .root-word { font-size: 1.2em; font-weight: bold; color: #667eea; }
+        .affix { background: #667eea; color: white; padding: 2px 6px; border-radius: 3px; margin: 0 2px; }
+        .timeline { background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71); height: 20px; border-radius: 10px; margin: 20px 0; position: relative; }
+        .timeline-marker { position: absolute; top: -5px; width: 30px; height: 30px; border-radius: 50%; background: white; border: 3px solid #333; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .focus-system { background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .conjugation-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .conjugation-table th, .conjugation-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .conjugation-table th { background: #667eea; color: white; }
+        .action-demo { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 2px dashed #a8edea; margin: 20px 0; }
+        canvas { border: 2px solid #a8edea; border-radius: 8px; margin: 10px 0; }
+        .verb-builder { display: flex; align-items: center; gap: 10px; margin: 10px 0; flex-wrap: wrap; }
+        .prefix { background: #e74c3c; color: white; padding: 5px 10px; border-radius: 15px; }
+        .root { background: #667eea; color: white; padding: 5px 10px; border-radius: 15px; }
+        .suffix { background: #2ecc71; color: white; padding: 5px 10px; border-radius: 15px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Mga Pandiwa - The Heart of Action</h1>
+        <p>Where every verb tells a story through time and focus</p>
+    </div>
+
+    <div class="section">
+        <h2>Verbs as Time Travelers</h2>
+        <p>Imagine if every time you spoke about an action, you had to paint a complete picture - not just what happened, but when it happened, how it happened, and what's most important about it. That's the beautiful complexity of Tagalog verbs!</p>
+
+        <div class="timeline">
+            <div class="timeline-marker" style="left: 15%; background: #e74c3c;"></div>
+            <div class="timeline-marker" style="left: 50%; background: #f39c12;"></div>
+            <div class="timeline-marker" style="left: 85%; background: #2ecc71;"></div>
+        </div>
+        
+        <div class="verb-grid">
+            <div class="verb-card past">
+                <h3>Past (Naganap na)</h3>
+                <div class="root-word">Kumain</div>
+                <p>"Ate" - The action is complete</p>
+                <p><em>Like a finished meal</em></p>
+            </div>
+            <div class="verb-card present">
+                <h3>Present (Nagaganap)</h3>
+                <div class="root-word">Kumakain</div>
+                <p>"Eating" - The action is ongoing</p>
+                <p><em>Like chewing right now</em></p>
+            </div>
+            <div class="verb-card future">
+                <h3>Future (Magaganap)</h3>
+                <div class="root-word">Kakain</div>
+                <p>"Will eat" - The action will happen</p>
+                <p><em>Like planning your next meal</em></p>
+            </div>
+        </div>
+
+        <div class="mermaid">
+            graph TD
+                A[Root Word: KAIN eat] --> B[Add Prefixes & Infixes]
+                B --> C[KUM-AIN ate]
+                B --> D[KUM-A-KAIN eating]  
+                B --> E[KA-KAIN will eat]
+                
+                C --> F[Past: Action completed]
+                D --> G[Present: Action ongoing]
+                E --> H[Future: Action planned]
+                
+                style C fill:#e74c3c,color:#fff
+                style D fill:#f39c12,color:#fff
+                style E fill:#2ecc71,color:#fff
+        </mermaid>
+    </div>
+
+    <div class="section">
+        <h2>The Verb Building Factory</h2>
+        <p>Think of creating Tagalog verbs like assembling a car - you start with a basic frame (root word) and add different parts (affixes) to make it work in different ways!</p>
+
+        <div class="action-demo">
+            <h3>Let's Build: "SULAT" (Write)</h3>
+            <canvas id="verbFactory" width="800" height="400"></canvas>
+            
+            <div class="example-box">
+                <h4>The Assembly Line:</h4>
+                <div class="verb-builder">
+                    <span>Root:</span>
+                    <div class="root">SULAT</div>
+                    <span>+</span>
+                    <div class="prefix">SUM</div>
+                    <span>=</span>
+                    <div class="root">SUMULAT (wrote)</div>
+                </div>
+                
+                <div class="verb-builder">
+                    <span>Root:</span>
+                    <div class="root">SULAT</div>
+                    <span>+</span>
+                    <div class="prefix">SUS</div>
+                    <span>+</span>
+                    <div class="suffix">-UM-</div>
+                    <span>=</span>
+                    <div class="root">SUSUULAT (writing)</div>
+                </div>
+                
+                <div class="verb-builder">
+                    <span>Root:</span>
+                    <div class="root">SULAT</div>
+                    <span>+</span>
+                    <div class="prefix">S</div>
+                    <span>+</span>
+                    <div class="suffix">-US-</div>
+                    <span>=</span>
+                    <div class="root">SUSULAT (will write)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Pro Tip:</strong> Don't try to memorize all the rules at once! Focus on recognizing the patterns - Tagalog speakers often feel the rhythm of these changes rather than thinking about rules.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>The Focus System - Tagalog's Superpower</h2>
+        <p>Here's where Tagalog becomes truly magical. While English has one way to say "The teacher taught the students," Tagalog has multiple ways, each putting the spotlight on different parts of the action!</p>
+
+        <div class="focus-system">
+            <h3>The Same Story, Different Spotlights</h3>
+            <p><strong>Scenario:</strong> A teacher is teaching students in a classroom</p>
+            
+            <table class="conjugation-table">
+                <tr>
+                    <th>Focus</th>
+                    <th>Tagalog</th>
+                    <th>English</th>
+                    <th>Spotlight On</th>
+                </tr>
+                <tr>
+                    <td>Actor Focus</td>
+                    <td>Nagtuturo ang guro sa mga estudyante.</td>
+                    <td>The teacher teaches the students.</td>
+                    <td>WHO is doing it</td>
+                </tr>
+                <tr>
+                    <td>Object Focus</td>
+                    <td>Tinuturuan ng guro ang mga estudyante.</td>
+                    <td>The students are being taught by the teacher.</td>
+                    <td>WHO receives the action</td>
+                </tr>
+                <tr>
+                    <td>Location Focus</td>
+                    <td>Tinuturuan ng guro ng mga estudyante ang silid-aralan.</td>
+                    <td>The classroom is where the teacher teaches students.</td>
+                    <td>WHERE it happens</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="example-box">
+            <h3>Why This Matters in Real Life</h3>
+            <p>Imagine you're telling someone about a robbery:</p>
+            <ul>
+                <li><strong>Actor Focus:</strong> "Nagnakaw ang magnanakaw ng pera." (Focus on the thief)</li>
+                <li><strong>Object Focus:</strong> "Ninakaw ng magnanakaw ang pera." (Focus on the money that was stolen)</li>
+            </ul>
+            <p>The choice depends on what's most important in your story!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Essential Verb Families - Your Daily Action Words</h2>
+        <p>These verb families are like the main characters in your daily Tagalog story. Master these, and you can talk about most of what you do every day!</p>
+
+        <div class="verb-grid">
+            <div class="verb-card">
+                <h3>KAIN Family (Eating)</h3>
+                <ul>
+                    <li><strong>Kumain</strong> - ate</li>
+                    <li><strong>Kumakain</strong> - eating</li>
+                    <li><strong>Kakain</strong> - will eat</li>
+                </ul>
+                <div class="example-box">
+                    <p>Kumakain ako ng breakfast. (I am eating breakfast.)</p>
+                </div>
+            </div>
+            
+            <div class="verb-card">
+                <h3>TULOG Family (Sleeping)</h3>
+                <ul>
+                    <li><strong>Natulog</strong> - slept</li>
+                    <li><strong>Natutulog</strong> - sleeping</li>
+                    <li><strong>Matutulog</strong> - will sleep</li>
+                </ul>
+                <div class="example-box">
+                    <p>Natutulog ang baby. (The baby is sleeping.)</p>
+                </div>
+            </div>
+            
+            <div class="verb-card">
+                <h3>LARO Family (Playing)</h3>
+                <ul>
+                    <li><strong>Naglaro</strong> - played</li>
+                    <li><strong>Naglalaro</strong> - playing</li>
+                    <li><strong>Maglalaro</strong> - will play</li>
+                </ul>
+                <div class="example-box">
+                    <p>Naglalaro ang mga bata. (The children are playing.)</p>
+                </div>
+            </div>
+            
+            <div class="verb-card">
+                <h3>TRABAHO Family (Working)</h3>
+                <ul>
+                    <li><strong>Nagtrabaho</strong> - worked</li>
+                    <li><strong>Nagtatrabaho</strong> - working</li>
+                    <li><strong>Magtatrabaho</strong> - will work</li>
+                </ul>
+                <div class="example-box">
+                    <p>Nagtatrabaho si Papa. (Papa is working.)</p>
+                </div>
+            </div>
+            
+            <div class="verb-card">
+                <h3>ARAL Family (Studying)</h3>
+                <ul>
+                    <li><strong>Nag-aral</strong> - studied</li>
+                    <li><strong>Nag-aaral</strong> - studying</li>
+                    <li><strong>Mag-aaral</strong> - will study</li>
+                </ul>
+                <div class="example-box">
+                    <p>Nag-aaral ako ng Tagalog. (I am studying Tagalog.)</p>
+                </div>
+            </div>
+            
+            <div class="verb-card">
+                <h3>BASA Family (Reading)</h3>
+                <ul>
+                    <li><strong>Nagbasa</strong> - read</li>
+                    <li><strong>Nagbabasa</strong> - reading</li>
+                    <li><strong>Magbabasa</strong> - will read</li>
+                </ul>
+                <div class="example-box">
+                    <p>Nagbabasa ng libro. (Reading a book.)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Aspect vs Tense - A Different Way of Seeing Time</h2>
+        <p>English thinks about WHEN something happened. Tagalog thinks about HOW COMPLETE the action is. It's like the difference between asking "What time is it?" vs "How done is your homework?"</p>
+
+        <div class="mermaid">
+            graph LR
+                A[Action Completeness] --> B[Completed naganap]
+                A --> C[Ongoing nagaganap]
+                A --> D[Not Yet Started magaganap]
+                
+                B --> E[Kumain ate - done!]
+                C --> F[Kumakain eating - in progress]
+                D --> G[Kakain will eat - planned]
+                
+                style B fill:#e74c3c,color:#fff
+                style C fill:#f39c12,color:#fff
+                style D fill:#2ecc71,color:#fff
+        </div>
+
+        <div class="example-box">
+            <h3>Real-World Example: Doing Homework</h3>
+            <p><strong>English thinking:</strong> "I did homework yesterday" (focus on WHEN)</p>
+            <p><strong>Tagalog thinking:</strong> "Natapos ko na ang homework" (focus on COMPLETION)</p>
+            
+            <ul>
+                <li><strong>Naganap (Completed):</strong> Nag-aral ako - I studied (and I'm done)</li>
+                <li><strong>Nagaganap (Ongoing):</strong> Nag-aaral ako - I'm studying (right now)</li>
+                <li><strong>Magaganap (Future):</strong> Mag-aaral ako - I will study (it's planned)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Verb Conjugation Gym</h2>
+        
+        <h3>Exercise 1: Time Travel Practice</h3>
+        <p>Change these verbs through time:</p>
+        <div class="example-box">
+            <p><strong>Root: LUTO (cook)</strong></p>
+            <ul>
+                <li>Past: _______ (Answer: Nagluto)</li>
+                <li>Present: _______ (Answer: Nagluluto)</li>
+                <li>Future: _______ (Answer: Magluluto)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Focus Shifting</h3>
+        <p>Change the focus of this sentence:</p>
+        <div class="example-box">
+            <p><strong>Original:</strong> Bumili ang nanay ng gulay. (Mother bought vegetables.)</p>
+            <p><strong>Focus on vegetables:</strong> _______ (Answer: Binili ng nanay ang gulay.)</p>
+        </div>
+
+        <h3>Exercise 3: Daily Action Builder</h3>
+        <p>Build sentences about your daily routine:</p>
+        <ul>
+            <li>What you ate for breakfast: "Kumain ako ng _____"</li>
+            <li>What you're studying: "Nag-aaral ako ng _____"</li>
+            <li>What you will do tonight: "_____ ako mamaya" (Fill in the future verb)</li>
+        </ul>
+
+        <h3>Exercise 4: Aspect Recognition</h3>
+        <p>Identify if these actions are completed, ongoing, or future:</p>
+        <ul>
+            <li>Natulog si Maria. (Answer: Completed)</li>
+            <li>Naglalaro ang mga bata. (Answer: Ongoing)</li>
+            <li>Kakain tayo bukas. (Answer: Future)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Common Verb Patterns - Your Shortcuts to Fluency</h2>
+        <p>These patterns are like having a GPS for verb conjugation - they'll guide you even when you don't know the exact route!</p>
+
+        <table class="conjugation-table">
+            <tr>
+                <th>Pattern Type</th>
+                <th>Past</th>
+                <th>Present</th>
+                <th>Future</th>
+                <th>Example Root</th>
+            </tr>
+            <tr>
+                <td>-UM- verbs</td>
+                <td>um + root</td>
+                <td>um + first syllable + root</td>
+                <td>first syllable + root</td>
+                <td>KAIN → kumain, kumakain, kakain</td>
+            </tr>
+            <tr>
+                <td>MAG- verbs</td>
+                <td>nag + root</td>
+                <td>nag + first syllable + root</td>
+                <td>mag + first syllable + root</td>
+                <td>LARO → naglaro, naglalaro, maglalaro</td>
+            </tr>
+            <tr>
+                <td>-IN verbs</td>
+                <td>in + root</td>
+                <td>in + first syllable + root</td>
+                <td>first syllable + root + in</td>
+                <td>BASA → binasa, binabasa, babasahin</td>
+            </tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>Memory Tip:</strong> Think of -UM- verbs as "selfish" verbs (the actor is the focus), MAG- verbs as "action" verbs (emphasis on the doing), and -IN verbs as "receiver" verbs (focus on what gets the action).
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Real-World Verb Usage - Conversations in Action</h2>
+        <p>Let's see how these verbs come alive in everyday Filipino conversations!</p>
+
+        <div class="example-box">
+            <h3>Scenario 1: Morning Routine</h3>
+            <p><strong>Mom:</strong> "Kumain ka na?" (Have you eaten?)</p>
+            <p><strong>You:</strong> "Kakain pa lang ako." (I'm just about to eat.)</p>
+            <p><strong>Mom:</strong> "Ano ang kakainin mo?" (What will you eat?)</p>
+            <p><strong>You:</strong> "Mag-aaral pa ako pagkatapos." (I'll study after.)</p>
+        </div>
+
+        <div class="example-box">
+            <h3>Scenario 2: After School</h3>
+            <p><strong>Friend:</strong> "Ano ang ginawa mo sa eskwelahan?" (What did you do at school?)</p>
+            <p><strong>You:</strong> "Nag-aral ako ng matematika." (I studied mathematics.)</p>
+            <p><strong>Friend:</strong> "Maglalaro tayo bukas?" (Will we play tomorrow?)</p>
+            <p><strong>You:</strong> "Oo, naglalaro na ako ng soccer." (Yes, I already play soccer.)</p>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Cultural Insight - Verbs and Filipino Values</h2>
+        <p>The Tagalog verb system reflects deep Filipino cultural values:</p>
+        <ul>
+            <li><strong>Relationship-focused:</strong> The focus system shows what's most important in the relationship or context</li>
+            <li><strong>Process-oriented:</strong> Emphasis on how complete an action is, not just when it happened</li>
+            <li><strong>Respectful communication:</strong> Different verb forms show respect and social awareness</li>
+            <li><strong>Storytelling tradition:</strong> The rich verb system supports the Filipino love of detailed, contextual storytelling</li>
+        </ul>
+    </div>
+
+    <div class="practice-box">
+        <h2>Your Weekly Verb Challenge</h2>
+        <ol>
+            <li><strong>Daily conjugation:</strong> Pick one verb each day and practice its three aspects</li>
+            <li><strong>Focus practice:</strong> Take one English sentence daily and try to say it with different Tagalog focuses</li>
+            <li><strong>Aspect awareness:</strong> Notice when you talk about actions - are you thinking about completion or time?</li>
+            <li><strong>Conversation starter:</strong> Use "Ano ang ginagawa mo?" (What are you doing?) to start conversations</li>
+            <li><strong>Pattern recognition:</strong> Listen to Tagalog music/shows and identify verb patterns</li>
+        </ol>
+        
+        <div class="cultural-note">
+            <strong>Cultural Practice:</strong> Try asking "Tapos ka na?" (Are you done?) instead of "What time did you finish?" - notice how it feels different!
+        </div>
+    </div>
+
+    <script>
+        // Interactive verb factory animation
+        const canvas = document.getElementById('verbFactory');
+        const ctx = canvas.getContext('2d');
+        let animationFrame = 0;
+
+        function drawVerbFactory() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#a8edea');
+            gradient.addColorStop(1, '#fed6e3');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Title
+            ctx.fillStyle = '#333';
+            ctx.font = 'bold 24px Arial';
+            ctx.fillText('The Tagalog Verb Factory', 20, 40);
+            
+            // Assembly line
+            ctx.strokeStyle = '#667eea';
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.moveTo(50, 300);
+            ctx.lineTo(750, 300);
+            ctx.stroke();
+            
+            // Moving parts animation
+            const offsetX = (animationFrame * 2) % 100;
+            
+            // Root word box
+            ctx.fillStyle = '#667eea';
+            ctx.fillRect(100 + offsetX, 250, 100, 50);
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 16px Arial';
+            ctx.fillText('SULAT', 115 + offsetX, 280);
+            
+            // Affix machines
+            const machines = [
+                { x: 250, color: '#e74c3c', label: 'Past Machine', affix: 'SUM-' },
+                { x: 400, color: '#f39c12', label: 'Present Machine', affix: '-UM-' },
+                { x: 550, color: '#2ecc71', label: 'Future Machine', affix: 'S-' }
+            ];
+            
+            machines.forEach(machine => {
+                // Machine body
+                ctx.fillStyle = machine.color;
+                ctx.fillRect(machine.x, 150, 80, 100);
+                
+                // Machine label
+                ctx.fillStyle = 'white';
+                ctx.font = '12px Arial';
+                ctx.fillText(machine.label, machine.x + 5, 170);
+                ctx.fillText(machine.affix, machine.x + 15, 190);
+                
+                // Gears
+                ctx.beginPath();
+                ctx.arc(machine.x + 40, 200, 15, animationFrame * 0.1, animationFrame * 0.1 + Math.PI * 2);
+                ctx.strokeStyle = 'white';
+                ctx.lineWidth = 3;
+                ctx.stroke();
+            });
+            
+            // Output examples
+            ctx.fillStyle = '#333';
+            ctx.font = '14px Arial';
+            ctx.fillText('SUMULAT (wrote)', 250, 120);
+            ctx.fillText('SUSULAT (writing)', 400, 120);
+            ctx.fillText('SUSULAT (will write)', 550, 120);
+            
+            // Conveyor belt items
+            const beltItems = ['ROOT', 'PREFIX', 'SUFFIX'];
+            beltItems.forEach((item, index) => {
+                const x = 150 + (index * 200) + offsetX;
+                if (x < 750) {
+                    ctx.fillStyle = '#764ba2';
+                    ctx.fillRect(x, 320, 60, 30);
+                    ctx.fillStyle = 'white';
+                    ctx.font = '10px Arial';
+                    ctx.fillText(item, x + 5, 340);
+                }
+            });
+            
+            animationFrame++;
+            requestAnimationFrame(drawVerbFactory);
+        }
+        
+        drawVerbFactory();
+    </script>
+</body>
+</html>

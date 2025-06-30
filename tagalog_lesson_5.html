@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamilya at Pakikipagkapwa - Family and Social Connections</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #667eea, #764ba2, #f093fb); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #667eea; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .family-tree { background: white; padding: 30px; border-radius: 15px; margin: 20px 0; box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+        .generation { display: flex; justify-content: center; gap: 30px; margin: 20px 0; flex-wrap: wrap; }
+        .family-member { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px; border-radius: 10px; text-align: center; min-width: 120px; position: relative; }
+        .grandparents { background: linear-gradient(135deg, #e74c3c, #c0392b) !important; }
+        .parents { background: linear-gradient(135deg, #f39c12, #e67e22) !important; }
+        .children { background: linear-gradient(135deg, #2ecc71, #27ae60) !important; }
+        .pronoun-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .pronoun-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #667eea; }
+        .formal { border-left-color: #e74c3c !important; }
+        .informal { border-left-color: #2ecc71 !important; }
+        .respect-demo { background: linear-gradient(45deg, #ffeaa7, #fab1a0); padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .relationship-web { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 2px dashed #667eea; margin: 20px 0; }
+        .conversation-box { background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        canvas { border: 2px solid #667eea; border-radius: 8px; margin: 10px 0; }
+        .relationship-card { background: white; padding: 15px; margin: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: inline-block; }
+        .kinship-terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 15px 0; }
+        .kinship-card { background: #667eea; color: white; padding: 10px; border-radius: 5px; text-align: center; }
+        .address-system { background: linear-gradient(135deg, #a29bfe, #6c5ce7); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .social-hierarchy { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 20px 0; }
+        .interactive-family { cursor: pointer; transition: transform 0.3s ease; }
+        .interactive-family:hover { transform: scale(1.1); }
+        .pronoun-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .pronoun-table th, .pronoun-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .pronoun-table th { background: #667eea; color: white; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Pamilya at Pakikipagkapwa</h1>
+        <p>The Heart of Filipino Culture - Family and Social Relationships</p>
+    </div>
+
+    <div class="section">
+        <h2>The Filipino Family - More Than Just Blood</h2>
+        <p>Imagine a tree where the branches keep growing and connecting to other trees until you have an entire forest. That's the Filipino family system! It's not just about parents and children - it's about lolas, titos, kumares, and even the neighbor who's become like family. In Tagalog, there's a specific word for almost every relationship you can imagine!</p>
+
+        <div class="family-tree">
+            <h3>Ang Pamilyang Pilipino (The Filipino Family)</h3>
+            <canvas id="familyTreeCanvas" width="900" height="500"></canvas>
+            
+            <div class="generation">
+                <div class="family-member grandparents interactive-family" onclick="showRelationship('lolo')">
+                    <strong>LOLO</strong><br>
+                    Grandfather<br>
+                    <small>(Father's or Mother's side)</small>
+                </div>
+                <div class="family-member grandparents interactive-family" onclick="showRelationship('lola')">
+                    <strong>LOLA</strong><br>
+                    Grandmother<br>
+                    <small>(Both sides)</small>
+                </div>
+            </div>
+            
+            <div class="generation">
+                <div class="family-member parents interactive-family" onclick="showRelationship('tatay')">
+                    <strong>TATAY/PAPA</strong><br>
+                    Father<br>
+                    <small>(Also: Ama)</small>
+                </div>
+                <div class="family-member parents interactive-family" onclick="showRelationship('nanay')">
+                    <strong>NANAY/MAMA</strong><br>
+                    Mother<br>
+                    <small>(Also: Ina)</small>
+                </div>
+                <div class="family-member parents interactive-family" onclick="showRelationship('tito')">
+                    <strong>TITO</strong><br>
+                    Uncle<br>
+                    <small>(Any older male family friend)</small>
+                </div>
+                <div class="family-member parents interactive-family" onclick="showRelationship('tita')">
+                    <strong>TITA</strong><br>
+                    Aunt<br>
+                    <small>(Any older female family friend)</small>
+                </div>
+            </div>
+            
+            <div class="generation">
+                <div class="family-member children interactive-family" onclick="showRelationship('kuya')">
+                    <strong>KUYA</strong><br>
+                    Older Brother<br>
+                    <small>(Also for older male cousins)</small>
+                </div>
+                <div class="family-member children interactive-family" onclick="showRelationship('ate')">
+                    <strong>ATE</strong><br>
+                    Older Sister<br>
+                    <small>(Also for older female cousins)</small>
+                </div>
+                <div class="family-member children interactive-family" onclick="showRelationship('bunso')">
+                    <strong>BUNSO</strong><br>
+                    Youngest Child<br>
+                    <small>(Special term of endearment)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="mermaid">
+            graph TD
+                A[Filipino Family Concept] --> B[Blood Relations]
+                A --> C[Extended Family]
+                A --> D[Chosen Family]
+                
+                B --> E[Magulang Parents]
+                B --> F[Magkakapatid Siblings]
+                B --> G[Lolo/Lola Grandparents]
+                
+                C --> H[Tito/Tita Aunts/Uncles]
+                C --> I[Pinsan Cousins]
+                C --> J[Kamag-anak Relatives]
+                
+                D --> K[Ninong/Ninang Godparents]
+                D --> L[Kumpare/Kumare Close Friends]
+                D --> M[Kapitbahay Neighbors]
+                
+                style A fill:#667eea,color:#fff
+                style B fill:#e74c3c,color:#fff
+                style C fill:#f39c12,color:#fff
+                style D fill:#2ecc71,color:#fff
+        </mermaid>
+
+        <div id="relationshipInfo" class="cultural-note" style="display: none;">
+            <div id="relationshipContent"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Personal Pronouns - The Dance of Respect</h2>
+        <p>Filipino pronouns are like a social GPS - they don't just tell you who's speaking, but also navigate the complex terrain of respect, intimacy, and social hierarchy. Using the wrong pronoun isn't just grammatically incorrect; it's like wearing flip-flops to a formal dinner!</p>
+
+        <div class="pronoun-grid">
+            <div class="pronoun-card informal">
+                <h3>Informal/Close Relationships</h3>
+                <ul>
+                    <li><strong>Ako</strong> - I (casual)</li>
+                    <li><strong>Ka/Ikaw</strong> - You (to friends/family)</li>
+                    <li><strong>Siya</strong> - He/She (casual)</li>
+                    <li><strong>Tayo</strong> - We (including listener)</li>
+                    <li><strong>Kami</strong> - We (excluding listener)</li>
+                    <li><strong>Kayo</strong> - You all (plural)</li>
+                    <li><strong>Sila</strong> - They</li>
+                </ul>
+            </div>
+            
+            <div class="pronoun-card formal">
+                <h3>Formal/Respectful</h3>
+                <ul>
+                    <li><strong>Ako po</strong> - I (respectful)</li>
+                    <li><strong>Kayo</strong> - You (to elders/authority)</li>
+                    <li><strong>Sila</strong> - He/She (respectful)</li>
+                    <li><strong>Tayo po</strong> - We (respectful, inclusive)</li>
+                    <li><strong>Kami po</strong> - We (respectful, exclusive)</li>
+                    <li><strong>Kayo</strong> - You all (formal)</li>
+                    <li><strong>Sila</strong> - They (formal)</li>
+                </ul>
+            </div>
+        </div>
+
+        <table class="pronoun-table">
+            <tr>
+                <th>Situation</th>
+                <th>Who You're Talking To</th>
+                <th>Pronoun to Use</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>Talking to friends</td>
+                <td>Same age/younger</td>
+                <td>Ka/Ikaw</td>
+                <td>"Kumain ka na?" (Have you eaten?)</td>
+            </tr>
+            <tr>
+                <td>Talking to parents</td>
+                <td>Parents/elders</td>
+                <td>Kayo (with po)</td>
+                <td>"Kumain na po kayo?" (Have you eaten?)</td>
+            </tr>
+            <tr>
+                <td>Talking to strangers</td>
+                <td>Unknown age</td>
+                <td>Kayo (safer choice)</td>
+                <td>"Nasaan po kayo pupunta?" (Where are you going?)</td>
+            </tr>
+            <tr>
+                <td>About yourself</td>
+                <td>To anyone</td>
+                <td>Ako (+ po if formal)</td>
+                <td>"Ako po si Maria." (I am Maria.)</td>
+            </tr>
+        </table>
+
+        <div class="respect-demo">
+            <h3>The Magic of "Po" and "Opo"</h3>
+            <p>Think of "po" and "opo" as invisible gifts you give with your words - they wrap your sentences in respect and kindness.</p>
+            
+            <div class="example-box">
+                <h4>Without Po/Opo (Casual/Rude):</h4>
+                <p>"Oo, alam ko." (Yes, I know.) - Sounds abrupt, possibly rude to elders</p>
+                
+                <h4>With Po/Opo (Respectful):</h4>
+                <p>"Opo, alam ko po." (Yes, I know.) - Shows proper respect and good upbringing</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>The Address System - More Than Names</h2>
+        <p>In Filipino culture, how you address someone is like choosing the right key for the right door. Get it right, and relationships flow smoothly. Get it wrong, and you might seem disrespectful or overly familiar!</p>
+
+        <div class="address-system">
+            <h3>Who Do You Call What?</h3>
+            
+            <div class="kinship-terms">
+                <div class="kinship-card">
+                    <strong>Kuya [Name]</strong><br>
+                    Older males<br>
+                    <small>(Even non-relatives)</small>
+                </div>
+                <div class="kinship-card">
+                    <strong>Ate [Name]</strong><br>
+                    Older females<br>
+                    <small>(Even non-relatives)</small>
+                </div>
+                <div class="kinship-card">
+                    <strong>Tito/Tita [Name]</strong><br>
+                    Much older adults<br>
+                    <small>(Family friends)</small>
+                </div>
+                <div class="kinship-card">
+                    <strong>Lolo/Lola [Name]</strong><br>
+                    Elderly people<br>
+                    <small>(Even strangers)</small>
+                </div>
+                <div class="kinship-card">
+                    <strong>Sir/Ma'am</strong><br>
+                    Professional settings<br>
+                    <small>(Office, school)</small>
+                </div>
+                <div class="kinship-card">
+                    <strong>[First Name]</strong><br>
+                    Same age/younger<br>
+                    <small>(Close friends only)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="conversation-box">
+            <h3>Real-Life Address Scenarios</h3>
+            
+            <div class="example-box" style="background: rgba(255,255,255,0.9); color: #333;">
+                <h4>Scenario 1: Meeting a Neighbor</h4>
+                <p><strong>Older neighbor (40s):</strong> You call them "Tita Rosa" or "Tito Ben"</p>
+                <p><strong>Your response:</strong> "Magandang umaga po, Tita Rosa!" (Good morning, Tita Rosa!)</p>
+            </div>
+            
+            <div class="example-box" style="background: rgba(255,255,255,0.9); color: #333;">
+                <h4>Scenario 2: Meeting Someone Your Age</h4>
+                <p><strong>New friend (similar age):</strong> You can use their name directly</p>
+                <p><strong>Your response:</strong> "Hi, Maria! Kumusta ka?" (Hi Maria! How are you?)</p>
+            </div>
+            
+            <div class="example-box" style="background: rgba(255,255,255,0.9); color: #333;">
+                <h4>Scenario 3: Slightly Older Person</h4>
+                <p><strong>College senior:</strong> Use "Kuya" or "Ate" before their name</p>
+                <p><strong>Your response:</strong> "Kuya Mike, pwede po makisuyo?" (Kuya Mike, can I ask a favor?)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Extended Family Terms - The Filipino Web</h2>
+        <p>Filipino kinship terms are like a detailed map of human relationships. Where English might say "cousin," Tagalog asks: "First cousin or second? Older or younger? Male or female? From mother's side or father's?" Every relationship has its place!</p>
+
+        <div class="relationship-web">
+            <h3>The Extended Network</h3>
+            
+            <div class="pronoun-grid">
+                <div class="relationship-card">
+                    <h4>Immediate Family</h4>
+                    <ul>
+                        <li><strong>Anak</strong> - Child</li>
+                        <li><strong>Panganay</strong> - Eldest child</li>
+                        <li><strong>Kapatid</strong> - Sibling (gender-neutral)</li>
+                        <li><strong>Bunso</strong> - Youngest child</li>
+                    </ul>
+                </div>
+                
+                <div class="relationship-card">
+                    <h4>Grandparent Generation</h4>
+                    <ul>
+                        <li><strong>Lolo sa Tatay</strong> - Paternal grandfather</li>
+                        <li><strong>Lola sa Nanay</strong> - Maternal grandmother</li>
+                        <li><strong>Tiyuhin</strong> - Uncle (formal)</li>
+                        <li><strong>Tiyahin</strong> - Aunt (formal)</li>
+                    </ul>
+                </div>
+                
+                <div class="relationship-card">
+                    <h4>Cousin Territory</h4>
+                    <ul>
+                        <li><strong>Pinsan</strong> - Cousin (general)</li>
+                        <li><strong>Kuya/Ate + name</strong> - Older cousins</li>
+                        <li><strong>First name</strong> - Younger cousins</li>
+                        <li><strong>Pamangkin</strong> - Niece/nephew</li>
+                    </ul>
+                </div>
+                
+                <div class="relationship-card">
+                    <h4>Chosen Family</h4>
+                    <ul>
+                        <li><strong>Ninong</strong> - Godfather</li>
+                        <li><strong>Ninang</strong> - Godmother</li>
+                        <li><strong>Inaanak</strong> - Godchild</li>
+                        <li><strong>Kumpare/Kumare</strong> - Co-godparent/close friend</li>
+                    </ul>
+                </div>
+                
+                <div class="relationship-card">
+                    <h4>In-Laws & Marriage</h4>
+                    <ul>
+                        <li><strong>Asawa</strong> - Spouse</li>
+                        <li><strong>Manugang</strong> - Son/daughter-in-law</li>
+                        <li><strong>Biyenan</strong> - Mother/father-in-law</li>
+                        <li><strong>Bayaw/Hipag</strong> - Brother/sister-in-law</li>
+                    </ul>
+                </div>
+                
+                <div class="relationship-card">
+                    <h4>Community Relations</h4>
+                    <ul>
+                        <li><strong>Kapitbahay</strong> - Neighbor</li>
+                        <li><strong>Kababayan</strong> - Fellow townmate</li>
+                        <li><strong>Kaibigan</strong> - Friend</li>
+                        <li><strong>Kasama</strong> - Companion/housemate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Social Hierarchy in Language</h2>
+        <p>Filipino society is like a gentle mountain with different levels of respect. The language reflects this beautifully - every conversation is a dance between showing proper respect and building warm relationships.</p>
+
+        <div class="social-hierarchy">
+            <h3>The Respect Pyramid</h3>
+            <canvas id="hierarchyCanvas" width="800" height="400"></canvas>
+            
+            <div class="example-box">
+                <h4>How to Navigate the Hierarchy:</h4>
+                <ol>
+                    <li><strong>Age matters:</strong> Always err on the side of using respectful language</li>
+                    <li><strong>Context matters:</strong> Workplace vs. family vs. friends require different approaches</li>
+                    <li><strong>Relationship matters:</strong> How close you are affects formality level</li>
+                    <li><strong>When in doubt:</strong> Use "po" and "opo" - nobody gets offended by too much respect!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Family and Relationship Practice</h2>
+        
+        <h3>Exercise 1: Family Tree Building</h3>
+        <p>Draw your own family tree and label each person with their Tagalog relationship term:</p>
+        <div class="example-box">
+            <ul>
+                <li>Your grandmother: _____</li>
+                <li>Your older sibling: _____</li>
+                <li>Your parent's brother: _____</li>
+                <li>Your cousin (older): _____</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Pronoun Practice</h3>
+        <p>Choose the correct pronoun for each situation:</p>
+        <div class="example-box">
+            <ol>
+                <li>Speaking to your teacher: "_____ po ang assignment?" (What is the assignment?) - Answer: Ano</li>
+                <li>Talking to your younger sibling: "_____ na ba ang takdang-aralin mo?" (Did you finish your homework?) - Answer: Tapos</li>
+                <li>Addressing your grandmother: "Kumain na po ba _____?" (Have you eaten?) - Answer: kayo</li>
+            </ol>
+        </div>
+
+        <h3>Exercise 3: Address Practice</h3>
+        <p>How would you address these people?</p>
+        <ul>
+            <li>Your friend's mother (40s): _____</li>
+            <li>A male classmate 2 years older: _____</li>
+            <li>Your 60-year-old neighbor: _____</li>
+            <li>Your same-age coworker: _____</li>
+        </ul>
+
+        <h3>Exercise 4: Respect Level Recognition</h3>
+        <p>Identify if these phrases are formal or informal:</p>
+        <ul>
+            <li>"Alam ko na yan." - (Informal)</li>
+            <li>"Opo, alam ko po." - (Formal)</li>
+            <li>"Kumain ka na?" - (Informal)</li>
+            <li>"Kumain na po kayo?" - (Formal)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Common Family Conversations</h2>
+        <p>Let's practice the most common family interactions - these are the conversations that happen in Filipino homes every single day!</p>
+
+        <div class="conversation-box">
+            <h3>Typical Family Scenarios</h3>
+            
+            <div class="example-box" style="background: rgba(255,255,255,0.9); color: #333;">
+                <h4>Morning Greeting</h4>
+                <p><strong>Child to Parent:</strong> "Magandang umaga po, Nanay!" (Good morning, Mom!)</p>
+                <p><strong>Parent to Child:</strong> "Magandang umaga rin, anak. Kumain ka na?" (Good morning too, child. Have you eaten?)</p>
+            </div>
+            
+            <div class="example-box" style="background: rgba(255,255,255,0.9); color: #333;">
+                <h4>Introducing Someone</h4>
+                <p><strong>You:</strong> "Nanay, ito po si Maria, kaklase ko." (Mom, this is Maria, my classmate.)</p>
+                <p><strong>Mom:</strong> "Kumusta ka, Maria? Tita mo ako." (How are you, Maria? I'm your Tita.)</p>
+                <p><strong>Maria:</strong> "Kumusta po, Tita. Salamat po sa pagdating." (How are you, Tita. Thank you for welcoming me.)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Cultural Deep Dive - Why Family Language Matters</h2>
+        <p>The Filipino family system and its language reflect core cultural values:</p>
+        <ul>
+            <li><strong>Kapamilya (Family-ness):</strong> Everyone can become family through relationships and respect</li>
+            <li><strong>Pakikipagkapwa (Shared identity):</strong> Language shows we're all connected</li>
+            <li><strong>Utang na loob (Debt of gratitude):</strong> Respect language acknowledges what others have given us</li>
+            <li><strong>Paggalang (Respect):</strong> Age and relationship hierarchy maintain social harmony</li>
+            <li><strong>Malasakit (Compassionate care):</strong> Family terms extend care beyond blood relations</li>
+        </ul>
+        
+        <div class="example-box">
+            <p><strong>Real Example:</strong> When Filipinos call older strangers "Kuya" or "Ate," they're not just being polite - they're creating instant kinship and showing that we're all part of the same human family!</p>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Your Weekly Relationship Challenge</h2>
+        <ol>
+            <li><strong>Family mapping:</strong> Create a complete family tree with Tagalog terms</li>
+            <li><strong>Respect practice:</strong> Use "po" and "opo" with all authority figures for one week</li>
+            <li><strong>Address awareness:</strong> Notice how people address each other in Filipino shows/videos</li>
+            <li><strong>Pronoun sensitivity:</strong> Practice switching between formal and informal pronouns</li>
+            <li><strong>Introduction skills:</strong> Practice introducing people using appropriate family terms</li>
+            <li><strong>Cultural observation:</strong> Watch how Filipinos determine respect levels in conversations</li>
+        </ol>
+        
+        <div class="cultural-note">
+            <strong>Cultural Challenge:</strong> Try calling an older person "Kuya" or "Ate" instead of their name - notice how it changes the dynamic of your interaction!
+        </div>
+    </div>
+
+    <script>
+        // Family relationship information
+        const relationships = {
+            lolo: {
+                title: "LOLO - The Family Patriarch",
+                content: "Lolo is more than grandfather - he's often the wise storyteller, the family historian, and the one who gives the best advice. In Filipino families, Lolo's word carries special weight, and his stories connect generations."
+            },
+            lola: {
+                title: "LOLA - The Heart of the Home",
+                content: "Lola is the ultimate nurturer - she feeds everyone, keeps family traditions alive, and often serves as the family's emotional center. Her kitchen is the heart of family gatherings, and her recipes are treasured secrets."
+            },
+            tatay: {
+                title: "TATAY/PAPA - The Provider",
+                content: "Filipino fathers are often seen as the family providers and protectors. The terms 'Tatay' (informal) and 'Papa' (more affectionate) show different levels of closeness and family dynamics."
+            },
+            nanay: {
+                title: "NANAY/MAMA - The Manager",
+                content: "Filipino mothers typically manage the household, make important family decisions, and serve as the primary caregivers. 'Nanay' and 'Mama' reflect the central role mothers play in Filipino family life."
+            },
+            tito: {
+                title: "TITO - More Than Uncle",
+                content: "Tito can be your actual uncle OR any older male family friend. This shows how Filipinos extend family relationships beyond blood - respect and affection can make anyone family!"
+            },
+            tita: {
+                title: "TITA - The Extended Mother",
+                content: "Like Tito, Tita extends beyond biological aunts to include any older female who shows care. She might give the best life advice and always has snacks ready!"
+            },
+            kuya: {
+                title: "KUYA - The Protective Brother",
+                content: "Kuya represents the protective older brother figure. This term extends to older male cousins, friends, and even respectful address for older males in general. It implies guidance and protection."
+            },
+            ate: {
+                title: "ATE - The Caring Sister",
+                content: "Ate embodies the caring older sister role. Used for older female siblings, cousins, and respectful address for older females. It implies nurturing and guidance."
+            },
+            bunso: {
+                title: "BUNSO - The Family Baby",
+                content: "Bunso is a special term for the youngest child who often gets extra attention and care from the whole family. Being the bunso means being cherished and sometimes slightly spoiled!"
+            }
+        };
+
+        function showRelationship(key) {
+            const info = relationships[key];
+            const infoDiv = document.getElementById('relationshipInfo');
+            const contentDiv = document.getElementById('relationshipContent');
+            
+            contentDiv.innerHTML = `<h3>${info.title}</h3><p>${info.content}</p>`;
+            infoDiv.style.display = 'block';
+            
+            // Scroll to the information
+            infoDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Family tree canvas animation
+        function drawFamilyTree() {
+            const canvas = document.getElementById('familyTreeCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw connecting lines
+            ctx.strokeStyle = 'rgba(255,255,255,0.6)';
+            ctx.lineWidth = 3;
+            
+            // Grandparents to parents
+            ctx.beginPath();
+            ctx.moveTo(200, 100);
+            ctx.lineTo(300, 200);
+            ctx.moveTo(400, 100);
+            ctx.lineTo(300, 200);
+            ctx.moveTo(500, 100);
+            ctx.lineTo(600, 200);
+            ctx.moveTo(700, 100);
+            ctx.lineTo(600, 200);
+            ctx.stroke();
+            
+            // Parents to children
+            ctx.beginPath();
+            ctx.moveTo(300, 250);
+            ctx.lineTo(200, 350);
+            ctx.moveTo(300, 250);
+            ctx.lineTo(300, 350);
+            ctx.moveTo(600, 250);
+            ctx.lineTo(400, 350);
+            ctx.moveTo(600, 250);
+            ctx.lineTo(500, 350);
+            ctx.stroke();
+            
+            // Add decorative elements
+            ctx.fillStyle = 'rgba(255,255,255,0.3)';
+            ctx.font = '14px Arial';
+            ctx.fillText('Three Generation Filipino Family', 20, 30);
+            ctx.fillText('Blood relations + Chosen family = Complete family', 20, 480);
+        }
+
+        // Social hierarchy pyramid
+        function drawHierarchy() {
+            const canvas = document.getElementById('hierarchyCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw pyramid levels
+            const levels = [
+                { text: 'Lolo/Lola, Elderly', color: '#e74c3c', y: 50 },
+                { text: 'Parents, Tito/Tita, Authority Figures', color: '#f39c12', y: 120 },
+                { text: 'Kuya/Ate, Older Siblings/Friends', color: '#f1c40f', y: 190 },
+                { text: 'Same Age Friends, Peers', color: '#2ecc71', y: 260 },
+                { text: 'Younger Siblings, Children', color: '#3498db', y: 330 }
+            ];
+            
+            levels.forEach((level, index) => {
+                const width = 600 - (index * 100);
+                const x = (canvas.width - width) / 2;
+                
+                ctx.fillStyle = level.color;
+                ctx.fillRect(x, level.y, width, 50);
+                
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 14px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText(level.text, canvas.width / 2, level.y + 30);
+            });
+            
+            // Add respect indicators
+            ctx.fillStyle = '#333';
+            ctx.font = '12px Arial';
+            ctx.textAlign = 'left';
+            ctx.fillText('Highest Respect: Po, Opo, Kayo', 50, 380);
+            ctx.fillText('Moderate Respect: Contextual Po/Opo', 300, 380);
+            ctx.fillText('Casual: Ka, Ikaw, no Po needed', 550, 380);
+        }
+
+        // Initialize canvases
+        drawFamilyTree();
+        drawHierarchy();
+    </script>
+</body>
+</html>

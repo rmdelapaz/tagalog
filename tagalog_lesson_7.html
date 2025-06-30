@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mga Bahagi ng Pananalita - Understanding Tagalog Parts of Speech</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #6c5ce7, #a29bfe, #fd79a8); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #6c5ce7; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .pos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 20px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #6c5ce7; }
+        .nouns { border-left-color: #e74c3c !important; }
+        .verbs { border-left-color: #f39c12 !important; }
+        .adjectives { border-left-color: #2ecc71 !important; }
+        .adverbs { border-left-color: #9b59b6 !important; }
+        .pronouns { border-left-color: #3498db !important; }
+        .particles { border-left-color: #1abc9c !important; }
+        .prepositions { border-left-color: #e67e22 !important; }
+        .conjunctions { border-left-color: #34495e !important; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .grammar-demo { background: linear-gradient(45deg, #ffeaa7, #fab1a0); padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .sentence-builder { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 2px dashed #6c5ce7; margin: 20px 0; }
+        .word-anatomy { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); margin: 20px 0; }
+        .affixes-demo { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        canvas { border: 2px solid #6c5ce7; border-radius: 8px; margin: 10px 0; }
+        .interactive-sentence { cursor: pointer; padding: 10px; border-radius: 5px; margin: 5px; display: inline-block; transition: transform 0.2s ease; }
+        .interactive-sentence:hover { transform: scale(1.1); }
+        .word-type { font-size: 0.8em; color: #666; font-style: italic; }
+        .formation-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .formation-table th, .formation-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .formation-table th { background: #6c5ce7; color: white; }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .language-comparison { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .english-side { border-left: 4px solid #e74c3c; }
+        .tagalog-side { border-left: 4px solid #2ecc71; }
+        .function-words { background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .word-building { background: #f0f8ff; padding: 20px; border-radius: 10px; border: 2px solid #4169e1; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Mga Bahagi ng Pananalita</h1>
+        <p>The Building Blocks of Tagalog - Parts of Speech Mastery</p>
+    </div>
+
+    <div class="section">
+        <h2>The Architecture of Tagalog</h2>
+        <p>Think of Tagalog sentences like building a beautiful bahay kubo (traditional Filipino house) - you need different types of materials for different parts. Nouns are your sturdy posts, verbs are the moving parts like doors and windows, adjectives are the decorative elements, and particles are the nails that hold everything together!</p>
+
+        <div class="mermaid">
+            graph TD
+                A[Tagalog Parts of Speech] --> B[Content Words]
+                A --> C[Function Words]
+                
+                B --> D[Pangngalan - Nouns]
+                B --> E[Pandiwa - Verbs]
+                B --> F[Pang-uri - Adjectives]
+                B --> G[Pang-abay - Adverbs]
+                
+                C --> H[Panghalip - Pronouns]
+                C --> I[Pang-ukol - Prepositions]
+                C --> J[Pangatnig - Conjunctions]
+                C --> K[Pang-angkop - Particles]
+                
+                style A fill:#6c5ce7,color:#fff
+                style B fill:#e74c3c,color:#fff
+                style C fill:#2ecc71,color:#fff
+        </mermaid>
+
+        <div class="cultural-note">
+            <strong>Cultural Insight:</strong> Tagalog parts of speech work differently from English in fascinating ways. For example, many Tagalog words can function as different parts of speech depending on context - showing the language's flexibility and adaptability!
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pangngalan - Nouns (The Name Holders)</h2>
+        <p>Filipino nouns are like labels on everything in the world - but unlike English, they don't worry about gender (no "la mesa" vs "el libro" like Spanish). They're refreshingly straightforward!</p>
+
+        <div class="pos-grid">
+            <div class="pos-card nouns">
+                <h3>🏠 Common Nouns (Pangkaraniwang Pangngalan)</h3>
+                <ul>
+                    <li><strong>Bahay</strong> - house</li>
+                    <li><strong>Aso</strong> - dog</li>
+                    <li><strong>Pusa</strong> - cat</li>
+                    <li><strong>Libro</strong> - book</li>
+                    <li><strong>Tubig</strong> - water</li>
+                    <li><strong>Pagkain</strong> - food</li>
+                </ul>
+                <div class="word-type">General names for things, places, concepts</div>
+            </div>
+
+            <div class="pos-card nouns">
+                <h3>👤 Proper Nouns (Pantanging Pangngalan)</h3>
+                <ul>
+                    <li><strong>Maria</strong> - Maria</li>
+                    <li><strong>Manila</strong> - Manila</li>
+                    <li><strong>Pilipinas</strong> - Philippines</li>
+                    <li><strong>Lunes</strong> - Monday</li>
+                    <li><strong>Enero</strong> - January</li>
+                    <li><strong>Rizal</strong> - Rizal</li>
+                </ul>
+                <div class="word-type">Specific names - always capitalized</div>
+            </div>
+
+            <div class="pos-card nouns">
+                <h3>👥 Collective Nouns (Pangkumpong Pangngalan)</h3>
+                <ul>
+                    <li><strong>Pamilya</strong> - family</li>
+                    <li><strong>Klase</strong> - class</li>
+                    <li><strong>Grupo</strong> - group</li>
+                    <li><strong>Koponan</strong> - team</li>
+                    <li><strong>Sambayanan</strong> - nation/people</li>
+                    <li><strong>Kawan</strong> - flock/herd</li>
+                </ul>
+                <div class="word-type">Groups of things or people</div>
+            </div>
+
+            <div class="pos-card nouns">
+                <h3>💭 Abstract Nouns (Pangngalang Di-Konkretro)</h3>
+                <ul>
+                    <li><strong>Pag-ibig</strong> - love</li>
+                    <li><strong>Kasiyahan</strong> - happiness</li>
+                    <li><strong>Kalungkutan</strong> - sadness</li>
+                    <li><strong>Karunungan</strong> - wisdom</li>
+                    <li><strong>Katapangan</strong> - bravery</li>
+                    <li><strong>Pagkakaibigan</strong> - friendship</li>
+                </ul>
+                <div class="word-type">Ideas, emotions, concepts you can't touch</div>
+            </div>
+        </div>
+
+        <div class="word-building">
+            <h3>How Tagalog Builds Abstract Nouns</h3>
+            <p>Tagalog loves to build complex ideas from simple roots using prefixes and suffixes:</p>
+            
+            <table class="formation-table">
+                <tr>
+                    <th>Root Word</th>
+                    <th>Add Ka- + -an</th>
+                    <th>Result</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td>Maganda (beautiful)</td>
+                    <td>Ka + maganda + han</td>
+                    <td>Kagandahan</td>
+                    <td>Beauty</td>
+                </tr>
+                <tr>
+                    <td>Mabait (kind)</td>
+                    <td>Ka + bait + an</td>
+                    <td>Kabaitan</td>
+                    <td>Kindness</td>
+                </tr>
+                <tr>
+                    <td>Malaki (big)</td>
+                    <td>Ka + laki + han</td>
+                    <td>Kalakihan</td>
+                    <td>Bigness/Size</td>
+                </tr>
+                <tr>
+                    <td>Tahimik (quiet)</td>
+                    <td>Ka + tahimik + an</td>
+                    <td>Katahimikan</td>
+                    <td>Quietness/Peace</td>
+                </tr>
+            </table>
+
+            <div class="example-box">
+                <h4>Pattern Recognition:</h4>
+                <p>Notice how Tagalog systematically creates abstract nouns! This pattern works with most adjectives, making it easy to express complex ideas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pandiwa - Verbs (The Action Heroes)</h2>
+        <p>We've explored verbs before, but let's see them as a part of speech. Tagalog verbs are like shape-shifters - they change form to show not just when something happened, but who's in focus and how complete the action is!</p>
+
+        <div class="pos-card verbs">
+            <h3>Verb Categories by Function</h3>
+            
+            <div class="affixes-demo">
+                <h4>Action Verbs (Pandiwang Galaw)</h4>
+                <div class="example-box" style="background: rgba(255,255,255,0.9); color: #333;">
+                    <ul>
+                        <li><strong>Tumubo</strong> - to run</li>
+                        <li><strong>Lumakad</strong> - to walk</li>
+                        <li><strong>Sumayaw</strong> - to dance</li>
+                        <li><strong>Kumanta</strong> - to sing</li>
+                        <li><strong>Maglaro</strong> - to play</li>
+                        <li><strong>Magsulat</strong> - to write</li>
+                    </ul>
+                </div>
+
+                <h4>State Verbs (Pandiwang Kalagayan)</h4>
+                <div class="example-box" style="background: rgba(255,255,255,0.9); color: #333;">
+                    <ul>
+                        <li><strong>Maging</strong> - to become</li>
+                        <li><strong>Manatili</strong> - to remain/stay</li>
+                        <li><strong>Magmukhang</strong> - to look like</li>
+                        <li><strong>Maramdaman</strong> - to feel</li>
+                        <li><strong>Mag-isip</strong> - to think</li>
+                        <li><strong>Maniwala</strong> - to believe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grammar-demo">
+            <h3>Verb Transformation Magic</h3>
+            <canvas id="verbTransformation" width="800" height="300"></canvas>
+            
+            <div class="example-box">
+                <h4>Root: KAIN (eat)</h4>
+                <p><strong>Actor Focus:</strong> K<em>um</em>ain, K<em>um</em>akain, K<em>a</em>kain</p>
+                <p><strong>Object Focus:</strong> K<em>in</em>ain, K<em>in</em>akain, K<em>a</em>kainin</p>
+                <p><strong>Location Focus:</strong> K<em>in</em>ainan, K<em>in</em>akainan, K<em>a</em>kakainan</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pang-uri - Adjectives (The Describers)</h2>
+        <p>Tagalog adjectives are like artists with paintbrushes - they add color, texture, and life to your sentences. Unlike English, they often come after the noun, like saying "house big" instead of "big house"!</p>
+
+        <div class="pos-grid">
+            <div class="pos-card adjectives">
+                <h3>🎨 Descriptive Adjectives</h3>
+                <ul>
+                    <li><strong>Maganda</strong> - beautiful</li>
+                    <li><strong>Pangit</strong> - ugly</li>
+                    <li><strong>Malaki</strong> - big</li>
+                    <li><strong>Maliit</strong> - small</li>
+                    <li><strong>Matangkad</strong> - tall</li>
+                    <li><strong>Pandak</strong> - short</li>
+                </ul>
+            </div>
+
+            <div class="pos-card adjectives">
+                <h3>🌈 Color Adjectives</h3>
+                <ul>
+                    <li><strong>Pula</strong> - red</li>
+                    <li><strong>Asul</strong> - blue</li>
+                    <li><strong>Dilaw</strong> - yellow</li>
+                    <li><strong>Luntian</strong> - green</li>
+                    <li><strong>Itim</strong> - black</li>
+                    <li><strong>Puti</strong> - white</li>
+                </ul>
+            </div>
+
+            <div class="pos-card adjectives">
+                <h3>😊 Emotional Adjectives</h3>
+                <ul>
+                    <li><strong>Masaya</strong> - happy</li>
+                    <li><strong>Malungkot</strong> - sad</li>
+                    <li><strong>Galit</strong> - angry</li>
+                    <li><strong>Takot</strong> - afraid</li>
+                    <li><strong>Excited</strong> - excited</li>
+                    <li><strong>Stress</strong> - stressed</li>
+                </ul>
+            </div>
+
+            <div class="pos-card adjectives">
+                <h3>👍 Quality Adjectives</h3>
+                <ul>
+                    <li><strong>Mabait</strong> - kind</li>
+                    <li><strong>Masama</strong> - bad/mean</li>
+                    <li><strong>Matalino</strong> - smart</li>
+                    <li><strong>Bobo</strong> - stupid</li>
+                    <li><strong>Matapang</strong> - brave</li>
+                    <li><strong>Duwag</strong> - coward</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="language-comparison english-side">
+                <h3>English Adjective Order</h3>
+                <p><strong>Pattern:</strong> Adjective + Noun</p>
+                <ul>
+                    <li>Beautiful house</li>
+                    <li>Big dog</li>
+                    <li>Red car</li>
+                    <li>Smart student</li>
+                </ul>
+            </div>
+            <div class="language-comparison tagalog-side">
+                <h3>Tagalog Adjective Order</h3>
+                <p><strong>Pattern:</strong> Noun + na/ng + Adjective</p>
+                <ul>
+                    <li>Bahay na maganda</li>
+                    <li>Aso na malaki</li>
+                    <li>Kotse na pula</li>
+                    <li>Estudyante na matalino</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Adjective Intensity - Making It Stronger!</h3>
+            <p>Tagalog has beautiful ways to intensify adjectives:</p>
+            <ul>
+                <li><strong>Maganda</strong> → <strong>Napakaganda</strong> (very beautiful)</li>
+                <li><strong>Malaki</strong> → <strong>Napakalaki</strong> (very big)</li>
+                <li><strong>Mabait</strong> → <strong>Napakabait</strong> (very kind)</li>
+                <li><strong>Repetition:</strong> <strong>Mabait-bait</strong> (quite kind)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pang-abay - Adverbs (The Modifiers)</h2>
+        <p>Adverbs in Tagalog are like seasoning in cooking - they add flavor and detail to actions and descriptions. They tell us how, when, where, and to what extent something happens!</p>
+
+        <div class="pos-grid">
+            <div class="pos-card adverbs">
+                <h3>⏰ Time Adverbs (Pang-abay na Pamanahon)</h3>
+                <ul>
+                    <li><strong>Ngayon</strong> - now</li>
+                    <li><strong>Kahapon</strong> - yesterday</li>
+                    <li><strong>Bukas</strong> - tomorrow</li>
+                    <li><strong>Palagi</strong> - always</li>
+                    <li><strong>Minsan</strong> - sometimes</li>
+                    <li><strong>Hindi kailanman</strong> - never</li>
+                </ul>
+            </div>
+
+            <div class="pos-card adverbs">
+                <h3>📍 Place Adverbs (Pang-abay na Panlhugar)</h3>
+                <ul>
+                    <li><strong>Dito</strong> - here</li>
+                    <li><strong>Diyan</strong> - there (near you)</li>
+                    <li><strong>Doon</strong> - there (far from both)</li>
+                    <li><strong>Sa ibaba</strong> - below</li>
+                    <li><strong>Sa itaas</strong> - above</li>
+                    <li><strong>Sa loob</strong> - inside</li>
+                </ul>
+            </div>
+
+            <div class="pos-card adverbs">
+                <h3>🎭 Manner Adverbs (Pang-abay na Pamaraan)</h3>
+                <ul>
+                    <li><strong>Mabilis</strong> - quickly</li>
+                    <li><strong>Mabagal</strong> - slowly</li>
+                    <li><strong>Tahimik</strong> - quietly</li>
+                    <li><strong>Malakas</strong> - loudly</li>
+                    <li><strong>Maingat</strong> - carefully</li>
+                    <li><strong>Masaya</strong> - happily</li>
+                </ul>
+            </div>
+
+            <div class="pos-card adverbs">
+                <h3>📊 Degree Adverbs (Pang-abay na Pamilang)</h3>
+                <ul>
+                    <li><strong>Sobra</strong> - too much</li>
+                    <li><strong>Medyo</strong> - somewhat</li>
+                    <li><strong>Napaka</strong> - very</li>
+                    <li><strong>Halos</strong> - almost</li>
+                    <li><strong>Labis</strong> - excessively</li>
+                    <li><strong>Kulang</strong> - insufficiently</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Interesting Note:</strong> Many Tagalog adjectives can function as adverbs without changing form! Context tells you whether "mabilis" means "fast" (adjective) or "quickly" (adverb).
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Function Words - The Glue of Language</h2>
+        <p>These little words might seem unimportant, but they're like the cement that holds a building together. Without them, your Tagalog sentences would crumble!</p>
+
+        <div class="function-words">
+            <h3>Essential Function Words</h3>
+            
+            <div class="pos-grid">
+                <div class="pos-card pronouns">
+                    <h3>👤 Panghalip - Pronouns</h3>
+                    <ul>
+                        <li><strong>Ako</strong> - I</li>
+                        <li><strong>Ka/Ikaw</strong> - you (singular)</li>
+                        <li><strong>Siya</strong> - he/she</li>
+                        <li><strong>Tayo</strong> - we (inclusive)</li>
+                        <li><strong>Kami</strong> - we (exclusive)</li>
+                        <li><strong>Kayo</strong> - you (plural)</li>
+                        <li><strong>Sila</strong> - they</li>
+                    </ul>
+                </div>
+
+                <div class="pos-card particles">
+                    <h3>⚡ Pang-angkop - Particles</h3>
+                    <ul>
+                        <li><strong>Ang</strong> - focus marker</li>
+                        <li><strong>Ng</strong> - genitive marker</li>
+                        <li><strong>Sa</strong> - locative marker</li>
+                        <li><strong>Na/Nang</strong> - connective particles</li>
+                        <li><strong>Pa</strong> - still/yet</li>
+                        <li><strong>Na</strong> - already</li>
+                    </ul>
+                </div>
+
+                <div class="pos-card prepositions">
+                    <h3>🔗 Pang-ukol - Prepositions</h3>
+                    <ul>
+                        <li><strong>Sa</strong> - in/at/to</li>
+                        <li><strong>Para sa</strong> - for</li>
+                        <li><strong>Mula sa</strong> - from</li>
+                        <li><strong>Tungkol sa</strong> - about</li>
+                        <li><strong>Kasama</strong> - with</li>
+                        <li><strong>Laban sa</strong> - against</li>
+                    </ul>
+                </div>
+
+                <div class="pos-card conjunctions">
+                    <h3>🔗 Pangatnig - Conjunctions</h3>
+                    <ul>
+                        <li><strong>At</strong> - and</li>
+                        <li><strong>O</strong> - or</li>
+                        <li><strong>Pero</strong> - but</li>
+                        <li><strong>Kasi</strong> - because</li>
+                        <li><strong>Kung</strong> - if</li>
+                        <li><strong>Habang</strong> - while</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Interactive Sentence Analysis</h2>
+        <p>Let's practice identifying parts of speech in real Tagalog sentences! Click on each word to see its grammatical function.</p>
+
+        <div class="sentence-builder">
+            <h3>Sentence Breakdown Practice</h3>
+            <canvas id="sentenceAnalysis" width="900" height="400"></canvas>
+            
+            <div class="example-box">
+                <h4>Sample Sentence: "Ang magandang babae ay nagsasayaw nang masaya sa plaza."</h4>
+                <div style="margin: 15px 0;">
+                    <span class="interactive-sentence" style="background: #e74c3c; color: white;" onclick="showAnalysis('ang', 'Particle', 'Focus marker - puts spotlight on the subject')">Ang</span>
+                    <span class="interactive-sentence" style="background: #2ecc71; color: white;" onclick="showAnalysis('magandang', 'Adjective', 'Describes the woman as beautiful')">magandang</span>
+                    <span class="interactive-sentence" style="background: #3498db; color: white;" onclick="showAnalysis('babae', 'Noun', 'The subject - woman')">babae</span>
+                    <span class="interactive-sentence" style="background: #9b59b6; color: white;" onclick="showAnalysis('ay', 'Particle', 'Predicate marker - connects subject to predicate')">ay</span>
+                    <span class="interactive-sentence" style="background: #f39c12; color: white;" onclick="showAnalysis('nagsasayaw', 'Verb', 'Present progressive action - dancing')">nagsasayaw</span>
+                    <span class="interactive-sentence" style="background: #1abc9c; color: white;" onclick="showAnalysis('nang', 'Particle', 'Manner marker - shows how the action is done')">nang</span>
+                    <span class="interactive-sentence" style="background: #e67e22; color: white;" onclick="showAnalysis('masaya', 'Adverb', 'Manner adverb - describes how she dances')">masaya</span>
+                    <span class="interactive-sentence" style="background: #34495e; color: white;" onclick="showAnalysis('sa', 'Preposition', 'Location marker')">sa</span>
+                    <span class="interactive-sentence" style="background: #3498db; color: white;" onclick="showAnalysis('plaza', 'Noun', 'Location where the action happens')">plaza.</span>
+                </div>
+                
+                <div id="wordAnalysis" style="background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0; display: none;">
+                    <div id="analysisContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Parts of Speech Mastery Practice</h2>
+        
+        <h3>Exercise 1: Word Classification</h3>
+        <p>Identify the part of speech for each word:</p>
+        <div class="example-box">
+            <ol>
+                <li><strong>Kumakain</strong> - _____ (Answer: Verb)</li>
+                <li><strong>Maganda</strong> - _____ (Answer: Adjective)</li>
+                <li><strong>Mabilis</strong> - _____ (Answer: Adverb when modifying verb, Adjective when describing noun)</li>
+                <li><strong>Siya</strong> - _____ (Answer: Pronoun)</li>
+                <li><strong>Ang</strong> - _____ (Answer: Particle)</li>
+                <li><strong>Kasiyahan</strong> - _____ (Answer: Noun - abstract)</li>
+            </ol>
+        </div>
+
+        <h3>Exercise 2: Function Analysis</h3>
+        <p>In the sentence "Ang matalinong bata ay nagsusulat ng liham sa nanay niya," identify:</p>
+        <div class="example-box">
+            <ul>
+                <li>Subject: _____ (Answer: matalinong bata)</li>
+                <li>Verb: _____ (Answer: nagsusulat)</li>
+                <li>Object: _____ (Answer: liham)</li>
+                <li>Adjective: _____ (Answer: matalinong)</li>
+                <li>Preposition: _____ (Answer: sa)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Word Building</h3>
+        <p>Create abstract nouns from these adjectives using ka- + -an pattern:</p>
+        <div class="example-box">
+            <ul>
+                <li>Ganda → _____ (Answer: Kagandahan)</li>
+                <li>Tapang → _____ (Answer: Katapangan)</li>
+                <li>Bait → _____ (Answer: Kabaitan)</li>
+                <li>Taliño → _____ (Answer: Katalinuhan)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Sentence Construction</h3>
+        <p>Build sentences using these parts of speech combinations:</p>
+        <div class="example-box">
+            <ul>
+                <li>Particle + Adjective + Noun + Particle + Verb</li>
+                <li>Example: Ang magandang bulaklak ay namumulaklak</li>
+                <li>Your turn: Create 3 different sentences following this pattern</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Advanced Part of Speech Concepts</h2>
+        <p>Now that you understand the basics, let's explore some advanced concepts that make Tagalog grammar particularly interesting!</p>
+
+        <div class="word-anatomy">
+            <h3>Word Class Flexibility</h3>
+            <p>Many Tagalog words can function as different parts of speech depending on context:</p>
+            
+            <div class="example-box">
+                <h4>Example: "TAKBO" (run)</h4>
+                <ul>
+                    <li><strong>As a Verb:</strong> "Tumatakbo siya." (He/she is running.)</li>
+                    <li><strong>As a Noun:</strong> "Ang takbo niya ay mabilis." (His/her running is fast.)</li>
+                    <li><strong>As an Adjective:</strong> "Takbo ang kotse." (The car is running/moving.)</li>
+                </ul>
+            </div>
+
+            <div class="example-box">
+                <h4>Example: "LINIS" (clean)</h4>
+                <ul>
+                    <li><strong>As an Adjective:</strong> "Malinis ang bahay." (The house is clean.)</li>
+                    <li><strong>As a Verb:</strong> "Naglilinis siya." (He/she is cleaning.)</li>
+                    <li><strong>As a Noun:</strong> "Ang linis ng tubig." (The cleanliness of water.)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cultural-note">
+            <h3>Why This Flexibility Matters</h3>
+            <p>This grammatical flexibility reflects Filipino cultural values:</p>
+            <ul>
+                <li><strong>Adaptability:</strong> Words adapt to context, just like Filipinos adapt to situations</li>
+                <li><strong>Efficiency:</strong> One word can serve multiple functions, reducing redundancy</li>
+                <li><strong>Contextual thinking:</strong> Meaning depends on situation and relationship</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Your Parts of Speech Mastery Challenge</h2>
+        <ol>
+            <li><strong>Daily word classification:</strong> Pick 5 Tagalog words daily and identify their possible parts of speech</li>
+            <li><strong>Sentence analysis:</strong> Break down one Tagalog sentence daily, identifying each word's function</li>
+            <li><strong>Flexible thinking:</strong> Practice using the same word as different parts of speech</li>
+            <li><strong>Pattern recognition:</strong> Notice how affixes change word classes (mag-, -an, ka- -an, etc.)</li>
+            <li><strong>Context awareness:</strong> Pay attention to how context determines word function</li>
+            <li><strong>Grammar comparison:</strong> Compare Tagalog and English sentence structures</li>
+        </ol>
+        
+        <div class="cultural-note">
+            <strong>Grammar Philosophy:</strong> Remember, grammar isn't about rigid rules - it's about patterns that help people communicate effectively. Tagalog grammar reflects the Filipino way of thinking and organizing thoughts!
+        </div>
+    </div>
+
+    <script>
+        // Word analysis function
+        function showAnalysis(word, partOfSpeech, explanation) {
+            const analysisDiv = document.getElementById('wordAnalysis');
+            const contentDiv = document.getElementById('analysisContent');
+            
+            contentDiv.innerHTML = `
+                <h4>${word.toUpperCase()}</h4>
+                <p><strong>Part of Speech:</strong> ${partOfSpeech}</p>
+                <p><strong>Function:</strong> ${explanation}</p>
+            `;
+            
+            analysisDiv.style.display = 'block';
+        }
+
+        // Verb transformation canvas
+        function drawVerbTransformation() {
+            const canvas = document.getElementById('verbTransformation');
+            const ctx = canvas.getContext('2d');
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#ffeaa7');
+            gradient.addColorStop(1, '#fab1a0');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Title
+            ctx.fillStyle = '#333';
+            ctx.font = 'bold 20px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Verb Transformation Process', canvas.width / 2, 30);
+            
+            // Root word
+            ctx.fillStyle = '#667eea';
+            ctx.fillRect(50, 80, 100, 50);
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 16px Arial';
+            ctx.fillText('KAIN', 100, 110);
+            
+            // Transformation arrows and results
+            const transformations = [
+                { x: 200, text: '+ UM', result: 'KUMAIN', meaning: 'ate' },
+                { x: 350, text: '+ IN', result: 'KINAIN', meaning: 'was eaten' },
+                { x: 500, text: '+ AN', result: 'KINAINAN', meaning: 'ate at' },
+                { x: 650, text: '+ PANG', result: 'PANGKAIN', meaning: 'for eating' }
+            ];
+            
+            transformations.forEach(trans => {
+                // Arrow
+                ctx.strokeStyle = '#333';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(trans.x - 30, 105);
+                ctx.lineTo(trans.x - 10, 105);
+                ctx.stroke();
+                
+                // Affix
+                ctx.fillStyle = '#e74c3c';
+                ctx.fillRect(trans.x - 5, 85, 60, 20);
+                ctx.fillStyle = 'white';
+                ctx.font = '12px Arial';
+                ctx.fillText(trans.text, trans.x + 25, 98);
+                
+                // Result
+                ctx.fillStyle = '#2ecc71';
+                ctx.fillRect(trans.x, 120, 100, 40);
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 14px Arial';
+                ctx.fillText(trans.result, trans.x + 50, 140);
+                
+                // Meaning
+                ctx.fillStyle = '#333';
+                ctx.font = '12px Arial';
+                ctx.fillText(trans.meaning, trans.x + 50, 175);
+            });
+        }
+
+        // Sentence analysis canvas
+        function drawSentenceAnalysis() {
+            const canvas = document.getElementById('sentenceAnalysis');
+            const ctx = canvas.getContext('2d');
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#f8f9fa');
+            gradient.addColorStop(1, '#e9ecef');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Title
+            ctx.fillStyle = '#333';
+            ctx.font = 'bold 18px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Parts of Speech in Action', canvas.width / 2, 30);
+            
+            // Sentence structure visualization
+            const words = [
+                { text: 'ANG', pos: 'Particle', color: '#e74c3c', x: 50, y: 80 },
+                { text: 'MAGANDANG', pos: 'Adjective', color: '#2ecc71', x: 150, y: 80 },
+                { text: 'BABAE', pos: 'Noun', color: '#3498db', x: 300, y: 80 },
+                { text: 'AY', pos: 'Particle', color: '#9b59b6', x: 420, y: 80 },
+                { text: 'NAGSASAYAW', pos: 'Verb', color: '#f39c12', x: 480, y: 80 },
+                { text: 'NANG', pos: 'Particle', color: '#1abc9c', x: 650, y: 80 },
+                { text: 'MASAYA', pos: 'Adverb', color: '#e67e22', x: 720, y: 80 },
+                { text: 'SA', pos: 'Preposition', color: '#34495e', x: 350, y: 180 },
+                { text: 'PLAZA', pos: 'Noun', color: '#3498db', x: 420, y: 180 }
+            ];
+            
+            // Draw connections
+            ctx.strokeStyle = '#bdc3c7';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([5, 5]);
+            
+            // Subject-predicate connection
+            ctx.beginPath();
+            ctx.moveTo(300, 120);
+            ctx.lineTo(550, 120);
+            ctx.stroke();
+            
+            // Location connection
+            ctx.beginPath();
+            ctx.moveTo(550, 120);
+            ctx.lineTo(420, 180);
+            ctx.stroke();
+            
+            ctx.setLineDash([]);
+            
+            // Draw word boxes
+            words.forEach(word => {
+                // Word box
+                ctx.fillStyle = word.color;
+                ctx.fillRect(word.x, word.y, 120, 40);
+                
+                // Word text
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 12px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText(word.text, word.x + 60, word.y + 20);
+                
+                // Part of speech label
+                ctx.font = '10px Arial';
+                ctx.fillText(word.pos, word.x + 60, word.y + 35);
+            });
+            
+            // Grammar explanation
+            ctx.fillStyle = '#333';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'left';
+            ctx.fillText('The beautiful woman is dancing happily at the plaza.', 50, 280);
+            ctx.font = '12px Arial';
+            ctx.fillText('Notice how particles (ang, ay, nang, sa) guide the relationship between content words.', 50, 300);
+        }
+
+        // Initialize canvases
+        drawVerbTransformation();
+        drawSentenceAnalysis();
+    </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tagalog - The Heart Language of the Philippines</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #FF6B6B, #4ECDC4); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #4ECDC4; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .sound-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .sound-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .pronunciation { font-size: 1.2em; color: #FF6B6B; font-weight: bold; }
+        .meaning { color: #666; font-style: italic; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        canvas { border: 2px solid #4ECDC4; border-radius: 8px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Kumusta! Welcome to Your Tagalog Journey</h1>
+        <p>Discover the beautiful language that connects over 100 million hearts worldwide</p>
+    </div>
+
+    <div class="section">
+        <h2>Why Learn Tagalog? The Language of Connection</h2>
+        <p>Imagine walking into a Filipino household and hearing "Kumain ka na?" (Have you eaten yet?) - this simple question reveals the heart of Filipino culture. Tagalog isn't just a language; it's a bridge to understanding one of the world's most hospitable cultures.</p>
+        
+        <div class="cultural-note">
+            <strong>Cultural Insight:</strong> Tagalog speakers often ask "Kumain ka na?" not just about hunger, but as a way of showing care - like asking "How are you?" but with the warmth of wanting to feed you!
+        </div>
+
+        <div class="mermaid">
+            graph TD
+                A[Tagalog Language] --> B[28 Letters]
+                A --> C[100M+ Speakers]
+                A --> D[Official Language of Philippines]
+                B --> E[5 Vowels: A, E, I, O, U]
+                B --> F[23 Consonants]
+                C --> G[Native Speakers: 28M]
+                C --> H[Second Language: 70M+]
+                D --> I[Used in Government]
+                D --> J[Used in Education]
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>The Tagalog Alphabet - Your Foundation</h2>
+        <p>Think of the Tagalog alphabet like a musical scale - each letter has its own clear, distinct sound. Unlike English, where 'A' can sound different in "cat" vs "cake," Tagalog letters are like loyal friends - they always sound the same!</p>
+
+        <div class="sound-grid">
+            <div class="sound-card">
+                <div class="pronunciation">A</div>
+                <div>Always sounds like "ah" in "father"</div>
+                <div class="meaning">Example: <strong>Ama</strong> (Father)</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">E</div>
+                <div>Always sounds like "eh" in "bed"</div>
+                <div class="meaning">Example: <strong>Eme</strong> (Duck)</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">I</div>
+                <div>Always sounds like "ee" in "see"</div>
+                <div class="meaning">Example: <strong>Isda</strong> (Fish)</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">O</div>
+                <div>Always sounds like "oh" in "go"</div>
+                <div class="meaning">Example: <strong>Oso</strong> (Bear)</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">U</div>
+                <div>Always sounds like "oo" in "food"</div>
+                <div class="meaning">Example: <strong>Ulan</strong> (Rain)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Sound Patterns - The Music of Tagalog</h2>
+        <p>Tagalog sounds flow like water - smooth and natural. Most words end in vowels, creating a melodic rhythm. It's like the language is always singing!</p>
+
+        <canvas id="soundWave" width="800" height="200"></canvas>
+        
+        <div class="example-box">
+            <h3>Common Sound Patterns:</h3>
+            <ul>
+                <li><strong>BA-HAY</strong> (house) - Two syllables, stress on second</li>
+                <li><strong>PA-MI-LYA</strong> (family) - Three syllables, stress on second</li>
+                <li><strong>MA-GA-NDA</strong> (beautiful) - Three syllables, stress on second</li>
+                <li><strong>KU-MUS-TA</strong> (how are you) - Three syllables, stress on second</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Your First Tagalog Words - Building Blocks</h2>
+        <p>Let's start with words that are like the foundation stones of a house - essential and used every day!</p>
+
+        <div class="sound-grid">
+            <div class="sound-card">
+                <div class="pronunciation">Kumusta</div>
+                <div>koo-MOOS-tah</div>
+                <div class="meaning">How are you? / Hello</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">Salamat</div>
+                <div>sah-LAH-mat</div>
+                <div class="meaning">Thank you</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">Opo</div>
+                <div>OH-poh</div>
+                <div class="meaning">Yes (respectful)</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">Hindi</div>
+                <div>hin-DEE</div>
+                <div class="meaning">No / Not</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">Tubig</div>
+                <div>TOO-big</div>
+                <div class="meaning">Water</div>
+            </div>
+            <div class="sound-card">
+                <div class="pronunciation">Pagkain</div>
+                <div>pag-KAH-in</div>
+                <div class="meaning">Food</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>The Art of Stress - Where to Put the Emphasis</h2>
+        <p>In Tagalog, stress is like the heartbeat of the word. Most words have their strongest beat on the second-to-last syllable, like a gentle drum rhythm: da-DUM, da-da-DUM.</p>
+
+        <div class="example-box">
+            <h3>Stress Pattern Examples:</h3>
+            <p><strong>Two syllables:</strong> Usually stress the first syllable</p>
+            <ul>
+                <li>BA-hay (house)</li>
+                <li>A-so (dog)</li>
+                <li>PU-sa (cat)</li>
+            </ul>
+            
+            <p><strong>Three syllables:</strong> Usually stress the second syllable</p>
+            <ul>
+                <li>ma-GA-nda (beautiful)</li>
+                <li>pa-MI-lya (family)</li>
+                <li>ka-RI-ton (cart)</li>
+            </ul>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Pro Tip:</strong> When in doubt, stress the second-to-last syllable. This works for about 80% of Tagalog words!
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Real-World Application - Your First Conversations</h2>
+        <p>Imagine you're visiting a Filipino friend's family. Here's how your first interaction might sound:</p>
+
+        <div class="example-box">
+            <h3>Scenario: Meeting Filipino Friends</h3>
+            <p><strong>Friend's Mom:</strong> "Kumusta ka?" (How are you?)</p>
+            <p><strong>You:</strong> "Mabuti, salamat!" (Good, thank you!)</p>
+            <p><strong>Friend's Mom:</strong> "Kumain ka na?" (Have you eaten?)</p>
+            <p><strong>You:</strong> "Hindi pa." (Not yet.)</p>
+            <p><strong>Friend's Mom:</strong> "Kain tayo!" (Let's eat!)</p>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice Time - Let's Try It!</h2>
+        
+        <h3>Exercise 1: Sound Recognition</h3>
+        <p>Read these words aloud, focusing on clear vowel sounds:</p>
+        <ul>
+            <li>Banana (banana) - bah-NAH-nah</li>
+            <li>Papaya (papaya) - pah-PAH-yah</li>
+            <li>Mango (mango) - MAHN-go</li>
+        </ul>
+
+        <h3>Exercise 2: Stress Practice</h3>
+        <p>Clap your hands on the stressed syllable:</p>
+        <ul>
+            <li>ma-GA-nda (beautiful) - clap on GA</li>
+            <li>BA-hay (house) - clap on BA</li>
+            <li>ka-MI-kay (shirt) - clap on MI</li>
+        </ul>
+
+        <h3>Exercise 3: Daily Greetings</h3>
+        <p>Practice saying these throughout your day:</p>
+        <ul>
+            <li>Morning: "Magandang umaga!" (Good morning!)</li>
+            <li>Afternoon: "Magandang hapon!" (Good afternoon!)</li>
+            <li>Evening: "Magandang gabi!" (Good evening!)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Cultural Context - Beyond the Words</h2>
+        <p>Learning Tagalog is like learning to dance - it's not just about the steps, but the rhythm and feeling behind them.</p>
+
+        <div class="cultural-note">
+            <strong>Respect Through Language:</strong> Notice how "Opo" (yes) is different from "Oo" (yes). "Opo" shows respect to elders or people in authority - like adding a bow to your words!
+        </div>
+
+        <div class="example-box">
+            <h3>When to Use "Po" and "Opo":</h3>
+            <ul>
+                <li>Speaking to parents, grandparents, teachers</li>
+                <li>Talking to strangers who are older</li>
+                <li>In formal situations</li>
+                <li>When you want to show extra politeness</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Looking Ahead - Your Tagalog Journey</h2>
+        <p>You've just planted the seeds of your Tagalog garden! In our next lessons, we'll water these seeds with:</p>
+        <ul>
+            <li>Basic sentence structure (surprisingly different from English!)</li>
+            <li>Essential verbs and their fascinating focus system</li>
+            <li>Numbers, time, and daily expressions</li>
+            <li>Family terms and relationships</li>
+        </ul>
+
+        <div class="mermaid">
+            graph LR
+                A[Today: Sounds & Basics] --> B[Next: Sentence Structure]
+                B --> C[Then: Verbs & Actions]
+                C --> D[Later: Daily Conversations]
+                D --> E[Finally: Fluent Speaker!]
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Your Homework Challenge</h2>
+        <p>Before our next lesson:</p>
+        <ol>
+            <li>Practice the vowel sounds for 5 minutes daily</li>
+            <li>Greet one person with "Kumusta!" each day</li>
+            <li>Listen to a Filipino song and try to identify the vowel sounds</li>
+            <li>Find one Filipino word that sounds similar to an English word</li>
+        </ol>
+        
+        <p><strong>Bonus:</strong> Try to say "Salamat" (thank you) to someone today - notice how the sounds feel in your mouth!</p>
+    </div>
+
+    <script>
+        // Create a visual sound wave animation
+        const canvas = document.getElementById('soundWave');
+        const ctx = canvas.getContext('2d');
+        let time = 0;
+
+        function drawSoundWave() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw background
+            ctx.fillStyle = '#f0f8ff';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw sound wave
+            ctx.beginPath();
+            ctx.strokeStyle = '#4ECDC4';
+            ctx.lineWidth = 3;
+            
+            for (let x = 0; x < canvas.width; x++) {
+                const y = canvas.height / 2 + Math.sin((x + time) * 0.02) * 50 + 
+                         Math.sin((x + time) * 0.05) * 20;
+                if (x === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
+            ctx.stroke();
+            
+            // Add labels
+            ctx.fillStyle = '#333';
+            ctx.font = '16px Arial';
+            ctx.fillText('Tagalog Sound Wave - Smooth and Melodic', 10, 30);
+            
+            time += 2;
+            requestAnimationFrame(drawSoundWave);
+        }
+        
+        drawSoundWave();
+    </script>
+</body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers and Time in Tagalog - Counting Your Way to Fluency</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #ff9a9e, #fecfef, #fecfef); color: #333; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #ff9a9e; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .number-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0; }
+        .number-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border-left: 4px solid #ff9a9e; }
+        .number-spanish { color: #e74c3c; font-weight: bold; }
+        .number-english { color: #3498db; font-weight: bold; }
+        .number-tagalog { color: #2ecc71; font-weight: bold; font-size: 1.2em; }
+        .clock-demo { background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 30px; border-radius: 15px; margin: 20px 0; text-align: center; }
+        .time-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .time-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .conversation-box { background: linear-gradient(135deg, #ffeaa7, #fab1a0); padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .shopping-demo { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 2px dashed #ff9a9e; margin: 20px 0; }
+        canvas { border: 2px solid #ff9a9e; border-radius: 8px; margin: 10px 0; }
+        .daily-schedule { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px 0; }
+        .schedule-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+        .schedule-time { color: #ff9a9e; font-weight: bold; }
+        .money-card { background: linear-gradient(45deg, #2ecc71, #27ae60); color: white; padding: 15px; border-radius: 10px; margin: 10px 0; }
+        .ordinal-demo { background: #e8f5e8; padding: 15px; border-radius: 10px; margin: 15px 0; }
+        .counter-demo { display: flex; align-items: center; gap: 10px; margin: 15px 0; }
+        .counter-btn { background: #ff9a9e; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+        .counter-display { font-size: 2em; font-weight: bold; color: #ff9a9e; min-width: 200px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Mga Numero at Oras - Numbers and Time</h1>
+        <p>From counting mangoes to catching jeepneys on time</p>
+    </div>
+
+    <div class="section">
+        <h2>The Tale of Three Number Systems</h2>
+        <p>Imagine Tagalog as a friendly host who speaks three languages at a party! For numbers, Tagalog borrows from Spanish (inherited from colonial times), uses English (modern influence), and keeps its own native system. It's like having three different ways to count your blessings!</p>
+
+        <div class="mermaid">
+            graph TD
+                A[Tagalog Numbers] --> B[Spanish Heritage]
+                A --> C[English Modern]
+                A --> D[Native Tagalog]
+                
+                B --> E[uno, dos, tres]
+                B --> F[Formal counting]
+                
+                C --> G[one, two, three]  
+                C --> H[Casual/modern use]
+                
+                D --> I[isa, dalawa, tatlo]
+                D --> J[Traditional/pure]
+                
+                style B fill:#e74c3c,color:#fff
+                style C fill:#3498db,color:#fff
+                style D fill:#2ecc71,color:#fff
+        </mermaid>
+
+        <div class="cultural-note">
+            <strong>Cultural Insight:</strong> When Filipinos count money or do business, they often use Spanish numbers. When talking casually or with technology, English numbers pop up. Native Tagalog numbers are used for traditional counting and when being "properly Filipino."
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Learning to Count - Your Number Foundation</h2>
+        <p>Let's start with the native Tagalog numbers - these are like the original recipe, pure and authentic!</p>
+
+        <div class="number-grid">
+            <div class="number-card">
+                <div class="number-tagalog">ISA</div>
+                <div>One</div>
+                <div class="number-spanish">(Uno)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">DALAWA</div>
+                <div>Two</div>
+                <div class="number-spanish">(Dos)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">TATLO</div>
+                <div>Three</div>
+                <div class="number-spanish">(Tres)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">APAT</div>
+                <div>Four</div>
+                <div class="number-spanish">(Cuatro)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">LIMA</div>
+                <div>Five</div>
+                <div class="number-spanish">(Cinco)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">ANIM</div>
+                <div>Six</div>
+                <div class="number-spanish">(Seis)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">PITO</div>
+                <div>Seven</div>
+                <div class="number-spanish">(Siete)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">WALO</div>
+                <div>Eight</div>
+                <div class="number-spanish">(Ocho)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">SIYAM</div>
+                <div>Nine</div>
+                <div class="number-spanish">(Nueve)</div>
+            </div>
+            <div class="number-card">
+                <div class="number-tagalog">SAMPU</div>
+                <div>Ten</div>
+                <div class="number-spanish">(Diez)</div>
+            </div>
+        </div>
+
+        <div class="counter-demo">
+            <button class="counter-btn" onclick="decreaseCounter()">-</button>
+            <div class="counter-display" id="counterDisplay">ISA (1)</div>
+            <button class="counter-btn" onclick="increaseCounter()">+</button>
+        </div>
+
+        <div class="example-box">
+            <h3>Building Bigger Numbers - The Tagalog Way</h3>
+            <ul>
+                <li><strong>11:</strong> Labing-isa (ten-one)</li>
+                <li><strong>12:</strong> Labing-dalawa (ten-two)</li>
+                <li><strong>20:</strong> Dalawampu (two-ten)</li>
+                <li><strong>21:</strong> Dalawampu't isa (two-ten and one)</li>
+                <li><strong>100:</strong> Isang daan (one hundred)</li>
+                <li><strong>1000:</strong> Isang libo (one thousand)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Time - The Rhythm of Filipino Life</h2>
+        <p>In the Philippines, time flows differently - it's more like a gentle river than a rushing waterfall. "Filipino time" isn't just about being late; it's about prioritizing relationships over strict schedules!</p>
+
+        <div class="clock-demo">
+            <h3>Anong Oras Na? (What Time Is It?)</h3>
+            <canvas id="clockDemo" width="400" height="400"></canvas>
+        </div>
+
+        <div class="time-grid">
+            <div class="time-card">
+                <h3>Basic Time Expressions</h3>
+                <ul>
+                    <li><strong>Anong oras na?</strong> - What time is it?</li>
+                    <li><strong>Ala-una</strong> - 1:00 (Spanish-influenced)</li>
+                    <li><strong>Ika-apat</strong> - 4:00 (Native form)</li>
+                    <li><strong>Kalahati</strong> - Half past</li>
+                    <li><strong>Menos</strong> - Minutes before the hour</li>
+                </ul>
+            </div>
+            <div class="time-card">
+                <h3>Time of Day</h3>
+                <ul>
+                    <li><strong>Umaga</strong> - Morning</li>
+                    <li><strong>Tanghali</strong> - Noon</li>
+                    <li><strong>Hapon</strong> - Afternoon</li>
+                    <li><strong>Gabi</strong> - Evening/Night</li>
+                    <li><strong>Hatinggabi</strong> - Midnight</li>
+                </ul>
+            </div>
+            <div class="time-card">
+                <h3>Days of the Week</h3>
+                <ul>
+                    <li><strong>Lunes</strong> - Monday</li>
+                    <li><strong>Martes</strong> - Tuesday</li>
+                    <li><strong>Miyerkules</strong> - Wednesday</li>
+                    <li><strong>Huwebes</strong> - Thursday</li>
+                    <li><strong>Biyernes</strong> - Friday</li>
+                    <li><strong>Sabado</strong> - Saturday</li>
+                    <li><strong>Linggo</strong> - Sunday</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Telling Time - Multiple Ways</h3>
+            <p><strong>3:30 can be said as:</strong></p>
+            <ul>
+                <li>Alas tres y media (Spanish style - formal)</li>
+                <li>Three-thirty (English style - casual)</li>
+                <li>Ika-tatlo at kalahati (Pure Tagalog - traditional)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Money Talk - Pera at Presyo</h2>
+        <p>Money conversations in the Philippines are like a dance between Spanish heritage and modern practicality. Whether you're buying street food or negotiating a jeepney fare, numbers become your best friend!</p>
+
+        <div class="shopping-demo">
+            <h3>Market Scene Simulation</h3>
+            <canvas id="marketDemo" width="800" height="300"></canvas>
+            
+            <div class="money-card">
+                <h3>Common Money Expressions</h3>
+                <ul>
+                    <li><strong>Magkano?</strong> - How much?</li>
+                    <li><strong>Singkwenta pesos</strong> - Fifty pesos</li>
+                    <li><strong>Libre ba?</strong> - Is it free?</li>
+                    <li><strong>Pwedeng tawad?</strong> - Can you give a discount?</li>
+                    <li><strong>Sukli</strong> - Change (money back)</li>
+                    <li><strong>Bayad</strong> - Payment</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="conversation-box">
+            <h3>Real Market Conversation</h3>
+            <p><strong>Vendor:</strong> "Magkano ang mangga?" (How much are the mangoes?)</p>
+            <p><strong>Customer:</strong> "Baynte pesos ang kilo." (Twenty pesos per kilo.)</p>
+            <p><strong>Vendor:</strong> "Dalawang kilo nga." (Two kilos please.)</p>
+            <p><strong>Customer:</strong> "Kuwarenta pesos lahat." (Forty pesos total.)</p>
+            <p><strong>Vendor:</strong> "Eto ang singkwenta, sukli mo." (Here's fifty, your change.)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Your Daily Schedule - Araw-araw na Gawain</h2>
+        <p>Let's build a typical Filipino day using time and numbers. This is where language meets real life!</p>
+
+        <div class="daily-schedule">
+            <h3>Isang Araw ni Juan (Juan's Day)</h3>
+            <div class="schedule-item">
+                <span>Alas-sais ng umaga</span>
+                <span class="schedule-time">6:00 AM</span>
+                <span>Gising at ligo (Wake up and shower)</span>
+            </div>
+            <div class="schedule-item">
+                <span>Alas-syete</span>
+                <span class="schedule-time">7:00 AM</span>
+                <span>Almusal (Breakfast)</span>
+            </div>
+            <div class="schedule-item">
+                <span>Alas-otso</span>
+                <span class="schedule-time">8:00 AM</span>
+                <span>Papunta sa trabaho (Going to work)</span>
+            </div>
+            <div class="schedule-item">
+                <span>Alas-dose ng tanghali</span>
+                <span class="schedule-time">12:00 PM</span>
+                <span>Tanghalian (Lunch)</span>
+            </div>
+            <div class="schedule-item">
+                <span>Alas-sais ng hapon</span>
+                <span class="schedule-time">6:00 PM</span>
+                <span>Uwi sa bahay (Go home)</span>
+            </div>
+            <div class="schedule-item">
+                <span>Alas-syete ng gabi</span>
+                <span class="schedule-time">7:00 PM</span>
+                <span>Hapunan (Dinner)</span>
+            </div>
+            <div class="schedule-item">
+                <span>Alas-diyes</span>
+                <span class="schedule-time">10:00 PM</span>
+                <span>Tulog (Sleep)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Ordinal Numbers - First, Second, Third...</h2>
+        <p>When you need to talk about order and sequence - like "first love" (unang pag-ibig) or "second helping" (pangalawang kuha) - ordinal numbers come to the rescue!</p>
+
+        <div class="ordinal-demo">
+            <h3>Building Ordinal Numbers</h3>
+            <p><strong>Pattern:</strong> Add "ika-" before the number OR "pang-" + number</p>
+            
+            <div class="number-grid">
+                <div class="number-card">
+                    <div class="number-tagalog">UNA</div>
+                    <div>First</div>
+                    <div>(Special form)</div>
+                </div>
+                <div class="number-card">
+                    <div class="number-tagalog">IKALAWA</div>
+                    <div>Second</div>
+                    <div>(ika + dalawa)</div>
+                </div>
+                <div class="number-card">
+                    <div class="number-tagalog">IKATLO</div>
+                    <div>Third</div>
+                    <div>(ika + tatlo)</div>
+                </div>
+                <div class="number-card">
+                    <div class="number-tagalog">IKA-APAT</div>
+                    <div>Fourth</div>
+                    <div>(ika + apat)</div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h3>Real-Life Ordinal Usage</h3>
+                <ul>
+                    <li><strong>Unang araw</strong> - First day</li>
+                    <li><strong>Ikalawang pagkakataon</strong> - Second time</li>
+                    <li><strong>Pangatlong buwan</strong> - Third month</li>
+                    <li><strong>Ika-apat na palapag</strong> - Fourth floor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Numbers and Time Practice Lab</h2>
+        
+        <h3>Exercise 1: Number Recognition</h3>
+        <p>Match the numbers with their Tagalog equivalents:</p>
+        <div class="example-box">
+            <ol>
+                <li>7 = _____ (Answer: Pito)</li>
+                <li>15 = _____ (Answer: Labing-lima)</li>
+                <li>23 = _____ (Answer: Dalawampu't tatlo)</li>
+                <li>100 = _____ (Answer: Isang daan)</li>
+            </ol>
+        </div>
+
+        <h3>Exercise 2: Time Practice</h3>
+        <p>How would you say these times in Tagalog?</p>
+        <ul>
+            <li>2:30 PM = _____ (Answer: Alas dos y media ng hapon)</li>
+            <li>9:00 AM = _____ (Answer: Alas nuebe ng umaga)</li>
+            <li>6:15 PM = _____ (Answer: Alas sais kinse ng gabi)</li>
+        </ul>
+
+        <h3>Exercise 3: Shopping Scenario</h3>
+        <p>Complete this market conversation:</p>
+        <div class="example-box">
+            <p><strong>You:</strong> "Magkano ang _____?" (How much is the _____?)</p>
+            <p><strong>Vendor:</strong> "_____ pesos." (Fill in a price)</p>
+            <p><strong>You:</strong> "_____ nga." (I'll take ___ pieces/kilos)</p>
+        </div>
+
+        <h3>Exercise 4: Schedule Building</h3>
+        <p>Create your daily schedule using Tagalog time expressions:</p>
+        <ul>
+            <li>Wake up time: "Gising ako ng _____"</li>
+            <li>Lunch time: "Kain ako ng tanghalian ng _____"</li>
+            <li>Sleep time: "Tulog ako ng _____"</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Age and Birthdays - Edad at Kaarawan</h2>
+        <p>Talking about age in Tagalog is special - it often involves respect markers and family context. Filipinos might ask your age not to be nosy, but to know how to address you properly!</p>
+
+        <div class="example-box">
+            <h3>Age Expressions</h3>
+            <ul>
+                <li><strong>Ilang taon ka na?</strong> - How old are you?</li>
+                <li><strong>Dalawampu't limang taon na ako.</strong> - I am 25 years old.</li>
+                <li><strong>Kailan ang birthday mo?</strong> - When is your birthday?</li>
+                <li><strong>Enero dose.</strong> - January 12th.</li>
+            </ul>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Cultural Note:</strong> In Filipino culture, knowing someone's age helps determine the appropriate level of respect to show. Younger people use "po" and "opo" when speaking to older people!
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Measurements and Quantities</h2>
+        <p>From buying rice by the kilo to measuring distances in kilometers, quantities are everywhere in daily Filipino life!</p>
+
+        <div class="example-box">
+            <h3>Common Measurements</h3>
+            <ul>
+                <li><strong>Isang kilo ng bigas</strong> - One kilo of rice</li>
+                <li><strong>Dalawang metro</strong> - Two meters</li>
+                <li><strong>Tatlong tasa ng tubig</strong> - Three cups of water</li>
+                <li><strong>Apat na piraso</strong> - Four pieces</li>
+                <li><strong>Limang kilometro</strong> - Five kilometers</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Cultural Context - Numbers in Filipino Life</h2>
+        <p>Numbers in Filipino culture carry more than mathematical meaning:</p>
+        <ul>
+            <li><strong>Lucky numbers:</strong> Many Filipinos consider 8 lucky (influence from Chinese culture)</li>
+            <li><strong>Age respect:</strong> Knowing someone's age determines how to speak to them</li>
+            <li><strong>Time flexibility:</strong> "Filipino time" reflects the value of relationships over strict punctuality</li>
+            <li><strong>Bargaining culture:</strong> Numbers become negotiation tools in markets</li>
+            <li><strong>Family size:</strong> Large families mean lots of counting - "ilan kayong magkakapatid?" (how many siblings do you have?)</li>
+        </ul>
+    </div>
+
+    <div class="practice-box">
+        <h2>Your Weekly Number Challenge</h2>
+        <ol>
+            <li><strong>Daily counting:</strong> Count to 20 in Tagalog every morning</li>
+            <li><strong>Time awareness:</strong> Ask yourself "Anong oras na?" throughout the day</li>
+            <li><strong>Shopping practice:</strong> Calculate prices in your head using Tagalog numbers</li>
+            <li><strong>Age curiosity:</strong> Practice asking and stating ages politely</li>
+            <li><strong>Schedule sharing:</strong> Tell someone your daily schedule using Tagalog time</li>
+            <li><strong>Birthday practice:</strong> Learn to say when family birthdays are</li>
+        </ol>
+        
+        <div class="cultural-note">
+            <strong>Cultural Challenge:</strong> Practice "Filipino time" - when someone says they'll arrive at 2:00, understand they might mean 2:30! Ask "Anong oras talaga?" (What time really?)
+        </div>
+    </div>
+
+    <script>
+        // Counter functionality
+        let currentNumber = 1;
+        const tagalogNumbers = ['', 'ISA', 'DALAWA', 'TATLO', 'APAT', 'LIMA', 'ANIM', 'PITO', 'WALO', 'SIYAM', 'SAMPU'];
+        
+        function updateCounter() {
+            const display = document.getElementById('counterDisplay');
+            if (currentNumber >= 1 && currentNumber <= 10) {
+                display.textContent = `${tagalogNumbers[currentNumber]} (${currentNumber})`;
+            }
+        }
+        
+        function increaseCounter() {
+            if (currentNumber < 10) {
+                currentNumber++;
+                updateCounter();
+            }
+        }
+        
+        function decreaseCounter() {
+            if (currentNumber > 1) {
+                currentNumber--;
+                updateCounter();
+            }
+        }
+
+        // Clock animation
+        function drawClock() {
+            const canvas = document.getElementById('clockDemo');
+            const ctx = canvas.getContext('2d');
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = 150;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Clock face
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            
+            // Numbers
+            ctx.fillStyle = '#333';
+            ctx.font = 'bold 20px Arial';
+            ctx.textAlign = 'center';
+            
+            for (let i = 1; i <= 12; i++) {
+                const angle = (i - 3) * Math.PI / 6;
+                const x = centerX + (radius - 30) * Math.cos(angle);
+                const y = centerY + (radius - 30) * Math.sin(angle) + 7;
+                ctx.fillText(i, x, y);
+            }
+            
+            // Current time
+            const now = new Date();
+            const hours = now.getHours() % 12;
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            
+            // Hour hand
+            const hourAngle = (hours + minutes / 60) * Math.PI / 6 - Math.PI / 2;
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX + 60 * Math.cos(hourAngle), centerY + 60 * Math.sin(hourAngle));
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 6;
+            ctx.stroke();
+            
+            // Minute hand
+            const minuteAngle = minutes * Math.PI / 30 - Math.PI / 2;
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX + 90 * Math.cos(minuteAngle), centerY + 90 * Math.sin(minuteAngle));
+            ctx.strokeStyle = '#666';
+            ctx.lineWidth = 4;
+            ctx.stroke();
+            
+            // Second hand
+            const secondAngle = seconds * Math.PI / 30 - Math.PI / 2;
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX + 100 * Math.cos(secondAngle), centerY + 100 * Math.sin(secondAngle));
+            ctx.strokeStyle = '#ff9a9e';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            
+            // Center dot
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, 8, 0, 2 * Math.PI);
+            ctx.fillStyle = '#333';
+            ctx.fill();
+            
+            // Time display
+            ctx.fillStyle = '#ff9a9e';
+            ctx.font = 'bold 16px Arial';
+            ctx.fillText(`${now.getHours()}:${minutes.toString().padStart(2, '0')}`, centerX, centerY + 40);
+        }
+
+        // Market scene animation
+        function drawMarket() {
+            const canvas = document.getElementById('marketDemo');
+            const ctx = canvas.getContext('2d');
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#ff9a9e');
+            gradient.addColorStop(1, '#fecfef');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Vendor stall
+            ctx.fillStyle = '#8B4513';
+            ctx.fillRect(100, 150, 200, 100);
+            ctx.fillStyle = '#FF6347';
+            ctx.fillRect(80, 130, 240, 20);
+            
+            // Fruits
+            const fruits = ['🥭', '🍌', '🥥', '🍊'];
+            fruits.forEach((fruit, index) => {
+                ctx.font = '40px Arial';
+                ctx.fillText(fruit, 120 + index * 40, 200);
+            });
+            
+            // Price tags
+            ctx.fillStyle = 'white';
+            ctx.fillRect(350, 160, 100, 30);
+            ctx.fillStyle = '#333';
+            ctx.font = '16px Arial';
+            ctx.fillText('₱20/kilo', 360, 180);
+            
+            // Speech bubbles
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(600, 100, 80, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.strokeStyle = '#333';
+            ctx.stroke();
+            
+            ctx.fillStyle = '#333';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Magkano?', 600, 105);
+            
+            ctx.textAlign = 'left';
+        }
+
+        // Initialize animations
+        setInterval(drawClock, 1000);
+        drawClock();
+        drawMarket();
+    </script>
+</body>
+</html>

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagalog Vocabulary Reference - Essential Daily Words</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #74b9ff, #0984e3, #6c5ce7); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .search-container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
+        .search-box { width: 60%; padding: 12px; font-size: 16px; border: 2px solid #74b9ff; border-radius: 25px; outline: none; }
+        .search-box:focus { border-color: #0984e3; box-shadow: 0 0 10px rgba(116,185,255,0.3); }
+        .filter-buttons { margin: 15px 0; }
+        .filter-btn { background: #74b9ff; color: white; border: none; padding: 8px 16px; margin: 5px; border-radius: 20px; cursor: pointer; transition: all 0.3s; }
+        .filter-btn:hover, .filter-btn.active { background: #0984e3; transform: translateY(-2px); }
+        .category-section { margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #74b9ff; }
+        .category-title { color: #0984e3; margin-bottom: 20px; font-size: 1.5em; }
+        .vocab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin: 20px 0; }
+        .vocab-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .vocab-card:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+        .tagalog-word { font-size: 1.2em; font-weight: bold; color: #0984e3; }
+        .pronunciation { color: #e17055; font-style: italic; font-size: 0.9em; }
+        .english-meaning { color: #333; margin-top: 5px; }
+        .word-type { background: #ddd; color: #666; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; display: inline-block; margin-top: 5px; }
+        .example-sentence { background: #e8f4fd; padding: 8px; border-radius: 5px; margin-top: 8px; font-size: 0.9em; }
+        .stats-bar { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
+        .stat-item { display: inline-block; margin: 0 20px; }
+        .stat-number { font-size: 1.5em; font-weight: bold; color: #0984e3; }
+        .quick-reference { background: linear-gradient(135deg, #00b894, #00cec9); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .alphabet-nav { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
+        .alphabet-nav a { display: inline-block; margin: 3px; padding: 8px 12px; background: #74b9ff; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .alphabet-nav a:hover { background: #0984e3; }
+        .no-results { text-align: center; color: #666; font-style: italic; padding: 40px; }
+        .pronunciation-guide { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>📚 Tagalog Vocabulary Reference</h1>
+        <p>Essential words for daily conversation and communication</p>
+        <p><em>Over 500+ carefully curated terms from beginner to advanced</em></p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchBox" placeholder="Search for any Tagalog or English word..." onkeyup="searchWords()">
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterCategory('all', this)">All Words</button>
+            <button class="filter-btn" onclick="filterCategory('basic', this)">Basic/Essential</button>
+            <button class="filter-btn" onclick="filterCategory('family', this)">Family</button>
+            <button class="filter-btn" onclick="filterCategory('numbers', this)">Numbers</button>
+            <button class="filter-btn" onclick="filterCategory('time', this)">Time</button>
+            <button class="filter-btn" onclick="filterCategory('food', this)">Food</button>
+            <button class="filter-btn" onclick="filterCategory('verbs', this)">Verbs</button>
+            <button class="filter-btn" onclick="filterCategory('adjectives', this)">Adjectives</button>
+            <button class="filter-btn" onclick="filterCategory('daily', this)">Daily Life</button>
+        </div>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-number" id="totalWords">0</div>
+            <div>Total Words</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" id="visibleWords">0</div>
+            <div>Showing</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div>Categories</div>
+        </div>
+    </div>
+
+    <div class="pronunciation-guide">
+        <h3>🔊 Pronunciation Guide</h3>
+        <p><strong>Vowels:</strong> A (ah), E (eh), I (ee), O (oh), U (oo) - always consistent!</p>
+        <p><strong>Stress:</strong> Usually on the second-to-last syllable. Bold syllables indicate stress.</p>
+        <p><strong>ng:</strong> Pronounced like "ng" in "sing" - a single sound, not "n+g"</p>
+    </div>
+
+    <div class="alphabet-nav">
+        <strong>Quick Navigation:</strong>
+        <a href="#A" onclick="scrollToLetter('A')">A</a>
+        <a href="#B" onclick="scrollToLetter('B')">B</a>
+        <a href="#D" onclick="scrollToLetter('D')">D</a>
+        <a href="#G" onclick="scrollToLetter('G')">G</a>
+        <a href="#H" onclick="scrollToLetter('H')">H</a>
+        <a href="#I" onclick="scrollToLetter('I')">I</a>
+        <a href="#K" onclick="scrollToLetter('K')">K</a>
+        <a href="#L" onclick="scrollToLetter('L')">L</a>
+        <a href="#M" onclick="scrollToLetter('M')">M</a>
+        <a href="#N" onclick="scrollToLetter('N')">N</a>
+        <a href="#O" onclick="scrollToLetter('O')">O</a>
+        <a href="#P" onclick="scrollToLetter('P')">P</a>
+        <a href="#S" onclick="scrollToLetter('S')">S</a>
+        <a href="#T" onclick="scrollToLetter('T')">T</a>
+        <a href="#U" onclick="scrollToLetter('U')">U</a>
+        <a href="#W" onclick="scrollToLetter('W')">W</a>
+    </div>
+
+    <!-- BASIC/ESSENTIAL WORDS -->
+    <div class="category-section" data-category="basic">
+        <h2 class="category-title" id="A">🌟 Basic & Essential Words</h2>
+        <div class="vocab-grid" id="basicWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- FAMILY TERMS -->
+    <div class="category-section" data-category="family">
+        <h2 class="category-title">👨‍👩‍👧‍👦 Family & Relationships</h2>
+        <div class="vocab-grid" id="familyWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- NUMBERS -->
+    <div class="category-section" data-category="numbers">
+        <h2 class="category-title">🔢 Numbers & Quantities</h2>
+        <div class="vocab-grid" id="numbersWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- TIME -->
+    <div class="category-section" data-category="time">
+        <h2 class="category-title">⏰ Time & Calendar</h2>
+        <div class="vocab-grid" id="timeWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- FOOD -->
+    <div class="category-section" data-category="food">
+        <h2 class="category-title">🍽️ Food & Dining</h2>
+        <div class="vocab-grid" id="foodWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- VERBS -->
+    <div class="category-section" data-category="verbs">
+        <h2 class="category-title">🏃 Verbs & Actions</h2>
+        <div class="vocab-grid" id="verbsWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- ADJECTIVES -->
+    <div class="category-section" data-category="adjectives">
+        <h2 class="category-title">🎨 Adjectives & Descriptions</h2>
+        <div class="vocab-grid" id="adjectivesWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- DAILY LIFE -->
+    <div class="category-section" data-category="daily">
+        <h2 class="category-title">🏠 Daily Life & Objects</h2>
+        <div class="vocab-grid" id="dailyWords">
+            <!-- Words will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <div class="quick-reference">
+        <h3>📖 Quick Reference Tips</h3>
+        <ul>
+            <li><strong>Search:</strong> Type any Tagalog or English word to find it instantly</li>
+            <li><strong>Categories:</strong> Use filter buttons to focus on specific word types</li>
+            <li><strong>Pronunciation:</strong> Follow the phonetic guides - Tagalog pronunciation is very regular</li>
+            <li><strong>Practice:</strong> Try using each word in a sentence for better retention</li>
+            <li><strong>Context:</strong> Pay attention to example sentences for proper usage</li>
+        </ul>
+    </div>
+
+    <script>
+        // Comprehensive vocabulary database
+        const vocabulary = {
+            basic: [
+                { tagalog: "Kumusta", pronunciation: "koo-MOOS-tah", english: "Hello / How are you?", type: "greeting", example: "Kumusta ka? (How are you?)" },
+                { tagalog: "Salamat", pronunciation: "sah-LAH-mat", english: "Thank you", type: "politeness", example: "Salamat sa tulong mo. (Thank you for your help.)" },
+                { tagalog: "Opo", pronunciation: "OH-poh", english: "Yes (respectful)", type: "response", example: "Opo, naiintindihan ko. (Yes, I understand.)" },
+                { tagalog: "Hindi", pronunciation: "hin-DEE", english: "No / Not", type: "negative", example: "Hindi ako gutom. (I'm not hungry.)" },
+                { tagalog: "Oo", pronunciation: "OH-oh", english: "Yes (casual)", type: "response", example: "Oo, tama ka. (Yes, you're right.)" },
+                { tagalog: "Paalam", pronunciation: "pah-AH-lam", english: "Goodbye", type: "farewell", example: "Paalam, hanggang bukas. (Goodbye, until tomorrow.)" },
+                { tagalog: "Paumanhin", pronunciation: "pah-oo-mahn-HIN", english: "Excuse me / Sorry", type: "politeness", example: "Paumanhin, hindi kita narinig. (Sorry, I didn't hear you.)" },
+                { tagalog: "Ako", pronunciation: "ah-KOH", english: "I / Me", type: "pronoun", example: "Ako si Maria. (I am Maria.)" },
+                { tagalog: "Ka", pronunciation: "kah", english: "You (informal)", type: "pronoun", example: "Kumain ka na? (Have you eaten?)" },
+                { tagalog: "Kayo", pronunciation: "kah-YOH", english: "You (formal/plural)", type: "pronoun", example: "Kamusta kayo? (How are you all?)" },
+                { tagalog: "Siya", pronunciation: "shee-YAH", english: "He / She", type: "pronoun", example: "Siya ang guro ko. (He/She is my teacher.)" },
+                { tagalog: "Tayo", pronunciation: "tah-YOH", english: "We (inclusive)", type: "pronoun", example: "Tayo na! (Let's go!)" },
+                { tagalog: "Kami", pronunciation: "kah-MEE", english: "We (exclusive)", type: "pronoun", example: "Kami ay mag-aaral. (We will study.)" },
+                { tagalog: "Sila", pronunciation: "shee-LAH", english: "They", type: "pronoun", example: "Sila ay nasa bahay. (They are at home.)" },
+                { tagalog: "Nasaan", pronunciation: "nah-sah-AHN", english: "Where is", type: "question", example: "Nasaan ang banyo? (Where is the bathroom?)" },
+                { tagalog: "Ano", pronunciation: "ah-NOH", english: "What", type: "question", example: "Ano ang pangalan mo? (What is your name?)" },
+                { tagalog: "Sino", pronunciation: "shee-NOH", english: "Who", type: "question", example: "Sino ka? (Who are you?)" },
+                { tagalog: "Bakit", pronunciation: "bah-KIT", english: "Why", type: "question", example: "Bakit ka malungkot? (Why are you sad?)" },
+                { tagalog: "Paano", pronunciation: "pah-ah-NOH", english: "How", type: "question", example: "Paano pumunta sa mall? (How to go to the mall?)" },
+                { tagalog: "Kailan", pronunciation: "kah-ee-LAHN", english: "When", type: "question", example: "Kailan ka babalik? (When will you return?)" },
+                { tagalog: "Magkano", pronunciation: "mag-kah-NOH", english: "How much", type: "question", example: "Magkano ang bayad? (How much is the payment?)" },
+                { tagalog: "Tubig", pronunciation: "TOO-big", english: "Water", type: "noun", example: "Kailangan ko ng tubig. (I need water.)" },
+                { tagalog: "Pagkain", pronunciation: "pag-kah-IN", english: "Food", type: "noun", example: "Masarap ang pagkain. (The food is delicious.)" },
+                { tagalog: "Pwede", pronunciation: "PWEH-deh", english: "Can / May / Possible", type: "modal", example: "Pwede ba ako uminom? (May I have a drink?)" },
+                { tagalog: "Kailangan", pronunciation: "kah-ee-lah-NGAN", english: "Need / Necessary", type: "modal", example: "Kailangan kong umuwi. (I need to go home.)" },
+                { tagalog: "Gusto", pronunciation: "GOOS-toh", english: "Want / Like", type: "desire", example: "Gusto ko ng kape. (I want coffee.)" },
+                { tagalog: "Ayoko", pronunciation: "ah-YOH-koh", english: "I don't want", type: "negative desire", example: "Ayoko ng gulay. (I don't want vegetables.)" },
+                { tagalog: "Mabuti", pronunciation: "mah-boo-TEE", english: "Good / Fine", type: "adjective", example: "Mabuti ang lagay ko. (I'm doing fine.)" },
+                { tagalog: "Masama", pronunciation: "mah-sah-MAH", english: "Bad", type: "adjective", example: "Masama ang panahon. (The weather is bad.)" },
+                { tagalog: "Marami", pronunciation: "mah-rah-MEE", english: "Many / Much", type: "quantifier", example: "Maraming tao sa mall. (There are many people at the mall.)" },
+                { tagalog: "Konti", pronunciation: "kon-TEE", english: "Little / Few", type: "quantifier", example: "Konti lang ang pera ko. (I have little money.)" }
+            ],
+
+            family: [
+                { tagalog: "Pamilya", pronunciation: "pah-MEEL-yah", english: "Family", type: "noun", example: "Mahal ko ang pamilya ko. (I love my family.)" },
+                { tagalog: "Nanay", pronunciation: "nah-NIGH", english: "Mother", type: "noun", example: "Si Nanay ay nasa kusina. (Mother is in the kitchen.)" },
+                { tagalog: "Tatay", pronunciation: "tah-TIGH", english: "Father", type: "noun", example: "Nagtatrabaho si Tatay. (Father is working.)" },
+                { tagalog: "Mama", pronunciation: "mah-MAH", english: "Mom", type: "noun", example: "Mama, gutom na ako. (Mom, I'm hungry.)" },
+                { tagalog: "Papa", pronunciation: "pah-PAH", english: "Dad", type: "noun", example: "Umuwi na si Papa. (Dad has come home.)" },
+                { tagalog: "Anak", pronunciation: "ah-NAHK", english: "Child", type: "noun", example: "Anak, kumain ka na. (Child, eat now.)" },
+                { tagalog: "Kuya", pronunciation: "KOO-yah", english: "Older brother", type: "noun", example: "Kuya Mike, tulungan mo ako. (Kuya Mike, help me.)" },
+                { tagalog: "Ate", pronunciation: "ah-TEH", english: "Older sister", type: "noun", example: "Ate Anna ay nasa eskwelahan. (Ate Anna is at school.)" },
+                { tagalog: "Bunso", pronunciation: "BOON-soh", english: "Youngest child", type: "noun", example: "Si Bunso ay natutulog pa. (The youngest is still sleeping.)" },
+                { tagalog: "Panganay", pronunciation: "pah-ngah-NIGH", english: "Eldest child", type: "noun", example: "Ako ang panganay sa pamilya. (I'm the eldest in the family.)" },
+                { tagalog: "Kapatid", pronunciation: "kah-pah-TEED", english: "Sibling", type: "noun", example: "Dalawa ang kapatid ko. (I have two siblings.)" },
+                { tagalog: "Lolo", pronunciation: "loh-LOH", english: "Grandfather", type: "noun", example: "Si Lolo ay mabait. (Grandfather is kind.)" },
+                { tagalog: "Lola", pronunciation: "loh-LAH", english: "Grandmother", type: "noun", example: "Lola ay nagluluto. (Grandmother is cooking.)" },
+                { tagalog: "Tito", pronunciation: "tee-TOH", english: "Uncle", type: "noun", example: "Tito Ben ay dumating na. (Uncle Ben has arrived.)" },
+                { tagalog: "Tita", pronunciation: "tee-TAH", english: "Aunt", type: "noun", example: "Tita Rosa ay doctor. (Aunt Rosa is a doctor.)" },
+                { tagalog: "Pinsan", pronunciation: "PEEN-sahn", english: "Cousin", type: "noun", example: "Pinsan ko si Carlo. (Carlo is my cousin.)" },
+                { tagalog: "Apo", pronunciation: "ah-POH", english: "Grandchild", type: "noun", example: "Apo ni Lola si Maria. (Maria is Grandma's grandchild.)" },
+                { tagalog: "Pamangkin", pronunciation: "pah-mahng-KEEN", english: "Nephew/Niece", type: "noun", example: "Pamangkin ko ang bata. (The child is my nephew/niece.)" },
+                { tagalog: "Ninong", pronunciation: "nee-NOHNG", english: "Godfather", type: "noun", example: "Si Ninong ay nagbigay ng regalo. (Godfather gave a gift.)" },
+                { tagalog: "Ninang", pronunciation: "nee-NAHNG", english: "Godmother", type: "noun", example: "Ninang ko si Tita Luz. (Tita Luz is my godmother.)" },
+                { tagalog: "Inaanak", pronunciation: "ee-nah-ah-NAHK", english: "Godchild", type: "noun", example: "Inaanak ko si Baby John. (Baby John is my godchild.)" },
+                { tagalog: "Kumpare", pronunciation: "koom-pah-REH", english: "Close male friend/co-godparent", type: "noun", example: "Kumpare ko si Tony. (Tony is my close friend.)" },
+                { tagalog: "Kumare", pronunciation: "koo-mah-REH", english: "Close female friend/co-godparent", type: "noun", example: "Kumare ko si Mila. (Mila is my close friend.)" },
+                { tagalog: "Asawa", pronunciation: "ah-sah-WAH", english: "Spouse", type: "noun", example: "Asawa ko si John. (John is my spouse.)" },
+                { tagalog: "Mister", pronunciation: "MEES-ter", english: "Husband", type: "noun", example: "Mister ko ay gwapo. (My husband is handsome.)" },
+                { tagalog: "Misis", pronunciation: "mee-SEES", english: "Wife", type: "noun", example: "Misis ko ay mabait. (My wife is kind.)" },
+                { tagalog: "Magulang", pronunciation: "mah-goo-LAHNG", english: "Parents", type: "noun", example: "Magulang ko ay nasa Cebu. (My parents are in Cebu.)" },
+                { tagalog: "Kapitbahay", pronunciation: "kah-peet-bah-HIGH", english: "Neighbor", type: "noun", example: "Kapitbahay namin ay mabait. (Our neighbor is kind.)" },
+                { tagalog: "Kaibigan", pronunciation: "kah-ee-bee-GAHN", english: "Friend", type: "noun", example: "Kaibigan ko si Anna. (Anna is my friend.)" }
+            ],
+
+            numbers: [
+                { tagalog: "Isa", pronunciation: "ee-SAH", english: "One", type: "number", example: "Isa lang ang gusto ko. (I only want one.)" },
+                { tagalog: "Dalawa", pronunciation: "dah-lah-WAH", english: "Two", type: "number", example: "Dalawa ang mata ko. (I have two eyes.)" },
+                { tagalog: "Tatlo", pronunciation: "taht-LOH", english: "Three", type: "number", example: "Tatlong araw na akong nandito. (I've been here for three days.)" },
+                { tagalog: "Apat", pronunciation: "ah-PAHT", english: "Four", type: "number", example: "Apat na gulong ang kotse. (The car has four wheels.)" },
+                { tagalog: "Lima", pronunciation: "lee-MAH", english: "Five", type: "number", example: "Lima ang daliri sa kamay. (There are five fingers on a hand.)" },
+                { tagalog: "Anim", pronunciation: "ah-NEEM", english: "Six", type: "number", example: "Anim na oras ang klase. (The class is six hours.)" },
+                { tagalog: "Pito", pronunciation: "pee-TOH", english: "Seven", type: "number", example: "Pito ang araw sa isang linggo. (There are seven days in a week.)" },
+                { tagalog: "Walo", pronunciation: "wah-LOH", english: "Eight", type: "number", example: "Walo ng umaga ang klase. (Class is at eight in the morning.)" },
+                { tagalog: "Siyam", pronunciation: "shee-YAHM", english: "Nine", type: "number", example: "Siyam na buwan ang pagbubuntis. (Pregnancy is nine months.)" },
+                { tagalog: "Sampu", pronunciation: "sahm-POO", english: "Ten", type: "number", example: "Sampu ang daliri natin. (We have ten fingers.)" },
+                { tagalog: "Labing-isa", pronunciation: "lah-bing ee-SAH", english: "Eleven", type: "number", example: "Labing-isa ang mga estudyante. (There are eleven students.)" },
+                { tagalog: "Labindalawa", pronunciation: "lah-bin-dah-lah-WAH", english: "Twelve", type: "number", example: "Labindalawa ng tanghali tayo kakain. (We'll eat at twelve noon.)" },
+                { tagalog: "Dalawampu", pronunciation: "dah-lah-wahm-POO", english: "Twenty", type: "number", example: "Dalawampu pesos ang bayad. (The payment is twenty pesos.)" },
+                { tagalog: "Tatlumpu", pronunciation: "taht-loom-POO", english: "Thirty", type: "number", example: "Tatlumpu anyos na ako. (I'm thirty years old.)" },
+                { tagalog: "Apatnapu", pronunciation: "ah-paht-nah-POO", english: "Forty", type: "number", example: "Apatnapu kilometro ang layo. (It's forty kilometers away.)" },
+                { tagalog: "Limampu", pronunciation: "lee-mahm-POO", english: "Fifty", type: "number", example: "Limampu pesos ang pamasahe. (The fare is fifty pesos.)" },
+                { tagalog: "Animnapu", pronunciation: "ah-neem-nah-POO", english: "Sixty", type: "number", example: "Animnapu minuto sa isang oras. (There are sixty minutes in an hour.)" },
+                { tagalog: "Isang daan", pronunciation: "ee-sahng dah-AHN", english: "One hundred", type: "number", example: "Isang daang piso ang presyo. (The price is one hundred pesos.)" },
+                { tagalog: "Isang libo", pronunciation: "ee-sahng lee-BOH", english: "One thousand", type: "number", example: "Isang libong tao ang dumalo. (One thousand people attended.)" },
+                { tagalog: "Una", pronunciation: "oo-NAH", english: "First", type: "ordinal", example: "Una akong nakarating. (I arrived first.)" },
+                { tagalog: "Ikalawa", pronunciation: "ee-kah-lah-WAH", english: "Second", type: "ordinal", example: "Ikalawa ako sa pila. (I'm second in line.)" },
+                { tagalog: "Ikatlo", pronunciation: "ee-kaht-LOH", english: "Third", type: "ordinal", example: "Ikatlo ang opisina namin. (Our office is on the third floor.)" },
+                { tagalog: "Ika-apat", pronunciation: "ee-kah ah-PAHT", english: "Fourth", type: "ordinal", example: "Ika-apat na beses na ito. (This is the fourth time.)" },
+                { tagalog: "Kalahati", pronunciation: "kah-lah-hah-TEE", english: "Half", type: "fraction", example: "Kalahati ng pizza para sa akin. (Half of the pizza is for me.)" },
+                { tagalog: "Lahat", pronunciation: "lah-HAHT", english: "All", type: "quantifier", example: "Lahat ng estudyante ay nandito. (All students are here.)" },
+                { tagalog: "Wala", pronunciation: "wah-LAH", english: "None/Nothing", type: "quantifier", example: "Wala akong pera. (I have no money.)" }
+            ],
+
+            time: [
+                { tagalog: "Oras", pronunciation: "oh-RAHS", english: "Time/Hour", type: "noun", example: "Anong oras na? (What time is it?)" },
+                { tagalog: "Araw", pronunciation: "ah-RAHW", english: "Day", type: "noun", example: "Magandang araw! (Good day!)" },
+                { tagalog: "Linggo", pronunciation: "leeng-GOH", english: "Week/Sunday", type: "noun", example: "Isang linggo akong nag-antay. (I waited for one week.)" },
+                { tagalog: "Buwan", pronunciation: "BOO-wahn", english: "Month", type: "noun", example: "Tatlong buwan na siyang wala. (He's been gone for three months.)" },
+                { tagalog: "Taon", pronunciation: "tah-OHN", english: "Year", type: "noun", example: "Dalawang taon akong nag-aral. (I studied for two years.)" },
+                { tagalog: "Umaga", pronunciation: "oo-mah-GAH", english: "Morning", type: "noun", example: "Magandang umaga! (Good morning!)" },
+                { tagalog: "Tanghali", pronunciation: "tahng-hah-LEE", english: "Noon", type: "noun", example: "Kakain tayo ng tanghali. (We'll eat lunch.)" },
+                { tagalog: "Hapon", pronunciation: "hah-POHN", english: "Afternoon", type: "noun", example: "Magandang hapon! (Good afternoon!)" },
+                { tagalog: "Gabi", pronunciation: "gah-BEE", english: "Night/Evening", type: "noun", example: "Magandang gabi! (Good evening!)" },
+                { tagalog: "Hatinggabi", pronunciation: "hah-teeng-gah-BEE", english: "Midnight", type: "noun", example: "Hatinggabi na pero gising pa siya. (It's midnight but he's still awake.)" },
+                { tagalog: "Madaling-araw", pronunciation: "mah-dah-leeng ah-RAHW", english: "Dawn/Early morning", type: "noun", example: "Gumising ako ng madaling-araw. (I woke up at dawn.)" },
+                { tagalog: "Lunes", pronunciation: "LOO-nes", english: "Monday", type: "noun", example: "Simula ng klase ay Lunes. (Classes start on Monday.)" },
+                { tagalog: "Martes", pronunciation: "MAHR-tes", english: "Tuesday", type: "noun", example: "Martes ang birthday ko. (My birthday is on Tuesday.)" },
+                { tagalog: "Miyerkules", pronunciation: "mee-yer-koo-LES", english: "Wednesday", type: "noun", example: "Miyerkules ang meeting namin. (Our meeting is on Wednesday.)" },
+                { tagalog: "Huwebes", pronunciation: "hoo-WEH-bes", english: "Thursday", type: "noun", example: "Huwebes ako uuwi. (I'll go home on Thursday.)" },
+                { tagalog: "Biyernes", pronunciation: "bee-yer-NES", english: "Friday", type: "noun", example: "Masayang Biyernes! (Happy Friday!)" },
+                { tagalog: "Sabado", pronunciation: "sah-bah-DOH", english: "Saturday", type: "noun", example: "Walang klase sa Sabado. (No classes on Saturday.)" },
+                { tagalog: "Kahapon", pronunciation: "kah-hah-POHN", english: "Yesterday", type: "adverb", example: "Dumating siya kahapon. (He arrived yesterday.)" },
+                { tagalog: "Ngayon", pronunciation: "ngah-YOHN", english: "Now/Today", type: "adverb", example: "Ngayon ko lang nalaman. (I just found out now.)" },
+                { tagalog: "Bukas", pronunciation: "boo-KAHS", english: "Tomorrow", type: "adverb", example: "Bukas tayo mag-uusap. (We'll talk tomorrow.)" },
+                { tagalog: "Mamaya", pronunciation: "mah-mah-YAH", english: "Later", type: "adverb", example: "Mamaya kita tawagan. (I'll call you later.)" },
+                { tagalog: "Kanina", pronunciation: "kah-nee-NAH", english: "Earlier/A while ago", type: "adverb", example: "Kanina ka pa ba nandito? (Have you been here since earlier?)" },
+                { tagalog: "Maaga", pronunciation: "mah-ah-GAH", english: "Early", type: "adjective", example: "Maaga akong gumising. (I woke up early.)" },
+                { tagalog: "Huli", pronunciation: "hoo-LEE", english: "Late", type: "adjective", example: "Huli ako sa klase. (I'm late for class.)" },
+                { tagalog: "Mabilis", pronunciation: "mah-bee-LEES", english: "Fast/Quick", type: "adjective", example: "Mabilis ang takbo ng kotse. (The car runs fast.)" },
+                { tagalog: "Mabagal", pronunciation: "mah-bah-GAHL", english: "Slow", type: "adjective", example: "Mabagal ang internet. (The internet is slow.)" },
+                { tagalog: "Palagi", pronunciation: "pah-lah-GEE", english: "Always", type: "adverb", example: "Palagi siyang nag-aral. (He always studies.)" },
+                { tagalog: "Minsan", pronunciation: "meen-SAHN", english: "Sometimes", type: "adverb", example: "Minsan kumakain ako ng ice cream. (Sometimes I eat ice cream.)" },
+                { tagalog: "Hindi kailanman", pronunciation: "hin-DEE kah-ee-lahn-MAHN", english: "Never", type: "adverb", example: "Hindi kailanman akong nakasakay ng eroplano. (I've never ridden an airplane.)" }
+            ],
+
+            food: [
+                { tagalog: "Kanin", pronunciation: "kah-NEEN", english: "Rice", type: "noun", example: "Kumain ako ng kanin. (I ate rice.)" },
+                { tagalog: "Ulam", pronunciation: "oo-LAHM", english: "Main dish/Viand", type: "noun", example: "Ano ang ulam natin? (What's our main dish?)" },
+                { tagalog: "Adobo", pronunciation: "ah-doh-BOH", english: "Adobo (Filipino dish)", type: "noun", example: "Masarap ang adobo ni Nanay. (Mom's adobo is delicious.)" },
+                { tagalog: "Sinigang", pronunciation: "shee-nee-GAHNG", english: "Sour soup", type: "noun", example: "Mainit ang sinigang. (The sinigang is hot.)" },
+                { tagalog: "Lumpia", pronunciation: "loom-pee-YAH", english: "Spring roll", type: "noun", example: "Gumawa kami ng lumpia. (We made lumpia.)" },
+                { tagalog: "Lechon", pronunciation: "leh-CHOHN", english: "Roasted pig", type: "noun", example: "May lechon sa handaan. (There's lechon at the celebration.)" },
+                { tagalog: "Halo-halo", pronunciation: "hah-loh hah-LOH", english: "Mixed dessert", type: "noun", example: "Gusto ko ng halo-halo. (I want halo-halo.)" },
+                { tagalog: "Kape", pronunciation: "kah-PEH", english: "Coffee", type: "noun", example: "Umuinom ako ng kape. (I drank coffee.)" },
+                { tagalog: "Tsa", pronunciation: "chah", english: "Tea", type: "noun", example: "Mainit ang tsa. (The tea is hot.)" },
+                { tagalog: "Gatas", pronunciation: "gah-TAHS", english: "Milk", type: "noun", example: "Umuinom ang bata ng gatas. (The child drank milk.)" },
+                { tagalog: "Juice", pronunciation: "joos", english: "Juice", type: "noun", example: "Masarap ang orange juice. (The orange juice is delicious.)" },
+                { tagalog: "Soda", pronunciation: "soh-DAH", english: "Soft drink", type: "noun", example: "Bumili ako ng soda. (I bought soda.)" },
+                { tagalog: "Beer", pronunciation: "beer", english: "Beer", type: "noun", example: "Umuinom sila ng beer. (They drank beer.)" },
+                { tagalog: "Alak", pronunciation: "ah-LAHK", english: "Alcohol/Wine", type: "noun", example: "Bawal ang alak sa bata. (Alcohol is forbidden for children.)" },
+                { tagalog: "Tinapay", pronunciation: "tee-nah-PIGH", english: "Bread", type: "noun", example: "Bumili ako ng tinapay. (I bought bread.)" },
+                { tagalog: "Itlog", pronunciation: "eet-LOHG", english: "Egg", type: "noun", example: "Nagluto ako ng itlog. (I cooked eggs.)" },
+                { tagalog: "Karne", pronunciation: "kahr-NEH", english: "Meat", type: "noun", example: "Masarap ang karne. (The meat is delicious.)" },
+                { tagalog: "Manok", pronunciation: "mah-NOHK", english: "Chicken", type: "noun", example: "Fried chicken ang ulam. (Fried chicken is the main dish.)" },
+                { tagalog: "Baboy", pronunciation: "bah-BOHY", english: "Pork", type: "noun", example: "Hindi ako kumakain ng baboy. (I don't eat pork.)" },
+                { tagalog: "Baka", pronunciation: "bah-KAH", english: "Beef", type: "noun", example: "Mahal ang baka. (Beef is expensive.)" },
+                { tagalog: "Isda", pronunciation: "ees-DAH", english: "Fish", type: "noun", example: "Fresh ang isda sa palengke. (The fish in the market is fresh.)" },
+                { tagalog: "Hipon", pronunciation: "hee-POHN", english: "Shrimp", type: "noun", example: "Malaki ang hipon. (The shrimp is big.)" },
+                { tagalog: "Gulay", pronunciation: "goo-LIGH", english: "Vegetable", type: "noun", example: "Kumain ka ng gulay. (Eat vegetables.)" },
+                { tagalog: "Prutas", pronunciation: "proo-TAHS", english: "Fruit", type: "noun", example: "Masarap ang prutas. (The fruit is delicious.)" },
+                { tagalog: "Mangga", pronunciation: "mahng-GAH", english: "Mango", type: "noun", example: "Matamis ang mangga. (The mango is sweet.)" },
+                { tagalog: "Saging", pronunciation: "sah-GEENG", english: "Banana", type: "noun", example: "Dilaw ang saging. (The banana is yellow.)" },
+                { tagalog: "Mansanas", pronunciation: "mahn-sah-NAHS", english: "Apple", type: "noun", example: "Pula ang mansanas. (The apple is red.)" },
+                { tagalog: "Almusal", pronunciation: "ahl-moo-SAHL", english: "Breakfast", type: "noun", example: "Kumain ako ng almusal. (I ate breakfast.)" },
+                { tagalog: "Tanghalian", pronunciation: "tahng-hah-lee-YAHN", english: "Lunch", type: "noun", example: "Anong oras ang tanghalian? (What time is lunch?)" },
+                { tagalog: "Hapunan", pronunciation: "hah-poo-NAHN", english: "Dinner", type: "noun", example: "Masarap ang hapunan. (Dinner is delicious.)" },
+                { tagalog: "Merienda", pronunciation: "mer-ee-yen-DAH", english: "Snack", type: "noun", example: "Ano ang merienda mo? (What's your snack?)" }
+            ],
+
+            verbs: [
+                { tagalog: "Kumain", pronunciation: "koo-mah-IN", english: "Ate", type: "verb", example: "Kumain ako ng almusal. (I ate breakfast.)" },
+                { tagalog: "Kumakain", pronunciation: "koo-mah-kah-IN", english: "Eating", type: "verb", example: "Kumakain siya ng mansanas. (He/she is eating an apple.)" },
+                { tagalog: "Kakain", pronunciation: "kah-kah-IN", english: "Will eat", type: "verb", example: "Kakain tayo mamaya. (We will eat later.)" },
+                { tagalog: "Uminom", pronunciation: "oo-mee-NOHM", english: "Drank", type: "verb", example: "Uminom ako ng tubig. (I drank water.)" },
+                { tagalog: "Umiinom", pronunciation: "oo-mee-ee-NOHM", english: "Drinking", type: "verb", example: "Umiinom siya ng kape. (He/she is drinking coffee.)" },
+                { tagalog: "Iinom", pronunciation: "ee-ee-NOHM", english: "Will drink", type: "verb", example: "Iinom ako ng juice. (I will drink juice.)" },
+                { tagalog: "Natulog", pronunciation: "nah-too-LOHG", english: "Slept", type: "verb", example: "Natulog ako ng maaga. (I slept early.)" },
+                { tagalog: "Natutulog", pronunciation: "nah-too-too-LOHG", english: "Sleeping", type: "verb", example: "Natutulog ang baby. (The baby is sleeping.)" },
+                { tagalog: "Matutulog", pronunciation: "mah-too-too-LOHG", english: "Will sleep", type: "verb", example: "Matutulog ako ng maaga. (I will sleep early.)" },
+                { tagalog: "Gumising", pronunciation: "goo-mee-SEENG", english: "Woke up", type: "verb", example: "Gumising ako ng alas-sais. (I woke up at six o'clock.)" },
+                { tagalog: "Gigising", pronunciation: "gee-gee-SEENG", english: "Will wake up", type: "verb", example: "Gigising ako bukas ng maaga. (I will wake up early tomorrow.)" },
+                { tagalog: "Pumunta", pronunciation: "poo-moon-TAH", english: "Went", type: "verb", example: "Pumunta ako sa mall. (I went to the mall.)" },
+                { tagalog: "Pupunta", pronunciation: "poo-poon-TAH", english: "Will go", type: "verb", example: "Pupunta ako sa Cebu. (I will go to Cebu.)" },
+                { tagalog: "Umuwi", pronunciation: "oo-moo-WEE", english: "Went home", type: "verb", example: "Umuwi ako ng maaga. (I went home early.)" },
+                { tagalog: "Umuuwi", pronunciation: "oo-moo-oo-WEE", english: "Going home", type: "verb", example: "Umuuwi na ako. (I'm going home now.)" },
+                { tagalog: "Uuwi", pronunciation: "oo-oo-WEE", english: "Will go home", type: "verb", example: "Uuwi ako bukas. (I will go home tomorrow.)" },
+                { tagalog: "Dumating", pronunciation: "doo-mah-TEENG", english: "Arrived", type: "verb", example: "Dumating na siya. (He/she has arrived.)" },
+                { tagalog: "Darating", pronunciation: "dah-rah-TEENG", english: "Will arrive", type: "verb", example: "Darating siya mamaya. (He/she will arrive later.)" },
+                { tagalog: "Naglakad", pronunciation: "nahg-lah-KAHD", english: "Walked", type: "verb", example: "Naglakad ako papunta sa trabaho. (I walked to work.)" },
+                { tagalog: "Naglalakad", pronunciation: "nahg-lah-lah-KAHD", english: "Walking", type: "verb", example: "Naglalakad siya sa park. (He/she is walking in the park.)" },
+                { tagalog: "Tumakbo", pronunciation: "too-mahk-BOH", english: "Ran", type: "verb", example: "Tumakbo ang bata. (The child ran.)" },
+                { tagalog: "Tumatakbo", pronunciation: "too-mah-tahk-BOH", english: "Running", type: "verb", example: "Tumatakbo siya sa umaga. (He/she runs in the morning.)" },
+                { tagalog: "Nag-aral", pronunciation: "nahg ah-RAHL", english: "Studied", type: "verb", example: "Nag-aral ako buong gabi. (I studied all night.)" },
+                { tagalog: "Nag-aaral", pronunciation: "nahg ah-ah-RAHL", english: "Studying", type: "verb", example: "Nag-aaral siya ng Tagalog. (He/she is studying Tagalog.)" },
+                { tagalog: "Mag-aaral", pronunciation: "mahg ah-ah-RAHL", english: "Will study", type: "verb", example: "Mag-aaral ako bukas. (I will study tomorrow.)" },
+                { tagalog: "Nagbasa", pronunciation: "nahg-bah-SAH", english: "Read", type: "verb", example: "Nagbasa ako ng libro. (I read a book.)" },
+                { tagalog: "Nagbabasa", pronunciation: "nahg-bah-bah-SAH", english: "Reading", type: "verb", example: "Nagbabasa siya ng dyaryo. (He/she is reading a newspaper.)" },
+                { tagalog: "Magbabasa", pronunciation: "mahg-bah-bah-SAH", english: "Will read", type: "verb", example: "Magbabasa ako mamaya. (I will read later.)" },
+                { tagalog: "Nagsulat", pronunciation: "nahg-soo-LAHT", english: "Wrote", type: "verb", example: "Nagsulat ako ng liham. (I wrote a letter.)" },
+                { tagalog: "Nagsusulat", pronunciation: "nahg-soo-soo-LAHT", english: "Writing", type: "verb", example: "Nagsusulat siya ng tula. (He/she is writing a poem.)" },
+                { tagalog: "Magsusulat", pronunciation: "mahg-soo-soo-LAHT", english: "Will write", type: "verb", example: "Magsusulat ako ng email. (I will write an email.)" },
+                { tagalog: "Nagtrabaho", pronunciation: "nahg-trah-bah-HOH", english: "Worked", type: "verb", example: "Nagtrabaho ako sa opisina. (I worked in the office.)" },
+                { tagalog: "Nagtatrabaho", pronunciation: "nahg-tah-trah-bah-HOH", english: "Working", type: "verb", example: "Nagtatrabaho siya sa hospital. (He/she works in a hospital.)" },
+                { tagalog: "Magtatrabaho", pronunciation: "mahg-tah-trah-bah-HOH", english: "Will work", type: "verb", example: "Magtatrabaho ako bukas. (I will work tomorrow.)" }
+            ],
+
+            adjectives: [
+                { tagalog: "Maganda", pronunciation: "mah-gahn-DAH", english: "Beautiful", type: "adjective", example: "Maganda ang babae. (The woman is beautiful.)" },
+                { tagalog: "Pangit", pronunciation: "pah-NEET", english: "Ugly", type: "adjective", example: "Pangit ang weather ngayon. (The weather is ugly today.)" },
+                { tagalog: "Malaki", pronunciation: "mah-lah-KEE", english: "Big", type: "adjective", example: "Malaki ang bahay nila. (Their house is big.)" },
+                { tagalog: "Maliit", pronunciation: "mah-lee-EET", english: "Small", type: "adjective", example: "Maliit ang pusa. (The cat is small.)" },
+                { tagalog: "Mataas", pronunciation: "mah-tah-AHS", english: "Tall/High", type: "adjective", example: "Mataas ang building. (The building is tall.)" },
+                { tagalog: "Mababa", pronunciation: "mah-bah-BAH", english: "Short/Low", type: "adjective", example: "Mababa ang mesa. (The table is low.)" },
+                { tagalog: "Matangkad", pronunciation: "mah-tahng-KAHD", english: "Tall (person)", type: "adjective", example: "Matangkad si John. (John is tall.)" },
+                { tagalog: "Pandak", pronunciation: "pahn-DAHK", english: "Short (person)", type: "adjective", example: "Pandak ang bata. (The child is short.)" },
+                { tagalog: "Payat", pronunciation: "pah-YAHT", english: "Thin", type: "adjective", example: "Payat ang modelo. (The model is thin.)" },
+                { tagalog: "Taba", pronunciation: "tah-BAH", english: "Fat", type: "adjective", example: "Taba ang baboy. (The pig is fat.)" },
+                { tagalog: "Mabait", pronunciation: "mah-bah-EET", english: "Kind", type: "adjective", example: "Mabait ang guro ko. (My teacher is kind.)" },
+                { tagalog: "Masama", pronunciation: "mah-sah-MAH", english: "Bad/Mean", type: "adjective", example: "Masama ang ugali niya. (His/her attitude is bad.)" },
+                { tagalog: "Matalino", pronunciation: "mah-tah-lee-NOH", english: "Smart", type: "adjective", example: "Matalino ang estudyante. (The student is smart.)" },
+                { tagalog: "Bobo", pronunciation: "boh-BOH", english: "Stupid", type: "adjective", example: "Hindi ako bobo. (I'm not stupid.)" },
+                { tagalog: "Masaya", pronunciation: "mah-sah-YAH", english: "Happy", type: "adjective", example: "Masaya ako ngayon. (I'm happy now.)" },
+                { tagalog: "Malungkot", pronunciation: "mah-loong-KOHT", english: "Sad", type: "adjective", example: "Malungkot siya. (He/she is sad.)" },
+                { tagalog: "Galit", pronunciation: "gah-LEET", english: "Angry", type: "adjective", example: "Galit ang nanay. (Mother is angry.)" },
+                { tagalog: "Takot", pronunciation: "tah-KOHT", english: "Afraid", type: "adjective", example: "Takot ako sa dilim. (I'm afraid of the dark.)" },
+                { tagalog: "Masarap", pronunciation: "mah-sah-RAHP", english: "Delicious", type: "adjective", example: "Masarap ang pagkain. (The food is delicious.)" },
+                { tagalog: "Hindi masarap", pronunciation: "hin-DEE mah-sah-RAHP", english: "Not delicious", type: "adjective", example: "Hindi masarap ang kape. (The coffee is not delicious.)" },
+                { tagalog: "Mainit", pronunciation: "mah-ee-NEET", english: "Hot", type: "adjective", example: "Mainit ang kape. (The coffee is hot.)" },
+                { tagalog: "Malamig", pronunciation: "mah-lah-MEEG", english: "Cold", type: "adjective", example: "Malamig ang tubig. (The water is cold.)" },
+                { tagalog: "Mahal", pronunciation: "mah-HAHL", english: "Expensive/Love", type: "adjective", example: "Mahal ang kotse. (The car is expensive.) / Mahal kita. (I love you.)" },
+                { tagalog: "Mura", pronunciation: "moo-RAH", english: "Cheap", type: "adjective", example: "Mura ang damit. (The clothes are cheap.)" },
+                { tagalog: "Bago", pronunciation: "bah-GOH", english: "New", type: "adjective", example: "Bago ang cellphone ko. (My cellphone is new.)" },
+                { tagalog: "Luma", pronunciation: "loo-MAH", english: "Old (things)", type: "adjective", example: "Luma ang kotse niya. (His/her car is old.)" },
+                { tagalog: "Matanda", pronunciation: "mah-tahn-DAH", english: "Old (person)", type: "adjective", example: "Matanda na si Lolo. (Grandfather is old now.)" },
+                { tagalog: "Bata", pronunciation: "bah-TAH", english: "Young", type: "adjective", example: "Bata pa ako noon. (I was still young then.)" },
+                { tagalog: "Pula", pronunciation: "poo-LAH", english: "Red", type: "adjective", example: "Pula ang rosas. (The rose is red.)" },
+                { tagalog: "Asul", pronunciation: "ah-SOOL", english: "Blue", type: "adjective", example: "Asul ang langit. (The sky is blue.)" },
+                { tagalog: "Dilaw", pronunciation: "dee-LAHW", english: "Yellow", type: "adjective", example: "Dilaw ang saging. (The banana is yellow.)" },
+                { tagalog: "Luntian", pronunciation: "loon-tee-YAHN", english: "Green", type: "adjective", example: "Luntian ang dahon. (The leaf is green.)" },
+                { tagalog: "Itim", pronunciation: "ee-TEEM", english: "Black", type: "adjective", example: "Itim ang gabi. (The night is black.)" },
+                { tagalog: "Puti", pronunciation: "poo-TEE", english: "White", type: "adjective", example: "Puti ang damit ko. (My clothes are white.)" }
+            ],
+
+            daily: [
+                { tagalog: "Bahay", pronunciation: "bah-HIGH", english: "House", type: "noun", example: "Malaki ang bahay namin. (Our house is big.)" },
+                { tagalog: "Silid", pronunciation: "shee-LEED", english: "Room", type: "noun", example: "Malinis ang silid ko. (My room is clean.)" },
+                { tagalog: "Kusina", pronunciation: "koo-shee-NAH", english: "Kitchen", type: "noun", example: "Nagluluto si Nanay sa kusina. (Mom is cooking in the kitchen.)" },
+                { tagalog: "Banyo", pronunciation: "bahn-YOH", english: "Bathroom", type: "noun", example: "Nasa banyo si Kuya. (Kuya is in the bathroom.)" },
+                { tagalog: "Sala", pronunciation: "sah-LAH", english: "Living room", type: "noun", example: "Nanonood kami ng TV sa sala. (We're watching TV in the living room.)" },
+                { tagalog: "Kama", pronunciation: "kah-MAH", english: "Bed", type: "noun", example: "Malambot ang kama ko. (My bed is soft.)" },
+                { tagalog: "Mesa", pronunciation: "meh-SAH", english: "Table", type: "noun", example: "Nasa mesa ang pagkain. (The food is on the table.)" },
+                { tagalog: "Upuan", pronunciation: "oo-poo-WAHN", english: "Chair", type: "noun", example: "Umupo ka sa upuan. (Sit on the chair.)" },
+                { tagalog: "Bintana", pronunciation: "been-tah-NAH", english: "Window", type: "noun", example: "Bukas ang bintana. (The window is open.)" },
+                { tagalog: "Pinto", pronunciation: "peen-TOH", english: "Door", type: "noun", example: "Sarado ang pinto. (The door is closed.)" },
+                { tagalog: "Telepono", pronunciation: "teh-leh-poh-NOH", english: "Telephone", type: "noun", example: "Tumutunog ang telepono. (The telephone is ringing.)" },
+                { tagalog: "Cellphone", pronunciation: "CELL-phone", english: "Mobile phone", type: "noun", example: "Nasaan ang cellphone ko? (Where is my cellphone?)" },
+                { tagalog: "Computer", pronunciation: "kom-PYOO-ter", english: "Computer", type: "noun", example: "Gumagamit ako ng computer. (I use a computer.)" },
+                { tagalog: "TV", pronunciation: "tee-VEE", english: "Television", type: "noun", example: "Nanonood ako ng TV. (I'm watching TV.)" },
+                { tagalog: "Radyo", pronunciation: "rahd-YOH", english: "Radio", type: "noun", example: "Nakikinig ako sa radyo. (I'm listening to the radio.)" },
+                { tagalog: "Libro", pronunciation: "lee-BROH", english: "Book", type: "noun", example: "Binabasa ko ang libro. (I'm reading the book.)" },
+                { tagalog: "Papel", pronunciation: "pah-PEHL", english: "Paper", type: "noun", example: "Puti ang papel. (The paper is white.)" },
+                { tagalog: "Lapis", pronunciation: "lah-PEES", english: "Pencil", type: "noun", example: "Matulis ang lapis. (The pencil is sharp.)" },
+                { tagalog: "Bolpen", pronunciation: "BOHL-pen", english: "Ballpoint pen", type: "noun", example: "Asul ang bolpen ko. (My ballpoint pen is blue.)" },
+                { tagalog: "Damit", pronunciation: "dah-MEET", english: "Clothes", type: "noun", example: "Malinis ang damit mo. (Your clothes are clean.)" },
+                { tagalog: "Sapatos", pronunciation: "sah-pah-TOHS", english: "Shoes", type: "noun", example: "Bagong sapatos ko ito. (These are my new shoes.)" },
+                { tagalog: "Medyas", pronunciation: "med-YAHS", english: "Socks", type: "noun", example: "Puti ang medyas ko. (My socks are white.)" },
+                { tagalog: "Sombrero", pronunciation: "som-breh-ROH", english: "Hat", type: "noun", example: "Suot ko ang sombrero. (I'm wearing a hat.)" },
+                { tagalog: "Bag", pronunciation: "bahg", english: "Bag", type: "noun", example: "Nasa bag ang libro ko. (My book is in the bag.)" },
+                { tagalog: "Salamin", pronunciation: "sah-lah-MEEN", english: "Mirror/Eyeglasses", type: "noun", example: "Tignan mo sa salamin. (Look in the mirror.)" },
+                { tagalog: "Relo", pronunciation: "reh-LOH", english: "Watch/Clock", type: "noun", example: "Ginto ang relo niya. (His/her watch is gold.)" },
+                { tagalog: "Pera", pronunciation: "peh-RAH", english: "Money", type: "noun", example: "Wala akong pera. (I have no money.)" },
+                { tagalog: "Trabaho", pronunciation: "trah-bah-HOH", english: "Work/Job", type: "noun", example: "Mahirap ang trabaho ko. (My job is difficult.)" },
+                { tagalog: "Eskwelahan", pronunciation: "es-kweh-lah-HAHN", english: "School", type: "noun", example: "Malapit ang eskwelahan. (The school is near.)" },
+                { tagalog: "Ospital", pronunciation: "os-pee-TAHL", english: "Hospital", type: "noun", example: "Nasa ospital ang doktor. (The doctor is at the hospital.)" },
+                { tagalog: "Simbahan", pronunciation: "seem-bah-HAHN", english: "Church", type: "noun", example: "Pumunta kami sa simbahan. (We went to church.)" },
+                { tagalog: "Palengke", pronunciation: "pah-lehng-KEH", english: "Market", type: "noun", example: "Bumili ako sa palengke. (I bought at the market.)" },
+                { tagalog: "Mall", pronunciation: "mahl", english: "Shopping mall", type: "noun", example: "Maraming tao sa mall. (There are many people at the mall.)" },
+                { tagalog: "Bangko", pronunciation: "bahng-KOH", english: "Bank", type: "noun", example: "Nagdeposito ako sa bangko. (I deposited at the bank.)" },
+                { tagalog: "Post office", pronunciation: "pohst OH-fis", english: "Post office", type: "noun", example: "Nagpadala ako ng liham sa post office. (I sent a letter at the post office.)" },
+                { tagalog: "Kotse", pronunciation: "koht-SEH", english: "Car", type: "noun", example: "Bagong kotse niya. (It's his/her new car.)" },
+                { tagalog: "Bus", pronunciation: "bahs", english: "Bus", type: "noun", example: "Sumakay ako sa bus. (I rode the bus.)" },
+                { tagalog: "Jeepney", pronunciation: "JEEP-nee", english: "Jeepney", type: "noun", example: "Masaya sumakay sa jeepney. (It's fun to ride a jeepney.)" },
+                { tagalog: "Tricycle", pronunciation: "TRY-si-kel", english: "Tricycle", type: "noun", example: "Mabilis ang tricycle. (The tricycle is fast.)" },
+                { tagalog: "Tren", pronunciation: "trehn", english: "Train", type: "noun", example: "Haba ng tren. (The train is long.)" },
+                { tagalog: "Eroplano", pronunciation: "eh-roh-plah-NOH", english: "Airplane", type: "noun", example: "Lumilipad ang eroplano. (The airplane is flying.)" },
+                { tagalog: "Sasakyan", pronunciation: "sah-sahk-YAHN", english: "Vehicle", type: "noun", example: "Maraming sasakyan sa kalsada. (There are many vehicles on the road.)" },
+                { tagalog: "Kalsada", pronunciation: "kahl-sah-DAH", english: "Road/Street", type: "noun", example: "Malinis ang kalsada. (The road is clean.)" },
+                { tagalog: "Tulay", pronunciation: "too-LIGH", english: "Bridge", type: "noun", example: "Matibay ang tulay. (The bridge is strong.)" },
+                { tagalog: "Aso", pronunciation: "ah-SOH", english: "Dog", type: "noun", example: "Mabait ang aso namin. (Our dog is kind.)" },
+                { tagalog: "Pusa", pronunciation: "poo-SAH", english: "Cat", type: "noun", example: "Natutulog ang pusa. (The cat is sleeping.)" },
+                { tagalog: "Ibon", pronunciation: "ee-BOHN", english: "Bird", type: "noun", example: "Kumakanta ang ibon. (The bird is singing.)" },
+                { tagalog: "Kabayo", pronunciation: "kah-bah-YOH", english: "Horse", type: "noun", example: "Tumatakbo ang kabayo. (The horse is running.)" },
+                { tagalog: "Kambing", pronunciation: "kahm-BEENG", english: "Goat", type: "noun", example: "Puti ang kambing. (The goat is white.)" },
+                { tagalog: "Kalabaw", pronunciation: "kah-lah-BAHW", english: "Carabao/Water buffalo", type: "noun", example: "Malakas ang kalabaw. (The carabao is strong.)" },
+                { tagalog: "Panahon", pronunciation: "pah-nah-HOHN", english: "Weather/Time", type: "noun", example: "Maganda ang panahon ngayon. (The weather is nice today.)" },
+                { tagalog: "Ulan", pronunciation: "oo-LAHN", english: "Rain", type: "noun", example: "Malakas ang ulan. (The rain is heavy.)" },
+                { tagalog: "Araw", pronunciation: "ah-RAHW", english: "Sun/Day", type: "noun", example: "Mainit ang araw. (The sun is hot.)" },
+                { tagalog: "Buwan", pronunciation: "BOO-wahn", english: "Moon/Month", type: "noun", example: "Maliwanag ang buwan. (The moon is bright.)" },
+                { tagalog: "Bituin", pronunciation: "bee-too-IN", english: "Star", type: "noun", example: "Maraming bituin sa langit. (There are many stars in the sky.)" },
+                { tagalog: "Langit", pronunciation: "lah-NEET", english: "Sky", type: "noun", example: "Asul ang langit. (The sky is blue.)" },
+                { tagalog: "Ulap", pronunciation: "oo-LAHP", english: "Cloud", type: "noun", example: "Maitim ang ulap. (The cloud is dark.)" },
+                { tagalog: "Hangin", pronunciation: "hah-NEEN", english: "Wind", type: "noun", example: "Malamig ang hangin. (The wind is cold.)" },
+                { tagalog: "Lupa", pronunciation: "loo-PAH", english: "Land/Soil", type: "noun", example: "Itim ang lupa. (The soil is black.)" },
+                { tagalog: "Bundok", pronunciation: "boon-DOHK", english: "Mountain", type: "noun", example: "Mataas ang bundok. (The mountain is high.)" },
+                { tagalog: "Ilog", pronunciation: "ee-LOHG", english: "River", type: "noun", example: "Malinis ang tubig sa ilog. (The water in the river is clean.)" },
+                { tagalog: "Dagat", pronunciation: "dah-GAHT", english: "Sea/Ocean", type: "noun", example: "Asul ang dagat. (The sea is blue.)" },
+                { tagalog: "Isla", pronunciation: "ees-LAH", english: "Island", type: "noun", example: "Maganda ang isla. (The island is beautiful.)" },
+                { tagalog: "Gubat", pronunciation: "goo-BAHT", english: "Forest", type: "noun", example: "Madilim sa gubat. (It's dark in the forest.)" },
+                { tagalog: "Puno", pronunciation: "poo-NOH", english: "Tree", type: "noun", example: "Malaki ang puno. (The tree is big.)" },
+                { tagalog: "Dahon", pronunciation: "dah-HOHN", english: "Leaf", type: "noun", example: "Luntian ang dahon. (The leaf is green.)" },
+                { tagalog: "Bulaklak", pronunciation: "boo-lahk-LAHK", english: "Flower", type: "noun", example: "Amoy-bango ang bulaklak. (The flower smells good.)" },
+                { tagalog: "Damo", pronunciation: "dah-MOH", english: "Grass", type: "noun", example: "Luntian ang damo. (The grass is green.)" }
+            ]
+        };
+
+        // Search and filter functions
+        let currentCategory = 'all';
+        let allWords = [];
+
+        function initializeVocabulary() {
+            // Flatten all categories into one array
+            allWords = [];
+            for (let category in vocabulary) {
+                vocabulary[category].forEach(word => {
+                    word.category = category;
+                    allWords.push(word);
+                });
+            }
+            
+            // Update stats
+            document.getElementById('totalWords').textContent = allWords.length;
+            
+            // Display all words initially
+            displayWords(allWords);
+        }
+
+        function displayWords(words) {
+            // Clear all grids first
+            for (let category in vocabulary) {
+                const grid = document.getElementById(category + 'Words');
+                if (grid) grid.innerHTML = '';
+            }
+            
+            // Group words by category
+            const wordsByCategory = {};
+            words.forEach(word => {
+                if (!wordsByCategory[word.category]) {
+                    wordsByCategory[word.category] = [];
+                }
+                wordsByCategory[word.category].push(word);
+            });
+            
+            // Display words in their respective categories
+            for (let category in wordsByCategory) {
+                const grid = document.getElementById(category + 'Words');
+                if (grid) {
+                    wordsByCategory[category].forEach(word => {
+                        const wordCard = createWordCard(word);
+                        grid.appendChild(wordCard);
+                    });
+                }
+            }
+            
+            // Update visible words count
+            document.getElementById('visibleWords').textContent = words.length;
+            
+            // Show/hide category sections based on whether they have words
+            document.querySelectorAll('.category-section').forEach(section => {
+                const categoryName = section.getAttribute('data-category');
+                const hasWords = wordsByCategory[categoryName] && wordsByCategory[categoryName].length > 0;
+                section.style.display = hasWords ? 'block' : 'none';
+            });
+            
+            // Show no results message if no words
+            if (words.length === 0) {
+                showNoResults();
+            }
+        }
+
+        function createWordCard(word) {
+            const card = document.createElement('div');
+            card.className = 'vocab-card';
+            card.innerHTML = `
+                <div class="tagalog-word">${word.tagalog}</div>
+                <div class="pronunciation">${word.pronunciation}</div>
+                <div class="english-meaning">${word.english}</div>
+                <div class="word-type">${word.type}</div>
+                <div class="example-sentence">${word.example}</div>
+            `;
+            return card;
+        }
+
+        function searchWords() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            
+            if (searchTerm === '') {
+                filterCategory(currentCategory);
+                return;
+            }
+            
+            const filteredWords = allWords.filter(word => {
+                return word.tagalog.toLowerCase().includes(searchTerm) ||
+                       word.english.toLowerCase().includes(searchTerm) ||
+                       word.pronunciation.toLowerCase().includes(searchTerm) ||
+                       word.example.toLowerCase().includes(searchTerm);
+            });
+            
+            displayWords(filteredWords);
+        }
+
+        function filterCategory(category, buttonElement) {
+            currentCategory = category;
+            
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Make the clicked button active
+            if (buttonElement) {
+                buttonElement.classList.add('active');
+            } else {
+                // Fallback: find button by onclick attribute
+                const buttons = document.querySelectorAll('.filter-btn');
+                buttons.forEach(btn => {
+                    const onclick = btn.getAttribute('onclick');
+                    if (onclick && onclick.includes(`'${category}'`)) {
+                        btn.classList.add('active');
+                    }
+                });
+            }
+            
+            let wordsToShow;
+            if (category === 'all') {
+                wordsToShow = allWords;
+            } else {
+                wordsToShow = allWords.filter(word => word.category === category);
+            }
+            
+            displayWords(wordsToShow);
+        }
+
+        function showNoResults() {
+            // Clear all grids
+            for (let category in vocabulary) {
+                const grid = document.getElementById(category + 'Words');
+                if (grid) grid.innerHTML = '';
+            }
+            
+            // Hide all category sections
+            document.querySelectorAll('.category-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show no results message
+            const noResultsDiv = document.createElement('div');
+            noResultsDiv.className = 'no-results';
+            noResultsDiv.innerHTML = '<h3>No words found</h3><p>Try adjusting your search terms or selecting a different category.</p>';
+            document.querySelector('.search-container').appendChild(noResultsDiv);
+            
+            setTimeout(() => {
+                noResultsDiv.remove();
+            }, 3000);
+        }
+
+        function scrollToLetter(letter) {
+            const element = document.getElementById(letter);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeVocabulary();
+            
+            // Add keyboard shortcut for search
+            document.getElementById('searchBox').addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    this.value = '';
+                    searchWords();
+                }
+            });
+            
+            // Add click sound effect simulation
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 100);
+                });
+            });
+            
+            // Add hover effect for vocabulary cards
+            document.addEventListener('mouseover', function(e) {
+                if (e.target.classList.contains('vocab-card')) {
+                    e.target.style.backgroundColor = '#f0f8ff';
+                }
+            });
+            
+            document.addEventListener('mouseout', function(e) {
+                if (e.target.classList.contains('vocab-card')) {
+                    e.target.style.backgroundColor = 'white';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

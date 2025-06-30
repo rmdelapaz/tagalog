@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Sentences in Tagalog - The Art of Focus</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #667eea; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .language-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .english-card { border-left: 4px solid #ff6b6b; }
+        .tagalog-card { border-left: 4px solid #4ecdc4; }
+        .focus-demo { background: linear-gradient(45deg, #ffeaa7, #fab1a0); padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .word-order { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0; }
+        .word-box { background: #667eea; color: white; padding: 8px 15px; border-radius: 20px; font-weight: bold; }
+        .predicate { background: #e74c3c !important; }
+        .subject { background: #2ecc71 !important; }
+        .object { background: #f39c12 !important; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .interactive-sentence { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 20px 0; }
+        canvas { border: 2px solid #667eea; border-radius: 8px; margin: 10px 0; }
+        .sentence-builder { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 2px dashed #667eea; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Pagbuo ng Pangungusap - Building Sentences</h1>
+        <p>Discover how Tagalog puts the spotlight on what matters most</p>
+    </div>
+
+    <div class="section">
+        <h2>The Great Word Order Revolution</h2>
+        <p>Imagine if movies always started with the most exciting scene first, then told you who the characters were. That's exactly how Tagalog works! While English says "I eat rice," Tagalog says "Kumakain ako ng kanin" - literally "Eating I rice." The action gets the spotlight first!</p>
+
+        <div class="comparison-grid">
+            <div class="language-card english-card">
+                <h3>English Structure</h3>
+                <div class="word-order">
+                    <div class="word-box subject">I</div>
+                    <div class="word-box predicate">eat</div>
+                    <div class="word-box object">rice</div>
+                </div>
+                <p><strong>Pattern:</strong> Subject + Verb + Object (SVO)</p>
+                <p>Focus is neutral - all parts are equally important</p>
+            </div>
+            <div class="language-card tagalog-card">
+                <h3>Tagalog Structure</h3>
+                <div class="word-order">
+                    <div class="word-box predicate">Kumakain</div>
+                    <div class="word-box subject">ako</div>
+                    <div class="word-box object">ng kanin</div>
+                </div>
+                <p><strong>Pattern:</strong> Verb + Subject + Object (VSO)</p>
+                <p>The verb gets the spotlight - the action is the star!</p>
+            </div>
+        </div>
+
+        <div class="mermaid">
+            graph TD
+                A[Tagalog Sentence] --> B[Predicate First]
+                A --> C[Subject Second]
+                A --> D[Object Last]
+                B --> E[Action gets spotlight]
+                B --> F[What's happening?]
+                C --> G[Who's doing it?]
+                D --> H[What's being acted upon?]
+                
+                style B fill:#e74c3c,color:#fff
+                style C fill:#2ecc71,color:#fff
+                style D fill:#f39c12,color:#fff
+        </mermaid>
+    </div>
+
+    <div class="section">
+        <h2>The Magic of "Ang" - Spotlight Words</h2>
+        <p>Think of "ang" as a spotlight operator in a theater. Whatever follows "ang" gets the bright light and becomes the star of the sentence. It's like Tagalog is constantly asking: "What's the most important thing here?"</p>
+
+        <div class="focus-demo">
+            <h3>The Spotlight Effect in Action</h3>
+            <div class="example-box">
+                <p><strong>Scenario:</strong> Maria is reading a book</p>
+                
+                <p><strong>Focus on WHO (Actor Focus):</strong></p>
+                <p><em>Bumabasa <u>ang Maria</u> ng libro.</em></p>
+                <p>Translation: "Maria is reading a book." (Spotlight on Maria)</p>
+                
+                <p><strong>Focus on WHAT (Object Focus):</strong></p>
+                <p><em>Binabasa ni Maria <u>ang libro</u>.</em></p>
+                <p>Translation: "The book is being read by Maria." (Spotlight on the book)</p>
+            </div>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Cultural Insight:</strong> This focus system reflects Filipino values of context and relationship. Filipinos often emphasize what's most relevant to the situation or relationship at hand!
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Building Your First Sentences - The Tagalog Recipe</h2>
+        <p>Creating a Tagalog sentence is like cooking adobo - you need the right ingredients in the right order to get that perfect flavor!</p>
+
+        <div class="sentence-builder">
+            <h3>Simple Sentence Recipe</h3>
+            <p><strong>Ingredient 1:</strong> Action Word (Verb)</p>
+            <p><strong>Ingredient 2:</strong> Who/What (Subject with "ang")</p>
+            <p><strong>Ingredient 3:</strong> Additional info (Object with "ng" or "sa")</p>
+        </div>
+
+        <div class="interactive-sentence">
+            <h3>Let's Build: "The dog is eating food"</h3>
+            <canvas id="sentenceBuilder" width="800" height="300"></canvas>
+            
+            <div class="example-box">
+                <div class="word-order">
+                    <div class="word-box predicate">Kumakain</div>
+                    <div class="word-box subject">ang aso</div>
+                    <div class="word-box object">ng pagkain</div>
+                </div>
+                <p><strong>Breakdown:</strong></p>
+                <ul>
+                    <li><strong>Kumakain</strong> (eating) - The action that's happening</li>
+                    <li><strong>ang aso</strong> (the dog) - Who's doing the action</li>
+                    <li><strong>ng pagkain</strong> (food) - What's being eaten</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Essential Sentence Starters - Your Building Blocks</h2>
+        <p>These are like the basic tools in your sentence-building toolkit. Master these, and you can express most daily situations!</p>
+
+        <div class="comparison-grid">
+            <div class="language-card">
+                <h3>Present Actions (Happening Now)</h3>
+                <ul>
+                    <li><strong>Kumakain</strong> - eating</li>
+                    <li><strong>Tumutulog</strong> - sleeping</li>
+                    <li><strong>Naglalaro</strong> - playing</li>
+                    <li><strong>Nagtatrabaho</strong> - working</li>
+                    <li><strong>Nag-aaral</strong> - studying</li>
+                </ul>
+            </div>
+            <div class="language-card">
+                <h3>Description Words (States of Being)</h3>
+                <ul>
+                    <li><strong>Maganda</strong> - beautiful</li>
+                    <li><strong>Malaki</strong> - big</li>
+                    <li><strong>Mabait</strong> - kind</li>
+                    <li><strong>Masaya</strong> - happy</li>
+                    <li><strong>Gutom</strong> - hungry</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Real-World Sentence Examples</h3>
+            <p><strong>Describing someone:</strong></p>
+            <p>Maganda ang babae. (The woman is beautiful.)</p>
+            
+            <p><strong>Talking about actions:</strong></p>
+            <p>Naglalaro ang mga bata. (The children are playing.)</p>
+            
+            <p><strong>Expressing feelings:</strong></p>
+            <p>Gutom ang tatay. (Father is hungry.)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>The Mysterious Markers - "Ng" and "Sa"</h2>
+        <p>Think of "ng" and "sa" as traffic directors - they tell you how words relate to each other in the sentence highway!</p>
+
+        <div class="comparison-grid">
+            <div class="language-card">
+                <h3>"Ng" - The Connection Maker</h3>
+                <p>Used for:</p>
+                <ul>
+                    <li>Objects being acted upon</li>
+                    <li>Possession (like 's in English)</li>
+                    <li>Doer in passive sentences</li>
+                </ul>
+                <div class="example-box">
+                    <p>Binabasa ng bata ang libro.</p>
+                    <p>(The book is being read by the child.)</p>
+                </div>
+            </div>
+            <div class="language-card">
+                <h3>"Sa" - The Location/Direction Guide</h3>
+                <p>Used for:</p>
+                <ul>
+                    <li>Places and locations</li>
+                    <li>Time expressions</li>
+                    <li>Recipients of actions</li>
+                </ul>
+                <div class="example-box">
+                    <p>Pumunta ang nanay sa palengke.</p>
+                    <p>(Mother went to the market.)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mermaid">
+            flowchart LR
+                A[Word Relationships] --> B[ng - connects objects]
+                A --> C[sa - shows direction/location]
+                A --> D[ang - highlights focus]
+                
+                B --> E[Kumain ng mansanas<br/>ate an apple]
+                C --> F[Pumunta sa eskwelahan<br/>went to school]
+                D --> G[Kumain ang bata<br/>the child ate]
+                
+                style B fill:#f39c12,color:#fff
+                style C fill:#e74c3c,color:#fff
+                style D fill:#2ecc71,color:#fff
+        </mermaid>
+    </div>
+
+    <div class="section">
+        <h2>Questions - The Art of Asking</h2>
+        <p>Asking questions in Tagalog is like flipping a switch - often you just change your tone! No complicated word rearrangement needed.</p>
+
+        <div class="example-box">
+            <h3>Statement vs. Question Magic</h3>
+            <p><strong>Statement:</strong> Kumakain ang bata. (The child is eating.)</p>
+            <p><strong>Question:</strong> Kumakain ang bata? (Is the child eating?)</p>
+            
+            <p><em>Same words, different tune!</em></p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="language-card">
+                <h3>Yes/No Questions</h3>
+                <ul>
+                    <li>Just add rising intonation ↗</li>
+                    <li>Or add "ba" for emphasis</li>
+                </ul>
+                <div class="example-box">
+                    <p>Gutom ka? (Are you hungry?)</p>
+                    <p>Gutom ka ba? (Are you hungry?)</p>
+                </div>
+            </div>
+            <div class="language-card">
+                <h3>Information Questions</h3>
+                <ul>
+                    <li><strong>Ano</strong> - What?</li>
+                    <li><strong>Sino</strong> - Who?</li>
+                    <li><strong>Saan</strong> - Where?</li>
+                    <li><strong>Kailan</strong> - When?</li>
+                </ul>
+                <div class="example-box">
+                    <p>Ano ang ginagawa mo? (What are you doing?)</p>
+                    <p>Sino ang kumakanta? (Who is singing?)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Sentence Building Workshop</h2>
+        
+        <h3>Exercise 1: Rearrange the English Way</h3>
+        <p>Take these English sentences and put them in Tagalog order (Verb + Subject + Object):</p>
+        <ol>
+            <li>"The cat sleeps" → "Tumutulog ang pusa"</li>
+            <li>"Mother cooks rice" → "Nagluluto ang nanay ng kanin"</li>
+            <li>"Father reads newspaper" → "Nagbabasa ang tatay ng dyaryo"</li>
+        </ol>
+
+        <h3>Exercise 2: Spotlight Practice</h3>
+        <p>Change the focus in these sentences:</p>
+        <div class="example-box">
+            <p><strong>Original:</strong> Bumili ang lalaki ng sapatos. (The man bought shoes.)</p>
+            <p><strong>Your turn:</strong> Change focus to the shoes: "Binili ng lalaki ang sapatos."</p>
+        </div>
+
+        <h3>Exercise 3: Question Transformation</h3>
+        <p>Turn these statements into questions:</p>
+        <ul>
+            <li>Masarap ang pagkain. → Masarap ang pagkain?</li>
+            <li>Natutulog ang baby. → Natutulog ang baby?</li>
+            <li>Nasa bahay si Maria. → Nasa bahay si Maria?</li>
+        </ul>
+
+        <h3>Exercise 4: Real-Life Sentences</h3>
+        <p>Build sentences about your daily life:</p>
+        <ul>
+            <li>What you're eating: "Kumakain ako ng ___"</li>
+            <li>Where you're going: "Pupunta ako sa ___"</li>
+            <li>What you're reading: "Binabasa ko ang ___"</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Common Sentence Patterns - Your Daily Templates</h2>
+        <p>These patterns are like having conversation templates in your back pocket - ready to use anytime!</p>
+
+        <div class="example-box">
+            <h3>Pattern 1: Basic Actions</h3>
+            <p><strong>Template:</strong> [Action] ang [person] ng [thing]</p>
+            <ul>
+                <li>Kumakain ang bata ng mansanas. (The child is eating an apple.)</li>
+                <li>Binabasa ang estudyante ng libro. (The student is reading a book.)</li>
+                <li>Nagluluto ang nanay ng adobo. (Mother is cooking adobo.)</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>Pattern 2: Descriptions</h3>
+            <p><strong>Template:</strong> [Description] ang [person/thing]</p>
+            <ul>
+                <li>Maganda ang bulaklak. (The flower is beautiful.)</li>
+                <li>Malaki ang bahay. (The house is big.)</li>
+                <li>Masaya ang pamilya. (The family is happy.)</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>Pattern 3: Location</h3>
+            <p><strong>Template:</strong> Nasa [place] ang [person/thing]</p>
+            <ul>
+                <li>Nasa kusina ang nanay. (Mother is in the kitchen.)</li>
+                <li>Nasa mesa ang libro. (The book is on the table.)</li>
+                <li>Nasa eskwelahan ang mga bata. (The children are at school.)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Cultural Wisdom - The Filipino Mind in Sentences</h2>
+        <p>The way Tagalog structures sentences reflects Filipino thinking:</p>
+        <ul>
+            <li><strong>Action-oriented:</strong> What's happening is often more important than who's doing it</li>
+            <li><strong>Context-sensitive:</strong> The focus system allows speakers to emphasize what's most relevant</li>
+            <li><strong>Relationship-aware:</strong> The markers show how everything connects to everything else</li>
+        </ul>
+        <p>This isn't just grammar - it's a window into how Filipinos see and organize their world!</p>
+    </div>
+
+    <div class="practice-box">
+        <h2>Your Mission for Tomorrow</h2>
+        <ol>
+            <li><strong>Verb-first thinking:</strong> For one hour, try to think of actions before actors in English</li>
+            <li><strong>Spotlight practice:</strong> In conversations, notice what's being emphasized</li>
+            <li><strong>Build 5 sentences:</strong> Use the three patterns above to describe your day</li>
+            <li><strong>Question practice:</strong> Ask yourself "Ano ang ginagawa ko?" throughout the day</li>
+        </ol>
+        
+        <div class="cultural-note">
+            <strong>Cultural Challenge:</strong> Try to start a conversation with "Kumain ka na?" (Have you eaten?) - notice how it feels different from "How are you?"
+        </div>
+    </div>
+
+    <script>
+        // Interactive sentence building animation
+        const canvas = document.getElementById('sentenceBuilder');
+        const ctx = canvas.getContext('2d');
+        
+        function drawSentenceBuilder() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Title
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 24px Arial';
+            ctx.fillText('Tagalog Sentence Structure', 20, 40);
+            
+            // Draw sentence components
+            const components = [
+                { text: 'KUMAKAIN', x: 50, y: 100, color: '#e74c3c', label: 'VERB (Action)' },
+                { text: 'ANG ASO', x: 250, y: 100, color: '#2ecc71', label: 'SUBJECT (Who)' },
+                { text: 'NG PAGKAIN', x: 450, y: 100, color: '#f39c12', label: 'OBJECT (What)' }
+            ];
+            
+            components.forEach((comp, index) => {
+                // Word box
+                ctx.fillStyle = comp.color;
+                ctx.fillRect(comp.x, comp.y, 150, 60);
+                
+                // Word text
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 16px Arial';
+                ctx.fillText(comp.text, comp.x + 10, comp.y + 35);
+                
+                // Label
+                ctx.fillStyle = 'white';
+                ctx.font = '12px Arial';
+                ctx.fillText(comp.label, comp.x + 10, comp.y + 80);
+                
+                // Arrow
+                if (index < components.length - 1) {
+                    ctx.strokeStyle = 'white';
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    ctx.moveTo(comp.x + 160, comp.y + 30);
+                    ctx.lineTo(comp.x + 180, comp.y + 30);
+                    ctx.stroke();
+                    
+                    // Arrow head
+                    ctx.beginPath();
+                    ctx.moveTo(comp.x + 175, comp.y + 25);
+                    ctx.lineTo(comp.x + 180, comp.y + 30);
+                    ctx.lineTo(comp.x + 175, comp.y + 35);
+                    ctx.stroke();
+                }
+            });
+            
+            // Translation
+            ctx.fillStyle = 'white';
+            ctx.font = '18px Arial';
+            ctx.fillText('Translation: "The dog is eating food"', 200, 220);
+            
+            // English comparison
+            ctx.font = '14px Arial';
+            ctx.fillText('English order: Subject + Verb + Object', 50, 250);
+            ctx.fillText('Tagalog order: Verb + Subject + Object', 50, 270);
+        }
+        
+        drawSentenceBuilder();
+    </script>
+</body>
+</html>
