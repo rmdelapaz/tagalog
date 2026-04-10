@@ -1,0 +1,338 @@
+/* ===== DARK MODE / LIGHT MODE ===== */
+:root {
+  --bg-primary: #f8fafb;
+  --bg-secondary: #ffffff;
+  --bg-section: #f9f9f9;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a6a;
+  --text-muted: #6b7280;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-light: rgba(79, 70, 229, 0.08);
+  --border: #e5e7eb;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --hero-gradient: linear-gradient(135deg, #4f46e5, #7c3aed, #ec4899);
+  --nav-bg: rgba(255,255,255,0.92);
+  --nav-shadow: 0 1px 8px rgba(0,0,0,0.08);
+  --code-bg: #f1f5f9;
+  --table-header: #4f46e5;
+  --toggle-bg: #e5e7eb;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-section: #1e293b;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent: #818cf8;
+  --accent-hover: #a5b4fc;
+  --accent-light: rgba(129, 140, 248, 0.1);
+  --border: #334155;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --hero-gradient: linear-gradient(135deg, #312e81, #581c87, #831843);
+  --nav-bg: rgba(15,23,42,0.95);
+  --nav-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  --code-bg: #1e293b;
+  --table-header: #312e81;
+  --toggle-bg: #334155;
+}
+
+/* ===== SITE NAV ===== */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--nav-shadow);
+  border-bottom: 1px solid var(--border);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.site-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.site-nav a:hover {
+  background: var(--accent-light);
+  color: var(--accent-hover);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.02em;
+}
+
+.nav-sep {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: var(--toggle-bg);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  transition: background 0.3s;
+}
+
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  background: #fbbf24;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+
+[data-theme="dark"] .theme-toggle::after {
+  transform: translateX(1rem);
+  background: #818cf8;
+}
+
+/* ===== PREV / NEXT NAV ===== */
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0 1.5rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.lesson-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: all 0.2s;
+  background: var(--bg-secondary);
+}
+
+.lesson-nav a:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+}
+
+.lesson-nav .spacer {
+  flex: 1;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .site-nav {
+    flex-wrap: wrap;
+    padding: 0.5rem 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .nav-links {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    gap: 0.1rem;
+  }
+
+  .nav-brand {
+    font-size: 0.85rem;
+  }
+
+  .site-nav a {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.45rem;
+  }
+
+  .lesson-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .lesson-nav a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ===== GLOBAL DARK MODE OVERRIDES ===== */
+[data-theme="dark"] body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .section,
+[data-theme="dark"] .example-box,
+[data-theme="dark"] .practice-box,
+[data-theme="dark"] .cultural-note,
+[data-theme="dark"] .pos-card,
+[data-theme="dark"] .verb-card,
+[data-theme="dark"] .sound-card,
+[data-theme="dark"] .number-card,
+[data-theme="dark"] .time-card,
+[data-theme="dark"] .language-card,
+[data-theme="dark"] .scenario-card,
+[data-theme="dark"] .ai-tool-card,
+[data-theme="dark"] .family-tree,
+[data-theme="dark"] .interactive-chat,
+[data-theme="dark"] .pronoun-card,
+[data-theme="dark"] .relationship-card,
+[data-theme="dark"] .social-hierarchy,
+[data-theme="dark"] .word-anatomy,
+[data-theme="dark"] .interactive-sentence,
+[data-theme="dark"] .vocab-card,
+[data-theme="dark"] .search-container,
+[data-theme="dark"] .stats-bar,
+[data-theme="dark"] .alphabet-nav,
+[data-theme="dark"] .daily-schedule,
+[data-theme="dark"] .progress-tracker,
+[data-theme="dark"] .interactive-demo,
+[data-theme="dark"] .workflow-visual {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .section {
+  border-left-color: var(--accent) !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+  background-color: var(--table-header) !important;
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] strong {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] a {
+  color: var(--accent) !important;
+}
+
+[data-theme="dark"] table,
+[data-theme="dark"] td,
+[data-theme="dark"] tr,
+[data-theme="dark"] th {
+  border-color: var(--border) !important;
+}
+
+[data-theme="dark"] th,
+[data-theme="dark"] .conjugation-table th,
+[data-theme="dark"] .comparison-table th,
+[data-theme="dark"] .formation-table th,
+[data-theme="dark"] .pronoun-table th {
+  background-color: var(--table-header) !important;
+}
+
+[data-theme="dark"] code, [data-theme="dark"] pre {
+  background-color: var(--code-bg) !important;
+}
+
+[data-theme="dark"] blockquote {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .search-box {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .pronunciation-guide {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .mermaid_container,
+[data-theme="dark"] .mermaid-diagram,
+[data-theme="dark"] .mermaid {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border) !important;
+}
+
+[data-theme="dark"] canvas {
+  border-color: var(--border) !important;
+}
+
+/* Dark mode for lesson 9 specific elements */
+[data-theme="dark"] .category-section {
+  background: var(--bg-secondary) !important;
+  border-left-color: var(--accent) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .category-title {
+  color: var(--accent) !important;
+  background: none !important;
+}
+
+[data-theme="dark"] .tagalog-word {
+  color: var(--accent) !important;
+}
+
+[data-theme="dark"] .english-meaning {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .word-type {
+  background: var(--bg-primary) !important;
+  color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .example-sentence {
+  background: var(--bg-primary) !important;
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .pronunciation {
+  color: #f87171 !important;
+}
+
+[data-theme="dark"] .meaning {
+  color: var(--text-muted) !important;
+}
