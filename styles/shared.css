@@ -336,3 +336,41 @@
 [data-theme="dark"] .meaning {
   color: var(--text-muted) !important;
 }
+
+/* BEGIN footer-nav-styles (managed by add_footer_nav.py) */
+/* Static lesson footer (inserted by add_footer_nav.py into each lesson HTML) */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: .85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.site-footer a { color: var(--accent); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.site-footer p { margin: .35rem 0; }
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+}
+
+/* Home-link: outlined "ghost" variant to distinguish from prev/next */
+.lesson-nav .home-link {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+.lesson-nav .home-link:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+/* First lesson uses <span></span> as a prev placeholder; keep it inert */
+.lesson-nav > span:empty { flex: 0 0 auto; }
+/* END footer-nav-styles */
