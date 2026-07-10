@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagalog Pronunciation Reader</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body>
+
+<div class="hero">
+    <h1>🔊 Pronunciation Reader</h1>
+    <p>Type it, hear it, see exactly how it breaks apart.</p>
+</div>
+
+<div class="section">
+    <p>Tagalog is <strong>phonemic</strong>: every letter has one sound, so syllables and
+    pronunciation follow from the spelling with no exceptions to memorise. Type any Tagalog
+    text below to hear it read aloud and see each word broken into syllables with a
+    phonetic transcription. Click any word in the text to hear just that word.</p>
+
+    <div class="reader-panel">
+        <label class="reader-label" for="reader-input">Tagalog na teksto</label>
+        <textarea id="reader-input" class="reader-input" rows="4" lang="tl" spellcheck="false"
+>Magandang umaga! Kumusta ka? Mabuti naman, salamat. Ang bahay ng pamilya ay malaki. Mahal ko ang pag-ibig.</textarea>
+
+        <div class="reader-controls">
+            <div class="reader-control">
+                <label for="reader-voice">Voice</label>
+                <select id="reader-voice"></select>
+            </div>
+            <div class="reader-control">
+                <label for="reader-rate">Speed <span id="reader-rate-value">0.90×</span></label>
+                <input type="range" id="reader-rate" min="0.5" max="1.2" step="0.05" value="0.9">
+            </div>
+            <div class="reader-buttons">
+                <button type="button" id="reader-play" class="reader-btn reader-btn-primary">▶&nbsp; Basahin nang malakas</button>
+                <button type="button" id="reader-stop" class="reader-btn" disabled>■&nbsp; Itigil</button>
+            </div>
+        </div>
+
+        <p id="reader-unsupported" class="reader-notice" hidden>
+            🔇 <strong>No voice available on this device.</strong> The analysis below still works,
+            but nothing can be read aloud.
+        </p>
+
+        <p id="reader-fallback" class="reader-fallback" hidden>
+            🗣️ <strong>Using a Spanish voice as a stand-in.</strong> No Filipino voice is installed
+            on this device. Tagalog and Spanish share the same five vowels and most consonants, so
+            the text is quietly respelled into Spanish orthography before speaking
+            (<em>bahay</em> → <em>bajay</em>, <em>kumusta</em> → <em>cumusta</em>) to get the
+            <code>/h/</code> and <code>/k/</code> sounds Spanish spelling otherwise loses.
+            The result is close, but it is not a native accent.
+        </p>
+
+        <div id="reader-display" class="reader-display" lang="tl"></div>
+        <p id="reader-summary" class="reader-summary"></p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Word Analysis</h2>
+    <div class="table-wrap no-audio">
+        <table class="reader-table">
+            <tr><th>Word</th><th>Syllables</th><th>Broad transcription</th><th>Stress type</th></tr>
+            <tbody id="reader-analysis"></tbody>
+        </table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>How Tagalog Pronunciation Works</h2>
+
+    <div class="example-box no-audio">
+        <h3>⚠️ Stress is real — and the spelling hides it</h3>
+        <p>This is the one thing Tagalog spelling does <em>not</em> tell you. Stress is
+        <strong>phonemic</strong>: it changes meaning. <em>baka</em> stressed on the first
+        syllable (<strong>BA</strong>-ka) means <em>cow</em>; stressed on the second
+        (ba-<strong>KA</strong>) it means <em>maybe</em>. Ordinary writing marks neither.</p>
+        <p>So this page assumes the default — stress on the <strong>second-to-last</strong>
+        syllable — and tags every such word <em>assumed</em>. That default is right most of the
+        time, but it is a guess, not a reading of the spelling.</p>
+        <p>Dictionaries resolve it with accent marks, and you can type them here:</p>
+        <ul>
+            <li><strong>baka</strong> — no mark, <em>malumay</em>: stress on the second-to-last
+            syllable, no final glottal stop. The default.</li>
+            <li><strong>bak&aacute;</strong> — acute, <em>mabilis</em>: stress on the final syllable.</li>
+            <li><strong>bat&agrave;</strong> — grave, <em>malumi</em>: stress on the second-to-last
+            syllable, and the word ends in a glottal stop.</li>
+            <li><strong>bak&acirc;</strong> — circumflex, <em>maragsa</em>: stress on the final
+            syllable <em>and</em> a final glottal stop.</li>
+        </ul>
+    </div>
+
+    <div class="example-box no-audio">
+        <h3>🔤 One letter, one sound</h3>
+        <p>The five vowels never shift: <code>a</code> <code>/a/</code>, <code>e</code>
+        <code>/ɛ/</code>, <code>i</code> <code>/i/</code>, <code>o</code> <code>/o/</code>,
+        <code>u</code> <code>/u/</code>. Compare English, where <em>a</em> differs in "cat" and
+        "cake".</p>
+        <p><strong>ng</strong> is a single letter, not two. It spells <code>/ŋ/</code> — the sound
+        at the end of English "si<em>ng</em>" — and Tagalog uses it at the <em>start</em> of words
+        too: <em>ngayon</em> is <code>/ˈŋa.jon/</code>, not "n-gayon".</p>
+        <p><strong>r</strong> is a quick tap <code>/ɾ/</code>, as in Spanish <em>pero</em>, never the
+        English <em>r</em>.</p>
+    </div>
+
+    <div class="example-box no-audio">
+        <h3>🧱 Where syllables break</h3>
+        <p>Tagalog syllables are <code>(C)V(C)</code>, and the rules have no exceptions:</p>
+        <ul>
+            <li>A single consonant between vowels starts the next syllable: <em>ma·ta</em>,
+            <em>a·so</em>.</li>
+            <li>Two consonants split: <em>bas·ta</em>, <em>pa·mil·ya</em>.</li>
+            <li><code>w</code> and <code>y</code> after a vowel close the syllable:
+            <em>a·raw</em>, <em>ba·hay</em>, <em>i·kaw</em>.</li>
+            <li>A hyphen is a real morpheme boundary and always breaks:
+            <em>pag·i·big</em>, <em>mag·i·sip</em>.</li>
+        </ul>
+        <p>Every syllable needs an onset, so a word that <em>looks</em> like it starts with a
+        vowel actually starts with a <strong>glottal stop</strong> — the catch in the middle of
+        English "uh-oh". Tagalog never writes it, but you can hear it: <em>aso</em> is
+        <code>/ˈʔa.so/</code>, and <em>ma·a·ga</em> has one in the middle,
+        <code>/ma.ˈʔa.ɡa/</code>.</p>
+    </div>
+
+    <div class="example-box no-audio">
+        <h3>📐 About the transcription</h3>
+        <p>Unlike the French reader, this engine needs almost no exception list — Tagalog
+        spelling is that regular. Only two words are pronounced unlike they are written:
+        the linker <strong>ng</strong> is <code>/naŋ/</code>, and the plural marker
+        <strong>mga</strong> is <code>/maˈŋa/</code>.</p>
+        <p>Loanword letters (<code>c f j q v x z</code>) are mapped to the nearest native sound,
+        which is what most speakers do. Everything else is derived by rule.</p>
+    </div>
+</div>
+
+<!-- BEGIN footer-nav (managed by add_footer_nav.py) -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="tagalog_lesson_9.html" class="prev-lesson">&larr; Previous: Vocabulary Reference</a>
+    <a href="index.html" class="home-link">&#127968; Course Home</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+<script src="/scripts/nav.js"></script>
+<script src="/reader.js"></script>
+</body>
+</html>

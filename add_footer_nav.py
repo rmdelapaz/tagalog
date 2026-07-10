@@ -55,6 +55,7 @@ LESSONS: list[tuple[str, str]] = [
     ("tagalog_lesson_7.html", "Parts of Speech"),
     ("tagalog_lesson_8.html", "AI Language Learning"),
     ("tagalog_lesson_9.html", "Vocabulary Reference"),
+    ("tagalog_reader.html",   "Pronunciation Reader"),
 ]
 
 # ===========================================================================
