@@ -29,6 +29,8 @@
             ['k', 'g', 'c'],
             ['w', 'g', 'u']
         ],
+        /* Stand-in language names, keyed by voice-lang prefix. */
+        fallbackNames: null,
         /* Lowercase before speaking: engines spell out ALL-CAPS words letter by letter. */
         lowercase: true,
         /* Re-attach when the DOM changes, for content built by page scripts. */
@@ -68,6 +70,9 @@
         excludeTest: '^(?=.*[A-Z]{2,})[A-Za-z]+(-[A-Za-z]+)+$',
         /* Removed from the utterance but left visible on the page (annotations). */
         stripSpoken: null,
+        /* A cell whose remaining text still matches this is not target text at all
+           and gets no button. Applied AFTER stripSpoken. */
+        rejectTest: null,
         rate: 0.85
     };
 
@@ -80,6 +85,16 @@
     var HEADER = CONFIG.header ? new RegExp(CONFIG.header, 'i') : null;
     var HEADER_SKIP = CONFIG.headerSkip ? new RegExp(CONFIG.headerSkip, 'i') : null;
     var STRIP_SPOKEN = CONFIG.stripSpoken ? new RegExp(CONFIG.stripSpoken, 'gu') : null;
+    var REJECT_TEST = CONFIG.rejectTest ? new RegExp(CONFIG.rejectTest, 'i') : null;
+
+    /* What will actually be spoken, with printed-but-unspoken annotations removed.
+       The reject gate must see this, not the raw cell: "Magnum bellum gessit. — A
+       GRAND war" is target text once the gloss after the em dash is gone. */
+    function stripAnnotations(text) {
+        if (!STRIP_SPOKEN) return text;
+        STRIP_SPOKEN.lastIndex = 0;
+        return text.replace(STRIP_SPOKEN, '').trim();
+    }
     var TARGET_TEST = CONFIG.targetTest ? new RegExp(CONFIG.targetTest, 'i') : null;
     var EXCLUDE_TEST = CONFIG.excludeTest ? new RegExp(CONFIG.excludeTest) : null;
     /* A cell with no letters (an em-dash, a number, an empty spacer) is not speakable. */
@@ -105,7 +120,9 @@
     }
 
     function usable(text) {
-        return !!text && SPEAKABLE.test(text) && !isExcluded(text);
+        if (!text || !SPEAKABLE.test(text) || isExcluded(text)) return false;
+        if (REJECT_TEST && REJECT_TEST.test(text)) return false;
+        return true;
     }
 
     var voice = null;
@@ -136,12 +153,38 @@
         return !CONFIG.nativeLangs.some(function (p) { return l.indexOf(p) === 0; });
     }
 
+    /* Which rewrite set applies to the resolved voice. `fallbackRules` is either one
+       list (a single stand-in language) or a map keyed by language prefix, because a
+       course may accept more than one stand-in and each needs its own orthography. */
+    function rulesForVoice() {
+        var rules = CONFIG.fallbackRules;
+        if (!rules || !isFallbackVoice(voice)) return null;
+        if (Array.isArray(rules)) return rules;
+        var l = langOf(voice);
+        for (var k in rules) {
+            if (Object.prototype.hasOwnProperty.call(rules, k) && l.indexOf(k) === 0) return rules[k];
+        }
+        return null;
+    }
+
+    function fallbackNameForVoice() {
+        if (!CONFIG.fallbackNames) return CONFIG.fallbackName || '';
+        var l = langOf(voice);
+        for (var k in CONFIG.fallbackNames) {
+            if (Object.prototype.hasOwnProperty.call(CONFIG.fallbackNames, k) && l.indexOf(k) === 0) {
+                return CONFIG.fallbackNames[k];
+            }
+        }
+        return CONFIG.fallbackName || '';
+    }
+
     /* Rewrite the utterance for a fallback voice. The page keeps its own spelling; only
        what is handed to the speech engine changes. */
     function forFallback(text) {
-        if (!CONFIG.fallbackRules || !isFallbackVoice(voice)) return text;
+        var rules = rulesForVoice();
+        if (!rules) return text;
         var out = text;
-        CONFIG.fallbackRules.forEach(function (r) {
+        rules.forEach(function (r) {
             out = out.replace(new RegExp(r[0], r[1]), r[2]);
         });
         return out;
@@ -265,8 +308,8 @@
                     var cell = row.cells[idx];
                     if (!cell || cell.tagName !== 'TD') return;
                     if (cell.closest('.no-audio') || cell.querySelector('.audio-btn')) return;
-                    var text = cell.textContent.trim();
-                    if (!SPEAKABLE.test(text)) return;
+                    var text = stripAnnotations(cell.textContent.trim());
+                    if (!usable(text)) return;
                     place(cell, text);
                 });
             });
@@ -441,15 +484,18 @@
             ' language pack (Windows: Settings → Time &amp; Language → Language → ' +
             'Add a language → ' + CONFIG.addLanguageAs + '), then reload.';
         placeNotice(note);
+    }
 
-        if (!CONFIG.fallbackName) return;
-        /* Second notice, shown only when a stand-in voice is doing the talking. */
-        if (document.querySelector('.audio-fallback')) return;
+    /* Built only once the voice is known: the wording names the stand-in that actually
+       won, which a course with several accepted fallbacks cannot know in advance. */
+    function addFallbackNotice() {
+        var name = fallbackNameForVoice();
+        if (!name || document.querySelector('.audio-fallback')) return;
         var fb = document.createElement('p');
         fb.className = 'audio-fallback';
-        fb.innerHTML = '🗣️ <strong>Using a ' + CONFIG.fallbackName + ' voice.</strong> ' +
+        fb.innerHTML = '🗣️ <strong>Using a ' + name + ' voice.</strong> ' +
             'No ' + CONFIG.langName + ' voice is installed, so audio is spoken by a ' +
-            CONFIG.fallbackName + ' voice, which shares most of ' + CONFIG.langName +
+            name + ' voice, which shares most of ' + CONFIG.langName +
             "'s sounds. The pronunciation is close but not native.";
         placeNotice(fb);
     }
@@ -481,7 +527,9 @@
             return;
         }
         document.documentElement.classList.remove('no-tts-voice');
-        document.documentElement.classList.toggle('tts-fallback', isFallbackVoice(voice));
+        var fallback = isFallbackVoice(voice);
+        document.documentElement.classList.toggle('tts-fallback', fallback);
+        if (fallback) addFallbackNotice();
         attachButtons();
         startRescan();
     }
