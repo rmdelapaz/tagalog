@@ -45,6 +45,9 @@
         detect: null,
         pattern: null,
         strip: null,
+        /* Which elements 'unicode' mode inspects. Table cells in most courses; the
+           Japanese lessons hold their vocabulary in converted grid spans. */
+        cellSelector: null,
         /* 'header': a table column is target text when its <th> matches this. */
         header: null,
         /* ...unless some <th> in the same row matches this, in which case the whole
@@ -253,7 +256,7 @@
     }
 
     function attachByUnicode() {
-        Array.prototype.forEach.call(document.querySelectorAll('td'), function (cell) {
+        Array.prototype.forEach.call(document.querySelectorAll(CONFIG.cellSelector || 'td'), function (cell) {
             if (cell.closest('.no-audio')) return;
             if (cell.querySelector('.audio-btn')) return;
             if (!HAS.test(cell.textContent)) return;

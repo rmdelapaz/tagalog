@@ -593,3 +593,58 @@ html.tts-fallback .audio-fallback { display: block; }
     .reader-buttons { width: 100%; }
     .reader-btn { flex: 1; }
 }
+
+/* ===========================
+   Diagrams: canvas and mermaid
+   =========================== */
+
+/* The lesson canvases carry fixed width attributes (up to 900px) and were pushing the
+   whole page sideways on a phone. height:auto keeps their aspect ratio while they scale. */
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 640px) {
+    /* Mermaid emits <svg width="100%" style="max-width:…">, so on a phone a wide
+       flowchart scales down until its labels are unreadable. Clearing max-width alone
+       does nothing — width:100% still binds it to the container. Give it a floor and
+       let the block scroll instead. */
+    .mermaid {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .mermaid svg {
+        max-width: none !important;
+        min-width: 34rem;
+    }
+
+    /* Several lesson tables sit outside a .table-wrap and pushed the page sideways.
+       Let each scroll within its own box. */
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* .comparison-grid is declared "1fr 1fr" in each page's own <style> block, and two
+       columns cannot fit a phone — the grid items' min-content width (216px each) forces
+       the row past the viewport. Stack them instead. The `body` prefix is only there to
+       out-specify the page rule, which wins on document order otherwise. min-width:0
+       lets a grid item shrink below its content, which grid does not allow by default. */
+    body .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+    body .comparison-grid > * {
+        min-width: 0;
+    }
+
+    /* Lesson 8's prompt templates contain unbreakable tokens such as
+       "[conversation/lesson/exercise/story]". They fit no line, so they paint outside
+       their paragraph and inflate the page's scrollWidth. overflow-wrap is inherited,
+       so one declaration on body covers the nested prose containers. */
+    body {
+        overflow-wrap: break-word;
+    }
+}
