@@ -175,10 +175,15 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
   - damit (folded stack = clothes in general), kamiseta, pantalon, sapatos,
     medyas, sombrero, bestida (dress on hanger), palda (skirt). Keep bestida vs
     palda distinct = full dress vs waist-down skirt.
-- **Colors** (L15) — 8 — committed `87e77f7`. **NOT ChatGPT** — a color is an
-  exact hue, not an illustration, so generate swatches directly with Pillow
-  (script below), styled to match the cards. No `_art_src` sources; the script
-  is the source. **77 entries now carry img.**
+- **Colors** (L15) — 8 + brown (`kayumanggi` #8B5A2B, `26ef75d`) — committed
+  `87e77f7`. **NOT ChatGPT** — a color is an exact hue, not an illustration, so
+  generate swatches directly with Pillow (script below), styled to match the
+  cards. No `_art_src` sources; the script is the source.
+- **Everyday nouns** (L2) — 11 — committed `c971904`. 7 new (bulaklak,
+  eskwelahan, kusina, libro, mansanas, mesa, palengke); **4 reused** existing
+  slugs (adobo, aso, kanin, sapatos) — no new files, just added `img`. Proof
+  the slug scheme reuses one image everywhere a word recurs. **89 entries now
+  carry img.** (Skip the L7 "Nouns" set — abstract: kindness/beauty/love/etc.)
 
 ### Color-swatch generator (Colors category — no ChatGPT)
 
