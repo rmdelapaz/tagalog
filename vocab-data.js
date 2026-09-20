@@ -2559,49 +2559,57 @@ window.TAGALOG_VOCAB = {
       "tl": "damit",
       "pron": "dah-MEET",
       "en": "clothes / dress",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "damit"
     },
     {
       "tl": "kamiseta",
       "pron": "kah-mee-SEH-tah",
       "en": "shirt / t-shirt",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "kamiseta"
     },
     {
       "tl": "pantalon",
       "pron": "pan-tah-LOHN",
       "en": "pants / trousers",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "pantalon"
     },
     {
       "tl": "sapatos",
       "pron": "sah-PAH-tos",
       "en": "shoes",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "sapatos"
     },
     {
       "tl": "medyas",
       "pron": "MED-yas",
       "en": "socks",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "medyas"
     },
     {
       "tl": "sombrero",
       "pron": "som-BREH-roh",
       "en": "hat",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "sombrero"
     },
     {
       "tl": "bestida",
       "pron": "bes-TEE-dah",
       "en": "dress",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "bestida"
     },
     {
       "tl": "palda",
       "pron": "PAL-dah",
       "en": "skirt",
-      "cat": "Clothing"
+      "cat": "Clothing",
+      "img": "palda"
     }
   ],
   "16": [
