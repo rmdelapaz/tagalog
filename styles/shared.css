@@ -453,6 +453,80 @@ html.no-tts-voice .audio-notice { display: block; }
 html.tts-fallback .audio-fallback { display: block; }
 
 /* ===========================
+   Listener panel (voice + speed), injected by audio.js.
+   A floating collapsible control, like the ESL courses.
+   =========================== */
+.tts-settings {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1150;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+html.no-tts-voice .tts-settings { display: none; }
+
+.tts-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .5rem .85rem;
+    font: inherit;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.22);
+    cursor: pointer;
+    transition: filter .15s, transform .15s;
+}
+.tts-toggle:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.tts-caret { font-size: .7rem; }
+
+.tts-panel {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + .55rem);
+    width: 260px;
+    max-width: 78vw;
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 12px 34px rgba(0,0,0,.28);
+}
+.tts-row { display: flex; flex-direction: column; gap: .3rem; margin-bottom: .85rem; }
+.tts-row label { font-size: .78rem; font-weight: 600; color: var(--text-light); }
+.tts-panel select {
+    width: 100%;
+    padding: .45rem .5rem;
+    font: inherit;
+    font-size: .88rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+}
+.tts-panel input[type="range"] { width: 100%; accent-color: var(--primary-color); }
+.tts-rate-val { font-weight: 400; color: var(--text-light); }
+.tts-test {
+    width: 100%;
+    padding: .5rem;
+    font: inherit;
+    font-size: .88rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary-color);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+.tts-test:hover { filter: brightness(1.08); }
+
+@media print { .tts-settings { display: none !important; } }
+
+/* ===========================
    Pronunciation reader (tagalog_reader.html)
    Uses the audio-layer token aliases defined above.
    =========================== */

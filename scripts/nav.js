@@ -28,6 +28,8 @@
     <span class="nav-sep">·</span>
     <a href="/glossary.html">Glossary</a>
     <span class="nav-sep">·</span>
+    <a href="/cheatsheet.html">Cheat Sheet</a>
+    <span class="nav-sep">·</span>
     <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
     <span class="nav-sep">·</span>
     <a href="https://rays-home.netlify.app/contact">Contact</a>
