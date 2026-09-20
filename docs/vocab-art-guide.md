@@ -171,6 +171,10 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
     lagnat=upright with ice pack + thermometer + flushed cheeks, masakit=wincing
     clutching a spot; plus ubo (cough), sipon (tissue), gamot (bottle+pills),
     doktor (white coat/stethoscope), ospital (building + red cross + ambulance).
+- **Clothing** (L15) — 8 (all concrete garments) — committed `0c70574`.
+  - damit (folded stack = clothes in general), kamiseta, pantalon, sapatos,
+    medyas, sombrero, bestida (dress on hanger), palda (skirt). Keep bestida vs
+    palda distinct = full dress vs waist-down skirt. **69 entries now carry img.**
 - Slugs are shared across lessons/categories, so an image made once is reused
   everywhere the word appears (e.g. `isda` in both Food and Animals).
 - Not yet: git push + Netlify deploy (Ray pushes via SSH).
