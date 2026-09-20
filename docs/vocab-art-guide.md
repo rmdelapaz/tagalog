@@ -164,6 +164,13 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
     visual (age/gender/grouping/cultural cue). Skip terms an image can't distinguish
     (e.g. kapatid "sibling", pinsan "cousin", pamangkin, the in-laws, kababayan).
     Use Filipino subjects and role cues (tita w/ pasalubong, ninong in barong).
+- **Body & Health** (L16) — 16 (all concrete) — committed `49293c8`.
+  - Body parts as clear close-ups (mata=eyes, bibig=mouth, tenga=ear profile,
+    kamay=hand, paa=foot, tiyan=child holding belly). Health terms need
+    **distinguishing cues** so near-synonyms don't collide: sakit=person in bed,
+    lagnat=upright with ice pack + thermometer + flushed cheeks, masakit=wincing
+    clutching a spot; plus ubo (cough), sipon (tissue), gamot (bottle+pills),
+    doktor (white coat/stethoscope), ospital (building + red cross + ambulance).
 - Slugs are shared across lessons/categories, so an image made once is reused
   everywhere the word appears (e.g. `isda` in both Food and Animals).
 - Not yet: git push + Netlify deploy (Ray pushes via SSH).
