@@ -2609,97 +2609,113 @@ window.TAGALOG_VOCAB = {
       "tl": "ulo",
       "pron": "OO-loh",
       "en": "head",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "ulo"
     },
     {
       "tl": "mata",
       "pron": "mah-TAH",
       "en": "eye(s)",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "mata"
     },
     {
       "tl": "ilong",
       "pron": "ee-LOHNG",
       "en": "nose",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "ilong"
     },
     {
       "tl": "bibig",
       "pron": "bee-BEEG",
       "en": "mouth",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "bibig"
     },
     {
       "tl": "tenga",
       "pron": "TEH-ngah",
       "en": "ear",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "tenga"
     },
     {
       "tl": "kamay",
       "pron": "kah-MY",
       "en": "hand",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "kamay"
     },
     {
       "tl": "paa",
       "pron": "pah-AH",
       "en": "foot / leg",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "paa"
     },
     {
       "tl": "tiyan",
       "pron": "tee-YAHN",
       "en": "stomach",
-      "cat": "The body"
+      "cat": "The body",
+      "img": "tiyan"
     },
     {
       "tl": "masakit",
       "pron": "mah-sah-KEET",
       "en": "painful / it hurts",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "masakit"
     },
     {
       "tl": "sakit",
       "pron": "sah-KEET",
       "en": "pain / illness",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "sakit"
     },
     {
       "tl": "lagnat",
       "pron": "LAG-nat",
       "en": "fever",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "lagnat"
     },
     {
       "tl": "ubo",
       "pron": "oo-BOH",
       "en": "cough",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "ubo"
     },
     {
       "tl": "sipon",
       "pron": "SEE-pon",
       "en": "cold / runny nose",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "sipon"
     },
     {
       "tl": "gamot",
       "pron": "gah-MOHT",
       "en": "medicine",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "gamot"
     },
     {
       "tl": "doktor",
       "pron": "dok-TOHR",
       "en": "doctor",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "doktor"
     },
     {
       "tl": "ospital",
       "pron": "os-pee-TAHL",
       "en": "hospital",
-      "cat": "Health"
+      "cat": "Health",
+      "img": "ospital"
     },
     {
       "tl": "Lunes",
