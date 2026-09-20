@@ -1,3 +1,6 @@
 status.md
 old_content/
 *.bak
+
+# Vocab illustration source PNGs (1024px); shipped assets live in images/vocab/
+_art_src/

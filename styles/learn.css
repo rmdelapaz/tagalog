@@ -149,6 +149,30 @@
     margin: .1rem 0 .35rem;
 }
 .lx-word-en { font-size: .95rem; color: var(--text-primary); }
+/* Vocabulary illustration (manga set) inside a review card */
+.lx-word-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: -.15rem 0 .55rem;
+    background: rgba(0,0,0,.04);
+}
+[data-theme="dark"] .lx-word-img { background: rgba(255,255,255,.05); }
+/* Illustration on the flashcard front */
+.lx-flash-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .6rem;
+}
+.lx-flash-img .lx-word-img {
+    width: 160px;
+    max-width: 60%;
+    margin: 0;
+    border-radius: 12px;
+}
 .lx-know-btn {
     margin-top: .6rem;
     display: inline-flex;

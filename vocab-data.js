@@ -1128,61 +1128,71 @@ window.TAGALOG_VOCAB = {
       "tl": "busog",
       "pron": "BOO-sog",
       "en": "full (from eating)",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "busog"
     },
     {
       "tl": "inumin",
       "pron": "i-noo-MIN",
       "en": "drink (beverage)",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "inumin"
     },
     {
       "tl": "maalat",
       "pron": "ma-A-lat",
       "en": "salty",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "maalat"
     },
     {
       "tl": "maanghang",
       "pron": "ma-ang-HANG",
       "en": "spicy",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "maanghang"
     },
     {
       "tl": "maasim",
       "pron": "ma-A-sim",
       "en": "sour",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "maasim"
     },
     {
       "tl": "malansa",
       "pron": "ma-lan-SA",
       "en": "fishy smell",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "malansa"
     },
     {
       "tl": "malinamnam",
       "pron": "ma-li-nam-NAM",
       "en": "savory / flavorful",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "malinamnam"
     },
     {
       "tl": "masarap",
       "pron": "ma-sa-RAP",
       "en": "delicious",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "masarap"
     },
     {
       "tl": "matamis",
       "pron": "ma-ta-MIS",
       "en": "sweet",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "matamis"
     },
     {
       "tl": "ulam",
       "pron": "OO-lam",
       "en": "main dish",
-      "cat": "Food & taste"
+      "cat": "Food & taste",
+      "img": "ulam"
     },
     {
       "tl": "bahala na",
@@ -1782,55 +1792,64 @@ window.TAGALOG_VOCAB = {
       "tl": "adobo",
       "pron": "ah-doh-BOH",
       "en": "adobo (filipino dish)",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "adobo"
     },
     {
       "tl": "gulay",
       "pron": "goo-LIGH",
       "en": "vegetable",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "gulay"
     },
     {
       "tl": "isda",
       "pron": "ees-DAH",
       "en": "fish",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "isda"
     },
     {
       "tl": "kanin",
       "pron": "kah-NEEN",
       "en": "rice",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "kanin"
     },
     {
       "tl": "kape",
       "pron": "kah-PEH",
       "en": "coffee",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "kape"
     },
     {
       "tl": "mangga",
       "pron": "mahng-GAH",
       "en": "mango",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "mangga"
     },
     {
       "tl": "manok",
       "pron": "mah-NOHK",
       "en": "chicken",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "manok"
     },
     {
       "tl": "sinigang",
       "pron": "shee-nee-GAHNG",
       "en": "sour soup",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "sinigang"
     },
     {
       "tl": "ulam",
       "pron": "oo-LAHM",
       "en": "main dish / viand",
-      "cat": "Food & drink"
+      "cat": "Food & drink",
+      "img": "ulam"
     },
     {
       "tl": "dumating",

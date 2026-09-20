@@ -56,6 +56,15 @@
             return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
         });
     }
+    /* Vocabulary illustrations (manga-style, generated set). Bump VOCAB_IMG_VER
+       when an image file is replaced so browsers pick up the new bytes. */
+    var VOCAB_IMG_VER = '1';
+    function vocabImg(w, alt) {
+        if (!w || !w.img) return '';
+        var src = '/images/vocab/' + encodeURIComponent(w.img) + '.webp?v=' + VOCAB_IMG_VER;
+        return '<img class="lx-word-img" src="' + src + '" alt="' + esc(alt || w.en || w.tl) +
+               '" loading="lazy" decoding="async" width="512" height="512">';
+    }
     function fmt(ts) { try { return new Date(ts).toLocaleString(); } catch (_) { return ''; } }
     function debounce(fn, ms) { var t; return function () { var a = arguments, c = this; clearTimeout(t); t = setTimeout(function () { fn.apply(c, a); }, ms); }; }
     function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
@@ -224,7 +233,8 @@
 
         function cardHTML(w) {
             var on = isTracked(w.tl);
-            return '<div class="lx-word' + (on ? ' lx-known' : '') + '" data-tl="' + esc(w.tl) + '">' +
+            return '<div class="lx-word' + (on ? ' lx-known' : '') + (w.img ? ' lx-word-has-img' : '') + '" data-tl="' + esc(w.tl) + '">' +
+                     vocabImg(w) +
                      '<div class="lx-word-tl"><span data-speak="' + esc(w.tl) + '">' + esc(w.tl) + '</span></div>' +
                      (w.pron ? '<div class="lx-word-pron">' + esc(w.pron) + '</div>' : '') +
                      '<div class="lx-word-en">' + esc(w.en) + '</div>' +
@@ -345,7 +355,8 @@
         function renderCard() {
             var w = deck[i];
             if (!flipped) {
-                faceEl.innerHTML = '<div class="lx-flash-front"><span data-speak="' + esc(w.tl) + '">' + esc(w.tl) + '</span></div>' +
+                faceEl.innerHTML = (w.img ? '<div class="lx-flash-img">' + vocabImg(w) + '</div>' : '') +
+                    '<div class="lx-flash-front"><span data-speak="' + esc(w.tl) + '">' + esc(w.tl) + '</span></div>' +
                     (w.pron ? '<div class="lx-flash-pron">' + esc(w.pron) + '</div>' : '');
             } else {
                 faceEl.innerHTML = '<div class="lx-flash-back">' + esc(w.en) + '</div>';
