@@ -17,7 +17,9 @@ window.TAGALOG_VOCAB = {
     "3": "Benefactive Focus (i-)",
     "4": "Causative Verbs (magpa-/ipa-)",
     "5": "Ability & the Accidental (maka-/ma-)",
-    "6": "Social & Reciprocal Verbs (maki-/mag-…-an)"
+    "6": "Social & Reciprocal Verbs (maki-/mag-…-an)",
+    "7": "Aspect in Depth",
+    "8": "Connecting Ideas"
   },
   "1": [
     { "tl": "focus", "pron": "FOH-kus", "en": "focus — which noun the verb spotlights", "cat": "Grammar terms" },
@@ -165,5 +167,47 @@ window.TAGALOG_VOCAB = {
     { "tl": "magkapatid", "pron": "mag-kah-PAH-tid", "en": "siblings (two who are siblings)", "cat": "Example words" },
     { "tl": "guro", "pron": "GOO-roh", "en": "teacher", "cat": "Example words" },
     { "tl": "boss", "pron": "bos", "en": "boss", "cat": "Example words" }
+  ],
+  "7": [
+    { "tl": "aspekto", "pron": "as-PEK-toh", "en": "aspect — completion state of a verb", "cat": "Grammar terms" },
+    { "tl": "perpektibo", "pron": "per-pek-TEE-boh", "en": "completed/perfective aspect", "cat": "Grammar terms" },
+    { "tl": "imperpektibo", "pron": "im-per-pek-TEE-boh", "en": "incompleted/imperfective (ongoing/habitual)", "cat": "Grammar terms" },
+    { "tl": "kontemplatibo", "pron": "kon-tem-plah-TEE-boh", "en": "contemplated aspect (not yet begun)", "cat": "Grammar terms" },
+    { "tl": "nagluto", "pron": "nag-LOO-toh", "en": "cooked (completed)", "cat": "The three aspects (magluto)" },
+    { "tl": "nagluluto", "pron": "nag-loo-LOO-toh", "en": "is cooking / cooks (incompleted)", "cat": "The three aspects (magluto)" },
+    { "tl": "magluluto", "pron": "mag-loo-LOO-toh", "en": "will cook (contemplated)", "cat": "The three aspects (magluto)" },
+    { "tl": "katatapos", "pron": "kah-tah-TAH-pos", "en": "just finished (recently-completed)", "cat": "Recently-completed (ka- + redup)" },
+    { "tl": "kararating", "pron": "kah-rah-rah-TING", "en": "just arrived", "cat": "Recently-completed (ka- + redup)" },
+    { "tl": "kakakain", "pron": "kah-kah-KAH-in", "en": "just ate", "cat": "Recently-completed (ka- + redup)" },
+    { "tl": "kagigising", "pron": "kah-gee-GEE-sing", "en": "just woke up", "cat": "Recently-completed (ka- + redup)" },
+    { "tl": "kaaalis", "pron": "kah-ah-ah-LEES", "en": "just left", "cat": "Recently-completed (ka- + redup)" },
+    { "tl": "na", "pron": "na", "en": "already / now (pairs with completed)", "cat": "Aspect time words" },
+    { "tl": "pa", "pron": "pa", "en": "still / yet (pairs with incompleted)", "cat": "Aspect time words" },
+    { "tl": "kanina", "pron": "kah-NEE-nah", "en": "earlier (today)", "cat": "Aspect time words" },
+    { "tl": "ngayon", "pron": "nga-YON", "en": "now / today", "cat": "Aspect time words" },
+    { "tl": "tuwing", "pron": "TOO-wing", "en": "every (habitual)", "cat": "Aspect time words" },
+    { "tl": "dati", "pron": "DAH-tee", "en": "before / used to", "cat": "Aspect time words" },
+    { "tl": "mamaya", "pron": "mah-mah-YAH", "en": "later (today)", "cat": "Aspect time words" },
+    { "tl": "bukas", "pron": "BOO-kas", "en": "tomorrow", "cat": "Aspect time words" }
+  ],
+  "8": [
+    { "tl": "pangatnig", "pron": "pang-at-NIG", "en": "conjunction (connecting word)", "cat": "Grammar terms" },
+    { "tl": "kasi", "pron": "kah-SEE", "en": "because (casual)", "cat": "Cause & result" },
+    { "tl": "dahil", "pron": "DAH-hil", "en": "because (neutral/formal)", "cat": "Cause & result" },
+    { "tl": "kaya", "pron": "kah-YAH", "en": "so / therefore (result)", "cat": "Cause & result" },
+    { "tl": "pero", "pron": "PEH-roh", "en": "but (casual)", "cat": "Contrast" },
+    { "tl": "ngunit", "pron": "NGOO-nit", "en": "but / however (formal)", "cat": "Contrast" },
+    { "tl": "subalit", "pron": "soo-BAH-lit", "en": "but / however (formal)", "cat": "Contrast" },
+    { "tl": "kahit", "pron": "KAH-hit", "en": "even if / even though / although", "cat": "Contrast" },
+    { "tl": "habang", "pron": "HAH-bang", "en": "while / as (at the same time)", "cat": "Time connectors" },
+    { "tl": "bago", "pron": "BAH-goh", "en": "before", "cat": "Time connectors" },
+    { "tl": "matapos", "pron": "mah-TAH-pos", "en": "after (+ verb)", "cat": "Time connectors" },
+    { "tl": "pagkatapos", "pron": "pag-kah-TAH-pos", "en": "after / afterwards (+ ng noun)", "cat": "Time connectors" },
+    { "tl": "samantala", "pron": "sah-man-tah-LAH", "en": "meanwhile / in the meantime", "cat": "Time connectors" },
+    { "tl": "at", "pron": "at", "en": "and", "cat": "Basic connectors" },
+    { "tl": "o", "pron": "oh", "en": "or", "cat": "Basic connectors" },
+    { "tl": "ulan", "pron": "oo-LAN", "en": "rain", "cat": "Example words" },
+    { "tl": "trabaho", "pron": "trah-BAH-hoh", "en": "work / job", "cat": "Example words" },
+    { "tl": "sakit", "pron": "sah-KIT", "en": "illness / pain", "cat": "Example words" }
   ]
 };

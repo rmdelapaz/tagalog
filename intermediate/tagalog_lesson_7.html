@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect in Depth - Time, Completion & the "Just Finished" Form</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #00cec9, #0984e3, #6c5ce7); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #0984e3; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #0984e3; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #0984e3; color: white; }
+        .asp-tag { display: inline-block; font-size: .78rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; color: #fff; }
+        .a-comp { background: #e17055; }
+        .a-inc { background: #00b894; }
+        .a-cont { background: #6c5ce7; }
+        .a-rec { background: #0984e3; }
+        .marker { font-weight: 700; padding: 0 3px; border-radius: 4px; }
+        .m-na { background: rgba(225,112,85,.22); color: #a63c22; }
+        .m-pa { background: rgba(0,184,148,.22); color: #0a6b52; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Aspekto nang Malalim — Aspect in Depth</h1>
+        <p>Tagalog verbs track <em>completion</em>, not tense — plus the handy "just finished" form</p>
+    </div>
+
+    <div class="section">
+        <p>In the beginner course you learned to change a verb for its three <strong>aspects</strong> — completed, incompleted, contemplated. You can already build them. This lesson goes <em>deeper</em>: what aspect really means (and why it isn't the same as English tense), the double life of the "present" form, a fourth aspect you haven't met — the <strong>recently-completed</strong> ("just did it") — and how aspects flow together in real speech.</p>
+        <p>Nail this and your Tagalog stops sounding like translated English and starts tracking time the way Filipinos actually do.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Aspect Is Not Tense</h2>
+        <p>English verbs mark <strong>tense</strong> — <em>when</em> relative to now (walk / walked / will walk). Tagalog verbs mark <strong>aspect</strong> — whether the action is <em>finished, ongoing, or not-yet-started</em>. Those aren't the same question.</p>
+
+        <div class="pos-card">
+            <ul>
+                <li><strong>Completed (perfective)</strong> — the action is <em>done</em>: <em>nagluto</em>.</li>
+                <li><strong>Incompleted (imperfective)</strong> — the action is <em>underway or habitual</em>: <em>nagluluto</em>.</li>
+                <li><strong>Contemplated (contemplative)</strong> — the action is <em>not yet begun</em>: <em>magluluto</em>.</li>
+            </ul>
+        </div>
+
+        <p>Because aspect ignores the calendar, one Tagalog form can land in different English tenses depending on context. <em>Nagluluto</em> can be "is cooking," "was cooking," or "cooks (every day)." Tagalog leans on <strong>aspect + time words</strong> (kanina, bukas, tuwing) to pin down <em>when</em>, instead of changing the verb for tense.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. The Three Core Aspects, Reviewed</h2>
+        <p>Here's the familiar set with the actor-focus verb <em>magluto</em> (cook), plus its object-focus twin <em>lutuin</em> so you can see the machinery once more:</p>
+
+        <table class="g-table">
+            <tr><th>Aspect</th><th>Actor focus (magluto)</th><th>Object focus (lutuin)</th><th>Sense</th></tr>
+            <tr><td><span class="asp-tag a-comp">Completed</span></td><td>nagluto</td><td>niluto</td><td>done, finished</td></tr>
+            <tr><td><span class="asp-tag a-inc">Incompleted</span></td><td>nagluluto</td><td>niluluto</td><td>ongoing / habitual</td></tr>
+            <tr><td><span class="asp-tag a-cont">Contemplated</span></td><td>magluluto</td><td>lulutuin</td><td>not yet begun</td></tr>
+            <tr><td>Infinitive</td><td>magluto</td><td>lutuin</td><td>neutral (after gusto, dapat…)</td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>Two moving parts.</strong> Reduplication (repeating the first syllable) signals "not completed" — it appears in both the incompleted and contemplated. The <em>started</em> marker (mag- → <strong>nag-</strong>, the <strong>-in-</strong> infix, ma- → <strong>na-</strong>) signals "already begun." Completed = started, not-reduplicated. Incompleted = started <em>and</em> reduplicated. Contemplated = not-started <em>and</em> reduplicated. That's the whole logic.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. The Imperfective's Double Life</h2>
+        <p>The incompleted (imperfective) form does <strong>two</strong> jobs that English splits apart. Same word — context tells you which:</p>
+
+        <div class="example-box">
+            <ul>
+                <li><strong>Ongoing</strong> ("-ing" right now): <em>Kumakain ako ngayon.</em> — I am eating now.</li>
+                <li><strong>Habitual</strong> (a regular thing): <em>Kumakain ako ng gulay tuwing umaga.</em> — I eat vegetables every morning.</li>
+            </ul>
+        </div>
+
+        <p>So <em>Nagtatrabaho siya sa Maynila</em> can mean "She is working in Manila (right now)" or "She works in Manila (that's her job)." A time word — <em>ngayon</em> (now) vs. <em>tuwing</em> (every) — settles it. English needs two different verb shapes; Tagalog needs one plus context.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. A Fourth Aspect: Recently-Completed ("Just Finished")</h2>
+        <p>Here's the new one. Tagalog has a special form for something that happened <strong>just a moment ago</strong> — the <strong>recently-completed</strong> aspect. It's built with <span class="marker m-na">ka-</span> + a reduplicated first syllable + the root, and it usually rides with <em>lang</em> / <em>pa lang</em> ("just"):</p>
+
+        <table class="g-table">
+            <tr><th>Root</th><th>Recently-completed</th><th>Meaning</th></tr>
+            <tr><td>tapos (finish)</td><td>ka<strong>ta</strong>tapos</td><td>just finished</td></tr>
+            <tr><td>dating (arrive)</td><td>ka<strong>ra</strong>rating</td><td>just arrived</td></tr>
+            <tr><td>kain (eat)</td><td>ka<strong>ka</strong>kain</td><td>just ate</td></tr>
+            <tr><td>gising (wake)</td><td>ka<strong>gi</strong>gising</td><td>just woke up</td></tr>
+            <tr><td>alis (leave)</td><td>ka<strong>a</strong>alis</td><td>just left</td></tr>
+        </table>
+
+        <div class="example-box">
+            <ul>
+                <li><strong>Katatapos</strong> <span class="marker m-na">ko lang</span> kumain. — I just finished eating.</li>
+                <li><strong>Kararating</strong> <span class="marker m-na">ko lang</span>. — I just got here.</li>
+                <li><strong>Kaaalis</strong> <span class="marker m-na">pa lang</span> niya. — He just left (moments ago).</li>
+            </ul>
+            <p>The doer is a <strong>ng</strong>-pronoun (ko, niya, mo) — just like object focus. Think of it as a "hot off the press" completed: more recent, more vivid than plain <em>kumain na ako</em>.</p>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Why bother?</strong> "<em>Kumain na ako</em>" (I already ate) and "<em>Kakakain ko lang</em>" (I just ate) are both past — but the second tells the listener it was <em>seconds/minutes</em> ago. It's the natural answer to "Bakit ayaw mo?" ("Why don't you want any?") → "Kakakain ko lang!" ("I just ate!").
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Where Each Aspect Sits in Time</h2>
+        <p>Picture the four aspects around <strong>now</strong>. This isn't a tense line — the incompleted stretches <em>across</em> now — but it helps you feel the shape of each:</p>
+
+        <div class="mermaid">
+            graph LR
+                A["Completed<br/>nagluto<br/>(done, earlier)"] --> B["Recently-completed<br/>katatapos<br/>(just now done)"]
+                B --> N(("NOW"))
+                N --> C["Incompleted<br/>nagluluto<br/>(ongoing / habitual)"]
+                C --> D["Contemplated<br/>magluluto<br/>(not yet begun)"]
+                style A fill:#e17055,color:#fff
+                style B fill:#0984e3,color:#fff
+                style C fill:#00b894,color:#fff
+                style D fill:#6c5ce7,color:#fff
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Aspect + Time Words: na and pa</h2>
+        <p>Two little particles from the beginner course pair tightly with aspect and sharpen the timing:</p>
+
+        <table class="g-table">
+            <tr><th>Particle</th><th>Meaning</th><th>Pairs with</th><th>Example</th></tr>
+            <tr><td><span class="marker m-na">na</span></td><td>already / now</td><td>completed</td><td>Kumain <span class="marker m-na">na</span> ako. — I already ate.</td></tr>
+            <tr><td><span class="marker m-pa">pa</span></td><td>still / yet</td><td>incompleted</td><td>Kumakain <span class="marker m-pa">pa</span> ako. — I'm still eating.</td></tr>
+        </table>
+
+        <p>And a few time words that steer aspect toward a reading:</p>
+        <ul>
+            <li><em>kanina</em> (earlier today), <em>kahapon</em> (yesterday) → nudge toward <strong>completed</strong>.</li>
+            <li><em>ngayon</em> (now) → <strong>incompleted</strong>, ongoing.</li>
+            <li><em>tuwing</em> (every), <em>dati</em> (before/used to) → <strong>incompleted</strong>, habitual.</li>
+            <li><em>bukas</em> (tomorrow), <em>mamaya</em> (later) → <strong>contemplated</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Aspect Across a Story</h2>
+        <p>Real speech strings aspects together. Notice how one short account mixes completed, recently-completed, and incompleted — each verb chosen for its <em>state of completion</em>, not a fixed tense:</p>
+
+        <div class="example-box">
+            <p><em>"<strong>Nagising</strong> ako nang maaga. <strong>Katatapos</strong> ko lang mag-almusal, at ngayon <strong>nagbabasa</strong> ako habang <strong>umuulan</strong> sa labas. Mamaya, <strong>magluluto</strong> ako ng hapunan."</em></p>
+            <p>"I woke up early <span class="asp-tag a-comp">completed</span>. I just finished breakfast <span class="asp-tag a-rec">recently-completed</span>, and now I'm reading <span class="asp-tag a-inc">incompleted</span> while it rains outside. Later, I'll cook dinner <span class="asp-tag a-cont">contemplated</span>."</p>
+        </div>
+        <p>That fluid movement between aspects — anchored by time words like <em>ngayon</em> and <em>mamaya</em> — is exactly what makes narration sound natural. You'll build on it directly in Lesson 12 (Telling Stories).</p>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Work the Aspects</h2>
+
+        <h3>Exercise 1: Name the aspect</h3>
+        <p>Answer <strong>completed</strong>, <strong>incompleted</strong>, <strong>contemplated</strong>, or <strong>recently-completed</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>nagluto → _____ (Answer: completed)</li>
+                <li>nagluluto → _____ (Answer: incompleted)</li>
+                <li>magluluto → _____ (Answer: contemplated)</li>
+                <li>katatapos → _____ (Answer: recently-completed|recently completed|recent)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Conjugate magluto</h3>
+        <p>Give the requested aspect:</p>
+        <div class="example-box">
+            <ul>
+                <li><strong>completed</strong>: _____ (Answer: nagluto)</li>
+                <li><strong>incompleted</strong> (present): _____ (Answer: nagluluto)</li>
+                <li><strong>contemplated</strong> (future): _____ (Answer: magluluto)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Form the "just finished"</h3>
+        <p>Give the recently-completed form:</p>
+        <div class="example-box">
+            <ul>
+                <li>tapos → just finished: _____ (Answer: katatapos)</li>
+                <li>dating → just arrived: _____ (Answer: kararating)</li>
+                <li>kain → just ate: _____ (Answer: kakakain)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: na or pa?</h3>
+        <p>Fill in <strong>na</strong> (already) or <strong>pa</strong> (still):</p>
+        <div class="example-box">
+            <ul>
+                <li>Busog ako — kumain _____ ako. → (Answer: na)</li>
+                <li>Sandali lang, kumakain _____ ako. → (Answer: pa)</li>
+                <li>Tapos _____ ang sine, umuwi na tayo. → (Answer: na)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Ongoing or habitual?</h3>
+        <p>Read the time word and answer <strong>ongoing</strong> or <strong>habitual</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>Kumakain ako ngayon. → _____ (Answer: ongoing)</li>
+                <li>Kumakain ako ng gulay tuwing umaga. → _____ (Answer: habitual)</li>
+                <li>Nagbabasa siya bago matulog gabi-gabi. → _____ (Answer: habitual)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>Aspect, not tense, is the engine of the Tagalog verb: <strong>completed</strong>, <strong>incompleted</strong> (ongoing <em>and</em> habitual), <strong>contemplated</strong>, and now the vivid <strong>recently-completed</strong> (<em>katatapos ko lang</em>). Anchor them with time words and <em>na</em>/<em>pa</em>, and you can place any action in time without ever "conjugating for tense." Next, we zoom out from single verbs to whole trains of thought: <strong>connecting ideas</strong> — kaya, kasi, pero, habang, and the rest of the glue that turns sentences into discourse.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/intermediate/tagalog_lesson_6.html" class="prev-lesson">&larr; Previous: Social &amp; Reciprocal Verbs (maki-/mag-…-an)</a>
+    <a href="/intermediate/index.html" class="home-link">&#127968; Intermediate Home</a>
+    <a href="/intermediate/tagalog_lesson_8.html" class="next-lesson">Next: Connecting Ideas &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/intermediate/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/intermediate/vocab-data.js"></script>
+<script src="/intermediate/lesson-content.js"></script>
+<script src="/intermediate/learn.js"></script>
+</body>
+</html>

@@ -119,5 +119,41 @@ window.TAGALOG_LESSON_INFO = {
       "Reciprocal (both directions) contrasts with one-directional verbs: Nag-usap kami (we talked, mutually) vs. Kinausap ko siya (I talked to him)",
       "Both maki- and mag-…-an are actor focus — same markers as Lesson 1 — and makisama ('getting along') names a prized Filipino social value"
     ]
+  },
+  "7": {
+    "objectives": [
+      "Explain that Tagalog verbs mark aspect (completion), not tense (calendar time), so one form can map to several English tenses",
+      "Review the three core aspects (completed, incompleted, contemplated) and the started/reduplicated logic behind them",
+      "Recognize the imperfective's double life: it covers both ongoing ('is doing') and habitual ('does regularly') meanings",
+      "Form and use the recently-completed aspect (ka- + reduplicated syllable: katatapos, kararating, kakakain) for 'just did it'",
+      "Pair aspect with na/pa and time words (kanina, ngayon, tuwing, bukas) to pin down when",
+      "Read how aspects flow together across a short narrative"
+    ],
+    "summary": [
+      "Aspect is about completion, not tense: completed (nagluto), incompleted (nagluluto), contemplated (magluluto) — context and time words supply the English tense",
+      "Reduplication marks 'not completed'; the started marker (nag-, -in-, na-) marks 'already begun' — completed = started + no reduplication, incompleted = both, contemplated = reduplication only",
+      "The incompleted/imperfective does double duty — ongoing (Kumakain ako ngayon) and habitual (Kumakain ako tuwing umaga)",
+      "The recently-completed aspect (ka- + reduplicated first syllable + root, doer in the ng-form) means 'just finished': Katatapos ko lang kumain; Kararating ko lang",
+      "na ('already', with completed) and pa ('still', with incompleted) sharpen timing, alongside time words like kanina, ngayon, tuwing, and bukas",
+      "In real speech aspects string together fluidly, each verb chosen for its completion state — the foundation for storytelling in Lesson 12"
+    ]
+  },
+  "8": {
+    "objectives": [
+      "Link clauses with cause-and-result connectors: kasi/dahil (because) and kaya (so/therefore)",
+      "Contrast ideas with pero/ngunit (but) and kahit (even though)",
+      "Sequence events with time connectors: habang (while), bago (before), matapos/pagkatapos (after), samantala (meanwhile)",
+      "Choose the casual vs. formal member of a pair (pero vs. ngunit, kasi vs. dahil) to match the setting",
+      "Place connectors correctly — kasi between clauses, dahil able to open a sentence, bago/matapos before a bare verb",
+      "Combine several connectors to build longer, connected discourse"
+    ],
+    "summary": [
+      "Conjunctions (pangatnig) turn separate sentences into connected discourse; group them by the relationship they signal",
+      "Cause & result: kasi/dahil introduce the reason ('because'); kaya introduces the result ('so') — they flip the clause order of the same idea",
+      "Contrast: pero (casual) and ngunit/subalit (formal) both mean 'but'; kahit (na) means 'even though / even if'",
+      "Time: habang (while), bago (before) + bare verb, matapos/pagkatapos (after), and samantala (meanwhile) order events",
+      "Register matters — pero and kasi are the everyday workhorses; save ngunit, subalit, and formal dahil for writing and speeches",
+      "Watch placement and note that kaya also means 'can/able' — context tells the two apart; then chain connectors to produce fluent multi-clause sentences"
+    ]
   }
 };
