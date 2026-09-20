@@ -836,19 +836,22 @@ window.TAGALOG_VOCAB = {
       "tl": "anak",
       "pron": "a-NAK",
       "en": "child",
-      "cat": "Immediate family"
+      "cat": "Immediate family",
+      "img": "anak"
     },
     {
       "tl": "ate",
       "pron": "A-te",
       "en": "older sister",
-      "cat": "Immediate family"
+      "cat": "Immediate family",
+      "img": "ate"
     },
     {
       "tl": "bunso",
       "pron": "bun-SO",
       "en": "youngest child",
-      "cat": "Immediate family"
+      "cat": "Immediate family",
+      "img": "bunso"
     },
     {
       "tl": "ina",
@@ -866,19 +869,22 @@ window.TAGALOG_VOCAB = {
       "tl": "kuya",
       "pron": "KOO-ya",
       "en": "older brother",
-      "cat": "Immediate family"
+      "cat": "Immediate family",
+      "img": "kuya"
     },
     {
       "tl": "magulang",
       "pron": "ma-GOO-lang",
       "en": "parents",
-      "cat": "Immediate family"
+      "cat": "Immediate family",
+      "img": "magulang"
     },
     {
       "tl": "nanay",
       "pron": "na-NAY",
       "en": "mother",
-      "cat": "Immediate family"
+      "cat": "Immediate family",
+      "img": "nanay"
     },
     {
       "tl": "panganay",
@@ -890,7 +896,8 @@ window.TAGALOG_VOCAB = {
       "tl": "tatay",
       "pron": "ta-TAY",
       "en": "father",
-      "cat": "Immediate family"
+      "cat": "Immediate family",
+      "img": "tatay"
     },
     {
       "tl": "kamag-anak",
@@ -902,13 +909,15 @@ window.TAGALOG_VOCAB = {
       "tl": "lola",
       "pron": "LO-la",
       "en": "grandmother",
-      "cat": "Extended family"
+      "cat": "Extended family",
+      "img": "lola"
     },
     {
       "tl": "lolo",
       "pron": "LO-lo",
       "en": "grandfather",
-      "cat": "Extended family"
+      "cat": "Extended family",
+      "img": "lolo"
     },
     {
       "tl": "pamangkin",
@@ -926,19 +935,22 @@ window.TAGALOG_VOCAB = {
       "tl": "tita",
       "pron": "TI-ta",
       "en": "aunt",
-      "cat": "Extended family"
+      "cat": "Extended family",
+      "img": "tita"
     },
     {
       "tl": "tito",
       "pron": "TI-to",
       "en": "uncle",
-      "cat": "Extended family"
+      "cat": "Extended family",
+      "img": "tito"
     },
     {
       "tl": "asawa",
       "pron": "a-SA-wa",
       "en": "spouse",
-      "cat": "In-laws"
+      "cat": "In-laws",
+      "img": "asawa"
     },
     {
       "tl": "bayaw",
@@ -986,13 +998,15 @@ window.TAGALOG_VOCAB = {
       "tl": "ninang",
       "pron": "NI-nang",
       "en": "godmother",
-      "cat": "Godparents & chosen family"
+      "cat": "Godparents & chosen family",
+      "img": "ninang"
     },
     {
       "tl": "ninong",
       "pron": "NI-nong",
       "en": "godfather",
-      "cat": "Godparents & chosen family"
+      "cat": "Godparents & chosen family",
+      "img": "ninong"
     },
     {
       "tl": "kababayan",
@@ -1004,7 +1018,8 @@ window.TAGALOG_VOCAB = {
       "tl": "kaibigan",
       "pron": "ka-i-BI-gan",
       "en": "friend",
-      "cat": "Community & friends"
+      "cat": "Community & friends",
+      "img": "kaibigan"
     },
     {
       "tl": "kapitbahay",
@@ -1670,13 +1685,15 @@ window.TAGALOG_VOCAB = {
       "tl": "anak",
       "pron": "ah-NAHK",
       "en": "child",
-      "cat": "Family"
+      "cat": "Family",
+      "img": "anak"
     },
     {
       "tl": "kaibigan",
       "pron": "kah-ee-bee-GAHN",
       "en": "friend",
-      "cat": "Family"
+      "cat": "Family",
+      "img": "kaibigan"
     },
     {
       "tl": "kapatid",
@@ -1688,31 +1705,36 @@ window.TAGALOG_VOCAB = {
       "tl": "lola",
       "pron": "loh-LAH",
       "en": "grandmother",
-      "cat": "Family"
+      "cat": "Family",
+      "img": "lola"
     },
     {
       "tl": "lolo",
       "pron": "loh-LOH",
       "en": "grandfather",
-      "cat": "Family"
+      "cat": "Family",
+      "img": "lolo"
     },
     {
       "tl": "nanay",
       "pron": "nah-NIGH",
       "en": "mother",
-      "cat": "Family"
+      "cat": "Family",
+      "img": "nanay"
     },
     {
       "tl": "pamilya",
       "pron": "pah-MEEL-yah",
       "en": "family",
-      "cat": "Family"
+      "cat": "Family",
+      "img": "pamilya"
     },
     {
       "tl": "tatay",
       "pron": "tah-TIGH",
       "en": "father",
-      "cat": "Family"
+      "cat": "Family",
+      "img": "tatay"
     },
     {
       "tl": "isa",
