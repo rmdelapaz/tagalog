@@ -30,6 +30,10 @@
     <span class="nav-sep">·</span>
     <a href="/intermediate/glossary.html">Glossary</a>
     <span class="nav-sep">·</span>
+    <a href="/intermediate/readings.html">Readings</a>
+    <span class="nav-sep">·</span>
+    <a href="/intermediate/cheatsheet.html">Cheat Sheet</a>
+    <span class="nav-sep">·</span>
     <a href="/intermediate/cando.html">Can-Do</a>
     <span class="nav-sep">·</span>
     <a href="/index.html">&larr; Beginner (A1–A2)</a>
