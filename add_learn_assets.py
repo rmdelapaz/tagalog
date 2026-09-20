@@ -13,6 +13,7 @@ import re
 CSS_LINK = '    <link rel="stylesheet" href="/styles/learn.css">\n'
 SCRIPTS = (
     '<script src="/vocab-data.js"></script>\n'
+    '<script src="/lesson-content.js"></script>\n'
     '<script src="/learn.js"></script>\n'
 )
 
@@ -48,6 +49,15 @@ for path in pages:
         else:
             html = html.replace("</body>", SCRIPTS + "</body>", 1)
             changed = True
+    elif "/lesson-content.js" not in html:
+        # learn.js already wired on an earlier run; slot lesson-content.js in
+        # just before it (must load first so window.TAGALOG_LESSON_INFO exists).
+        html = html.replace(
+            '<script src="/learn.js"></script>',
+            '<script src="/lesson-content.js"></script>\n<script src="/learn.js"></script>',
+            1,
+        )
+        changed = True
 
     if changed:
         with open(path, "w", encoding="utf-8") as fh:

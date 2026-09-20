@@ -49,6 +49,7 @@
 
     var VOCAB = window.TAGALOG_VOCAB || {};
     var TITLES = (VOCAB.titles) || {};
+    var LESSON_INFO = window.TAGALOG_LESSON_INFO || {};
 
     function esc(s) {
         return String(s).replace(/[&<>"']/g, function (c) {
@@ -166,6 +167,48 @@
         var at = insertPoint();
         if (at && at.parentNode) at.parentNode.insertBefore(el, at);
         else document.body.appendChild(el);
+    }
+
+    /* ==========================================================
+       Lesson objectives (top of lesson) — "What you'll learn"
+       ========================================================== */
+    function initObjectives() {
+        var info = LESSON_INFO[lessonNum];
+        if (!info || !Array.isArray(info.objectives) || !info.objectives.length) return;
+
+        var sec = document.createElement('section');
+        sec.className = 'lx-card lx-objectives';
+        sec.id = 'objectives';
+        sec.innerHTML =
+            '<h2>🎯 What You\'ll Learn</h2>' +
+            '<p class="lx-sub">By the end of this lesson you\'ll be able to:</p>' +
+            '<ul class="lx-check-list">' +
+                info.objectives.map(function (o) { return '<li>' + esc(o) + '</li>'; }).join('') +
+            '</ul>';
+
+        // Place just below the lesson hero, above the first content section.
+        var hero = document.querySelector('.hero');
+        if (hero && hero.parentNode) hero.parentNode.insertBefore(sec, hero.nextSibling);
+        else document.body.insertBefore(sec, document.body.firstChild);
+    }
+
+    /* ==========================================================
+       Lesson summary (end of lesson) — key takeaways
+       ========================================================== */
+    function initSummary() {
+        var info = LESSON_INFO[lessonNum];
+        if (!info || !Array.isArray(info.summary) || !info.summary.length) return;
+
+        var sec = document.createElement('section');
+        sec.className = 'lx-card lx-summary';
+        sec.id = 'lesson-summary';
+        sec.innerHTML =
+            '<h2>📝 Lesson Summary</h2>' +
+            '<p class="lx-sub">The key things to take away from this lesson:</p>' +
+            '<ul class="lx-sum-list">' +
+                info.summary.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') +
+            '</ul>';
+        mount(sec);   // inserted before .lesson-nav; called before the vocab review so it sits above it
     }
 
     /* ==========================================================
@@ -633,6 +676,8 @@
 
         if (lessonNum) {
             markVisited(lessonNum);
+            initObjectives();     // top of lesson
+            initSummary();        // end of lesson, above the review sections
             initVocabReview();
             initQuiz();
             initJournal();

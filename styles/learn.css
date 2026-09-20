@@ -49,6 +49,55 @@
     margin: 0 0 1.1rem;
 }
 
+/* ---------- Objectives & summary lists ---------- */
+.lx-objectives { border-top: 4px solid #4ECDC4; }
+.lx-summary { border-top: 4px solid var(--accent); }
+
+.lx-check-list, .lx-sum-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: .6rem;
+}
+.lx-check-list li, .lx-sum-list li {
+    position: relative;
+    list-style: none;   /* the course main.css forces list-style on bare li */
+    margin: 0;
+    padding: .1rem 0 .1rem 2rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.lx-check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0; top: .05rem;
+    width: 1.4rem; height: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(78,205,196,.18);
+    color: #0e9f8e;
+    font-size: .82rem;
+    font-weight: 700;
+}
+[data-theme="dark"] .lx-check-list li::before { color: #4ECDC4; }
+.lx-sum-list li::before {
+    content: '';
+    position: absolute;
+    left: .35rem; top: .6rem;
+    width: .55rem; height: .55rem;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+/* Two columns on wide screens so a 6-point list stays compact */
+@media (min-width: 720px) {
+    .lx-check-list, .lx-sum-list { grid-template-columns: 1fr 1fr; gap: .6rem 1.6rem; }
+}
+
 /* ---------- Words You Learned / flashcards ---------- */
 .lx-vocab-grid {
     display: grid;
