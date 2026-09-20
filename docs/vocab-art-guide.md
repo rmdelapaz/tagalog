@@ -174,7 +174,36 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
 - **Clothing** (L15) — 8 (all concrete garments) — committed `0c70574`.
   - damit (folded stack = clothes in general), kamiseta, pantalon, sapatos,
     medyas, sombrero, bestida (dress on hanger), palda (skirt). Keep bestida vs
-    palda distinct = full dress vs waist-down skirt. **69 entries now carry img.**
+    palda distinct = full dress vs waist-down skirt.
+- **Colors** (L15) — 8 — committed `87e77f7`. **NOT ChatGPT** — a color is an
+  exact hue, not an illustration, so generate swatches directly with Pillow
+  (script below), styled to match the cards. No `_art_src` sources; the script
+  is the source. **77 entries now carry img.**
+
+### Color-swatch generator (Colors category — no ChatGPT)
+
+```python
+from PIL import Image, ImageDraw, ImageFilter
+import os
+COLORS = {"pula":"#E53935","asul":"#1E88E5","dilaw":"#FDD835","berde":"#43A047",
+          "puti":"#FFFFFF","itim":"#1E1E1E","kahel":"#FB8C00","kulay-rosas":"#F06292"}
+CREAM=(255,243,224); OUTLINE=(26,26,26); S=4; W=512*S
+hx=lambda h:tuple(int(h.lstrip('#')[i:i+2],16) for i in (0,2,4))
+os.makedirs("images/vocab",exist_ok=True)
+for slug,hexv in COLORS.items():
+    img=Image.new("RGB",(W,W),CREAM); m=int(W*0.15); box=(m,m,W-m,W-m); r=int(W*0.10)
+    sh=Image.new("RGBA",(W,W),(0,0,0,0)); off=int(W*0.02)
+    ImageDraw.Draw(sh).rounded_rectangle((box[0]+off,box[1]+off,box[2]+off,box[3]+off),radius=r,fill=(0,0,0,60))
+    sh=sh.filter(ImageFilter.GaussianBlur(W*0.012))
+    img=Image.alpha_composite(img.convert("RGBA"),sh).convert("RGB")
+    ImageDraw.Draw(img,"RGBA").rounded_rectangle(box,radius=r,fill=hx(hexv),outline=OUTLINE,width=int(W*0.014))
+    gl=Image.new("RGBA",(W,W),(0,0,0,0))
+    ImageDraw.Draw(gl).rounded_rectangle((box[0]+int(W*0.06),box[1]+int(W*0.06),
+        box[0]+int((box[2]-box[0])*0.55),box[1]+int((box[3]-box[1])*0.34)),radius=int(W*0.06),fill=(255,255,255,70))
+    gl=gl.filter(ImageFilter.GaussianBlur(W*0.01))
+    Image.alpha_composite(img.convert("RGBA"),gl).convert("RGB").resize((512,512),Image.LANCZOS)\
+        .save(f"images/vocab/{slug}.webp","WEBP",quality=88,method=6)
+```
 - Slugs are shared across lessons/categories, so an image made once is reused
   everywhere the word appears (e.g. `isda` in both Food and Animals).
 - Not yet: git push + Netlify deploy (Ray pushes via SSH).
