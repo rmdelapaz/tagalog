@@ -22,166 +22,136 @@ window.TAGALOG_VOCAB = {
   },
   "1": [
     {
-      "tl": "Kumusta",
-      "pron": "koo-MOOS-tah",
-      "en": "How are you? / Hello"
-    },
-    {
-      "tl": "Salamat",
-      "pron": "sah-LAH-mat",
-      "en": "Thank you"
-    },
-    {
-      "tl": "Opo",
-      "pron": "OH-poh",
-      "en": "Yes (respectful)"
-    },
-    {
-      "tl": "Oo",
-      "pron": "OH-oh",
-      "en": "Yes (casual)"
-    },
-    {
-      "tl": "Hindi",
-      "pron": "hin-DEE",
-      "en": "No / Not"
-    },
-    {
-      "tl": "Tubig",
-      "pron": "TOO-big",
-      "en": "Water"
-    },
-    {
-      "tl": "Pagkain",
-      "pron": "pag-KAH-in",
-      "en": "Food"
-    },
-    {
-      "tl": "Ama",
-      "pron": "AH-mah",
-      "en": "Father"
-    },
-    {
-      "tl": "Isda",
-      "pron": "is-DAH",
-      "en": "Fish"
-    },
-    {
-      "tl": "Ulan",
-      "pron": "OO-lan",
-      "en": "Rain"
-    },
-    {
-      "tl": "Bahay",
-      "pron": "BAH-hay",
-      "en": "House"
-    },
-    {
-      "tl": "Aso",
+      "tl": "aso",
       "pron": "AH-so",
-      "en": "Dog"
+      "en": "dog"
     },
     {
-      "tl": "Pusa",
-      "pron": "POO-sa",
-      "en": "Cat"
+      "tl": "bahay",
+      "pron": "bah-HAY",
+      "en": "house"
     },
     {
-      "tl": "Maganda",
-      "pron": "ma-GAN-da",
-      "en": "Beautiful"
+      "tl": "hindi",
+      "pron": "hin-DEE",
+      "en": "no / not"
     },
     {
-      "tl": "Pamilya",
-      "pron": "pa-MIL-ya",
-      "en": "Family"
-    },
-    {
-      "tl": "Mabuti",
-      "pron": "ma-BOO-ti",
-      "en": "Good / Fine"
-    },
-    {
-      "tl": "Magandang umaga",
-      "pron": "ma-gan-DANG oo-MAH-ga",
-      "en": "Good morning"
-    },
-    {
-      "tl": "Magandang hapon",
-      "pron": "ma-gan-DANG HAH-pon",
-      "en": "Good afternoon"
-    },
-    {
-      "tl": "Magandang gabi",
-      "pron": "ma-gan-DANG ga-BEE",
-      "en": "Good evening"
-    },
-    {
-      "tl": "Kumain ka na?",
-      "pron": "koo-MA-in ka na",
-      "en": "Have you eaten?"
-    },
-    {
-      "tl": "Po",
-      "pron": "po",
-      "en": "Respect particle (adds politeness)"
-    },
-    {
-      "tl": "Kain tayo",
-      "pron": "ka-IN TA-yo",
-      "en": "Let's eat"
-    },
-    {
-      "tl": "Hindi pa",
+      "tl": "hindi pa",
       "pron": "hin-DEE pa",
-      "en": "Not yet"
+      "en": "not yet"
     },
     {
-      "tl": "Kumusta ka?",
+      "tl": "isda",
+      "pron": "is-DAH",
+      "en": "fish"
+    },
+    {
+      "tl": "kain tayo",
+      "pron": "ka-IN TA-yo",
+      "en": "let's eat"
+    },
+    {
+      "tl": "kumain ka na?",
+      "pron": "koo-MA-in ka na",
+      "en": "have you eaten?"
+    },
+    {
+      "tl": "kumusta",
+      "pron": "koo-MOOS-tah",
+      "en": "how are you? / hello"
+    },
+    {
+      "tl": "kumusta ka?",
       "pron": "koo-MOOS-ta ka",
-      "en": "How are you?"
+      "en": "how are you?"
     },
     {
-      "tl": "Oso",
+      "tl": "mabuti",
+      "pron": "ma-BOO-ti",
+      "en": "good / fine"
+    },
+    {
+      "tl": "maganda",
+      "pron": "ma-gan-DA",
+      "en": "beautiful"
+    },
+    {
+      "tl": "magandang gabi",
+      "pron": "ma-gan-DANG ga-BEE",
+      "en": "good evening"
+    },
+    {
+      "tl": "magandang hapon",
+      "pron": "ma-gan-DANG HAH-pon",
+      "en": "good afternoon"
+    },
+    {
+      "tl": "magandang umaga",
+      "pron": "ma-gan-DANG oo-MAH-ga",
+      "en": "good morning"
+    },
+    {
+      "tl": "oo",
+      "pron": "OH-oh",
+      "en": "yes (casual)"
+    },
+    {
+      "tl": "opo",
+      "pron": "OH-poh",
+      "en": "yes (respectful)"
+    },
+    {
+      "tl": "oso",
       "pron": "OH-so",
-      "en": "Bear"
+      "en": "bear"
     },
     {
-      "tl": "Eme",
-      "pron": "EH-me",
-      "en": "Duck"
+      "tl": "pagkain",
+      "pron": "pag-KAH-in",
+      "en": "food"
     },
     {
-      "tl": "Kariton",
-      "pron": "ka-RI-ton",
-      "en": "Cart"
+      "tl": "pamilya",
+      "pron": "pa-MIL-ya",
+      "en": "family"
     },
     {
-      "tl": "Papaya",
-      "pron": "pah-PAH-yah",
-      "en": "Papaya"
+      "tl": "po",
+      "pron": "po",
+      "en": "respect particle (adds politeness)"
     },
     {
-      "tl": "Mangga",
-      "pron": "MAHN-go",
-      "en": "Mango"
+      "tl": "pusa",
+      "pron": "POO-sa",
+      "en": "cat"
     },
     {
-      "tl": "Banana",
-      "pron": "bah-NAH-nah",
-      "en": "Banana"
+      "tl": "salamat",
+      "pron": "sah-LAH-mat",
+      "en": "thank you"
+    },
+    {
+      "tl": "tubig",
+      "pron": "TOO-big",
+      "en": "water"
+    },
+    {
+      "tl": "ulan",
+      "pron": "oo-LAN",
+      "en": "rain"
     }
   ],
   "2": [
     {
-      "tl": "Kumakain",
+      "tl": "kumakain",
       "pron": "koo-ma-KAH-in",
       "en": "eating"
     },
     {
       "tl": "ako",
       "pron": "a-KO",
-      "en": "I / me"
+      "en": "i / me"
     },
     {
       "tl": "ang",
@@ -204,27 +174,27 @@ window.TAGALOG_VOCAB = {
       "en": "dog"
     },
     {
-      "tl": "Tumutulog",
+      "tl": "tumutulog",
       "pron": "too-moo-TOO-log",
       "en": "sleeping"
     },
     {
-      "tl": "Naglalaro",
+      "tl": "naglalaro",
       "pron": "nag-la-la-RO",
       "en": "playing"
     },
     {
-      "tl": "Malaki",
+      "tl": "malaki",
       "pron": "ma-la-KI",
       "en": "big"
     },
     {
-      "tl": "Masaya",
+      "tl": "masaya",
       "pron": "ma-sa-YA",
       "en": "happy"
     },
     {
-      "tl": "Gutom",
+      "tl": "gutom",
       "pron": "GOO-tom",
       "en": "hungry"
     },
@@ -239,24 +209,24 @@ window.TAGALOG_VOCAB = {
       "en": "children"
     },
     {
-      "tl": "Ano",
+      "tl": "ano",
       "pron": "a-NO",
-      "en": "What?"
+      "en": "what?"
     },
     {
-      "tl": "Sino",
+      "tl": "sino",
       "pron": "SEE-no",
-      "en": "Who?"
+      "en": "who?"
     },
     {
-      "tl": "Saan",
+      "tl": "saan",
       "pron": "sa-AN",
-      "en": "Where?"
+      "en": "where?"
     },
     {
-      "tl": "Kailan",
+      "tl": "kailan",
       "pron": "ka-EE-lan",
-      "en": "When?"
+      "en": "when?"
     },
     {
       "tl": "palengke",
@@ -274,17 +244,17 @@ window.TAGALOG_VOCAB = {
       "en": "book"
     },
     {
-      "tl": "Nagtatrabaho",
+      "tl": "nagtatrabaho",
       "pron": "nag-ta-tra-BA-ho",
       "en": "working"
     },
     {
-      "tl": "Nag-aaral",
+      "tl": "nag-aaral",
       "pron": "nag-a-A-ral",
       "en": "studying"
     },
     {
-      "tl": "Mabait",
+      "tl": "mabait",
       "pron": "ma-BA-it",
       "en": "kind"
     },
@@ -331,7 +301,7 @@ window.TAGALOG_VOCAB = {
     {
       "tl": "adobo",
       "pron": "a-DO-bo",
-      "en": "adobo (Filipino dish)"
+      "en": "adobo (filipino dish)"
     },
     {
       "tl": "mansanas",
@@ -349,69 +319,69 @@ window.TAGALOG_VOCAB = {
       "en": "predicate marker (is / are)"
     },
     {
-      "tl": "Nagluluto",
+      "tl": "nagluluto",
       "pron": "nag-loo-LOO-to",
       "en": "cooking"
     }
   ],
   "3": [
     {
-      "tl": "Kumain",
+      "tl": "kumain",
       "pron": "koo-MA-in",
       "en": "ate"
     },
     {
-      "tl": "Kumakain",
+      "tl": "kumakain",
       "pron": "koo-ma-KA-in",
       "en": "eating"
     },
     {
-      "tl": "Kakain",
+      "tl": "kakain",
       "pron": "KA-ka-in",
       "en": "will eat"
     },
     {
-      "tl": "Natulog",
+      "tl": "natulog",
       "pron": "na-TOO-log",
       "en": "slept"
     },
     {
-      "tl": "Natutulog",
+      "tl": "natutulog",
       "pron": "na-too-TOO-log",
       "en": "sleeping"
     },
     {
-      "tl": "Naglaro",
+      "tl": "naglaro",
       "pron": "nag-la-RO",
       "en": "played"
     },
     {
-      "tl": "Nagtrabaho",
+      "tl": "nagtrabaho",
       "pron": "nag-tra-BA-ho",
       "en": "worked"
     },
     {
-      "tl": "Nag-aral",
+      "tl": "nag-aral",
       "pron": "nag-A-ral",
       "en": "studied"
     },
     {
-      "tl": "Nagbasa",
+      "tl": "nagbasa",
       "pron": "nag-BA-sa",
       "en": "read"
     },
     {
-      "tl": "Sumulat",
+      "tl": "sumulat",
       "pron": "soo-MOO-lat",
       "en": "wrote"
     },
     {
-      "tl": "Nagluto",
+      "tl": "nagluto",
       "pron": "nag-LOO-to",
       "en": "cooked"
     },
     {
-      "tl": "Bumili",
+      "tl": "bumili",
       "pron": "boo-mi-LI",
       "en": "bought"
     },
@@ -436,62 +406,62 @@ window.TAGALOG_VOCAB = {
       "en": "money"
     },
     {
-      "tl": "Matutulog",
+      "tl": "matutulog",
       "pron": "ma-too-TOO-log",
       "en": "will sleep"
     },
     {
-      "tl": "Naglalaro",
+      "tl": "naglalaro",
       "pron": "nag-la-la-RO",
       "en": "playing"
     },
     {
-      "tl": "Maglalaro",
+      "tl": "maglalaro",
       "pron": "mag-la-la-RO",
       "en": "will play"
     },
     {
-      "tl": "Nagtatrabaho",
+      "tl": "nagtatrabaho",
       "pron": "nag-ta-tra-BA-ho",
       "en": "working"
     },
     {
-      "tl": "Magtatrabaho",
+      "tl": "magtatrabaho",
       "pron": "mag-ta-tra-BA-ho",
       "en": "will work"
     },
     {
-      "tl": "Nag-aaral",
+      "tl": "nag-aaral",
       "pron": "nag-a-A-ral",
       "en": "studying"
     },
     {
-      "tl": "Mag-aaral",
+      "tl": "mag-aaral",
       "pron": "mag-a-A-ral",
       "en": "will study"
     },
     {
-      "tl": "Nagbabasa",
+      "tl": "nagbabasa",
       "pron": "nag-ba-BA-sa",
       "en": "reading"
     },
     {
-      "tl": "Magbabasa",
+      "tl": "magbabasa",
       "pron": "mag-ba-BA-sa",
       "en": "will read"
     },
     {
-      "tl": "Nagluluto",
+      "tl": "nagluluto",
       "pron": "nag-loo-LOO-to",
       "en": "cooking"
     },
     {
-      "tl": "Magluluto",
+      "tl": "magluluto",
       "pron": "mag-loo-LOO-to",
       "en": "will cook"
     },
     {
-      "tl": "Nagtuturo",
+      "tl": "nagtuturo",
       "pron": "nag-too-TOO-ro",
       "en": "teaches"
     },
@@ -506,7 +476,7 @@ window.TAGALOG_VOCAB = {
       "en": "classroom"
     },
     {
-      "tl": "Tapos",
+      "tl": "tapos",
       "pron": "TA-pos",
       "en": "done / finished"
     },
@@ -516,1141 +486,1141 @@ window.TAGALOG_VOCAB = {
       "en": "mathematics"
     },
     {
-      "tl": "Kain",
+      "tl": "kain",
       "pron": "ka-IN",
       "en": "eat (root word)"
     },
     {
-      "tl": "Binili",
+      "tl": "binili",
       "pron": "bi-ni-LI",
       "en": "bought (object focus)"
     }
   ],
   "4": [
     {
-      "tl": "Isa",
+      "tl": "isa",
       "pron": "ee-SA",
-      "en": "One"
+      "en": "one"
     },
     {
-      "tl": "Dalawa",
+      "tl": "dalawa",
       "pron": "da-la-WA",
-      "en": "Two"
+      "en": "two"
     },
     {
-      "tl": "Tatlo",
+      "tl": "tatlo",
       "pron": "tat-LO",
-      "en": "Three"
+      "en": "three"
     },
     {
-      "tl": "Apat",
+      "tl": "apat",
       "pron": "A-pat",
-      "en": "Four"
+      "en": "four"
     },
     {
-      "tl": "Lima",
+      "tl": "lima",
       "pron": "li-MA",
-      "en": "Five"
+      "en": "five"
     },
     {
-      "tl": "Anim",
+      "tl": "anim",
       "pron": "A-nim",
-      "en": "Six"
+      "en": "six"
     },
     {
-      "tl": "Pito",
+      "tl": "pito",
       "pron": "pi-TO",
-      "en": "Seven"
+      "en": "seven"
     },
     {
-      "tl": "Walo",
+      "tl": "walo",
       "pron": "wa-LO",
-      "en": "Eight"
+      "en": "eight"
     },
     {
-      "tl": "Siyam",
+      "tl": "siyam",
       "pron": "SI-yam",
-      "en": "Nine"
+      "en": "nine"
     },
     {
-      "tl": "Sampu",
+      "tl": "sampu",
       "pron": "sam-POO",
-      "en": "Ten"
+      "en": "ten"
     },
     {
-      "tl": "Anong oras na?",
+      "tl": "anong oras na?",
       "pron": "a-NONG O-ras na",
-      "en": "What time is it?"
+      "en": "what time is it?"
     },
     {
-      "tl": "Umaga",
+      "tl": "umaga",
       "pron": "oo-MA-ga",
-      "en": "Morning"
+      "en": "morning"
     },
     {
-      "tl": "Tanghali",
+      "tl": "tanghali",
       "pron": "tang-HA-li",
-      "en": "Noon"
+      "en": "noon"
     },
     {
-      "tl": "Hapon",
+      "tl": "hapon",
       "pron": "HA-pon",
-      "en": "Afternoon"
+      "en": "afternoon"
     },
     {
-      "tl": "Gabi",
+      "tl": "gabi",
       "pron": "ga-BEE",
-      "en": "Evening / Night"
+      "en": "evening / night"
     },
     {
-      "tl": "Magkano",
+      "tl": "magkano",
       "pron": "mag-KA-no",
-      "en": "How much?"
+      "en": "how much?"
     },
     {
-      "tl": "Sukli",
+      "tl": "sukli",
       "pron": "sook-LI",
-      "en": "Change (money back)"
+      "en": "change (money back)"
     },
     {
-      "tl": "Bayad",
+      "tl": "bayad",
       "pron": "BA-yad",
-      "en": "Payment"
+      "en": "payment"
     },
     {
-      "tl": "Labing-isa",
+      "tl": "labing-isa",
       "pron": "la-bing-ee-SA",
-      "en": "Eleven"
+      "en": "eleven"
     },
     {
-      "tl": "Labing-dalawa",
+      "tl": "labing-dalawa",
       "pron": "la-bing-da-la-WA",
-      "en": "Twelve"
+      "en": "twelve"
     },
     {
-      "tl": "Dalawampu",
+      "tl": "dalawampu",
       "pron": "da-la-wam-POO",
-      "en": "Twenty"
+      "en": "twenty"
     },
     {
-      "tl": "Isang daan",
+      "tl": "isang daan",
       "pron": "I-sang da-AN",
-      "en": "One hundred"
+      "en": "one hundred"
     },
     {
-      "tl": "Isang libo",
+      "tl": "isang libo",
       "pron": "I-sang LI-bo",
-      "en": "One thousand"
+      "en": "one thousand"
     },
     {
-      "tl": "Hatinggabi",
+      "tl": "hatinggabi",
       "pron": "ha-ting-ga-BEE",
-      "en": "Midnight"
+      "en": "midnight"
     },
     {
-      "tl": "Lunes",
+      "tl": "lunes",
       "pron": "LOO-nes",
-      "en": "Monday"
+      "en": "monday"
     },
     {
-      "tl": "Martes",
+      "tl": "martes",
       "pron": "MAR-tes",
-      "en": "Tuesday"
+      "en": "tuesday"
     },
     {
-      "tl": "Miyerkules",
+      "tl": "miyerkules",
       "pron": "mi-YER-koo-les",
-      "en": "Wednesday"
+      "en": "wednesday"
     },
     {
-      "tl": "Huwebes",
+      "tl": "huwebes",
       "pron": "hoo-WE-bes",
-      "en": "Thursday"
+      "en": "thursday"
     },
     {
-      "tl": "Biyernes",
+      "tl": "biyernes",
       "pron": "bi-YER-nes",
-      "en": "Friday"
+      "en": "friday"
     },
     {
-      "tl": "Sabado",
+      "tl": "sabado",
       "pron": "SA-ba-do",
-      "en": "Saturday"
+      "en": "saturday"
     },
     {
-      "tl": "Linggo",
+      "tl": "linggo",
       "pron": "ling-GO",
-      "en": "Sunday"
+      "en": "sunday"
     },
     {
-      "tl": "Kalahati",
+      "tl": "kalahati",
       "pron": "ka-la-HA-ti",
-      "en": "Half past"
+      "en": "half past"
     },
     {
-      "tl": "Una",
+      "tl": "una",
       "pron": "OO-na",
-      "en": "First"
+      "en": "first"
     },
     {
-      "tl": "Ikalawa",
+      "tl": "ikalawa",
       "pron": "i-ka-la-WA",
-      "en": "Second"
+      "en": "second"
     },
     {
-      "tl": "Ikatlo",
+      "tl": "ikatlo",
       "pron": "i-kat-LO",
-      "en": "Third"
+      "en": "third"
     },
     {
-      "tl": "Kaarawan",
+      "tl": "kaarawan",
       "pron": "ka-a-ra-WAN",
-      "en": "Birthday"
+      "en": "birthday"
     },
     {
-      "tl": "Edad",
+      "tl": "edad",
       "pron": "E-dad",
-      "en": "Age"
+      "en": "age"
     }
   ],
   "5": [
     {
-      "tl": "Lolo",
+      "tl": "lolo",
       "pron": "LO-lo",
-      "en": "Grandfather"
+      "en": "grandfather"
     },
     {
-      "tl": "Lola",
+      "tl": "lola",
       "pron": "LO-la",
-      "en": "Grandmother"
+      "en": "grandmother"
     },
     {
-      "tl": "Tatay",
+      "tl": "tatay",
       "pron": "ta-TAY",
-      "en": "Father"
+      "en": "father"
     },
     {
-      "tl": "Nanay",
+      "tl": "nanay",
       "pron": "na-NAY",
-      "en": "Mother"
+      "en": "mother"
     },
     {
-      "tl": "Tito",
+      "tl": "tito",
       "pron": "TI-to",
-      "en": "Uncle"
+      "en": "uncle"
     },
     {
-      "tl": "Tita",
+      "tl": "tita",
       "pron": "TI-ta",
-      "en": "Aunt"
+      "en": "aunt"
     },
     {
-      "tl": "Kuya",
+      "tl": "kuya",
       "pron": "KOO-ya",
-      "en": "Older brother"
+      "en": "older brother"
     },
     {
-      "tl": "Ate",
+      "tl": "ate",
       "pron": "A-te",
-      "en": "Older sister"
+      "en": "older sister"
     },
     {
-      "tl": "Bunso",
+      "tl": "bunso",
       "pron": "bun-SO",
-      "en": "Youngest child"
+      "en": "youngest child"
     },
     {
-      "tl": "Anak",
+      "tl": "anak",
       "pron": "a-NAK",
-      "en": "Child"
+      "en": "child"
     },
     {
-      "tl": "Kapatid",
+      "tl": "kapatid",
       "pron": "ka-pa-TID",
-      "en": "Sibling"
+      "en": "sibling"
     },
     {
-      "tl": "Pinsan",
+      "tl": "pinsan",
       "pron": "PIN-san",
-      "en": "Cousin"
+      "en": "cousin"
     },
     {
-      "tl": "Ninong",
+      "tl": "ninong",
       "pron": "NI-nong",
-      "en": "Godfather"
+      "en": "godfather"
     },
     {
-      "tl": "Ninang",
+      "tl": "ninang",
       "pron": "NI-nang",
-      "en": "Godmother"
+      "en": "godmother"
     },
     {
-      "tl": "Asawa",
+      "tl": "asawa",
       "pron": "a-SA-wa",
-      "en": "Spouse"
+      "en": "spouse"
     },
     {
-      "tl": "Kaibigan",
+      "tl": "kaibigan",
       "pron": "ka-i-BI-gan",
-      "en": "Friend"
+      "en": "friend"
     },
     {
-      "tl": "Kapitbahay",
+      "tl": "kapitbahay",
       "pron": "ka-pit-BA-hay",
-      "en": "Neighbor"
+      "en": "neighbor"
     },
     {
-      "tl": "Magulang",
+      "tl": "magulang",
       "pron": "ma-GOO-lang",
-      "en": "Parents"
+      "en": "parents"
     },
     {
-      "tl": "Panganay",
+      "tl": "panganay",
       "pron": "pa-nga-NAY",
-      "en": "Eldest child"
+      "en": "eldest child"
     },
     {
-      "tl": "Pamangkin",
+      "tl": "pamangkin",
       "pron": "pa-mang-KIN",
-      "en": "Niece / nephew"
+      "en": "niece / nephew"
     },
     {
-      "tl": "Ama",
+      "tl": "ama",
       "pron": "A-ma",
-      "en": "Father (formal)"
+      "en": "father (formal)"
     },
     {
-      "tl": "Ina",
+      "tl": "ina",
       "pron": "EE-na",
-      "en": "Mother (formal)"
+      "en": "mother (formal)"
     },
     {
-      "tl": "Inaanak",
+      "tl": "inaanak",
       "pron": "i-na-a-NAK",
-      "en": "Godchild"
+      "en": "godchild"
     },
     {
-      "tl": "Kumpare",
+      "tl": "kumpare",
       "pron": "koom-pa-RE",
-      "en": "Male co-godparent / close friend"
+      "en": "male co-godparent / close friend"
     },
     {
-      "tl": "Kumare",
+      "tl": "kumare",
       "pron": "koo-ma-RE",
-      "en": "Female co-godparent / close friend"
+      "en": "female co-godparent / close friend"
     },
     {
-      "tl": "Manugang",
+      "tl": "manugang",
       "pron": "ma-noo-GANG",
-      "en": "Son / daughter-in-law"
+      "en": "son / daughter-in-law"
     },
     {
-      "tl": "Biyenan",
+      "tl": "biyenan",
       "pron": "bi-YE-nan",
-      "en": "Parent-in-law"
+      "en": "parent-in-law"
     },
     {
-      "tl": "Bayaw",
+      "tl": "bayaw",
       "pron": "BA-yaw",
-      "en": "Brother-in-law"
+      "en": "brother-in-law"
     },
     {
-      "tl": "Hipag",
+      "tl": "hipag",
       "pron": "HI-pag",
-      "en": "Sister-in-law"
+      "en": "sister-in-law"
     },
     {
-      "tl": "Kababayan",
+      "tl": "kababayan",
       "pron": "ka-ba-BA-yan",
-      "en": "Fellow townmate / countryman"
+      "en": "fellow townmate / countryman"
     },
     {
-      "tl": "Kasama",
+      "tl": "kasama",
       "pron": "ka-SA-ma",
-      "en": "Companion / housemate"
+      "en": "companion / housemate"
     },
     {
-      "tl": "Kamag-anak",
+      "tl": "kamag-anak",
       "pron": "ka-mag-A-nak",
-      "en": "Relatives"
+      "en": "relatives"
     },
     {
-      "tl": "Ako",
+      "tl": "ako",
       "pron": "a-KO",
-      "en": "I (pronoun)"
+      "en": "i (pronoun)"
     },
     {
-      "tl": "Ikaw",
+      "tl": "ikaw",
       "pron": "i-KAW",
-      "en": "You (singular)"
+      "en": "you (singular)"
     },
     {
-      "tl": "Siya",
+      "tl": "siya",
       "pron": "shi-YA",
-      "en": "He / she"
+      "en": "he / she"
     },
     {
-      "tl": "Tayo",
+      "tl": "tayo",
       "pron": "TA-yo",
-      "en": "We (inclusive)"
+      "en": "we (inclusive)"
     },
     {
-      "tl": "Kami",
+      "tl": "kami",
       "pron": "ka-MI",
-      "en": "We (exclusive)"
+      "en": "we (exclusive)"
     },
     {
-      "tl": "Kayo",
+      "tl": "kayo",
       "pron": "ka-YO",
-      "en": "You (plural / formal)"
+      "en": "you (plural / formal)"
     },
     {
-      "tl": "Sila",
+      "tl": "sila",
       "pron": "si-LA",
-      "en": "They"
+      "en": "they"
     },
     {
-      "tl": "Paggalang",
+      "tl": "paggalang",
       "pron": "pag-GA-lang",
-      "en": "Respect"
+      "en": "respect"
     }
   ],
   "6": [
     {
-      "tl": "Tulong!",
+      "tl": "tulong!",
       "pron": "TOO-long",
-      "en": "Help!"
+      "en": "help!"
     },
     {
-      "tl": "Nasaan ang...?",
+      "tl": "nasaan ang...?",
       "pron": "nah-SAH-an ang",
-      "en": "Where is...?"
+      "en": "where is...?"
     },
     {
-      "tl": "Hindi ko maintindihan",
+      "tl": "hindi ko maintindihan",
       "pron": "HIN-di ko ma-in-tin-di-HAN",
-      "en": "I don't understand"
+      "en": "i don't understand"
     },
     {
-      "tl": "Pwede mo bang ulitin?",
+      "tl": "pwede mo bang ulitin?",
       "pron": "PWEH-de mo bang oo-li-TIN",
-      "en": "Can you repeat that?"
+      "en": "can you repeat that?"
     },
     {
-      "tl": "Bahala na",
+      "tl": "bahala na",
       "pron": "ba-HA-la na",
-      "en": "Come what may"
+      "en": "come what may"
     },
     {
-      "tl": "Malasakit",
+      "tl": "malasakit",
       "pron": "ma-la-SA-kit",
-      "en": "Compassionate care"
+      "en": "compassionate care"
     },
     {
-      "tl": "Utang na loob",
+      "tl": "utang na loob",
       "pron": "OO-tang na LO-ob",
-      "en": "Debt of gratitude"
+      "en": "debt of gratitude"
     },
     {
-      "tl": "Masarap",
+      "tl": "masarap",
       "pron": "ma-sa-RAP",
-      "en": "Delicious"
+      "en": "delicious"
     },
     {
-      "tl": "Busog",
+      "tl": "busog",
       "pron": "BOO-sog",
-      "en": "Full (from eating)"
+      "en": "full (from eating)"
     },
     {
-      "tl": "Ulam",
+      "tl": "ulam",
       "pron": "OO-lam",
-      "en": "Main dish"
+      "en": "main dish"
     },
     {
-      "tl": "Maasim",
+      "tl": "maasim",
       "pron": "ma-A-sim",
-      "en": "Sour"
+      "en": "sour"
     },
     {
-      "tl": "Matamis",
+      "tl": "matamis",
       "pron": "ma-ta-MIS",
-      "en": "Sweet"
+      "en": "sweet"
     },
     {
-      "tl": "Maalat",
+      "tl": "maalat",
       "pron": "ma-A-lat",
-      "en": "Salty"
+      "en": "salty"
     },
     {
-      "tl": "Maanghang",
+      "tl": "maanghang",
       "pron": "ma-ang-HANG",
-      "en": "Spicy"
+      "en": "spicy"
     },
     {
-      "tl": "Grabe",
+      "tl": "grabe",
       "pron": "GRA-be",
-      "en": "Wow! / Intense!"
+      "en": "wow! / intense!"
     },
     {
-      "tl": "Talaga?",
+      "tl": "talaga?",
       "pron": "ta-la-GA",
-      "en": "Really?"
+      "en": "really?"
     },
     {
-      "tl": "Sige",
+      "tl": "sige",
       "pron": "SI-ge",
-      "en": "Okay / Go ahead"
+      "en": "okay / go ahead"
     },
     {
-      "tl": "Tara",
+      "tl": "tara",
       "pron": "ta-RA",
-      "en": "Let's go"
+      "en": "let's go"
     },
     {
-      "tl": "Pakikipagkapwa",
+      "tl": "pakikipagkapwa",
       "pron": "pa-ki-ki-pag-KAP-wa",
-      "en": "Shared identity / connectedness"
+      "en": "shared identity / connectedness"
     },
     {
-      "tl": "Kapamilya",
+      "tl": "kapamilya",
       "pron": "ka-pa-MIL-ya",
-      "en": "Family-like; treating others as family"
+      "en": "family-like; treating others as family"
     },
     {
-      "tl": "Pamasahe",
+      "tl": "pamasahe",
       "pron": "pa-ma-SA-he",
-      "en": "Fare"
+      "en": "fare"
     },
     {
-      "tl": "Diretso",
+      "tl": "diretso",
       "pron": "di-RET-so",
-      "en": "Straight ahead"
+      "en": "straight ahead"
     },
     {
-      "tl": "Kaliwa",
+      "tl": "kaliwa",
       "pron": "ka-li-WA",
-      "en": "Left"
+      "en": "left"
     },
     {
-      "tl": "Kanan",
+      "tl": "kanan",
       "pron": "KA-nan",
-      "en": "Right"
+      "en": "right"
     },
     {
-      "tl": "Malayo",
+      "tl": "malayo",
       "pron": "ma-LA-yo",
-      "en": "Far"
+      "en": "far"
     },
     {
-      "tl": "Malapit",
+      "tl": "malapit",
       "pron": "ma-LA-pit",
-      "en": "Near"
+      "en": "near"
     },
     {
-      "tl": "Gusto ko",
+      "tl": "gusto ko",
       "pron": "GOOS-to ko",
-      "en": "I want / I'd like"
+      "en": "i want / i'd like"
     },
     {
-      "tl": "Inumin",
+      "tl": "inumin",
       "pron": "i-noo-MIN",
-      "en": "Drink (beverage)"
+      "en": "drink (beverage)"
     },
     {
-      "tl": "Malinamnam",
+      "tl": "malinamnam",
       "pron": "ma-li-nam-NAM",
-      "en": "Savory / flavorful"
+      "en": "savory / flavorful"
     },
     {
-      "tl": "Malansa",
+      "tl": "malansa",
       "pron": "ma-lan-SA",
-      "en": "Fishy smell"
+      "en": "fishy smell"
     },
     {
-      "tl": "Kilig",
+      "tl": "kilig",
       "pron": "KI-lig",
-      "en": "Giddy / thrilled"
+      "en": "giddy / thrilled"
     },
     {
-      "tl": "Hay naku",
+      "tl": "hay naku",
       "pron": "hay na-KOO",
-      "en": "Oh my gosh! (exasperation)"
+      "en": "oh my gosh! (exasperation)"
     },
     {
-      "tl": "Sayang",
+      "tl": "sayang",
       "pron": "SA-yang",
-      "en": "What a waste!"
+      "en": "what a waste!"
     },
     {
-      "tl": "Hindi nga!",
+      "tl": "hindi nga!",
       "pron": "hin-DEE nga",
-      "en": "No way!"
+      "en": "no way!"
     },
     {
-      "tl": "Maraming salamat",
+      "tl": "maraming salamat",
       "pron": "ma-RA-ming sa-LA-mat",
-      "en": "Thank you very much"
+      "en": "thank you very much"
     },
     {
-      "tl": "Uso",
+      "tl": "uso",
       "pron": "OO-so",
-      "en": "Trending / in style"
+      "en": "trending / in style"
     }
   ],
   "7": [
     {
-      "tl": "Bahay",
+      "tl": "bahay",
       "pron": "BA-hay",
       "en": "house (noun)"
     },
     {
-      "tl": "Pag-ibig",
+      "tl": "pag-ibig",
       "pron": "pag-EE-big",
       "en": "love (abstract noun)"
     },
     {
-      "tl": "Kagandahan",
+      "tl": "kagandahan",
       "pron": "ka-gan-DA-han",
       "en": "beauty"
     },
     {
-      "tl": "Kabaitan",
+      "tl": "kabaitan",
       "pron": "ka-ba-EE-tan",
       "en": "kindness"
     },
     {
-      "tl": "Pula",
+      "tl": "pula",
       "pron": "poo-LA",
       "en": "red"
     },
     {
-      "tl": "Asul",
+      "tl": "asul",
       "pron": "a-SOOL",
       "en": "blue"
     },
     {
-      "tl": "Dilaw",
+      "tl": "dilaw",
       "pron": "di-LAW",
       "en": "yellow"
     },
     {
-      "tl": "Luntian",
+      "tl": "luntian",
       "pron": "loon-ti-YAN",
       "en": "green"
     },
     {
-      "tl": "Itim",
+      "tl": "itim",
       "pron": "ee-TIM",
       "en": "black"
     },
     {
-      "tl": "Puti",
+      "tl": "puti",
       "pron": "poo-TI",
       "en": "white"
     },
     {
-      "tl": "Ngayon",
+      "tl": "ngayon",
       "pron": "nga-YON",
       "en": "now"
     },
     {
-      "tl": "Kahapon",
+      "tl": "kahapon",
       "pron": "ka-ha-PON",
       "en": "yesterday"
     },
     {
-      "tl": "Bukas",
+      "tl": "bukas",
       "pron": "boo-KAS",
       "en": "tomorrow"
     },
     {
-      "tl": "Dito",
+      "tl": "dito",
       "pron": "DEE-to",
       "en": "here"
     },
     {
-      "tl": "Doon",
+      "tl": "doon",
       "pron": "do-ON",
       "en": "there (far)"
     },
     {
-      "tl": "Mabilis",
+      "tl": "mabilis",
       "pron": "ma-bi-LIS",
       "en": "fast / quickly"
     },
     {
-      "tl": "Napakaganda",
+      "tl": "napakaganda",
       "pron": "na-pa-ka-gan-DA",
       "en": "very beautiful"
     },
     {
-      "tl": "At",
+      "tl": "at",
       "pron": "at",
       "en": "and"
     },
     {
-      "tl": "Pero",
+      "tl": "pero",
       "pron": "PE-ro",
       "en": "but"
     },
     {
-      "tl": "Kasi",
+      "tl": "kasi",
       "pron": "ka-SI",
       "en": "because"
     },
     {
-      "tl": "Kasiyahan",
+      "tl": "kasiyahan",
       "pron": "ka-si-ya-HAN",
       "en": "happiness"
     },
     {
-      "tl": "Kalungkutan",
+      "tl": "kalungkutan",
       "pron": "ka-lung-KOO-tan",
       "en": "sadness"
     },
     {
-      "tl": "Karunungan",
+      "tl": "karunungan",
       "pron": "ka-roo-NOO-ngan",
       "en": "wisdom"
     },
     {
-      "tl": "Katapangan",
+      "tl": "katapangan",
       "pron": "ka-ta-PA-ngan",
       "en": "bravery"
     },
     {
-      "tl": "Pagkakaibigan",
+      "tl": "pagkakaibigan",
       "pron": "pag-ka-ka-i-BI-gan",
       "en": "friendship"
     },
     {
-      "tl": "Pangit",
+      "tl": "pangit",
       "pron": "pa-NGIT",
       "en": "ugly"
     },
     {
-      "tl": "Maliit",
+      "tl": "maliit",
       "pron": "ma-li-IT",
       "en": "small"
     },
     {
-      "tl": "Matangkad",
+      "tl": "matangkad",
       "pron": "ma-tang-KAD",
       "en": "tall (person)"
     },
     {
-      "tl": "Malungkot",
+      "tl": "malungkot",
       "pron": "ma-lung-KOT",
       "en": "sad"
     },
     {
-      "tl": "Matalino",
+      "tl": "matalino",
       "pron": "ma-ta-LI-no",
       "en": "smart"
     },
     {
-      "tl": "Matapang",
+      "tl": "matapang",
       "pron": "ma-ta-PANG",
       "en": "brave"
     },
     {
-      "tl": "Diyan",
+      "tl": "diyan",
       "pron": "di-YAN",
       "en": "there (near you)"
     },
     {
-      "tl": "Palagi",
+      "tl": "palagi",
       "pron": "pa-LA-gi",
       "en": "always"
     },
     {
-      "tl": "Minsan",
+      "tl": "minsan",
       "pron": "min-SAN",
       "en": "sometimes"
     },
     {
-      "tl": "Mabagal",
+      "tl": "mabagal",
       "pron": "ma-BA-gal",
       "en": "slow / slowly"
     },
     {
-      "tl": "Maingat",
+      "tl": "maingat",
       "pron": "ma-I-ngat",
       "en": "careful / carefully"
     },
     {
-      "tl": "Medyo",
+      "tl": "medyo",
       "pron": "MED-yo",
       "en": "somewhat"
     },
     {
-      "tl": "O",
+      "tl": "o",
       "pron": "oh",
       "en": "or"
     },
     {
-      "tl": "Kung",
+      "tl": "kung",
       "pron": "koong",
       "en": "if"
     },
     {
-      "tl": "Habang",
+      "tl": "habang",
       "pron": "HA-bang",
       "en": "while"
     }
   ],
   "8": [
     {
-      "tl": "Kumusta",
+      "tl": "kumusta",
       "pron": "koo-MOOS-tah",
-      "en": "How are you? / Hello"
+      "en": "how are you? / hello"
     },
     {
-      "tl": "Salamat",
+      "tl": "salamat",
       "pron": "sah-LAH-mat",
-      "en": "Thank you"
+      "en": "thank you"
     },
     {
-      "tl": "Paalam",
+      "tl": "paalam",
       "pron": "pa-A-lam",
-      "en": "Goodbye"
+      "en": "goodbye"
     },
     {
-      "tl": "Oo",
+      "tl": "oo",
       "pron": "OH-oh",
-      "en": "Yes"
+      "en": "yes"
     },
     {
-      "tl": "Hindi",
+      "tl": "hindi",
       "pron": "hin-DEE",
-      "en": "No / Not"
+      "en": "no / not"
     },
     {
-      "tl": "Mabuti",
+      "tl": "mabuti",
       "pron": "ma-BOO-ti",
-      "en": "Good / Fine"
+      "en": "good / fine"
     },
     {
-      "tl": "Opo",
+      "tl": "opo",
       "pron": "OH-po",
-      "en": "Yes (respectful)"
+      "en": "yes (respectful)"
     },
     {
-      "tl": "Magandang umaga",
+      "tl": "magandang umaga",
       "pron": "ma-gan-DANG oo-MA-ga",
-      "en": "Good morning"
+      "en": "good morning"
     },
     {
-      "tl": "Gusto",
+      "tl": "gusto",
       "pron": "GOOS-to",
-      "en": "Want / like"
+      "en": "want / like"
     },
     {
-      "tl": "Pwede",
+      "tl": "pwede",
       "pron": "PWEH-de",
-      "en": "Can / may / possible"
+      "en": "can / may / possible"
     }
   ],
   "9": [
     {
-      "tl": "Kumusta",
+      "tl": "kumusta",
       "pron": "koo-MOOS-tah",
-      "en": "Hello / How are you?"
+      "en": "hello / how are you?"
     },
     {
-      "tl": "Paalam",
+      "tl": "paalam",
       "pron": "pah-AH-lam",
-      "en": "Goodbye"
+      "en": "goodbye"
     },
     {
-      "tl": "Gusto",
+      "tl": "gusto",
       "pron": "GOOS-toh",
-      "en": "Want / Like"
+      "en": "want / like"
     },
     {
-      "tl": "Pwede",
+      "tl": "pwede",
       "pron": "PWEH-deh",
-      "en": "Can / May / Possible"
+      "en": "can / may / possible"
     },
     {
-      "tl": "Pamilya",
+      "tl": "pamilya",
       "pron": "pah-MEEL-yah",
-      "en": "Family"
+      "en": "family"
     },
     {
-      "tl": "Kapatid",
+      "tl": "kapatid",
       "pron": "kah-pah-TEED",
-      "en": "Sibling"
+      "en": "sibling"
     },
     {
-      "tl": "Kaibigan",
+      "tl": "kaibigan",
       "pron": "kah-ee-bee-GAHN",
-      "en": "Friend"
+      "en": "friend"
     },
     {
-      "tl": "Isa",
+      "tl": "isa",
       "pron": "ee-SAH",
-      "en": "One"
+      "en": "one"
     },
     {
-      "tl": "Sampu",
+      "tl": "sampu",
       "pron": "sahm-POO",
-      "en": "Ten"
+      "en": "ten"
     },
     {
-      "tl": "Oras",
+      "tl": "oras",
       "pron": "oh-RAHS",
-      "en": "Time / Hour"
+      "en": "time / hour"
     },
     {
-      "tl": "Bukas",
+      "tl": "bukas",
       "pron": "boo-KAHS",
-      "en": "Tomorrow"
+      "en": "tomorrow"
     },
     {
-      "tl": "Kanin",
+      "tl": "kanin",
       "pron": "kah-NEEN",
-      "en": "Rice"
+      "en": "rice"
     },
     {
-      "tl": "Ulam",
+      "tl": "ulam",
       "pron": "oo-LAHM",
-      "en": "Main dish / Viand"
+      "en": "main dish / viand"
     },
     {
-      "tl": "Manok",
+      "tl": "manok",
       "pron": "mah-NOHK",
-      "en": "Chicken"
+      "en": "chicken"
     },
     {
-      "tl": "Kumain",
+      "tl": "kumain",
       "pron": "koo-mah-IN",
-      "en": "Ate"
+      "en": "ate"
     },
     {
-      "tl": "Uminom",
+      "tl": "uminom",
       "pron": "oo-mee-NOHM",
-      "en": "Drank"
+      "en": "drank"
     },
     {
-      "tl": "Pumunta",
+      "tl": "pumunta",
       "pron": "poo-moon-TAH",
-      "en": "Went"
+      "en": "went"
     },
     {
-      "tl": "Maganda",
+      "tl": "maganda",
       "pron": "mah-gahn-DAH",
-      "en": "Beautiful"
+      "en": "beautiful"
     },
     {
-      "tl": "Masaya",
+      "tl": "masaya",
       "pron": "mah-sah-YAH",
-      "en": "Happy"
+      "en": "happy"
     },
     {
-      "tl": "Bahay",
+      "tl": "bahay",
       "pron": "bah-HIGH",
-      "en": "House"
+      "en": "house"
     },
     {
-      "tl": "Pera",
+      "tl": "pera",
       "pron": "peh-RAH",
-      "en": "Money"
+      "en": "money"
     },
     {
-      "tl": "Palengke",
+      "tl": "palengke",
       "pron": "pah-lehng-KEH",
-      "en": "Market"
+      "en": "market"
     },
     {
-      "tl": "Salamat",
+      "tl": "salamat",
       "pron": "sah-LAH-mat",
-      "en": "Thank you"
+      "en": "thank you"
     },
     {
-      "tl": "Opo",
+      "tl": "opo",
       "pron": "OH-poh",
-      "en": "Yes (respectful)"
+      "en": "yes (respectful)"
     },
     {
-      "tl": "Hindi",
+      "tl": "hindi",
       "pron": "hin-DEE",
-      "en": "No / Not"
+      "en": "no / not"
     },
     {
-      "tl": "Ano",
+      "tl": "ano",
       "pron": "ah-NOH",
-      "en": "What"
+      "en": "what"
     },
     {
-      "tl": "Magkano",
+      "tl": "magkano",
       "pron": "mag-kah-NOH",
-      "en": "How much"
+      "en": "how much"
     },
     {
-      "tl": "Kailangan",
+      "tl": "kailangan",
       "pron": "kah-ee-lah-NGAN",
-      "en": "Need / Necessary"
+      "en": "need / necessary"
     },
     {
-      "tl": "Nanay",
+      "tl": "nanay",
       "pron": "nah-NIGH",
-      "en": "Mother"
+      "en": "mother"
     },
     {
-      "tl": "Tatay",
+      "tl": "tatay",
       "pron": "tah-TIGH",
-      "en": "Father"
+      "en": "father"
     },
     {
-      "tl": "Anak",
+      "tl": "anak",
       "pron": "ah-NAHK",
-      "en": "Child"
+      "en": "child"
     },
     {
-      "tl": "Lolo",
+      "tl": "lolo",
       "pron": "loh-LOH",
-      "en": "Grandfather"
+      "en": "grandfather"
     },
     {
-      "tl": "Lola",
+      "tl": "lola",
       "pron": "loh-LAH",
-      "en": "Grandmother"
+      "en": "grandmother"
     },
     {
-      "tl": "Dalawa",
+      "tl": "dalawa",
       "pron": "dah-lah-WAH",
-      "en": "Two"
+      "en": "two"
     },
     {
-      "tl": "Tatlo",
+      "tl": "tatlo",
       "pron": "taht-LOH",
-      "en": "Three"
+      "en": "three"
     },
     {
-      "tl": "Lima",
+      "tl": "lima",
       "pron": "lee-MAH",
-      "en": "Five"
+      "en": "five"
     },
     {
-      "tl": "Lahat",
+      "tl": "lahat",
       "pron": "lah-HAHT",
-      "en": "All"
+      "en": "all"
     },
     {
-      "tl": "Araw",
+      "tl": "araw",
       "pron": "ah-RAHW",
-      "en": "Day / Sun"
+      "en": "day / sun"
     },
     {
-      "tl": "Umaga",
+      "tl": "umaga",
       "pron": "oo-mah-GAH",
-      "en": "Morning"
+      "en": "morning"
     },
     {
-      "tl": "Gabi",
+      "tl": "gabi",
       "pron": "gah-BEE",
-      "en": "Night / Evening"
+      "en": "night / evening"
     },
     {
-      "tl": "Ngayon",
+      "tl": "ngayon",
       "pron": "ngah-YOHN",
-      "en": "Now / Today"
+      "en": "now / today"
     },
     {
-      "tl": "Linggo",
+      "tl": "linggo",
       "pron": "leeng-GOH",
-      "en": "Week / Sunday"
+      "en": "week / sunday"
     },
     {
-      "tl": "Adobo",
+      "tl": "adobo",
       "pron": "ah-doh-BOH",
-      "en": "Adobo (Filipino dish)"
+      "en": "adobo (filipino dish)"
     },
     {
-      "tl": "Sinigang",
+      "tl": "sinigang",
       "pron": "shee-nee-GAHNG",
-      "en": "Sour soup"
+      "en": "sour soup"
     },
     {
-      "tl": "Kape",
+      "tl": "kape",
       "pron": "kah-PEH",
-      "en": "Coffee"
+      "en": "coffee"
     },
     {
-      "tl": "Gulay",
+      "tl": "gulay",
       "pron": "goo-LIGH",
-      "en": "Vegetable"
+      "en": "vegetable"
     },
     {
-      "tl": "Isda",
+      "tl": "isda",
       "pron": "ees-DAH",
-      "en": "Fish"
+      "en": "fish"
     },
     {
-      "tl": "Mangga",
+      "tl": "mangga",
       "pron": "mahng-GAH",
-      "en": "Mango"
+      "en": "mango"
     },
     {
-      "tl": "Natulog",
+      "tl": "natulog",
       "pron": "nah-too-LOHG",
-      "en": "Slept"
+      "en": "slept"
     },
     {
-      "tl": "Gumising",
+      "tl": "gumising",
       "pron": "goo-mee-SEENG",
-      "en": "Woke up"
+      "en": "woke up"
     },
     {
-      "tl": "Nag-aral",
+      "tl": "nag-aral",
       "pron": "nahg ah-RAHL",
-      "en": "Studied"
+      "en": "studied"
     },
     {
-      "tl": "Dumating",
+      "tl": "dumating",
       "pron": "doo-mah-TEENG",
-      "en": "Arrived"
+      "en": "arrived"
     },
     {
-      "tl": "Malaki",
+      "tl": "malaki",
       "pron": "mah-lah-KEE",
-      "en": "Big"
+      "en": "big"
     },
     {
-      "tl": "Mabait",
+      "tl": "mabait",
       "pron": "mah-bah-EET",
-      "en": "Kind"
+      "en": "kind"
     },
     {
-      "tl": "Masarap",
+      "tl": "masarap",
       "pron": "mah-sah-RAHP",
-      "en": "Delicious"
+      "en": "delicious"
     },
     {
-      "tl": "Mainit",
+      "tl": "mainit",
       "pron": "mah-ee-NEET",
-      "en": "Hot"
+      "en": "hot"
     },
     {
-      "tl": "Mahal",
+      "tl": "mahal",
       "pron": "mah-HAHL",
-      "en": "Expensive / Love"
+      "en": "expensive / love"
     },
     {
-      "tl": "Kusina",
+      "tl": "kusina",
       "pron": "koo-shee-NAH",
-      "en": "Kitchen"
+      "en": "kitchen"
     },
     {
-      "tl": "Kotse",
+      "tl": "kotse",
       "pron": "koht-SEH",
-      "en": "Car"
+      "en": "car"
     },
     {
-      "tl": "Ulan",
+      "tl": "ulan",
       "pron": "oo-LAHN",
-      "en": "Rain"
+      "en": "rain"
     }
   ]
 };
