@@ -1,0 +1,366 @@
+/* ============================================================
+   learn.css — learning-experience layer for the Tagalog course.
+   Powers the components injected by learn.js: reading-progress
+   bar, end-of-lesson "Words You Learned" review + flashcards,
+   self-check quiz, learning journal, and the home dashboard.
+
+   All colours reference the tokens defined in shared.css, so
+   both light and dark themes are inherited automatically. New
+   class names are prefixed `lx-` to avoid colliding with the
+   audio layer's selectors (audio.js) and the lesson bodies.
+   ============================================================ */
+
+/* ---------- Reading progress bar ---------- */
+.lx-progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 4px;
+    width: 0%;
+    z-index: 1100;
+    background: linear-gradient(90deg, #4ECDC4, #4f46e5, #ec4899);
+    transition: width .1s linear;
+    pointer-events: none;
+}
+
+/* ---------- Shared card look for injected sections ---------- */
+.lx-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--card-shadow);
+    padding: 1.4rem 1.5rem 1.6rem;
+    margin: 2.2rem auto;
+    max-width: 1160px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.lx-card h2 {
+    background: none !important;
+    color: var(--text-primary) !important;
+    font-size: 1.35rem;
+    margin: 0 0 .35rem !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.lx-card .lx-sub {
+    color: var(--text-secondary);
+    font-size: .92rem;
+    margin: 0 0 1.1rem;
+}
+
+/* ---------- Words You Learned / flashcards ---------- */
+.lx-vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: .85rem;
+}
+.lx-word {
+    position: relative;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: .8rem .9rem .85rem;
+    transition: transform .15s, box-shadow .15s, border-color .15s;
+}
+.lx-word:hover { transform: translateY(-2px); box-shadow: var(--card-shadow); }
+.lx-word.lx-known {
+    border-left-color: #22c55e;
+    background: rgba(34,197,94,.07);
+}
+.lx-word-tl {
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .15rem;
+}
+[data-theme="dark"] .lx-word-tl { color: var(--accent) !important; }
+.lx-word-pron {
+    font-size: .8rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: .1rem 0 .35rem;
+}
+.lx-word-en { font-size: .95rem; color: var(--text-primary); }
+.lx-know-btn {
+    margin-top: .6rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    font: inherit;
+    font-size: .78rem;
+    padding: .28rem .6rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all .15s;
+}
+.lx-know-btn:hover { border-color: var(--accent); color: var(--accent); }
+.lx-word.lx-known .lx-know-btn {
+    background: #22c55e; border-color: #22c55e; color: #fff;
+}
+
+/* ---------- Toolbar / buttons ---------- */
+.lx-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+.lx-btn {
+    font: inherit;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: .55rem 1.05rem;
+    border-radius: 9px;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all .18s;
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+}
+.lx-btn:hover { border-color: var(--accent); background: var(--accent-light); color: var(--accent); }
+.lx-btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.lx-btn-primary:hover { filter: brightness(1.08); background: var(--accent); color: #fff; }
+.lx-btn:disabled { opacity: .5; cursor: default; }
+.lx-btn:disabled:hover { border-color: var(--border); background: var(--bg-secondary); color: var(--text-primary); }
+.lx-rate-miss:hover { border-color: #ef4444; background: rgba(239,68,68,.1); color: #dc2626; }
+.lx-count {
+    font-size: .85rem;
+    color: var(--text-muted);
+    margin-left: auto;
+}
+
+/* ---------- Self-check quiz ---------- */
+.lx-quiz-q { margin: 0 0 1.3rem; }
+.lx-quiz-q:last-child { margin-bottom: 0; }
+.lx-quiz-stem {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 .6rem;
+    font-size: 1.02rem;
+}
+.lx-quiz-stem .lx-q-word { color: var(--accent); }
+.lx-quiz-opts { display: grid; gap: .5rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.lx-opt {
+    text-align: left;
+    font: inherit;
+    font-size: .93rem;
+    padding: .6rem .8rem;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all .15s;
+}
+.lx-opt:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-light); }
+.lx-opt:disabled { cursor: default; }
+.lx-opt.lx-correct { border-color: #22c55e; background: rgba(34,197,94,.14); color: var(--text-primary); font-weight: 600; }
+.lx-opt.lx-wrong { border-color: #ef4444; background: rgba(239,68,68,.12); color: var(--text-primary); }
+.lx-quiz-score {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.lx-quiz-score.lx-good { color: #16a34a; }
+
+/* ---------- Learning journal ---------- */
+.lx-journal-label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: .5rem;
+}
+.lx-journal-note { font-weight: 400; color: var(--text-muted); font-size: .82rem; }
+.lx-journal-prompts {
+    font-size: .86rem;
+    color: var(--text-secondary);
+    background: var(--accent-light);
+    border-radius: 9px;
+    padding: .7rem .9rem;
+    margin: 0 0 .85rem;
+}
+.lx-journal-prompts strong { color: var(--text-primary); }
+.lx-textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: .85rem 1rem;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    resize: vertical;
+}
+.lx-textarea:focus { outline: none; border-color: var(--accent); }
+.lx-journal-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .75rem;
+    margin-top: .7rem;
+}
+.lx-status { font-size: .84rem; color: var(--text-muted); }
+
+/* ---------- Lesson-complete control ---------- */
+.lx-complete {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .8rem;
+    margin: 2.2rem auto 0;
+    max-width: 1160px;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    background: var(--accent-light);
+    border: 1px dashed var(--accent);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.lx-complete.lx-done { border-style: solid; background: rgba(34,197,94,.1); border-color: #22c55e; }
+.lx-complete-text { color: var(--text-primary); font-weight: 500; }
+
+/* ---------- Home dashboard ---------- */
+.lx-dash {
+    max-width: 960px;
+    margin: 0 auto 2rem;
+    padding: 0 1.25rem;
+}
+.lx-dash-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+}
+.lx-dash h2 { font-size: 1.3rem; margin: 0 0 1rem !important; color: var(--text-primary) !important; background: none !important; }
+.lx-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+.lx-stat {
+    text-align: center;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+.lx-stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1; }
+.lx-stat-label { font-size: .82rem; color: var(--text-muted); margin-top: .35rem; }
+.lx-track {
+    height: 12px;
+    border-radius: 999px;
+    background: var(--toggle-bg);
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+.lx-track-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #4ECDC4, #4f46e5, #ec4899);
+    transition: width .5s ease;
+}
+
+/* Completion ticks on the lesson cards (home page) */
+.lesson-card { position: relative; }
+.lesson-card .lx-tick {
+    position: absolute;
+    top: .6rem; right: .6rem;
+    width: 1.5rem; height: 1.5rem;
+    border-radius: 50%;
+    background: #22c55e;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: .85rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+.lesson-card.lx-visited .lx-tick { display: flex; background: var(--toggle-bg); color: var(--text-muted); }
+.lesson-card.lx-completed .lx-tick { display: flex; background: #22c55e; color: #fff; }
+
+/* ---------- Flashcard modal ---------- */
+.lx-modal {
+    position: fixed; inset: 0;
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background: rgba(0,0,0,.55);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+.lx-modal[hidden] { display: none; }
+.lx-flash {
+    width: 100%;
+    max-width: 460px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    padding: 1.25rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.lx-flash-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.lx-flash-head h3 { margin: 0 !important; font-size: 1.05rem; color: var(--text-primary) !important; background: none !important; }
+.lx-flash-close {
+    font: inherit; font-size: 1.4rem; line-height: 1;
+    background: none; border: none; color: var(--text-muted); cursor: pointer;
+}
+.lx-flash-card {
+    min-height: 190px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.lx-flash-front { font-size: 1.9rem; font-weight: 800; color: var(--accent); }
+.lx-flash-pron { font-size: .95rem; color: var(--text-muted); font-style: italic; }
+.lx-flash-back { font-size: 1.35rem; color: var(--text-primary); }
+.lx-flash-hint { font-size: .8rem; color: var(--text-muted); margin-top: .4rem; }
+.lx-flash-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .6rem;
+    margin-top: 1rem;
+}
+.lx-flash-progress { font-size: .85rem; color: var(--text-muted); }
+
+@media (max-width: 600px) {
+    .lx-card { padding: 1.1rem 1rem 1.25rem; border-radius: 12px; }
+    .lx-count { margin-left: 0; width: 100%; }
+    .lx-vocab-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) {
+    .lx-vocab-grid { grid-template-columns: 1fr; }
+}
+
+/* Print: hide interactive-only chrome */
+@media print {
+    .lx-progress-bar, .lx-toolbar, .lx-know-btn, .lx-quiz, .lx-complete, .lx-modal { display: none !important; }
+}
