@@ -18,7 +18,8 @@ window.TAGALOG_VOCAB = {
     "6": "Real Conversations",
     "7": "Parts of Speech",
     "8": "AI Language Learning",
-    "9": "Vocabulary Reference"
+    "9": "Vocabulary Reference",
+    "10": "Grammar Essentials"
   },
   "1": [
     {
@@ -1938,6 +1939,170 @@ window.TAGALOG_VOCAB = {
       "pron": "peh-RAH",
       "en": "money",
       "cat": "Places & things"
+    }
+  ],
+  "10": [
+    {
+      "tl": "may",
+      "pron": "my",
+      "en": "have / there is",
+      "cat": "Having & existing"
+    },
+    {
+      "tl": "mayroon",
+      "pron": "my-ROH-on",
+      "en": "have / there is (full form)",
+      "cat": "Having & existing"
+    },
+    {
+      "tl": "wala",
+      "pron": "wah-LAH",
+      "en": "none / there isn't",
+      "cat": "Having & existing"
+    },
+    {
+      "tl": "na",
+      "pron": "nah",
+      "en": "already / now",
+      "cat": "Particles"
+    },
+    {
+      "tl": "pa",
+      "pron": "pah",
+      "en": "still / yet / more",
+      "cat": "Particles"
+    },
+    {
+      "tl": "ba",
+      "pron": "bah",
+      "en": "question marker",
+      "cat": "Particles"
+    },
+    {
+      "tl": "lang",
+      "pron": "lahng",
+      "en": "only / just",
+      "cat": "Particles"
+    },
+    {
+      "tl": "rin",
+      "pron": "reen",
+      "en": "also / too",
+      "cat": "Particles"
+    },
+    {
+      "tl": "daw",
+      "pron": "dow",
+      "en": "reportedly / they say",
+      "cat": "Particles"
+    },
+    {
+      "tl": "nga",
+      "pron": "ngah",
+      "en": "indeed / please (softener)",
+      "cat": "Particles"
+    },
+    {
+      "tl": "pala",
+      "pron": "pah-LAH",
+      "en": "oh! (realization)",
+      "cat": "Particles"
+    },
+    {
+      "tl": "ko",
+      "pron": "koh",
+      "en": "my / by me",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "mo",
+      "pron": "moh",
+      "en": "your / by you",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "niya",
+      "pron": "nee-YAH",
+      "en": "his / her / by him / by her",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "namin",
+      "pron": "NAH-min",
+      "en": "our / by us (exclusive)",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "natin",
+      "pron": "NAH-tin",
+      "en": "our / by us (inclusive)",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "nila",
+      "pron": "nee-LAH",
+      "en": "their / by them",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "akin",
+      "pron": "AH-kin",
+      "en": "to me / mine",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "iyo",
+      "pron": "ee-YOH",
+      "en": "to you / yours",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "kaniya",
+      "pron": "kah-nee-YAH",
+      "en": "to him / to her",
+      "cat": "Pronoun forms"
+    },
+    {
+      "tl": "ito",
+      "pron": "ee-TOH",
+      "en": "this (near me)",
+      "cat": "Pointing words"
+    },
+    {
+      "tl": "iyan",
+      "pron": "ee-YAHN",
+      "en": "that (near you)",
+      "cat": "Pointing words"
+    },
+    {
+      "tl": "iyon",
+      "pron": "ee-YOHN",
+      "en": "that (over there)",
+      "cat": "Pointing words"
+    },
+    {
+      "tl": "mas",
+      "pron": "mahs",
+      "en": "more",
+      "cat": "Comparing"
+    },
+    {
+      "tl": "pinaka",
+      "pron": "pee-nah-KAH",
+      "en": "the most (prefix)",
+      "cat": "Comparing"
+    },
+    {
+      "tl": "kaysa",
+      "pron": "KY-sah",
+      "en": "than",
+      "cat": "Comparing"
+    },
+    {
+      "tl": "na / -ng",
+      "pron": "nah / ng",
+      "en": "linker (joins words)",
+      "cat": "Comparing"
     }
   ]
 };

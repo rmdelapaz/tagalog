@@ -55,15 +55,17 @@
 
     /* ---- build the deduplicated word list ---- */
     var byKey = {}, order = [];
-    for (var ln = 1; ln <= 9; ln++) {
+    var LESSON_KEYS = Object.keys(VOCAB).filter(function (k) { return /^\d+$/.test(k); })
+        .map(Number).sort(function (a, b) { return a - b; });
+    LESSON_KEYS.forEach(function (ln) {
         var list = VOCAB[String(ln)];
-        if (!Array.isArray(list)) continue;
+        if (!Array.isArray(list)) return;
         list.forEach(function (w) {
             var key = w.tl.toLowerCase();
             if (!byKey[key]) { byKey[key] = { tl: w.tl, pron: w.pron || '', en: w.en || '', lessons: [ln] }; order.push(key); }
             else if (byKey[key].lessons.indexOf(ln) < 0) byKey[key].lessons.push(ln);
         });
-    }
+    });
     var WORDS = order.map(function (k) { return byKey[k]; });
 
     // strip diacritics for accent-insensitive search and A–Z bucketing
@@ -114,7 +116,7 @@
 
     // lesson filter options
     var opt = '<option value="">All lessons</option>';
-    for (var i = 1; i <= 9; i++) opt += '<option value="' + i + '">Lesson ' + i + (TITLES[i] ? ' — ' + esc(TITLES[i]) : '') + '</option>';
+    LESSON_KEYS.forEach(function (i) { opt += '<option value="' + i + '">Lesson ' + i + (TITLES[i] ? ' — ' + esc(TITLES[i]) : '') + '</option>'; });
     lessonEl.innerHTML = opt;
 
     function lessonLinks(lessons) {

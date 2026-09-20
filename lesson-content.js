@@ -170,5 +170,23 @@ window.TAGALOG_LESSON_INFO = {
       "Alphabet quick-navigation and category filters make it fast to jump to the words you need",
       "Retention improves by following example sentences and practicing each new word in your own sentences"
     ]
+  },
+  "10": {
+    "objectives": [
+      "Express possession and existence with may, mayroon, and their opposite wala",
+      "Join describing words to nouns using the na / -ng linker and its simple sound rule",
+      "Use the full pronoun family — the ang, ng, and sa sets — for subjects, possession, and recipients",
+      "Add natural tone and timing with enclitic particles like na, pa, ba, lang, rin, daw, and pala",
+      "Point precisely with the three-distance demonstratives ito, iyan, and iyon",
+      "Compare things using mas, kaysa, pinaka-, and kasing-"
+    ],
+    "summary": [
+      "May comes directly before a noun, mayroon is the fuller form used with pronouns, and wala negates both",
+      "The linker is -ng after a vowel or n, and the separate word na after any other consonant",
+      "Pronouns come in three matching sets: ang (ako, ikaw), ng (ko, mo, niya), and sa (akin, iyo, kaniya)",
+      "Enclitic particles slot right after the first word and carry meaning far larger than their size",
+      "Demonstratives track distance: ito is near me, iyan is near you, iyon is far from both",
+      "Comparisons build from mas (more), kaysa (than), pinaka- (the most), and kasing- (as…as)"
+    ]
   }
 };
