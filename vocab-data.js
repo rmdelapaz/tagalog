@@ -2463,49 +2463,57 @@ window.TAGALOG_VOCAB = {
       "tl": "pula",
       "pron": "poo-LAH",
       "en": "red",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "pula"
     },
     {
       "tl": "asul",
       "pron": "ah-SOOL",
       "en": "blue",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "asul"
     },
     {
       "tl": "dilaw",
       "pron": "dee-LOW",
       "en": "yellow",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "dilaw"
     },
     {
       "tl": "berde",
       "pron": "BEHR-deh",
       "en": "green",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "berde"
     },
     {
       "tl": "puti",
       "pron": "poo-TEE",
       "en": "white",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "puti"
     },
     {
       "tl": "itim",
       "pron": "ee-TEEM",
       "en": "black",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "itim"
     },
     {
       "tl": "kahel",
       "pron": "KAH-hel",
       "en": "orange",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "kahel"
     },
     {
       "tl": "kulay-rosas",
       "pron": "KOO-lai ROH-sas",
       "en": "pink",
-      "cat": "Colors"
+      "cat": "Colors",
+      "img": "kulay-rosas"
     },
     {
       "tl": "mainit",
