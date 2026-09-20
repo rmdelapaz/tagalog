@@ -308,67 +308,78 @@ window.TAGALOG_VOCAB = {
       "tl": "adobo",
       "pron": "a-DO-bo",
       "en": "adobo (filipino dish)",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "adobo"
     },
     {
       "tl": "aso",
       "pron": "AH-so",
       "en": "dog",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "aso"
     },
     {
       "tl": "bulaklak",
       "pron": "boo-lak-LAK",
       "en": "flower",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "bulaklak"
     },
     {
       "tl": "eskwelahan",
       "pron": "es-kwe-la-HAN",
       "en": "school",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "eskwelahan"
     },
     {
       "tl": "kanin",
       "pron": "KA-nin",
       "en": "rice (cooked)",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "kanin"
     },
     {
       "tl": "kusina",
       "pron": "koo-SI-na",
       "en": "kitchen",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "kusina"
     },
     {
       "tl": "libro",
       "pron": "LIB-ro",
       "en": "book",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "libro"
     },
     {
       "tl": "mansanas",
       "pron": "man-SA-nas",
       "en": "apple",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "mansanas"
     },
     {
       "tl": "mesa",
       "pron": "ME-sa",
       "en": "table",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "mesa"
     },
     {
       "tl": "palengke",
       "pron": "pa-leng-KE",
       "en": "market",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "palengke"
     },
     {
       "tl": "sapatos",
       "pron": "sa-pa-TOS",
       "en": "shoes",
-      "cat": "Everyday nouns"
+      "cat": "Everyday nouns",
+      "img": "sapatos"
     },
     {
       "tl": "gutom",
