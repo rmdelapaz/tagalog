@@ -110,25 +110,29 @@ window.TAGALOG_VOCAB = {
       "tl": "aso",
       "pron": "AH-so",
       "en": "dog",
-      "cat": "Animals"
+      "cat": "Animals",
+      "img": "aso"
     },
     {
       "tl": "isda",
       "pron": "is-DAH",
       "en": "fish",
-      "cat": "Animals"
+      "cat": "Animals",
+      "img": "isda"
     },
     {
       "tl": "oso",
       "pron": "OH-so",
       "en": "bear",
-      "cat": "Animals"
+      "cat": "Animals",
+      "img": "oso"
     },
     {
       "tl": "pusa",
       "pron": "POO-sa",
       "en": "cat",
-      "cat": "Animals"
+      "cat": "Animals",
+      "img": "pusa"
     },
     {
       "tl": "bahay",
