@@ -101,7 +101,10 @@
                 '<div class="cs-en">' + esc(it[2]) + '</div>' +
             '</div>';
         }).join('');
-        return '<section class="cs-card"><h3 class="cs-cat">' + esc(cat.title) + '</h3>' + rows + '</section>';
+        return '<section class="cs-card"><h3 class="cs-cat">' + esc(cat.title) +
+            '<button type="button" class="cs-cat-practice" data-cat="' + esc(cat.title) + '" ' +
+            'aria-label="Practice ' + esc(cat.title) + ' flashcards" title="Practice these">🃏</button>' +
+            '</h3>' + rows + '</section>';
     }).join('');
 
     var total = SHEET.reduce(function (n, c) { return n + c.items.length; }, 0);
@@ -169,5 +172,14 @@
     var practiceBtn = document.querySelector('.cs-practice');
     if (practiceBtn) practiceBtn.addEventListener('click', function () {
         openFlashcards(shuffle(DECK), 'Cheat sheet · ' + DECK.length + ' phrases');
+    });
+
+    // Per-category practice (delegated on the grid).
+    root.addEventListener('click', function (e) {
+        var b = e.target.closest('.cs-cat-practice');
+        if (!b) return;
+        var cat = b.getAttribute('data-cat');
+        var deck = DECK.filter(function (w) { return w.cat === cat; });
+        if (deck.length) openFlashcards(shuffle(deck), cat + ' · ' + deck.length + ' phrases');
     });
 })();
