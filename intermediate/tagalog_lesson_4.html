@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causative Verbs (magpa-/ipa-) - Having Things Done</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #e17055, #d63031, #6c5ce7); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #e17055; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #e17055; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #e17055; color: white; }
+        .focus-tag { display: inline-block; font-size: .78rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; color: #fff; }
+        .af { background: #00b894; }
+        .of { background: #e17055; }
+        .cau { background: #d63031; }
+        .marker { font-weight: 700; padding: 0 3px; border-radius: 4px; }
+        .m-ang { background: rgba(0,184,148,.22); color: #0a6b52; }
+        .m-ng { background: rgba(225,112,85,.22); color: #a63c22; }
+        .m-sa { background: rgba(9,132,227,.20); color: #0652dd; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Mga Pandiwang Sanhi — Causative Verbs (magpa- / ipa-)</h1>
+        <p>Not doing it yourself — having <em>someone else</em> do it for you</p>
+    </div>
+
+    <div class="section">
+        <p>So far every verb has had <em>you</em> doing the action. But real life is full of actions you <strong>arrange</strong> rather than perform: you get a haircut, you have the house repaired, you have someone summoned. In Tagalog this "have it done" idea has its own affixes — the <strong>causative</strong> prefixes <span class="marker m-ang">magpa-</span> and <span class="marker m-ang">ipa-</span>.</p>
+        <p>Causatives add a new character to the scene: the <strong>causer</strong> (the one who wants it done) and the <strong>causee</strong> (the one who actually does it). And because Tagalog is a focus language, there are two ways to build it depending on <em>who's in the spotlight</em> — the causer (<span class="marker m-ang">magpa-</span>) or the thing being done (<span class="marker m-ang">ipa-</span>).</p>
+    </div>
+
+    <div class="section">
+        <h2>1. The Cast: Causer, Causee, Action</h2>
+        <p>Every causative sentence has up to three players. Keep them straight and the affixes fall into place:</p>
+
+        <div class="pos-card">
+            <ul>
+                <li><strong>Causer</strong> — the one who <em>wants</em> the action done (often "I"). </li>
+                <li><strong>Causee</strong> — the one who <em>actually does</em> it (the cook, the barber, the worker). Marked with <span class="marker m-sa">sa</span> or <span class="marker m-ng">ng</span>.</li>
+                <li><strong>Patient / thing</strong> — what the action is done to (the food, the hair, the house).</li>
+            </ul>
+        </div>
+
+        <div class="mermaid">
+            graph LR
+                CAUSER["CAUSER<br/>(nagpaluto ako)<br/>wants it done"]
+                CAUSEE["CAUSEE<br/>(sa kusinero)<br/>actually does it"]
+                ACTION["ACTION on the THING<br/>(luto → adobo)<br/>gets done"]
+                CAUSER -- "asks / has" --> CAUSEE
+                CAUSEE -- "performs" --> ACTION
+                style CAUSER fill:#d63031,color:#fff
+                style CAUSEE fill:#e17055,color:#fff
+                style ACTION fill:#6c5ce7,color:#fff
+        </div>
+
+        <p>The prefix <span class="marker m-ang">pa-</span> is the causative core — it means "cause/let to be done." <span class="marker m-ang">magpa-</span> and <span class="marker m-ang">ipa-</span> are just <span class="marker m-ang">pa-</span> wrapped for two different focuses.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. magpa- : the Causer in Focus</h2>
+        <p><span class="marker m-ang">magpa-</span> is an <strong>actor-focus causative</strong> — but the "actor" it spotlights is the <strong>causer</strong>, the one who had it done. So the causer wears <span class="marker m-ang">ang</span> (or is an <span class="marker m-ang">ang</span>-pronoun like <em>ako</em>):</p>
+
+        <div class="example-box">
+            <ul>
+                <li><strong>Nagpaluto</strong> <span class="marker m-ang">ako</span> <span class="marker m-ng">ng adobo</span> <span class="marker m-sa">sa kusinero</span>. — I had the cook make adobo. <span class="focus-tag af">causer-focus</span></li>
+                <li><strong>Nagpagupit</strong> <span class="marker m-ang">si Ben</span> <span class="marker m-sa">sa barbero</span>. — Ben got a haircut (had the barber cut it).</li>
+            </ul>
+            <p>The causer (<em>ako</em>, <em>si Ben</em>) is in focus; the causee takes <span class="marker m-sa">sa</span>; the thing takes <span class="marker m-ng">ng</span>. Literally: "I <em>had-cook</em> adobo at/with the cook."</p>
+        </div>
+
+        <p>Aspect works with the usual <em>mag-</em> pattern — the <em>m</em> becomes <em>n</em> for started aspects, and the syllable after <em>pa</em>… actually reduplicates <em>pa</em> itself:</p>
+
+        <table class="g-table">
+            <tr><th>Aspect</th><th>Prefix</th><th>Example (luto)</th></tr>
+            <tr><td>Infinitive / command</td><td>magpa-</td><td>magpaluto</td></tr>
+            <tr><td>Completed (past)</td><td>nagpa-</td><td>nagpaluto</td></tr>
+            <tr><td>Incompleted (present)</td><td>nagpapa-</td><td>nagpapaluto</td></tr>
+            <tr><td>Contemplated (future)</td><td>magpapa-</td><td>magpapaluto</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>3. ipa- : the Thing Done in Focus</h2>
+        <p><span class="marker m-ang">ipa-</span> is the <strong>object/patient-focus causative</strong>: it puts <span class="marker m-ang">ang</span> on the <strong>thing that gets done</strong>. Now the causer drops to <span class="marker m-ng">ng</span> (or a <span class="marker m-ng">ng</span>-pronoun like <em>ko</em>), and the causee still takes <span class="marker m-sa">sa</span>:</p>
+
+        <div class="example-box">
+            <ul>
+                <li><strong>Ipinaluto</strong> <span class="marker m-ng">ko</span> <span class="marker m-ang">ang manok</span> <span class="marker m-sa">kay Ana</span>. — I had the chicken cooked by Ana. <span class="focus-tag cau">patient-focus</span></li>
+                <li><strong>Ipinagawa</strong> <span class="marker m-ng">namin</span> <span class="marker m-ang">ang bahay</span>. — We had the house built/repaired.</li>
+            </ul>
+            <p>Here the <strong>thing</strong> (<em>ang manok</em>, <em>ang bahay</em>) is in the spotlight — natural when the thing is specific and it's what you're talking about. Compare with <em>magpa-</em>, where <em>you</em> the causer were the news.</p>
+        </div>
+
+        <p>Aspect uses the object-focus <strong>-in-</strong> machinery, landing right after the <em>i</em>:</p>
+
+        <table class="g-table">
+            <tr><th>Aspect</th><th>Prefix</th><th>Example (luto)</th></tr>
+            <tr><td>Infinitive / command</td><td>ipa-</td><td>ipaluto</td></tr>
+            <tr><td>Completed (past)</td><td>ipina-</td><td>ipinaluto</td></tr>
+            <tr><td>Incompleted (present)</td><td>ipinapa-</td><td>ipinapaluto</td></tr>
+            <tr><td>Contemplated (future)</td><td>ipapa-</td><td>ipapaluto</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>4. magpa- vs. ipa-: Same Event, Which Spotlight?</h2>
+        <p>It's the focus system again — one causative event, framed by whichever role is the news. Pick <span class="marker m-ang">magpa-</span> when <em>the person who arranged it</em> is the topic; pick <span class="marker m-ang">ipa-</span> when <em>the thing done</em> is the topic:</p>
+
+        <table class="g-table">
+            <tr><th>Causative</th><th>Spotlight (ang)</th><th>Example</th></tr>
+            <tr><td><span class="focus-tag af">magpa-</span></td><td>the <strong>causer</strong></td><td><strong>Nagpaluto</strong> <span class="marker m-ang">ako</span> ng manok sa kusinero.</td></tr>
+            <tr><td><span class="focus-tag cau">ipa-</span></td><td>the <strong>thing done</strong></td><td><strong>Ipinaluto</strong> ko <span class="marker m-ang">ang manok</span> sa kusinero.</td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>How to remember which.</strong> <em>magpa-</em> starts like <em>mag-</em> (actor focus) — so it spotlights the <strong>doer-of-the-arranging</strong>, the causer. <em>ipa-</em> starts like the object-marking <em>i-</em> family — so it spotlights the <strong>thing</strong>. Match your choice to the answer you'd give: "<em>Sino ang nagpaluto?</em>" (Who had it cooked?) → magpa-; "<em>Ano ang ipinaluto?</em>" (What was had-cooked?) → ipa-.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Marking the Causee: sa / ng</h2>
+        <p>The <strong>causee</strong> — whoever actually performs the action — is normally marked with <span class="marker m-sa">sa</span> (or <span class="marker m-sa">kay</span> before a personal name). You can often leave the causee out entirely when it's obvious or unimportant:</p>
+
+        <div class="example-box">
+            <ul>
+                <li>Nagpagupit ako <span class="marker m-sa">sa barbero</span>. — I got a haircut from the barber. <em>(causee named)</em></li>
+                <li>Nagpagupit ako. — I got a haircut. <em>(causee dropped — a barber is implied)</em></li>
+                <li>Ipinaayos ko ang kotse <span class="marker m-sa">sa mekaniko</span>. — I had the car fixed by the mechanic.</li>
+            </ul>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Everyday causatives you'll hear constantly.</strong> Filipinos use causatives for all the services of daily life:
+            <ul>
+                <li><strong>nagpagupit</strong> — got a haircut</li>
+                <li><strong>nagpagawa</strong> — had something made/built/repaired</li>
+                <li><strong>nagpaluto</strong> — had food cooked</li>
+                <li><strong>nagpahinga</strong> — rested (had oneself rest — <em>pa-</em> can turn inward, too)</li>
+                <li><strong>ipinatawag</strong> — had someone summoned / sent for someone</li>
+                <li><strong>ipinaayos</strong> / <strong>ipinagawa</strong> — had something fixed / made</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Putting It in a Sentence</h2>
+        <p>A few fuller examples to hear the rhythm — notice the causer, causee, and thing each in place:</p>
+
+        <div class="example-box">
+            <ul>
+                <li><strong>Nagpapaluto</strong> si Nanay <span class="marker m-ng">ng hapunan</span> <span class="marker m-sa">sa kasambahay</span> tuwing Linggo. — Mom has the helper cook dinner every Sunday.</li>
+                <li><strong>Ipinatawag</strong> ng boss <span class="marker m-ang">si Ana</span>. — The boss sent for Ana. <em>(Ana = the one summoned, in focus)</em></li>
+                <li><strong>Magpapagawa</strong> kami <span class="marker m-ng">ng bagong pinto</span> <span class="marker m-sa">sa karpintero</span>. — We'll have the carpenter make a new door.</li>
+                <li><strong>Ipinaluto</strong> ko <span class="marker m-ang">ang isda</span> kagabi. — I had the fish cooked last night.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Work the Causatives</h2>
+
+        <h3>Exercise 1: Conjugate the causative</h3>
+        <p>Give the requested aspect:</p>
+        <div class="example-box">
+            <ul>
+                <li>magpaluto, <strong>completed</strong> (past): _____ (Answer: nagpaluto)</li>
+                <li>magpaluto, <strong>incompleted</strong> (present): _____ (Answer: nagpapaluto)</li>
+                <li>ipaluto, <strong>completed</strong> (past): _____ (Answer: ipinaluto)</li>
+                <li>ipaluto, <strong>contemplated</strong> (future): _____ (Answer: ipapaluto)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: magpa- or ipa-?</h3>
+        <p>Which causative matches the spotlight — answer <strong>magpa</strong> or <strong>ipa</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>_____ ako ng adobo sa kusinero. (causer "ako" in focus) → (Answer: magpa|nagpa)</li>
+                <li>_____ ko ang manok sa kusinero. (thing "ang manok" in focus) → (Answer: ipa|ipina)</li>
+                <li>_____ kami ng bahay sa karpintero. (causer "kami" in focus) → (Answer: magpa|nagpa)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Mark the causee</h3>
+        <p>Fill in the marker for the causee (the one who does the work). Use <strong>sa</strong> or <strong>kay</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>Nagpaluto ako ng pansit _____ kusinero. → (Answer: sa)</li>
+                <li>Ipinaayos niya ang relo _____ Mang Tonyo. (a person's name) → (Answer: kay)</li>
+                <li>Nagpagupit si Ana _____ bagong barbero. → (Answer: sa)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Spot the causer's marker</h3>
+        <p>In each sentence, is the causer in focus (<strong>ang</strong>-word) or non-focus (<strong>ng</strong>-word)? Answer <strong>ang</strong> or <strong>ng</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>Nagpaluto <strong>ako</strong> ng manok. → _____ (Answer: ang)</li>
+                <li>Ipinaluto <strong>ko</strong> ang manok. → _____ (Answer: ng)</li>
+                <li>Nagpapagawa <strong>si Nanay</strong> ng damit. → _____ (Answer: ang)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Say it with a causative</h3>
+        <p>Give the everyday causative verb (completed aspect) for each:</p>
+        <div class="example-box">
+            <ul>
+                <li>You got a haircut. → _____ ako. (Answer: nagpagupit)</li>
+                <li>The boss sent for Ana. → _____ ng boss si Ana. (Answer: ipinatawag)</li>
+                <li>We had a new house built. → _____ kami ng bagong bahay. (Answer: nagpagawa)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>Causatives let you talk about the huge slice of life you <em>arrange</em> rather than do yourself. Two spotlights, one idea: <span class="marker m-ang">magpa-</span> keeps the <strong>causer</strong> in focus ("<em>I</em> had it done"); <span class="marker m-ang">ipa-</span> keeps the <strong>thing done</strong> in focus ("the chicken <em>was had-cooked</em>"), with the causee tucked into a <span class="marker m-sa">sa</span>-phrase. That's four B1 verb lessons of the focus system now under your belt. Next up: <strong>ability and the accidental</strong> (maka-/ma-) — <em>can</em>, <em>managed to</em>, and things that happened by accident.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/intermediate/tagalog_lesson_3.html" class="prev-lesson">&larr; Previous: Benefactive Focus (i-)</a>
+    <a href="/intermediate/index.html" class="home-link">&#127968; Intermediate Home</a>
+    <a href="/intermediate/tagalog_lesson_5.html" class="next-lesson">Next: Ability &amp; the Accidental (maka-/ma-) &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/intermediate/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/intermediate/vocab-data.js"></script>
+<script src="/intermediate/lesson-content.js"></script>
+<script src="/intermediate/learn.js"></script>
+</body>
+</html>
