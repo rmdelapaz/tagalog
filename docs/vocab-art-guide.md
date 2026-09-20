@@ -153,5 +153,17 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
   To refresh any image, overwrite the WebP and bump `VOCAB_IMG_VER` in `learn.js`.
   (Simpler than per-file content hashes; revisit if the set grows to many
   independently-changing files.)
-- **Not yet:** commit + deploy (awaiting review). To scale to other categories, repeat
-  the generate → download → convert → add `img` flow; no code changes needed.
+- To scale to other categories, repeat the generate → download → convert → add `img`
+  flow; no code changes needed.
+
+### Roll-out progress
+- **Food & Drink** (L6, L9) — 18 illustrations — committed `6a18fe3`.
+- **Animals** (L1) — 3 new (aso, oso, pusa) + `isda` reused — committed `cf37c9f`.
+- **Family** (L5, L9) — 16 roles — committed `1bd655a`.
+  - **Scoping rule for people-heavy categories:** illustrate only roles with a clear
+    visual (age/gender/grouping/cultural cue). Skip terms an image can't distinguish
+    (e.g. kapatid "sibling", pinsan "cousin", pamangkin, the in-laws, kababayan).
+    Use Filipino subjects and role cues (tita w/ pasalubong, ninong in barong).
+- Slugs are shared across lessons/categories, so an image made once is reused
+  everywhere the word appears (e.g. `isda` in both Food and Animals).
+- Not yet: git push + Netlify deploy (Ray pushes via SSH).
