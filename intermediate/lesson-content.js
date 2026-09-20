@@ -227,5 +227,71 @@ window.TAGALOG_LESSON_INFO = {
       "Contrast a backdrop (imperfective) with a punch (completed) to make the story feel alive: Natutulog ako nang tumunog ang telepono",
       "Telling stories weaves together the whole B1 toolkit — the extended focus system, aspect, connectors, conditionals, description, and self-expression — completing B1"
     ]
+  },
+  "13": {
+    "objectives": [
+      "Place Tagalog on a register spectrum: deep/literary, formal/standard, casual/colloquial, and Taglish",
+      "Swap formal and everyday word pairs (wika/salita, silid/kwarto, paaralan/eskwelahan, tanggapan/opisina)",
+      "Mark respect with po/opo, the plural kayo/sila for one person, and titles (Ginoo, Bb., Gng.)",
+      "Recognize Taglish as code-switching where English roots take Tagalog affixes (nag-meeting, i-send, na-stress)",
+      "Match the register to the situation — deep for ceremony, formal for official, casual for friends, Taglish for office/online"
+    ],
+    "summary": [
+      "Register is the B2 mindset: the same meaning dressed for its occasion, along a dial from deep/literary to formal to casual to Taglish",
+      "Many concepts have formal/deep vs. everyday word pairs — wika/salita, silid/kwarto, paaralan/eskwelahan, tanggapan/opisina (extending pero/ngunit, kasi/dahil from Lesson 8)",
+      "Politeness is marked with po/opo, by using kayo/sila for a single respected person, and with titles (Ginoo, Binibini/Bb., Ginang/Gng.)",
+      "Taglish is a legitimate register: English words take Tagalog affixes (nag-meeting, i-send, na-stress) and dominate technical, corporate, and online talk",
+      "Choose your register by audience and setting — deep for ceremony, formal for letters/officials, casual for family/friends, Taglish for office and social media"
+    ]
+  },
+  "14": {
+    "objectives": [
+      "Explain why nominalization matters — packaging qualities and actions as nouns you can discuss",
+      "Build abstract quality nouns with ka-…-an (ganda→kagandahan, laya→kalayaan, totoo→katotohanan)",
+      "Build gerunds with pag- (basa→pagbasa/pagbabasa, aral→pag-aaral), with reduplication for the ongoing activity",
+      "Build state/essence nouns with pagka- (bata→pagkabata, tao→pagkatao)",
+      "Recognize doer nouns (taga-/tagapag-) and result nouns (-in)"
+    ],
+    "summary": [
+      "Nominalization turns qualities and actions into nouns so they can be the topic of a sentence — the raw material of abstract, formal Tagalog",
+      "ka-…-an is the most productive abstract-quality pattern: kagandahan (beauty), kalayaan (freedom), katotohanan (truth), kahirapan (poverty)",
+      "pag- makes gerunds ('the act of -ing'): bare pag- for a single act (pagbasa), reduplicated for the activity/habit (pagbabasa, pagluluto) — echoing verb-aspect reduplication",
+      "pagka- names a state or essence — '-hood/-ness': pagkabata (childhood), pagkatao (personhood/character), pagkatalo (defeat)",
+      "taga-/tagapag- form doer nouns (tagaluto, tagabantay) and -in forms result/thing nouns (inumin, kakanin) — feeding the abstract topics of Lesson 23"
+    ]
+  },
+  "15": {
+    "objectives": [
+      "Distinguish direct from reported speech and make the pronoun shift (ako→siya)",
+      "Report statements with sabi/sinabi … na",
+      "Use the reportative particle daw/raw ('reportedly / they say')",
+      "Report questions with a tanong verb + kung (whether) — a Lesson 9 callback",
+      "Attribute information with ayon kay (+ name) / ayon sa (+ common noun)",
+      "Remember that Tagalog has no tense-backshift — keep the original aspect, change only pronouns"
+    ],
+    "summary": [
+      "Reported speech folds someone's words into your sentence: quotes give way to the linker na, and pronouns shift to your viewpoint (ako→siya)",
+      "The everyday quotative is sabi (ni/nila) … na; the more formal object-focus verb is sinabi",
+      "daw (after a consonant) / raw (after a vowel) marks information as second-hand — 'reportedly / they say' — and sits after the first word like other enclitics",
+      "Report a yes/no question with a tanong verb + kung ('whether'); wh-questions keep their question word (kung saan, kung ano)",
+      "Attribute with ayon kay (+ personal name) or ayon sa (+ common noun/source)",
+      "Crucially, there is no backshift — keep the original verb's aspect; only the pronouns change"
+    ]
+  },
+  "16": {
+    "objectives": [
+      "Contrast real conditionals (Lesson 9) with unreal/hypothetical ones marked by sana",
+      "Use sana + contemplated for hope, and sana + completed for a wish or regret",
+      "Build counterfactuals with kung + past … sana ('if X had happened, Y would have')",
+      "Use the formal kung sakaling ('in the event that') for remote hypotheticals",
+      "Express 'should have' regrets with dapat sana"
+    ],
+    "summary": [
+      "B2 adds unreal conditions to the real ones from Lesson 9; the marker is sana ('I hope / if only / would that')",
+      "sana + a contemplated (future) verb expresses hope (Sana umulan bukas); sana + a completed (past) verb expresses a wish or regret (Sana nag-aral ako)",
+      "Counterfactuals use kung + past in the condition and sana in the result: Kung nag-aral ka, pumasa ka sana ('you would have passed')",
+      "kung sakaling means 'in the event that' — the formal, more hypothetical cousin of Lesson 9's sakali",
+      "dapat sana expresses 'should have (but didn't)': Dapat sana tumawag ako, pero nakalimutan ko"
+    ]
   }
 };
