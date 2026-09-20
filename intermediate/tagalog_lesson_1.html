@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Focus System Revisited - What Really Makes Tagalog Sound Natural</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #6c5ce7, #0984e3, #00b894); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #6c5ce7; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #6c5ce7; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #6c5ce7; color: white; }
+        .focus-tag { display: inline-block; font-size: .78rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; color: #fff; }
+        .af { background: #00b894; }
+        .of { background: #e17055; }
+        .marker { font-weight: 700; padding: 0 3px; border-radius: 4px; }
+        .m-ang { background: rgba(0,184,148,.22); color: #0a6b52; }
+        .m-ng { background: rgba(225,112,85,.22); color: #a63c22; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Ang Sistema ng Focus, Muli — The Focus System Revisited</h1>
+        <p>Why Tagalog sounds natural because of <em>focus</em>, not word order</p>
+    </div>
+
+    <div class="section">
+        <p>Welcome to B1. In the beginner course you met the <strong>focus system</strong> in passing — the reason a Tagalog verb can be built around the <em>doer</em> one moment and the <em>thing done</em> the next. It's the single biggest idea in the language, and it's what separates learners who translate word-by-word from speakers who actually <em>sound</em> Filipino.</p>
+        <p>This lesson pulls that idea into the open and makes it solid: <strong>actor focus</strong> (<em>-um-</em> / <em>mag-</em>) versus <strong>object focus</strong> (<em>-in</em>), how the <span class="marker m-ang">ang</span> and <span class="marker m-ng">ng</span> markers swap places when focus changes, and — the practical skill — how to <strong>choose</strong> which focus to use. Everything from here (locative, benefactive, causative, ability) is just more focus types. Get this and the rest of B1 clicks into place.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. What "Focus" Actually Means</h2>
+        <p>In English, the verb changes for <em>tense</em> (walk / walked / will walk) and the important noun sits in the subject slot. In Tagalog, the verb's <strong>affix</strong> announces something different: <strong>which participant is in the spotlight</strong> — the one marked by <span class="marker m-ang">ang</span>.</p>
+        <p>That spotlighted noun is the <strong>focus</strong> (some books call it the "trigger" or "topic"). The affix on the verb and the marker on the noun always agree. Change one and you must change the other. Think of it as a matched pair:</p>
+
+        <div class="pos-card">
+            <ul>
+                <li><strong>Actor focus</strong> <span class="focus-tag af">AF</span> — the <em>doer</em> is the <span class="marker m-ang">ang</span>-phrase. Affixes: <strong>-um-</strong> and <strong>mag-</strong>.</li>
+                <li><strong>Object focus</strong> <span class="focus-tag of">OF</span> — the <em>thing acted on</em> is the <span class="marker m-ang">ang</span>-phrase. Affix: <strong>-in</strong> (with its aspect forms).</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>The same event, two focuses</h3>
+            <p>Imagine one real-world scene: <em>a person eating a mango</em>. Tagalog can frame it two ways.</p>
+            <ul>
+                <li><span class="focus-tag af">AF</span> <strong>Kumain</strong> <span class="marker m-ang">ang lalaki</span> <span class="marker m-ng">ng mangga</span>. — <em>The man ate a mango.</em> (spotlight on the man)</li>
+                <li><span class="focus-tag of">OF</span> <strong>Kinain</strong> <span class="marker m-ng">ng lalaki</span> <span class="marker m-ang">ang mangga</span>. — <em>The man ate the mango.</em> (spotlight on the mango)</li>
+            </ul>
+            <p>Same action, same two people-and-thing. What changed is the <strong>verb affix</strong> (<em>kum-</em> → <em>-in-</em>) and which noun wears <span class="marker m-ang">ang</span>. That agreement <em>is</em> the focus system.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. The Markers Swap: ang ↔ ng</h2>
+        <p>Here's the mechanical heart of it. You already know the markers from A2:</p>
+        <ul>
+            <li><span class="marker m-ang">ang</span> = the spotlight / focus marker (for the one noun in focus).</li>
+            <li><span class="marker m-ng">ng</span> (said "nang") = the non-focus marker (for the other core noun — doer or object that is <em>not</em> in the spotlight).</li>
+        </ul>
+        <p>When you flip focus, these two markers <strong>trade places</strong> on the doer and the object:</p>
+
+        <table class="g-table">
+            <tr><th>Role</th><th>Actor focus <span class="focus-tag af">AF</span></th><th>Object focus <span class="focus-tag of">OF</span></th></tr>
+            <tr><td>Doer (the man)</td><td><span class="marker m-ang">ang</span> lalaki</td><td><span class="marker m-ng">ng</span> lalaki</td></tr>
+            <tr><td>Object (the mango)</td><td><span class="marker m-ng">ng</span> mangga</td><td><span class="marker m-ang">ang</span> mangga</td></tr>
+            <tr><td>Verb affix</td><td>k<strong>um</strong>ain / <strong>mag</strong>luto</td><td>kain<strong>in</strong> / lutu<strong>in</strong></td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>Pronouns follow the same rule.</strong> The doer who loses <span class="marker m-ang">ang</span> doesn't vanish — it becomes a <strong>ng</strong>-pronoun (ko, mo, niya…). So <em>Kumain ako ng mangga</em> (AF, "I ate a mango") becomes <em>Kinain ko ang mangga</em> (OF, "I ate the mango"). <em>ako</em> → <em>ko</em>: the ang-pronoun becomes the ng-pronoun. Nothing is added or dropped — the roles just re-dress.
+        </div>
+
+        <div class="mermaid">
+            graph LR
+                subgraph AF["Actor Focus · doer in spotlight"]
+                    A1["ang lalaki<br/>(doer = focus)"]
+                    A2["ng mangga<br/>(object)"]
+                end
+                subgraph OF["Object Focus · thing in spotlight"]
+                    B1["ng lalaki<br/>(doer)"]
+                    B2["ang mangga<br/>(object = focus)"]
+                end
+                A1 -- "flip focus" --> B1
+                A2 -- "flip focus" --> B2
+                style A1 fill:#00b894,color:#fff
+                style B2 fill:#00b894,color:#fff
+                style A2 fill:#e17055,color:#fff
+                style B1 fill:#e17055,color:#fff
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Actor Focus: -um- vs. mag-</h2>
+        <p>Actor focus has <strong>two</strong> common affixes, and beginners often wonder which to use. They aren't random — there's a soft pattern.</p>
+
+        <div class="pos-card">
+            <h3>-um- : simple, often self-directed or momentary</h3>
+            <p>Infix slotted in before the first vowel of the root. Frequently used when the action mainly affects the doer, or is a single act of moving/perceiving.</p>
+            <ul>
+                <li>kain → k<strong>um</strong>ain (to eat) · inom → <strong>um</strong>inom (to drink)</li>
+                <li>alis → <strong>um</strong>alis (to leave) · upo → <strong>um</strong>upo (to sit)</li>
+            </ul>
+        </div>
+
+        <div class="pos-card">
+            <h3>mag- : often deliberate, repeated, or with an object/tool</h3>
+            <p>Prefix on the front of the root. Frequently used for a chosen activity or one that reaches out to something.</p>
+            <ul>
+                <li>luto → <strong>mag</strong>luto (to cook) · linis → <strong>mag</strong>linis (to clean)</li>
+                <li>aral → <strong>mag</strong>-aral (to study) · trabaho → <strong>mag</strong>trabaho (to work)</li>
+            </ul>
+        </div>
+
+        <div class="cultural-note">
+            <strong>Don't over-worry the split.</strong> Some roots take only one; some take both with a nuance (<em>bumili</em> = buy [for oneself]; <em>magbili</em> = sell / deal in). For B1, learn the common verbs as fixed pairs and the instinct grows. The key point: <strong>both are actor focus</strong>, so in both the doer wears <span class="marker m-ang">ang</span>.</p>
+        </div>
+
+        <div class="example-box">
+            <h3>Both affixes, doer still in focus</h3>
+            <ul>
+                <li>K<strong>um</strong> anta <span class="marker m-ang">ang bata</span>. — The child sang.</li>
+                <li><strong>Nag</strong>luto <span class="marker m-ang">si Ana</span> <span class="marker m-ng">ng adobo</span>. — Ana cooked adobo.</li>
+                <li><strong>Nag</strong>-aral <span class="marker m-ang">ako</span> kagabi. — I studied last night.</li>
+            </ul>
+            <p><em>(Note the aspect: <strong>nag-</strong> is just <strong>mag-</strong> in the completed/begun form — more on aspect in Lesson 7.)</em></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Object Focus: -in and Its Aspects</h2>
+        <p>Object focus spotlights the <strong>thing acted upon</strong>. Its marker is <span class="marker m-ang">ang</span> on the object, and the verb carries the <strong>-in</strong> family of affixes. Because -in changes shape across aspect, here's the map for the root <em>kain</em> (eat):</p>
+
+        <table class="g-table">
+            <tr><th>Aspect</th><th>Form</th><th>Meaning</th></tr>
+            <tr><td>Infinitive / command</td><td>kain<strong>in</strong></td><td>to eat (it) / eat it</td></tr>
+            <tr><td>Completed (past)</td><td>k<strong>in</strong>ain</td><td>ate (it)</td></tr>
+            <tr><td>Incompleted (present)</td><td>k<strong>in</strong>a<strong>ka</strong>in</td><td>is eating (it)</td></tr>
+            <tr><td>Contemplated (future)</td><td><strong>ka</strong>kain<strong>in</strong></td><td>will eat (it)</td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>Watch the -in → -in- shift.</strong> In the completed and incompleted aspects, the suffix <strong>-in</strong> moves <em>inside</em> the word as the infix <strong>-in-</strong> (kain<u>in</u> → k<u>in</u>ain). This is regular across object-focus verbs (sulat → s<u>in</u>ulat, basa → b<u>in</u>asa). If the root starts with a vowel, it becomes a prefix instead: inom → <strong>in</strong>inom (drank).
+        </div>
+
+        <div class="example-box">
+            <h3>Object in focus across time</h3>
+            <ul>
+                <li><strong>Kinain</strong> ko <span class="marker m-ang">ang mangga</span>. — I ate the mango.</li>
+                <li><strong>Binabasa</strong> niya <span class="marker m-ang">ang libro</span>. — She is reading the book.</li>
+                <li><strong>Bibilhin</strong> namin <span class="marker m-ang">ang bahay</span>. — We will buy the house.</li>
+            </ul>
+            <p>In every one, the doer is a <strong>ng</strong>-pronoun (ko, niya, namin) and the <span class="marker m-ang">ang</span>-phrase is the object. That's object focus.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Why Focus — Not Word Order — Makes It Natural</h2>
+        <p>English leans on <strong>word order</strong> (the subject comes before the verb; swap them and the meaning breaks). Tagalog word order is famously flexible — you can front the doer, the object, or a time word for emphasis — so order alone can't tell you "who did what." That job belongs to the <strong>markers</strong>, and the markers are driven by <strong>focus</strong>.</p>
+
+        <div class="pos-card">
+            <h3>The definiteness clue English speakers miss</h3>
+            <p>Choosing object focus usually makes the object <strong>definite</strong> — "<em>the</em> mango," a specific known one. Actor focus tends to leave the object <strong>indefinite</strong> — "<em>a</em> mango, some mango." So Tagalog often expresses "the" vs. "a" through <em>which focus you pick</em>, not through an article:</p>
+            <ul>
+                <li>Bumili ako <span class="marker m-ng">ng tinapay</span>. — I bought <em>some</em> bread. <span class="focus-tag af">AF</span></li>
+                <li>Binili ko <span class="marker m-ang">ang tinapay</span>. — I bought <em>the</em> bread. <span class="focus-tag of">OF</span></li>
+            </ul>
+        </div>
+
+        <div class="cultural-note">
+            <strong>The "sounds off" trap.</strong> A learner who answers "<em>Ano ang kinain mo?</em>" (What did you eat?) with an actor-focus sentence — "<em>Kumain ako ng mangga</em>" — isn't wrong, but a native ear expects the <strong>object</strong> in focus because the object is what's being asked about: "<em>Kinain ko ang mangga.</em>" Matching your focus to <strong>what the conversation is spotlighting</strong> is the real secret to sounding natural.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. How to Choose Which Focus to Use</h2>
+        <p>You rarely "decide" focus from scratch — the conversation tells you. Use this quick guide:</p>
+
+        <table class="g-table">
+            <tr><th>Use ACTOR focus when…</th><th>Use OBJECT focus when…</th></tr>
+            <tr><td>the <strong>doer</strong> is the news / the topic</td><td>the <strong>thing acted on</strong> is the news / the topic</td></tr>
+            <tr><td>the object is vague or "some" (indefinite)</td><td>the object is specific / "the" (definite)</td></tr>
+            <tr><td>answering <em>"Sino / Ano ang gumawa?"</em> (Who did it?)</td><td>answering <em>"Ano ang ginawa?"</em> (What was done? / to it?)</td></tr>
+            <tr><td>there's no object at all (umalis, natulog)</td><td>you're moving a known object through the story</td></tr>
+        </table>
+
+        <div class="mermaid">
+            graph TD
+                Q{"What's in the spotlight<br/>of this sentence?"}
+                Q -- "the DOER" --> AF["Actor focus<br/>-um- / mag-<br/>doer = ang"]
+                Q -- "a SPECIFIC object" --> OF["Object focus<br/>-in<br/>object = ang"]
+                Q -- "the place / recipient" --> LOC["Locative focus (-an)<br/>→ Lesson 2"]
+                Q -- "the beneficiary" --> BEN["Benefactive focus (i-)<br/>→ Lesson 3"]
+                style AF fill:#00b894,color:#fff
+                style OF fill:#e17055,color:#fff
+                style LOC fill:#0984e3,color:#fff
+                style BEN fill:#6c5ce7,color:#fff
+        </div>
+
+        <div class="example-box">
+            <h3>Reading the conversation</h3>
+            <ul>
+                <li>— Sino ang nagluto? — <strong>Nagluto</strong> ako. <em>(Who cooked? — I cooked.)</em> <span class="focus-tag af">AF</span> — doer is the topic.</li>
+                <li>— Nasaan ang adobo? — <strong>Kinain</strong> ko na. <em>(Where's the adobo? — I ate it already.)</em> <span class="focus-tag of">OF</span> — the known dish is the topic.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. There's More Than Two (a Preview)</h2>
+        <p>Actor and object focus are the two pillars, but Tagalog spotlights <strong>other roles</strong> too — and the whole rest of the B1 verb sequence is exactly that. Each new "focus" just puts <span class="marker m-ang">ang</span> on a different participant and uses a matching affix:</p>
+        <ul>
+            <li><strong>Locative focus</strong> <em>(-an)</em> — the place or recipient in focus: <em>Binuksan ko <span class="marker m-ang">ang pinto</span></em> (I opened the door). → <strong>Lesson 2</strong></li>
+            <li><strong>Benefactive focus</strong> <em>(i-)</em> — the beneficiary in focus: <em>Ibinili ko <span class="marker m-ang">si Nanay</span> ng gamot</em> (I bought Mom medicine). → <strong>Lesson 3</strong></li>
+        </ul>
+        <p>Same machinery, new spotlight. Master the ang↔ng swap now and those lessons are a short step.</p>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Work the Focus System</h2>
+
+        <h3>Exercise 1: Name the focus</h3>
+        <p>Write <strong>AF</strong> (actor focus) or <strong>OF</strong> (object focus):</p>
+        <div class="example-box">
+            <ul>
+                <li>Kumain ang bata ng kanin. → _____ (Answer: AF|af|actor)</li>
+                <li>Binasa ko ang liham. → _____ (Answer: OF|of|object)</li>
+                <li>Naglinis siya ng bahay. → _____ (Answer: AF|af|actor)</li>
+                <li>Iniinom niya ang gamot. → _____ (Answer: OF|of|object)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Supply the marker</h3>
+        <p>Fill in <strong>ang</strong> or <strong>ng</strong> (say "nang"):</p>
+        <div class="example-box">
+            <ul>
+                <li>Actor focus: Bumili _____ babae ng bulaklak. → (Answer: ang)</li>
+                <li>Object focus: Binili ng babae _____ bulaklak. → (Answer: ang)</li>
+                <li>Object focus: Kinain _____ aso ang buto. → (Answer: ng)</li>
+                <li>Actor focus: Nagluto si Ben _____ ulam. → (Answer: ng)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Flip the focus</h3>
+        <p>Rewrite the doer-pronoun for the flipped sentence (the ang-pronoun becomes the ng-pronoun):</p>
+        <div class="example-box">
+            <ul>
+                <li>AF: Kumain <strong>ako</strong> ng mangga. → OF: Kinain _____ ang mangga. (Answer: ko)</li>
+                <li>AF: Bumili <strong>siya</strong> ng libro. → OF: Binili _____ ang libro. (Answer: niya)</li>
+                <li>AF: Naglinis <strong>kami</strong> ng kwarto. → OF: Nilinis _____ ang kwarto. (Answer: namin)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Pick the natural focus</h3>
+        <p>The question spotlights a role — give the affixed verb the reply should use (write <strong>AF</strong> or <strong>OF</strong>):</p>
+        <div class="example-box">
+            <ul>
+                <li>— Ano ang kinain mo? (What did you eat — the specific dish?) → _____ (Answer: OF|of|object)</li>
+                <li>— Sino ang bumili nito? (Who bought this?) → _____ (Answer: AF|af|actor)</li>
+                <li>— Nabasa mo na ba ang libro? (Have you read the book?) → _____ (Answer: OF|of|object)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Definite or indefinite?</h3>
+        <p>Which sentence means "the" (a specific, known object)? Answer <strong>A</strong> or <strong>B</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>A) Bumili ako ng tinapay. &nbsp; B) Binili ko ang tinapay. → _____ (Answer: B|b)</li>
+                <li>A) Ininom ko ang tubig. &nbsp; B) Uminom ako ng tubig. → _____ (Answer: A|a)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>You now hold the core of Tagalog grammar: focus is a <strong>matched pair</strong> of a verb affix and the <span class="marker m-ang">ang</span> marker, and choosing it well is about <em>spotlighting what the conversation cares about</em>. Every remaining B1 verb lesson — locative, benefactive, causative, ability — is one more spotlight on the same stage. Listen for the ang↔ng swap in Filipino shows and songs; once you hear it, you'll never un-hear it.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/index.html" class="prev-lesson">&larr; Beginner course (A1–A2)</a>
+    <a href="/intermediate/index.html" class="home-link">&#127968; Intermediate Home</a>
+    <a href="/intermediate/tagalog_lesson_2.html" class="next-lesson">Next: Locative Focus (-an) &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/intermediate/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/intermediate/vocab-data.js"></script>
+<script src="/intermediate/lesson-content.js"></script>
+<script src="/intermediate/learn.js"></script>
+</body>
+</html>

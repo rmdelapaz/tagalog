@@ -19,7 +19,9 @@
         .tier-sub { color: var(--muted-color,#667); margin: 0 0 14px; }
         .lesson-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
         .lesson-card { display: flex; gap: 12px; align-items: flex-start; background: var(--card-bg,#fff);
-            border: 1px solid rgba(0,0,0,.08); border-radius: 12px; padding: 16px; box-shadow: 0 4px 10px rgba(0,0,0,.05); }
+            border: 1px solid rgba(0,0,0,.08); border-radius: 12px; padding: 16px; box-shadow: 0 4px 10px rgba(0,0,0,.05);
+            text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s, border-color .2s; }
+        a.lesson-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(108,92,231,.15); border-color: #6c5ce7; }
         .lesson-card.soon { opacity: .72; }
         .lesson-num { flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
             font-weight: 700; color: #fff; background: linear-gradient(135deg,#6c5ce7,#0984e3); }
@@ -55,7 +57,7 @@
 <h2 class="tier-title">B1 — Intermediate</h2>
 <p class="tier-sub">Independence: handle most situations, describe experiences, give reasons and opinions, produce connected text.</p>
 <div class="lesson-grid" id="b1-grid">
-    <div class="lesson-card soon"><div class="lesson-num">1</div><div class="lesson-info"><h3>The Focus System Revisited <span class="soon-tag">Soon</span></h3><p>Actor &amp; object focus reviewed — and why focus is the key to sounding natural.</p></div></div>
+    <a class="lesson-card" href="/intermediate/tagalog_lesson_1.html"><div class="lesson-num">1</div><div class="lesson-info"><h3>The Focus System Revisited</h3><p>Actor &amp; object focus reviewed — and why focus is the key to sounding natural.</p></div></a>
     <div class="lesson-card soon"><div class="lesson-num">2</div><div class="lesson-info"><h3>Locative Focus (-an) <span class="soon-tag">Soon</span></h3><p>Putting the spotlight on the place or recipient of an action.</p></div></div>
     <div class="lesson-card soon"><div class="lesson-num">3</div><div class="lesson-info"><h3>Benefactive Focus (i-) <span class="soon-tag">Soon</span></h3><p>Doing things <em>for</em> someone — the beneficiary in focus.</p></div></div>
     <div class="lesson-card soon"><div class="lesson-num">4</div><div class="lesson-info"><h3>Causative Verbs (magpa-/ipa-) <span class="soon-tag">Soon</span></h3><p>Having things done — "I had the food cooked."</p></div></div>
