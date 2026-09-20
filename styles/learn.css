@@ -552,6 +552,7 @@
 
 /* ---------- Printable cheat sheet ---------- */
 .cs-intro { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+.cs-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: .75rem 0; }
 .cs-print { vertical-align: middle; }
 .cs-meta { color: var(--text-muted); font-size: .9rem; margin-top: .5rem; }
 .cs-grid {
@@ -601,7 +602,7 @@
 @media print {
     .lx-progress-bar, .lx-toolbar, .lx-know-btn, .lx-quiz, .lx-complete, .lx-modal,
     .g-controls, .g-azbar, .g-th-act, .g-act,
-    .cs-print, .cs-hero, .lesson-nav, .site-footer, .audio-btn { display: none !important; }
+    .cs-actions, .cs-hero, .lesson-nav, .site-footer, .audio-btn { display: none !important; }
 
     /* Cheat sheet: tight, ink-friendly, fits a couple of pages */
     body { background: #fff !important; color: #000 !important; }

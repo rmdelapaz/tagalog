@@ -107,4 +107,67 @@
     var total = SHEET.reduce(function (n, c) { return n + c.items.length; }, 0);
     var count = document.getElementById('cs-count');
     if (count) count.textContent = total + ' essential phrases across ' + SHEET.length + ' situations';
+
+    /* ---------- flashcard practice ----------
+       Flip through every phrase (front = Tagalog + pronunciation, back = English).
+       Reuses the .lx-flash modal styles from learn.css. Browse-only: the cheat
+       sheet is a quick reference, not tied to the spaced-repetition deck. */
+    var DECK = [];
+    SHEET.forEach(function (cat) { cat.items.forEach(function (it) { DECK.push({ tl: it[0], pron: it[1], en: it[2], cat: cat.title }); }); });
+
+    function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+    function openFlashcards(deck, title) {
+        if (!deck.length) return;
+        var i = 0, flipped = false;
+        var overlay = document.createElement('div');
+        overlay.className = 'lx-modal';
+        overlay.innerHTML =
+            '<div class="lx-flash" role="dialog" aria-modal="true" aria-label="Flashcard practice">' +
+                '<div class="lx-flash-head"><h3>' + esc(title) + '</h3>' +
+                    '<button type="button" class="lx-flash-close" aria-label="Close">&times;</button></div>' +
+                '<div class="lx-flash-card"><div class="lx-flash-face"></div>' +
+                    '<div class="lx-flash-hint">Tap the card to flip</div></div>' +
+                '<div class="lx-flash-controls">' +
+                    '<button type="button" class="lx-btn lx-flash-prev">← Prev</button>' +
+                    '<span class="lx-flash-progress"></span>' +
+                    '<button type="button" class="lx-btn lx-flash-next">Next →</button>' +
+                '</div>' +
+            '</div>';
+        document.body.appendChild(overlay);
+
+        var faceEl = overlay.querySelector('.lx-flash-face');
+        var progEl = overlay.querySelector('.lx-flash-progress');
+        function render() {
+            var w = deck[i];
+            if (!flipped) {
+                faceEl.innerHTML = '<div class="lx-flash-front"><span data-speak="' + esc(w.tl) + '">' + esc(w.tl) + '</span></div>' +
+                    (w.pron ? '<div class="lx-flash-pron">' + esc(w.pron) + '</div>' : '') +
+                    (w.cat ? '<div class="lx-flash-hint" style="margin-top:.3rem">' + esc(w.cat) + '</div>' : '');
+            } else {
+                faceEl.innerHTML = '<div class="lx-flash-back">' + esc(w.en) + '</div>';
+            }
+            progEl.textContent = (i + 1) + ' / ' + deck.length;
+        }
+        function go(d) { i = (i + d + deck.length) % deck.length; flipped = false; render(); }
+        function close() { overlay.remove(); document.removeEventListener('keydown', onKey); }
+        overlay.querySelector('.lx-flash-card').addEventListener('click', function () { flipped = !flipped; render(); });
+        overlay.querySelector('.lx-flash-next').addEventListener('click', function () { go(1); });
+        overlay.querySelector('.lx-flash-prev').addEventListener('click', function () { go(-1); });
+        overlay.querySelector('.lx-flash-close').addEventListener('click', close);
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+        function onKey(e) {
+            if (e.key === 'Escape') close();
+            else if (e.key === 'ArrowRight') go(1);
+            else if (e.key === 'ArrowLeft') go(-1);
+            else if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flipped = !flipped; render(); }
+        }
+        document.addEventListener('keydown', onKey);
+        render();
+    }
+
+    var practiceBtn = document.querySelector('.cs-practice');
+    if (practiceBtn) practiceBtn.addEventListener('click', function () {
+        openFlashcards(shuffle(DECK), 'Cheat sheet · ' + DECK.length + ' phrases');
+    });
 })();
