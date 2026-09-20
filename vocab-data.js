@@ -21,7 +21,9 @@ window.TAGALOG_VOCAB = {
     "9": "Vocabulary Reference",
     "10": "Grammar Essentials",
     "11": "Modals & Pseudo-verbs",
-    "12": "Negation"
+    "12": "Negation",
+    "13": "Question Words",
+    "14": "Requests & Commands"
   },
   "1": [
     {
@@ -2253,6 +2255,160 @@ window.TAGALOG_VOCAB = {
       "pron": "hin-DEE PAH",
       "en": "not yet",
       "cat": "Negative phrases"
+    }
+  ],
+  "13": [
+    {
+      "tl": "ano",
+      "pron": "ah-NOH",
+      "en": "what",
+      "cat": "Question words"
+    },
+    {
+      "tl": "sino",
+      "pron": "SEE-noh",
+      "en": "who",
+      "cat": "Question words"
+    },
+    {
+      "tl": "saan",
+      "pron": "sah-AHN",
+      "en": "where",
+      "cat": "Question words"
+    },
+    {
+      "tl": "kailan",
+      "pron": "ky-LAHN",
+      "en": "when",
+      "cat": "Question words"
+    },
+    {
+      "tl": "bakit",
+      "pron": "BAH-kit",
+      "en": "why",
+      "cat": "Question words"
+    },
+    {
+      "tl": "paano",
+      "pron": "pah-AH-noh",
+      "en": "how (in what way)",
+      "cat": "Question words"
+    },
+    {
+      "tl": "alin",
+      "pron": "ah-LEEN",
+      "en": "which",
+      "cat": "Question words"
+    },
+    {
+      "tl": "ilan",
+      "pron": "ee-LAHN",
+      "en": "how many",
+      "cat": "Question words"
+    },
+    {
+      "tl": "magkano",
+      "pron": "mag-KAH-noh",
+      "en": "how much (price)",
+      "cat": "Question words"
+    },
+    {
+      "tl": "kanino",
+      "pron": "kah-NEE-noh",
+      "en": "whose / to whom",
+      "cat": "Question words"
+    },
+    {
+      "tl": "kasi",
+      "pron": "kah-SEE",
+      "en": "because (casual)",
+      "cat": "Answering words"
+    },
+    {
+      "tl": "dahil",
+      "pron": "DAH-hil",
+      "en": "because",
+      "cat": "Answering words"
+    }
+  ],
+  "14": [
+    {
+      "tl": "paki-",
+      "pron": "PAH-kee",
+      "en": "please (do) — verb prefix",
+      "cat": "Polite request words"
+    },
+    {
+      "tl": "pakiabot",
+      "pron": "pah-kee-ah-BOT",
+      "en": "please pass / hand",
+      "cat": "Polite request words"
+    },
+    {
+      "tl": "pakisara",
+      "pron": "pah-kee-sah-RAH",
+      "en": "please close",
+      "cat": "Polite request words"
+    },
+    {
+      "tl": "pakibuksan",
+      "pron": "pah-kee-book-SAHN",
+      "en": "please open",
+      "cat": "Polite request words"
+    },
+    {
+      "tl": "pakitulungan",
+      "pron": "pah-kee-too-LOO-ngan",
+      "en": "please help",
+      "cat": "Polite request words"
+    },
+    {
+      "tl": "pakiusap",
+      "pron": "pah-kee-OO-sap",
+      "en": "please / a request",
+      "cat": "Polite request words"
+    },
+    {
+      "tl": "halika",
+      "pron": "hah-lee-KAH",
+      "en": "come here",
+      "cat": "Common commands"
+    },
+    {
+      "tl": "tara",
+      "pron": "tah-RAH",
+      "en": "let's go (casual)",
+      "cat": "Common commands"
+    },
+    {
+      "tl": "umupo",
+      "pron": "oo-moo-POH",
+      "en": "sit down",
+      "cat": "Common commands"
+    },
+    {
+      "tl": "tumayo",
+      "pron": "too-mah-YOH",
+      "en": "stand up",
+      "cat": "Common commands"
+    },
+    {
+      "tl": "sandali",
+      "pron": "san-dah-LEE",
+      "en": "a moment / wait",
+      "cat": "Courtesy"
+    },
+    {
+      "tl": "paumanhin",
+      "pron": "pah-oo-mahn-HEEN",
+      "en": "excuse me (formal)",
+      "cat": "Courtesy"
+    },
+    {
+      "tl": "pasensya na",
+      "pron": "pah-SEN-sha nah",
+      "en": "sorry / pardon me",
+      "cat": "Courtesy"
     }
   ]
 };

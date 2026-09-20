@@ -224,5 +224,41 @@ window.TAGALOG_LESSON_INFO = {
       "huwag makes a negative command — never use hindi to tell someone not to do something",
       "For need/can/should, add hindi; for want, switch to ayaw"
     ]
+  },
+  "13": {
+    "objectives": [
+      "Recognize and use the ten core question words: ano, sino, saan, kailan, bakit, paano, alin, ilan, magkano, kanino",
+      "Place the question word first, followed by ang or a short pronoun",
+      "Answer each question type with a natural, matching reply",
+      "Tell apart the tricky pairs — ano vs. alin and ilan vs. magkano",
+      "Answer bakit with kasi or dahil (because)",
+      "Soften questions politely with po"
+    ],
+    "summary": [
+      "Tagalog has ten high-frequency question words covering who, what, where, when, why, how, which, how many, how much, and whose",
+      "The question word almost always comes first, usually with ang or a pronoun right after",
+      "ano is open-ended 'what' while alin means 'which' from set options",
+      "ilan counts (how many) while magkano asks a price (how much)",
+      "paano means 'in what way'; kumusta means 'how are you' — keep them separate",
+      "Add po for respect; ba is optional because the question word already signals a question"
+    ]
+  },
+  "14": {
+    "objectives": [
+      "Give a plain command with the verb's command form plus ka (doer) or mo (thing acted on)",
+      "Turn any verb into a polite request with the paki- prefix",
+      "Soften requests further with po (respect) and nga (gentleness)",
+      "Ask permission and favors with pwede/maaari + ba",
+      "Use courtesy openers: paumanhin, pasensya na, sandali lang, pakiusap",
+      "Form negative commands with huwag, never hindi"
+    ],
+    "summary": [
+      "A direct command uses the command form + ka (actor focus) or mo (object focus)",
+      "paki- attached to a verb means 'please do it' — the everyday politeness workhorse",
+      "po adds respect and nga adds gentleness to any request",
+      "Ask permission with pwede/maaari ba, and open politely with paumanhin or pasensya na",
+      "Negative commands use huwag (Don't!), following the Lesson 12 rule",
+      "How you ask matters in Filipino culture — climb the politeness dial to fit the person and close with salamat"
+    ]
   }
 };
