@@ -188,5 +188,41 @@ window.TAGALOG_LESSON_INFO = {
       "Demonstratives track distance: ito is near me, iyan is near you, iyon is far from both",
       "Comparisons build from mas (more), kaysa (than), pinaka- (the most), and kasing- (as…as)"
     ]
+  },
+  "11": {
+    "objectives": [
+      "Use the five core pseudo-verbs — gusto, ayaw, kailangan, pwede/maaari, and dapat",
+      "Build sentences with the pattern [pseudo-verb] + who + linker + plain verb",
+      "Choose ng before a noun (a thing) versus the linker -ng before a verb (an action)",
+      "Apply the pronoun split: NG-set (ko, mo, niya) for gusto/ayaw/kailangan, ANG-set (ako, ka, siya) for pwede/maaari/dapat",
+      "Ask and answer permission and preference questions using ba",
+      "Recognize the negative partners: ayaw, hindi kailangan, hindi pwede, hindi dapat"
+    ],
+    "summary": [
+      "Pseudo-verbs express wanting, needing, being able to, and having to, and they don't conjugate for tense",
+      "The core pattern is [pseudo-verb] + [who] + na/-ng + [plain verb]; use ng before a noun instead",
+      "gusto, ayaw, and kailangan take the NG-pronouns (ko, mo, niya)",
+      "pwede, maaari, and dapat take the ANG-pronouns (ako, ka, siya)",
+      "ba turns any of them into a yes/no question",
+      "gusto's negative is the single word ayaw; need/can/should just add hindi"
+    ]
+  },
+  "12": {
+    "objectives": [
+      "Distinguish the four negators — hindi, wala, ayaw, and huwag — by what each one negates",
+      "Use hindi for verbs, adjectives, and identity (not / isn't / didn't)",
+      "Use wala as the opposite of may/mayroon for not having and not existing",
+      "Use ayaw as the built-in negative of gusto, keeping the NG-pronouns",
+      "Use huwag for commands (don't!), with a pronoun and the linker",
+      "Negate the modals: ayaw, hindi kailangan, hindi pwede, hindi dapat"
+    ],
+    "summary": [
+      "Tagalog splits English 'not' across four words chosen by what is being negated",
+      "hindi is the all-purpose negator for actions, descriptions, and saying what something isn't",
+      "wala means none / there isn't — the opposite of may/mayroon, never used for a plain verb",
+      "ayaw means don't want / don't like and takes the same NG-pronouns as gusto",
+      "huwag makes a negative command — never use hindi to tell someone not to do something",
+      "For need/can/should, add hindi; for want, switch to ayaw"
+    ]
   }
 };

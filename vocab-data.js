@@ -19,7 +19,9 @@ window.TAGALOG_VOCAB = {
     "7": "Parts of Speech",
     "8": "AI Language Learning",
     "9": "Vocabulary Reference",
-    "10": "Grammar Essentials"
+    "10": "Grammar Essentials",
+    "11": "Modals & Pseudo-verbs",
+    "12": "Negation"
   },
   "1": [
     {
@@ -2103,6 +2105,154 @@ window.TAGALOG_VOCAB = {
       "pron": "nah / ng",
       "en": "linker (joins words)",
       "cat": "Comparing"
+    }
+  ],
+  "11": [
+    {
+      "tl": "gusto",
+      "pron": "GOOS-toh",
+      "en": "want / like",
+      "cat": "Pseudo-verbs (modals)"
+    },
+    {
+      "tl": "ayaw",
+      "pron": "AH-yaw",
+      "en": "don't want / don't like",
+      "cat": "Pseudo-verbs (modals)"
+    },
+    {
+      "tl": "kailangan",
+      "pron": "kah-ee-LAHN-gan",
+      "en": "need",
+      "cat": "Pseudo-verbs (modals)"
+    },
+    {
+      "tl": "pwede",
+      "pron": "PWEH-deh",
+      "en": "can / may (allowed)",
+      "cat": "Pseudo-verbs (modals)"
+    },
+    {
+      "tl": "maaari",
+      "pron": "mah-ah-AH-ree",
+      "en": "can / may (formal)",
+      "cat": "Pseudo-verbs (modals)"
+    },
+    {
+      "tl": "dapat",
+      "pron": "DAH-pat",
+      "en": "should / must / ought to",
+      "cat": "Pseudo-verbs (modals)"
+    },
+    {
+      "tl": "kumain",
+      "pron": "koo-MAH-in",
+      "en": "to eat",
+      "cat": "Verbs used with modals"
+    },
+    {
+      "tl": "matulog",
+      "pron": "mah-TOO-log",
+      "en": "to sleep",
+      "cat": "Verbs used with modals"
+    },
+    {
+      "tl": "umalis",
+      "pron": "oo-mah-LEES",
+      "en": "to leave / go",
+      "cat": "Verbs used with modals"
+    },
+    {
+      "tl": "pumunta",
+      "pron": "poo-moon-TAH",
+      "en": "to go (to)",
+      "cat": "Verbs used with modals"
+    },
+    {
+      "tl": "mag-aral",
+      "pron": "mag-AH-ral",
+      "en": "to study",
+      "cat": "Verbs used with modals"
+    },
+    {
+      "tl": "magpahinga",
+      "pron": "mag-pah-heeng-AH",
+      "en": "to rest",
+      "cat": "Verbs used with modals"
+    },
+    {
+      "tl": "magtanong",
+      "pron": "mag-tah-NONG",
+      "en": "to ask",
+      "cat": "Verbs used with modals"
+    },
+    {
+      "tl": "tulong",
+      "pron": "TOO-long",
+      "en": "help",
+      "cat": "Useful words"
+    },
+    {
+      "tl": "tubig",
+      "pron": "TOO-big",
+      "en": "water",
+      "cat": "Useful words"
+    }
+  ],
+  "12": [
+    {
+      "tl": "hindi",
+      "pron": "hin-DEE",
+      "en": "not / no (all-purpose)",
+      "cat": "Negators"
+    },
+    {
+      "tl": "wala",
+      "pron": "wah-LAH",
+      "en": "none / there isn't",
+      "cat": "Negators"
+    },
+    {
+      "tl": "ayaw",
+      "pron": "AH-yaw",
+      "en": "don't want / don't like",
+      "cat": "Negators"
+    },
+    {
+      "tl": "huwag",
+      "pron": "HOO-wag",
+      "en": "don't! (command)",
+      "cat": "Negators"
+    },
+    {
+      "tl": "hindi pwede",
+      "pron": "hin-DEE PWEH-deh",
+      "en": "can't / not allowed",
+      "cat": "Negative phrases"
+    },
+    {
+      "tl": "hindi kailangan",
+      "pron": "hin-DEE kah-ee-LAHN-gan",
+      "en": "don't need",
+      "cat": "Negative phrases"
+    },
+    {
+      "tl": "hindi dapat",
+      "pron": "hin-DEE DAH-pat",
+      "en": "shouldn't",
+      "cat": "Negative phrases"
+    },
+    {
+      "tl": "wala na",
+      "pron": "wah-LAH NAH",
+      "en": "none left / gone",
+      "cat": "Negative phrases"
+    },
+    {
+      "tl": "hindi pa",
+      "pron": "hin-DEE PAH",
+      "en": "not yet",
+      "cat": "Negative phrases"
     }
   ]
 };

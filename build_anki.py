@@ -80,7 +80,7 @@ def main():
         if source:
             n["tags"].add(source)
 
-    for k in [str(i) for i in range(1, 11)]:
+    for k in [str(i) for i in range(1, 13)]:
         for w in vocab[k]:
             add(w["tl"], w.get("pron"), w["en"], lesson=k, cat=w.get("cat"), source="vocabulary")
     for cat in sheet:
