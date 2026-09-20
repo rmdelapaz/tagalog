@@ -8,6 +8,7 @@ window.TAGALOG_LESSON_INFO = {
   "1": {
     "objectives": [
       "Pronounce the five Tagalog vowels (A, E, I, O, U) with their single consistent sounds",
+      "Recognize the 15 native consonants and the special 'Ng' sound (as in 'sing')",
       "Apply Tagalog stress rules, defaulting to the second-to-last syllable",
       "Recognize the melodic, mostly vowel-ending sound patterns of spoken Tagalog",
       "Use essential first words like Kumusta, Salamat, Opo, Hindi, Tubig, and Pagkain",
@@ -17,6 +18,7 @@ window.TAGALOG_LESSON_INFO = {
     "summary": [
       "Tagalog has 5 vowels and 23 consonants, and each letter keeps one consistent sound unlike English",
       "The five vowels are fixed: A (ah), E (eh), I (ee), O (oh), U (oo)",
+      "Native Tagalog uses 15 consonants (B,K,D,G,H,L,M,N,Ng,P,R,S,T,W,Y); the modern alphabet adds C,F,J,Ñ,Q,V,X,Z for loanwords",
       "Most Tagalog words end in vowels, giving the language a smooth, melodic rhythm",
       "Stress usually falls on the second-to-last syllable, a rule that holds for roughly 80% of words",
       "Core survival words include Kumusta (hello/how are you), Salamat (thank you), Opo (respectful yes), and Hindi (no)",
