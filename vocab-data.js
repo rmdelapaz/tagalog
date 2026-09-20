@@ -22,124 +22,148 @@ window.TAGALOG_VOCAB = {
   },
   "1": [
     {
-      "tl": "aso",
-      "pron": "AH-so",
-      "en": "dog"
-    },
-    {
-      "tl": "bahay",
-      "pron": "bah-HAY",
-      "en": "house"
-    },
-    {
-      "tl": "hindi",
-      "pron": "hin-DEE",
-      "en": "no / not"
-    },
-    {
-      "tl": "hindi pa",
-      "pron": "hin-DEE pa",
-      "en": "not yet"
-    },
-    {
-      "tl": "isda",
-      "pron": "is-DAH",
-      "en": "fish"
-    },
-    {
-      "tl": "kain tayo",
-      "pron": "ka-IN TA-yo",
-      "en": "let's eat"
-    },
-    {
-      "tl": "kumain ka na?",
-      "pron": "koo-MA-in ka na",
-      "en": "have you eaten?"
-    },
-    {
       "tl": "kumusta",
       "pron": "koo-MOOS-tah",
-      "en": "how are you? / hello"
+      "en": "how are you? / hello",
+      "cat": "Greetings"
     },
     {
       "tl": "kumusta ka?",
       "pron": "koo-MOOS-ta ka",
-      "en": "how are you?"
-    },
-    {
-      "tl": "mabuti",
-      "pron": "ma-BOO-ti",
-      "en": "good / fine"
-    },
-    {
-      "tl": "maganda",
-      "pron": "ma-gan-DA",
-      "en": "beautiful"
+      "en": "how are you?",
+      "cat": "Greetings"
     },
     {
       "tl": "magandang gabi",
       "pron": "ma-gan-DANG ga-BEE",
-      "en": "good evening"
+      "en": "good evening",
+      "cat": "Greetings"
     },
     {
       "tl": "magandang hapon",
       "pron": "ma-gan-DANG HAH-pon",
-      "en": "good afternoon"
+      "en": "good afternoon",
+      "cat": "Greetings"
     },
     {
       "tl": "magandang umaga",
       "pron": "ma-gan-DANG oo-MAH-ga",
-      "en": "good morning"
+      "en": "good morning",
+      "cat": "Greetings"
+    },
+    {
+      "tl": "hindi",
+      "pron": "hin-DEE",
+      "en": "no / not",
+      "cat": "Courtesy & responses"
     },
     {
       "tl": "oo",
       "pron": "OH-oh",
-      "en": "yes (casual)"
+      "en": "yes (casual)",
+      "cat": "Courtesy & responses"
     },
     {
       "tl": "opo",
       "pron": "OH-poh",
-      "en": "yes (respectful)"
-    },
-    {
-      "tl": "oso",
-      "pron": "OH-so",
-      "en": "bear"
-    },
-    {
-      "tl": "pagkain",
-      "pron": "pag-KAH-in",
-      "en": "food"
-    },
-    {
-      "tl": "pamilya",
-      "pron": "pa-MIL-ya",
-      "en": "family"
+      "en": "yes (respectful)",
+      "cat": "Courtesy & responses"
     },
     {
       "tl": "po",
       "pron": "po",
-      "en": "respect particle (adds politeness)"
-    },
-    {
-      "tl": "pusa",
-      "pron": "POO-sa",
-      "en": "cat"
+      "en": "respect particle (adds politeness)",
+      "cat": "Courtesy & responses"
     },
     {
       "tl": "salamat",
       "pron": "sah-LAH-mat",
-      "en": "thank you"
+      "en": "thank you",
+      "cat": "Courtesy & responses"
+    },
+    {
+      "tl": "hindi pa",
+      "pron": "hin-DEE pa",
+      "en": "not yet",
+      "cat": "Everyday phrases"
+    },
+    {
+      "tl": "kain tayo",
+      "pron": "ka-IN TA-yo",
+      "en": "let's eat",
+      "cat": "Everyday phrases"
+    },
+    {
+      "tl": "kumain ka na?",
+      "pron": "koo-MA-in ka na",
+      "en": "have you eaten?",
+      "cat": "Everyday phrases"
+    },
+    {
+      "tl": "aso",
+      "pron": "AH-so",
+      "en": "dog",
+      "cat": "Animals"
+    },
+    {
+      "tl": "isda",
+      "pron": "is-DAH",
+      "en": "fish",
+      "cat": "Animals"
+    },
+    {
+      "tl": "oso",
+      "pron": "OH-so",
+      "en": "bear",
+      "cat": "Animals"
+    },
+    {
+      "tl": "pusa",
+      "pron": "POO-sa",
+      "en": "cat",
+      "cat": "Animals"
+    },
+    {
+      "tl": "bahay",
+      "pron": "bah-HAY",
+      "en": "house",
+      "cat": "Everyday words"
+    },
+    {
+      "tl": "pagkain",
+      "pron": "pag-KAH-in",
+      "en": "food",
+      "cat": "Everyday words"
+    },
+    {
+      "tl": "pamilya",
+      "pron": "pa-MIL-ya",
+      "en": "family",
+      "cat": "Everyday words"
     },
     {
       "tl": "tubig",
       "pron": "TOO-big",
-      "en": "water"
+      "en": "water",
+      "cat": "Everyday words"
     },
     {
       "tl": "ulan",
       "pron": "oo-LAN",
-      "en": "rain"
+      "en": "rain",
+      "cat": "Everyday words"
+    },
+    {
+      "tl": "mabuti",
+      "pron": "ma-BOO-ti",
+      "en": "good / fine",
+      "cat": "Describing"
+    },
+    {
+      "tl": "maganda",
+      "pron": "ma-gan-DA",
+      "en": "beautiful",
+      "cat": "Describing"
     }
   ],
   "2": [

@@ -99,6 +99,20 @@
 }
 
 /* ---------- Words You Learned / flashcards ---------- */
+.lx-vocab-cat { margin-bottom: 1.1rem; }
+.lx-vocab-cat:last-child { margin-bottom: 0; }
+.lx-cat-title {
+    background: none !important;
+    color: var(--text-secondary) !important;
+    font-size: .82rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin: 0 0 .5rem !important;
+    padding: 0 0 .3rem !important;
+    border-bottom: 1px solid var(--border);
+}
+[data-theme="dark"] .lx-cat-title { color: var(--text-secondary) !important; }
 .lx-vocab-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));

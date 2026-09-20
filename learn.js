@@ -222,7 +222,7 @@
         sec.className = 'lx-card lx-vocab';
         sec.id = 'words-learned';
 
-        var cards = list.map(function (w) {
+        function cardHTML(w) {
             var on = isTracked(w.tl);
             return '<div class="lx-word' + (on ? ' lx-known' : '') + '" data-tl="' + esc(w.tl) + '">' +
                      '<div class="lx-word-tl"><span data-speak="' + esc(w.tl) + '">' + esc(w.tl) + '</span></div>' +
@@ -230,14 +230,34 @@
                      '<div class="lx-word-en">' + esc(w.en) + '</div>' +
                      '<button type="button" class="lx-know-btn">' + (on ? '✓ In review deck' : '+ Add to review') + '</button>' +
                    '</div>';
-        }).join('');
+        }
+
+        /* Grouped display when the words carry a `cat`; otherwise one flat grid.
+           The array is authored already ordered by category and alphabetised
+           within each, so a single pass preserves that structure. */
+        var vocabHTML;
+        if (list.some(function (w) { return w.cat; })) {
+            var groups = [], cur = null;
+            list.forEach(function (w) {
+                if (!cur || cur.cat !== (w.cat || '')) { cur = { cat: w.cat || '', items: [] }; groups.push(cur); }
+                cur.items.push(w);
+            });
+            vocabHTML = groups.map(function (g) {
+                return '<div class="lx-vocab-cat">' +
+                        (g.cat ? '<h3 class="lx-cat-title">' + esc(g.cat) + '</h3>' : '') +
+                        '<div class="lx-vocab-grid">' + g.items.map(cardHTML).join('') + '</div>' +
+                    '</div>';
+            }).join('');
+        } else {
+            vocabHTML = '<div class="lx-vocab-grid">' + list.map(cardHTML).join('') + '</div>';
+        }
 
         sec.innerHTML =
             '<h2>📒 Words You Learned</h2>' +
             '<p class="lx-sub">' + list.length + ' key words &amp; phrases from this lesson. Tap 🔊 to hear each one, ' +
                 'and add any to your <strong>spaced-repetition review deck</strong> — they\'ll resurface for practice ' +
                 'at growing intervals so they actually stick.</p>' +
-            '<div class="lx-vocab-grid">' + cards + '</div>' +
+            vocabHTML +
             '<div class="lx-toolbar">' +
                 '<button type="button" class="lx-btn lx-btn-primary lx-flash-start">🃏 Practice all with flashcards</button>' +
                 '<button type="button" class="lx-btn lx-review-due" hidden>🔁 Review due (<span class="lx-due-n">0</span>)</button>' +
