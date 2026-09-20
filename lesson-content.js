@@ -13,7 +13,8 @@ window.TAGALOG_LESSON_INFO = {
       "Recognize the melodic, mostly vowel-ending sound patterns of spoken Tagalog",
       "Use essential first words like Kumusta, Salamat, Opo, Hindi, Tubig, and Pagkain",
       "Exchange basic daily greetings such as Magandang umaga, hapon, and gabi",
-      "Explain why 'Po' and 'Opo' are used to show respect to elders and authority"
+      "Explain why 'Po' and 'Opo' are used to show respect to elders and authority",
+      "Recognize the four stress patterns (malumay, mabilis, malumi, maragsa) and the glottal stop"
     ],
     "summary": [
       "Tagalog has 5 vowels and 23 consonants, and each letter keeps one consistent sound unlike English",
@@ -22,7 +23,8 @@ window.TAGALOG_LESSON_INFO = {
       "Most Tagalog words end in vowels, giving the language a smooth, melodic rhythm",
       "Stress usually falls on the second-to-last syllable, a rule that holds for roughly 80% of words",
       "Core survival words include Kumusta (hello/how are you), Salamat (thank you), Opo (respectful yes), and Hindi (no)",
-      "'Po' and 'Opo' add respect and are used with elders, teachers, strangers, and in formal situations"
+      "'Po' and 'Opo' add respect and are used with elders, teachers, strangers, and in formal situations",
+      "Stress and the glottal stop can change a word's meaning (e.g., BU-hay 'life' vs bu-HAY 'alive'); words fall into four patterns"
     ]
   },
   "2": {
