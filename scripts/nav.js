@@ -26,6 +26,8 @@
   links.innerHTML = `
     <a href="/index.html" class="nav-brand">Tagalog Lessons</a>
     <span class="nav-sep">·</span>
+    <a href="/readings.html">Readings</a>
+    <span class="nav-sep">·</span>
     <a href="/glossary.html">Glossary</a>
     <span class="nav-sep">·</span>
     <a href="/cheatsheet.html">Cheat Sheet</a>
