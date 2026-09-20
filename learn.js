@@ -590,6 +590,85 @@
     }
 
     /* ==========================================================
+       Interactive exercises
+       ---------------------------
+       Auto-upgrades the static gap-fill exercises. Any practice list/box whose
+       items contain a blank ("_____") and an inline answer ("(Answer: X)" or
+       "— Answer: X") is turned into checkable inputs with Check / Show-answers
+       controls and a live score. Alternatives may be listed as "a|b". Items
+       without both a blank and an answer are left untouched, so identification
+       and open-ended tasks stay as they are.
+       ========================================================== */
+    function initExercises() {
+        function norm(s) { return (s || '').trim().toLowerCase().replace(/[.!?,;:]+$/, '').replace(/\s+/g, ' '); }
+
+        var boxes = document.querySelectorAll('.practice-box ul, .practice-box ol, .practice-box .example-box');
+        Array.prototype.forEach.call(boxes, function (box) {
+            if (box.dataset.lxEx) return;
+            var items = (box.tagName === 'UL' || box.tagName === 'OL')
+                ? box.querySelectorAll(':scope > li')
+                : box.querySelectorAll('li, p');
+            var fields = [];
+
+            Array.prototype.forEach.call(items, function (li) {
+                var text = li.textContent;
+                if (!/_{3,}/.test(text)) return;
+                var m = text.match(/\(answer:\s*([^)]+)\)/i) || text.match(/[-–—]\s*answer:\s*(.+)$/i);
+                if (!m) return;
+                var answer = m[1].trim();
+                li.innerHTML = li.innerHTML
+                    .replace(/\s*\(answer:[^)]*\)/i, '')
+                    .replace(/\s*[-–—]\s*answer:[^<]*$/i, '')
+                    .replace(/_{3,}/, '<input type="text" class="lx-blank" data-answer="' + esc(answer) +
+                        '" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Answer">');
+                var input = li.querySelector('.lx-blank');
+                if (input) fields.push(input);
+            });
+            if (!fields.length) return;
+
+            box.dataset.lxEx = '1';
+            var bar = document.createElement('div');
+            bar.className = 'lx-ex-controls';
+            bar.innerHTML =
+                '<button type="button" class="lx-btn lx-btn-primary lx-ex-check">Check</button>' +
+                '<button type="button" class="lx-btn lx-ex-reveal">Show answers</button>' +
+                '<span class="lx-ex-feedback" aria-live="polite"></span>';
+            box.parentNode.insertBefore(bar, box.nextSibling);
+            var feedback = bar.querySelector('.lx-ex-feedback');
+
+            function accepted(f) { return f.getAttribute('data-answer').split('|').map(norm); }
+            function evaluate() {
+                var ok = 0;
+                fields.forEach(function (f) {
+                    var good = f.value.trim() !== '' && accepted(f).indexOf(norm(f.value)) >= 0;
+                    f.classList.remove('lx-correct', 'lx-wrong');
+                    f.classList.add(good ? 'lx-correct' : 'lx-wrong');
+                    if (good) ok++;
+                });
+                var all = ok === fields.length;
+                feedback.textContent = ok + ' / ' + fields.length + ' correct' +
+                    (all ? ' — great job! 🎉' : ' — try the ones in red again.');
+                feedback.className = 'lx-ex-feedback' + (all ? ' lx-good' : '');
+            }
+            function reveal() {
+                fields.forEach(function (f) {
+                    f.value = f.getAttribute('data-answer').split('|')[0];
+                    f.classList.remove('lx-wrong');
+                    f.classList.add('lx-correct');
+                });
+                feedback.textContent = 'Answers shown.';
+                feedback.className = 'lx-ex-feedback';
+            }
+            bar.querySelector('.lx-ex-check').addEventListener('click', evaluate);
+            bar.querySelector('.lx-ex-reveal').addEventListener('click', reveal);
+            fields.forEach(function (f) {
+                f.addEventListener('input', function () { f.classList.remove('lx-correct', 'lx-wrong'); });
+                f.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); evaluate(); } });
+            });
+        });
+    }
+
+    /* ==========================================================
        Keyboard shortcuts (← prev, → next, h home)
        ========================================================== */
     function initShortcuts() {
@@ -702,6 +781,7 @@
             initQuiz();
             initJournal();
             initComplete();
+            initExercises();
         } else if (isHome) {
             initDashboard();
         } else {

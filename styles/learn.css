@@ -204,6 +204,34 @@
     margin-left: auto;
 }
 
+/* ---------- Interactive gap-fill exercises ---------- */
+.lx-blank {
+    font: inherit;
+    font-size: .95em;
+    min-width: 7rem;
+    max-width: 100%;
+    padding: .2rem .5rem;
+    margin: 0 .15rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+.lx-blank:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-light); }
+.lx-blank.lx-correct { border-color: #22c55e; background: rgba(34,197,94,.12); }
+.lx-blank.lx-wrong { border-color: #ef4444; background: rgba(239,68,68,.1); }
+.lx-ex-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .6rem;
+    margin: .7rem 0 1.3rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.lx-ex-feedback { font-size: .9rem; color: var(--text-muted); }
+.lx-ex-feedback.lx-good { color: #16a34a; font-weight: 600; }
+@media print { .lx-ex-controls { display: none !important; } }
+
 /* ---------- Self-check quiz ---------- */
 .lx-quiz-q { margin: 0 0 1.3rem; }
 .lx-quiz-q:last-child { margin-bottom: 0; }
