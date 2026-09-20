@@ -38,6 +38,9 @@
         .prefix { background: #e74c3c; color: white; padding: 5px 10px; border-radius: 15px; }
         .root { background: #667eea; color: white; padding: 5px 10px; border-radius: 15px; }
         .suffix { background: #2ecc71; color: white; padding: 5px 10px; border-radius: 15px; }
+        .infix { background: #f39c12; color: white; padding: 5px 10px; border-radius: 15px; }
+        .redup { background: #764ba2; color: white; padding: 5px 10px; border-radius: 15px; }
+        .build-note { margin-top: 12px; font-size: 0.95em; color: #555; }
     </style>
 </head>
 <body>
@@ -107,33 +110,37 @@
                 <div class="verb-builder">
                     <span>Root:</span>
                     <div class="root">SULAT</div>
-                    <span>+</span>
-                    <div class="prefix">SUM</div>
+                    <span>+ infix</span>
+                    <div class="infix">-UM-</div>
                     <span>=</span>
                     <div class="root">SUMULAT (wrote)</div>
                 </div>
-                
+
                 <div class="verb-builder">
                     <span>Root:</span>
                     <div class="root">SULAT</div>
-                    <span>+</span>
-                    <div class="prefix">SUS</div>
-                    <span>+</span>
-                    <div class="suffix">-UM-</div>
+                    <span>+ infix</span>
+                    <div class="infix">-UM-</div>
+                    <span>+ repeat</span>
+                    <div class="redup">SU-</div>
                     <span>=</span>
-                    <div class="root">SUSUULAT (writing)</div>
+                    <div class="root">SUMUSULAT (writing)</div>
                 </div>
-                
+
                 <div class="verb-builder">
                     <span>Root:</span>
                     <div class="root">SULAT</div>
-                    <span>+</span>
-                    <div class="prefix">S</div>
-                    <span>+</span>
-                    <div class="suffix">-US-</div>
+                    <span>+ repeat</span>
+                    <div class="redup">SU-</div>
                     <span>=</span>
                     <div class="root">SUSULAT (will write)</div>
                 </div>
+
+                <p class="build-note"><strong>How it works:</strong> the <strong>-UM-</strong> infix
+                slips in right after the first consonant (s‑<strong>um</strong>‑ulat). The ongoing form
+                also <strong>reduplicates</strong> the first syllable (<strong>su</strong>), while the
+                future form uses that reduplication on its own:
+                SULAT → SUM<u>ULAT</u> → SU<u>MU</u>SULAT → <u>SU</u>SULAT.</p>
             </div>
         </div>
 
@@ -466,9 +473,9 @@
             
             // Affix machines
             const machines = [
-                { x: 250, color: '#e74c3c', label: 'Past Machine', affix: 'SUM-' },
-                { x: 400, color: '#f39c12', label: 'Present Machine', affix: '-UM-' },
-                { x: 550, color: '#2ecc71', label: 'Future Machine', affix: 'S-' }
+                { x: 250, color: '#e74c3c', label: 'Past', affix: '-UM-' },
+                { x: 400, color: '#f39c12', label: 'Present', affix: 'SU+-UM-' },
+                { x: 550, color: '#2ecc71', label: 'Future', affix: 'SU-' }
             ];
             
             machines.forEach(machine => {
@@ -484,7 +491,7 @@
                 
                 // Gears
                 ctx.beginPath();
-                ctx.arc(machine.x + 40, 200, 15, animationFrame * 0.1, animationFrame * 0.1 + Math.PI * 2);
+                ctx.arc(machine.x + 40, 222, 15, animationFrame * 0.1, animationFrame * 0.1 + Math.PI * 2);
                 ctx.strokeStyle = 'white';
                 ctx.lineWidth = 3;
                 ctx.stroke();
@@ -493,12 +500,12 @@
             // Output examples
             ctx.fillStyle = '#333';
             ctx.font = '14px Arial';
-            ctx.fillText('SUMULAT (wrote)', 250, 120);
-            ctx.fillText('SUSULAT (writing)', 400, 120);
-            ctx.fillText('SUSULAT (will write)', 550, 120);
+            ctx.fillText('SUMULAT (wrote)', 240, 120);
+            ctx.fillText('SUMUSULAT (writing)', 380, 120);
+            ctx.fillText('SUSULAT (will write)', 560, 120);
             
             // Conveyor belt items
-            const beltItems = ['ROOT', 'PREFIX', 'SUFFIX'];
+            const beltItems = ['ROOT', 'INFIX', 'REPEAT'];
             beltItems.forEach((item, index) => {
                 const x = 150 + (index * 200) + offsetX;
                 if (x < 750) {
