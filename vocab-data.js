@@ -2516,6 +2516,13 @@ window.TAGALOG_VOCAB = {
       "img": "kulay-rosas"
     },
     {
+      "tl": "kayumanggi",
+      "pron": "kah-yoo-mahng-GEE",
+      "en": "brown",
+      "cat": "Colors",
+      "img": "kayumanggi"
+    },
+    {
       "tl": "mainit",
       "pron": "mah-EE-nit",
       "en": "hot",
