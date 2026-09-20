@@ -455,6 +455,13 @@
     cursor: pointer;
 }
 
+.g-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin: 0 0 1rem;
+}
+
 .g-azbar {
     display: flex;
     flex-wrap: wrap;
