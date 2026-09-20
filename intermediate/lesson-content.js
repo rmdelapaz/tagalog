@@ -83,5 +83,41 @@ window.TAGALOG_LESSON_INFO = {
       "Aspect follows the familiar patterns: magpa-/nagpa-/nagpapa-/magpapa- and ipa-/ipina-/ipinapa-/ipapa-",
       "The causee (who actually does it) is marked with sa or kay and can be left out; causatives cover daily services — haircuts, repairs, cooking, summoning"
     ]
+  },
+  "5": {
+    "objectives": [
+      "Understand the maka-/ma- potentive mode and its three meanings: ability ('can'), success ('managed to'), and the accidental ('happened to')",
+      "Conjugate maka- (actor focus) across aspects (makabili → nakabili / nakakabili / makakabili)",
+      "Conjugate ma- (object focus) across aspects (makita → nakita / nakikita / makikita)",
+      "Choose maka- (doer in focus) vs. ma- (thing in focus) — the same AF/OF choice from Lesson 1",
+      "Use the accidental ma- to say something happened unintentionally (nasira, nahulog, nabasag) and contrast it with deliberate -in verbs",
+      "Recognize the everyday nakaka- 'feeling' words (nakakatawa, nakakainis, nakakapagod) as spin-offs of this mode"
+    ],
+    "summary": [
+      "maka-/ma- form the potentive (ability) mode: 'can', 'was able to / managed to', and the accidental 'happened to'",
+      "maka- is the actor-focus version — the doer wears 'ang' (Nakabili ako ng tiket); maka- → naka-, with 'ka' reduplicating for present/future",
+      "ma- is the object-focus version — the thing wears 'ang' and the doer drops to 'ng' (Nakita ko ang bahay); ma- → na-, first root syllable reduplicating",
+      "Choosing between them is the Lesson 1 AF/OF choice again — Nakakita ako (doer in focus) vs. Nakita ko (thing in focus), with the ako→ko ang↔ng swap",
+      "The accidental ma- says something happened without intent (Nabasag ko ang baso = broke it by accident) and often drops the doer (Nasira ang kotse) — a real politeness tool",
+      "nakaka- attaches to feeling roots to mean 'causes that feeling' — nakakatawa (funny), nakakainis (annoying), nakakapagod (tiring)"
+    ]
+  },
+  "6": {
+    "objectives": [
+      "Use maki- to express joining in someone else's action or approaching them with a request (makikain, makisakay, makiusap, makisama)",
+      "Conjugate maki- across aspects (makisama → nakisama / nakikisama / makikisama)",
+      "Use mag-…-an to express reciprocal 'each other' actions (mag-usap, magkita, magtulungan) with a plural actor",
+      "Conjugate the reciprocal across aspects (mag-usap → nag-usap / nag-uusap / mag-uusap)",
+      "Contrast reciprocal (both ways, plural subject) with one-directional verbs (one way)",
+      "Recognize both patterns as actor focus — participants wear 'ang' — and connect maki- to the beginner course's paki- requests and the value of pakikisama"
+    ],
+    "summary": [
+      "maki- turns an action outward: you take part in another's action or ask a favor; the joiner wears 'ang' and the group/person joined takes 'sa' (or 'kay' before a name)",
+      "maki- conjugates maki- → naki-, with 'ki' reduplicating for present/future (nakisama, nakikisama, makikisama)",
+      "mag-…-an is reciprocal — two or more people do the action to each other — and needs a plural or joined subject (kami, sila, sina Ana at Ben)",
+      "The reciprocal uses the ordinary mag- aspect machine (mag-usap, nag-usap, nag-uusap, mag-uusap) and often adds -an (magtulungan, magmahalan)",
+      "Reciprocal (both directions) contrasts with one-directional verbs: Nag-usap kami (we talked, mutually) vs. Kinausap ko siya (I talked to him)",
+      "Both maki- and mag-…-an are actor focus — same markers as Lesson 1 — and makisama ('getting along') names a prized Filipino social value"
+    ]
   }
 };
