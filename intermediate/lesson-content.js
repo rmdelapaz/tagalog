@@ -357,5 +357,69 @@ window.TAGALOG_LESSON_INFO = {
       "nga confirms or insists ('indeed / really') and makes requests earnest: Pakiabot nga",
       "naman is the multi-tool — contrast, gentle appeal/reproach, or softening — and particles stack in a fairly fixed order (na/pa/ba, then nga/pala/kasi/naman/daw/po)"
     ]
+  },
+  "21": {
+    "objectives": [
+      "Know when to write formally — officials, elders, institutions, applications and requests",
+      "Assemble the parts of a Tagalog formal letter: petsa, bating panimula, katawan, bating pangwakas, lagda",
+      "Use salutations and titles (Kagalang-galang na…, Ginoo/Bb./Gng.)",
+      "Use formal openings (Lumiliham ako upang…) and closings (Gumagalang, / Lubos na gumagalang,)",
+      "Follow email conventions (Paksa:, Magandang araw po) while keeping the respectful voice"
+    ],
+    "summary": [
+      "Formal writing brings together the formal register (Lesson 13), nominalization (Lesson 14), and formal connectors — for letters and email to officials, elders, and institutions",
+      "A formal letter has: petsa (date), bating panimula (salutation), katawan (body), bating pangwakas (closing), and lagda (signature)",
+      "Salutations range from warm (Mahal kong…) to formal (Kagalang-galang na Ginoo,); titles are Ginoo/G., Binibini/Bb., Ginang/Gng.",
+      "Open with Lumiliham ako upang… (I am writing to…) and close with Gumagalang, ('respecting' = respectfully) or Lubos na gumagalang,",
+      "Email adds Paksa: (subject) and a warm-formal Magandang araw po greeting, keeping full sentences and po/kayo throughout"
+    ]
+  },
+  "22": {
+    "objectives": [
+      "Recognize the features of Filipino news language — object focus, formal vocabulary, ayon sa attribution",
+      "Expand headline shorthand by restoring dropped markers and reading nominalizations",
+      "Apply reading strategies: find the focus verb, scan for sources, guess from roots, get the gist",
+      "Understand song/poetry language — poetic words (sinta, dalisay, marikit) and metaphor",
+      "Read authentic texts for meaning without knowing every word"
+    ],
+    "summary": [
+      "Real media rewards strategy, not word-by-word decoding: news is formal and object-focus heavy, songs are figurative and deep",
+      "News features: object focus foregrounding the thing done, formal vocabulary (pamahalaan, ipinatupad), and ayon sa/kay attribution (reported speech, Lesson 15)",
+      "Headlines drop ang/ng/sa markers and lean on nominalizations (pagtaas, pagbabago) — restore them mentally to find who/what",
+      "Read by finding the focus verb, scanning for ayon sa, guessing new words from known roots (kaligtasan ← ligtas), and not stalling on a single word",
+      "Songs and poems use the deep register and figurative language — poetic words for 'beloved' (sinta, irog, giliw) and metaphor (talinghaga)"
+    ]
+  },
+  "23": {
+    "objectives": [
+      "Build vocabulary for society (lipunan): karapatan, katarungan, kahirapan, kaunlaran",
+      "Build vocabulary for the environment (kalikasan): polusyon, pagbabago ng klima, pangangalaga",
+      "Build vocabulary for technology (teknolohiya): katalinuhang artipisyal, impormasyon, social media",
+      "Build vocabulary for culture (kultura): tradisyon, pamana, sining, pagkakakilanlan",
+      "Weigh pros and cons with frames like may kalamangan at kahinaan and sa isang banda… sa kabilang banda"
+    ],
+    "summary": [
+      "Abstract discussion needs topic vocabulary across four domains — lipunan, kalikasan, teknolohiya, kultura — built largely on nominalizations (Lesson 14)",
+      "Society: lipunan, pamahalaan, karapatan, katarungan, kahirapan, kaunlaran",
+      "Environment: kalikasan, polusyon, basura, pagbabago ng klima, pagkasira ng kalikasan, pangangalaga",
+      "Technology: teknolohiya, kompyuter, social media (Taglish), katalinuhang artipisyal, impormasyon; and culture: kultura, tradisyon, pamana, sining, pagkakakilanlan, wika",
+      "Weigh sides with may kalamangan at kahinaan, isa sa pinakamalaking hamon, sa isang banda… sa kabilang banda, and nakabubuti/nakasasama sa… — combined with argument moves (Lesson 19) and connectors (Lesson 17)"
+    ]
+  },
+  "24": {
+    "objectives": [
+      "Use fillers (ano, parang, kuwan, eh) to buy thinking time gracefully in Tagalog",
+      "Use back-channels (Talaga?, Ganun ba?, Oo nga, Grabe) to show you're listening",
+      "Manage a conversation (Sandali lang, Ang ibig kong sabihin…, Balik tayo sa…, Para mabuod…)",
+      "Keep discourse cohesive with reference words, connectors, recall phrases, and particles",
+      "Combine every course tool into natural, flowing speech"
+    ],
+    "summary": [
+      "Fluency is smoothness, not perfection — buying time, showing you're listening, and threading back to what came before",
+      "Fillers (ano, kasi, parang, 'yun/ganun, kuwan, eh) plug gaps the way native speakers do — hesitating in Tagalog beats freezing in English",
+      "Back-channels (Talaga?, Ganun ba?, Oo nga, Ay ganun, Grabe) signal active listening while the other person talks",
+      "Manage the floor with Sandali lang, Ang ibig kong sabihin…, Balik tayo sa…, Para mabuod…, and Diba?",
+      "Cohesion comes from reference words (ito/iyon), connectors (Lessons 8 & 17), recall phrases (gaya ng sinabi ko), and attitude particles (Lesson 20) — the capstone that completes the B1–B2 course"
+    ]
   }
 };
