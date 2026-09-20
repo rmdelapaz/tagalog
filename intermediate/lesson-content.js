@@ -293,5 +293,69 @@ window.TAGALOG_LESSON_INFO = {
       "kung sakaling means 'in the event that' — the formal, more hypothetical cousin of Lesson 9's sakali",
       "dapat sana expresses 'should have (but didn't)': Dapat sana tumawag ako, pero nakalimutan ko"
     ]
+  },
+  "17": {
+    "objectives": [
+      "Level up from casual kasi/kaya/pero to formal, discourse-level connectors",
+      "State causes formally with dahil sa, dahil dito, and bunga ng / dulot ng",
+      "Draw conclusions with kaya naman, samakatuwid, and sa gayon",
+      "Concede with sa kabila ng (despite), gayunpaman (nevertheless), and bagama't (although)",
+      "Combine cause, concession, and conclusion into a reasoned argument paragraph"
+    ],
+    "summary": [
+      "Formal discourse maps the casual connectors of Lesson 8 onto weightier ones — same relationships, essay-level words",
+      "Cause: dahil sa (+ noun), dahil dito (because of this), bunga ng / dulot ng (as a result of)",
+      "Result/conclusion: kaya naman (and so), samakatuwid (therefore), sa gayon (thus)",
+      "Concession is the persuasive key: sa kabila ng (despite), gayunpaman (nevertheless), bagama't (although) — acknowledging the other side strengthens your case",
+      "Chaining cause → concession → conclusion produces a paragraph that reasons, the backbone of argument (Lesson 19)"
+    ]
+  },
+  "18": {
+    "objectives": [
+      "Distinguish literal from figurative meaning, and learn idioms as whole units",
+      "Understand common body-part idioms (matigas ang ulo, balat-sibuyas, bukas ang palad, mababaw ang luha)",
+      "Understand home and family idioms (haligi/ilaw ng tahanan, kabiyak ng dibdib)",
+      "Recognize everyday proverbs (kasabihan) like 'Kung may tiyaga, may nilaga'",
+      "Use idioms sparingly and appropriately, matching register (Lesson 13)"
+    ],
+    "summary": [
+      "Figurative language (sawikain idioms, kasabihan proverbs) means something you can't get by adding up the words — learn each as a unit",
+      "Body-part idioms are everywhere: matigas ang ulo (stubborn), balat-sibuyas (touchy), bukas ang palad (generous), mababaw ang luha (cries easily), makati ang paa (loves to wander)",
+      "Home/family idioms carry values: haligi ng tahanan (father), ilaw ng tahanan (mother), kabiyak ng dibdib (spouse), namamangka sa dalawang ilog (two-timing)",
+      "Kasabihan are compact wisdom: 'Kung may tiyaga, may nilaga' (perseverance pays off); 'Aanhin pa ang damo kung patay na ang kabayo?' (too little, too late)",
+      "Aim first to recognize idioms in speech, then use a few — sparingly and with the right register"
+    ]
+  },
+  "19": {
+    "objectives": [
+      "Take a firm position with naniniwala ako na, sa aking palagay, ang paninindigan ko ay",
+      "Agree and build on a point (lubos akong sang-ayon, dagdag pa rito)",
+      "Disagree respectfully (iginagalang ko… ngunit, sa kabaligtaran, the naman pivot)",
+      "Hedge and concede (maaaring totoo ngunit, sa isang banda, bagama't) using Lesson 17 connectors",
+      "Persuade and conclude (dapat isaalang-alang, higit sa lahat, sa konklusyon)"
+    ],
+    "summary": [
+      "B2 argument goes beyond stating an opinion (Lesson 11): you take a stand, agree, disagree, concede, and conclude",
+      "Take a position with naniniwala ako na…, sa aking palagay…, ang paninindigan ko ay…",
+      "Agree and add value with lubos akong sang-ayon and dagdag pa rito (furthermore)",
+      "Disagree while keeping harmony — cushion first: iginagalang ko ang iyong opinyon, ngunit…, or the naman pivot; a bare 'Mali ka' is too blunt",
+      "Concede to persuade with maaaring totoo, ngunit… and bagama't may punto ka…, then drive to a close with higit sa lahat and sa konklusyon"
+    ]
+  },
+  "20": {
+    "objectives": [
+      "Understand enclitic particles as carriers of attitude rather than dictionary meaning",
+      "Use yata, siguro, and the wondering particle kaya for uncertainty",
+      "Use pala for realization and surprise",
+      "Use nga for emphasis, confirmation, and earnest requests",
+      "Use the versatile naman for contrast, appeal, or softening — and recognize that particles stack"
+    ],
+    "summary": [
+      "Enclitic particles add no dictionary content but carry attitude — doubt, surprise, insistence, softness — and sit after the first full word of the clause",
+      "Uncertainty: yata (I think), siguro (maybe), and the particle kaya (I wonder) — distinct from conjunction kaya (so) and verb kaya (can)",
+      "pala marks a fresh realization ('oh, so…!'): Ikaw pala!",
+      "nga confirms or insists ('indeed / really') and makes requests earnest: Pakiabot nga",
+      "naman is the multi-tool — contrast, gentle appeal/reproach, or softening — and particles stack in a fairly fixed order (na/pa/ba, then nga/pala/kasi/naman/daw/po)"
+    ]
   }
 };

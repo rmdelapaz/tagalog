@@ -27,7 +27,11 @@ window.TAGALOG_VOCAB = {
     "13": "Register & Formality",
     "14": "Advanced Affixes & Nominalization",
     "15": "Reported Speech",
-    "16": "Hypotheticals & Complex Conditionals"
+    "16": "Hypotheticals & Complex Conditionals",
+    "17": "Cause, Result & Concession",
+    "18": "Idioms & Figurative Language",
+    "19": "Opinion & Argument",
+    "20": "Emotion & Attitude Particles"
   },
   "1": [
     { "tl": "focus", "pron": "FOH-kus", "en": "focus — which noun the verb spotlights", "cat": "Grammar terms" },
@@ -355,5 +359,69 @@ window.TAGALOG_VOCAB = {
     { "tl": "maantala", "pron": "mah-an-tah-LAH", "en": "to be delayed", "cat": "Example verbs" },
     { "tl": "nakinig", "pron": "nah-KEE-nig", "en": "listened", "cat": "Example verbs" },
     { "tl": "flight", "pron": "flait", "en": "flight (Taglish)", "cat": "Example words" }
+  ],
+  "17": [
+    { "tl": "sanhi", "pron": "san-HEE", "en": "cause", "cat": "Grammar terms" },
+    { "tl": "bunga", "pron": "boo-NGAH", "en": "result / fruit", "cat": "Grammar terms" },
+    { "tl": "pagsalungat", "pron": "pag-sah-LOONG-at", "en": "concession / opposition", "cat": "Grammar terms" },
+    { "tl": "dahil sa", "pron": "DAH-hil sa", "en": "because of (+ noun)", "cat": "Cause" },
+    { "tl": "dahil dito", "pron": "DAH-hil DEE-toh", "en": "because of this", "cat": "Cause" },
+    { "tl": "bunga ng", "pron": "boo-NGAH nang", "en": "as a result of", "cat": "Cause" },
+    { "tl": "dulot ng", "pron": "DOO-lot nang", "en": "brought about by", "cat": "Cause" },
+    { "tl": "kaya naman", "pron": "kah-YAH NAH-man", "en": "and so / that is why", "cat": "Result / conclusion" },
+    { "tl": "samakatuwid", "pron": "sah-mah-kah-TOO-wid", "en": "therefore / in other words", "cat": "Result / conclusion" },
+    { "tl": "sa gayon", "pron": "sa gah-YON", "en": "thus / in that way", "cat": "Result / conclusion" },
+    { "tl": "sa kabila ng", "pron": "sa kah-bee-LAH nang", "en": "despite / in spite of", "cat": "Concession" },
+    { "tl": "gayunpaman", "pron": "gah-yoon-pah-MAN", "en": "nevertheless / however", "cat": "Concession" },
+    { "tl": "bagama't", "pron": "bah-gah-MAT", "en": "although", "cat": "Concession" },
+    { "tl": "pamahalaan", "pron": "pah-mah-hah-lah-AN", "en": "government", "cat": "Example words" },
+    { "tl": "ekonomiya", "pron": "eh-koh-noh-MEE-yah", "en": "economy", "cat": "Example words" }
+  ],
+  "18": [
+    { "tl": "sawikain", "pron": "sah-wee-kah-EEN", "en": "idiom", "cat": "Grammar terms" },
+    { "tl": "kasabihan", "pron": "kah-sah-bee-HAN", "en": "proverb / saying", "cat": "Grammar terms" },
+    { "tl": "matigas ang ulo", "pron": "mah-tee-GAS ang OO-loh", "en": "stubborn (hard-headed)", "cat": "Body-part idioms" },
+    { "tl": "balat-sibuyas", "pron": "BAH-lat see-BOO-yas", "en": "overly sensitive (onion-skinned)", "cat": "Body-part idioms" },
+    { "tl": "bukas ang palad", "pron": "boo-KAS ang PAH-lad", "en": "generous (open palm)", "cat": "Body-part idioms" },
+    { "tl": "mababaw ang luha", "pron": "mah-BAH-baw ang LOO-hah", "en": "cries easily (shallow tears)", "cat": "Body-part idioms" },
+    { "tl": "malikot ang kamay", "pron": "mah-lee-KOT ang kah-MAI", "en": "light-fingered / thief", "cat": "Body-part idioms" },
+    { "tl": "makati ang paa", "pron": "mah-kah-TEE ang pah-AH", "en": "loves to wander (itchy feet)", "cat": "Body-part idioms" },
+    { "tl": "haligi ng tahanan", "pron": "hah-lee-GEE nang tah-HAH-nan", "en": "the father (pillar of the home)", "cat": "Home & family idioms" },
+    { "tl": "ilaw ng tahanan", "pron": "EE-law nang tah-HAH-nan", "en": "the mother (light of the home)", "cat": "Home & family idioms" },
+    { "tl": "kabiyak ng dibdib", "pron": "kah-bee-YAK nang dib-DIB", "en": "one's spouse (other half)", "cat": "Home & family idioms" },
+    { "tl": "namamangka sa dalawang ilog", "pron": "nah-mah-mang-KAH sa dah-lah-WANG EE-log", "en": "two-timing", "cat": "Home & family idioms" },
+    { "tl": "kung may tiyaga, may nilaga", "pron": "koong mai tee-YAH-gah mai nee-LAH-gah", "en": "hard work pays off", "cat": "Proverbs (kasabihan)" },
+    { "tl": "nilaga", "pron": "nee-LAH-gah", "en": "boiled stew", "cat": "Example words" },
+    { "tl": "kabayo", "pron": "kah-BAH-yoh", "en": "horse", "cat": "Example words" }
+  ],
+  "19": [
+    { "tl": "pangangatwiran", "pron": "pah-ngah-ngat-WEE-ran", "en": "argumentation / reasoning", "cat": "Grammar terms" },
+    { "tl": "paninindigan", "pron": "pah-nee-nin-DEE-gan", "en": "stand / position", "cat": "Grammar terms" },
+    { "tl": "naniniwala", "pron": "nah-nee-nee-WAH-lah", "en": "believe(s)", "cat": "Taking a position" },
+    { "tl": "lubos akong sang-ayon", "pron": "loo-BOS ah-kong sang-AH-yon", "en": "I fully agree", "cat": "Agreeing" },
+    { "tl": "dagdag pa rito", "pron": "dag-DAG pa REE-toh", "en": "adding to this / furthermore", "cat": "Agreeing" },
+    { "tl": "iginagalang", "pron": "ee-gee-nah-gah-LANG", "en": "respect(s) — I respect…", "cat": "Disagreeing" },
+    { "tl": "sa kabaligtaran", "pron": "sa kah-bah-lig-tah-RAN", "en": "on the contrary", "cat": "Disagreeing" },
+    { "tl": "maaaring totoo", "pron": "mah-ah-ah-RING toh-TOH-oh", "en": "that may be true", "cat": "Hedging & conceding" },
+    { "tl": "sa isang banda", "pron": "sa ee-SANG ban-DAH", "en": "on one hand", "cat": "Hedging & conceding" },
+    { "tl": "isaalang-alang", "pron": "ee-sah-ah-lang-AH-lang", "en": "to consider / take into account", "cat": "Persuading & concluding" },
+    { "tl": "higit sa lahat", "pron": "HEE-git sa lah-HAT", "en": "above all", "cat": "Persuading & concluding" },
+    { "tl": "sa konklusyon", "pron": "sa kon-kloos-YON", "en": "in conclusion", "cat": "Persuading & concluding" },
+    { "tl": "edukasyon", "pron": "eh-doo-kas-YON", "en": "education", "cat": "Example words" },
+    { "tl": "negosyo", "pron": "neh-GOS-yoh", "en": "business", "cat": "Example words" }
+  ],
+  "20": [
+    { "tl": "kataga", "pron": "kah-TAH-gah", "en": "particle (little word)", "cat": "Grammar terms" },
+    { "tl": "pang-angkla", "pron": "pang-ANG-klah", "en": "enclitic particle", "cat": "Grammar terms" },
+    { "tl": "yata", "pron": "YAH-tah", "en": "I think / it seems (mild doubt)", "cat": "Uncertainty" },
+    { "tl": "siguro", "pron": "see-GOO-roh", "en": "maybe / probably", "cat": "Uncertainty" },
+    { "tl": "kaya", "pron": "kah-YAH", "en": "I wonder (particle in questions)", "cat": "Uncertainty" },
+    { "tl": "pala", "pron": "PAH-lah", "en": "oh! so… (realization / surprise)", "cat": "Realization" },
+    { "tl": "nga", "pron": "ngah", "en": "indeed / really / do (please)", "cat": "Emphasis" },
+    { "tl": "naman", "pron": "NAH-man", "en": "on the other hand / gentle appeal / soften", "cat": "The versatile naman" },
+    { "tl": "ba", "pron": "bah", "en": "question marker", "cat": "Other particles" },
+    { "tl": "na", "pron": "na", "en": "already / now", "cat": "Other particles" },
+    { "tl": "pa", "pron": "pa", "en": "still / yet", "cat": "Other particles" },
+    { "tl": "daw", "pron": "dow", "en": "reportedly / they say", "cat": "Other particles" }
   ]
 };
