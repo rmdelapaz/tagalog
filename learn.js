@@ -228,7 +228,7 @@
                      '<div class="lx-word-tl"><span data-speak="' + esc(w.tl) + '">' + esc(w.tl) + '</span></div>' +
                      (w.pron ? '<div class="lx-word-pron">' + esc(w.pron) + '</div>' : '') +
                      '<div class="lx-word-en">' + esc(w.en) + '</div>' +
-                     '<button type="button" class="lx-know-btn">' + (on ? '✓ In review deck' : '＋ Add to review') + '</button>' +
+                     '<button type="button" class="lx-know-btn">' + (on ? '✓ In review deck' : '+ Add to review') + '</button>' +
                    '</div>';
         }).join('');
 
@@ -241,7 +241,7 @@
             '<div class="lx-toolbar">' +
                 '<button type="button" class="lx-btn lx-btn-primary lx-flash-start">🃏 Practice all with flashcards</button>' +
                 '<button type="button" class="lx-btn lx-review-due" hidden>🔁 Review due (<span class="lx-due-n">0</span>)</button>' +
-                '<button type="button" class="lx-btn lx-mark-all">＋ Add all to review</button>' +
+                '<button type="button" class="lx-btn lx-mark-all">+ Add all to review</button>' +
                 '<span class="lx-count"></span>' +
             '</div>';
         mount(sec);
@@ -253,7 +253,7 @@
             var k = 0;
             list.forEach(function (w) { if (isTracked(w.tl)) k++; });
             sec.querySelector('.lx-count').textContent = k + ' / ' + list.length + ' in your review deck';
-            markAllBtn.textContent = (k === list.length) ? '✕ Remove all from review' : '＋ Add all to review';
+            markAllBtn.textContent = (k === list.length) ? '✕ Remove all from review' : '+ Add all to review';
             var due = dueFrom(list);
             if (due.length) { dueBtn.hidden = false; sec.querySelector('.lx-due-n').textContent = due.length; }
             else dueBtn.hidden = true;
@@ -268,7 +268,7 @@
             var on = !isTracked(tl);
             trackWord(tl, on);
             card.classList.toggle('lx-known', on);
-            btn.textContent = on ? '✓ In review deck' : '＋ Add to review';
+            btn.textContent = on ? '✓ In review deck' : '+ Add to review';
             refresh();
         });
 
@@ -278,7 +278,7 @@
             Array.prototype.forEach.call(sec.querySelectorAll('.lx-word'), function (card) {
                 var on = isTracked(card.getAttribute('data-tl'));
                 card.classList.toggle('lx-known', on);
-                card.querySelector('.lx-know-btn').textContent = on ? '✓ In review deck' : '＋ Add to review';
+                card.querySelector('.lx-know-btn').textContent = on ? '✓ In review deck' : '+ Add to review';
             });
             refresh();
         });
@@ -654,7 +654,7 @@
 
         dash.querySelector('.lx-review-known').addEventListener('click', function () {
             var uniq = trackedFrom(flatVocab());
-            if (!uniq.length) { alert('Your review deck is empty. Open a lesson and use "＋ Add to review" in "Words You Learned".'); return; }
+            if (!uniq.length) { alert('Your review deck is empty. Open a lesson and use "+ Add to review" in "Words You Learned".'); return; }
             openFlashcards(shuffle(uniq), 'Browse · ' + uniq.length + ' words in review');
         });
 

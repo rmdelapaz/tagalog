@@ -26,6 +26,8 @@
   links.innerHTML = `
     <a href="/index.html" class="nav-brand">Tagalog Lessons</a>
     <span class="nav-sep">·</span>
+    <a href="/glossary.html">Glossary</a>
+    <span class="nav-sep">·</span>
     <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
     <span class="nav-sep">·</span>
     <a href="https://rays-home.netlify.app/contact">Contact</a>
