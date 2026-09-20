@@ -87,6 +87,18 @@
             font-size: 1.05rem;
         }
 
+        .tier-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin: 2.25rem 0 0.25rem !important;
+        }
+        .tier-title:first-of-type { margin-top: 0 !important; }
+        .tier-sub {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0 0 1rem !important;
+        }
+
         .lesson-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -185,15 +197,17 @@
     <div class="hero">
         <span class="flag">🇵🇭</span>
         <h1>Learn Tagalog</h1>
-        <p>A beginner-friendly course covering fundamentals, grammar, culture, vocabulary, and practical conversation skills.</p>
+        <p>A beginner-friendly course — a complete A1–A2 foundation in fundamentals, grammar, culture, vocabulary, and practical conversation.</p>
     </div>
 
     <div class="container">
         <div class="intro">
-            <h2>9 Lessons from Basics to Fluency</h2>
-            <p>Each lesson builds on the last — start at the beginning or jump to any topic that interests you.</p>
+            <h2>16 Lessons — a Complete A1–A2 Foundation</h2>
+            <p>Organized by CEFR level: begin with A1 and build up to A2, or jump to any topic. Reference and practice tools are at the bottom.</p>
         </div>
 
+        <h2 class="tier-title">A1 — Breakthrough (Beginner)</h2>
+        <p class="tier-sub">Foundations and first survival: sounds and sentences, verbs, numbers, family, questions, and everyday topics.</p>
         <div class="lesson-grid">
             <a class="lesson-card" href="/tagalog_lesson_1.html">
                 <div class="lesson-num">1</div>
@@ -230,6 +244,32 @@
                     <p>Kinship terms, pronouns, the respect system (po/opo), and address conventions.</p>
                 </div>
             </a>
+            <a class="lesson-card" href="/tagalog_lesson_13.html">
+                <div class="lesson-num">13</div>
+                <div class="lesson-info">
+                    <h3>Question Words</h3>
+                    <p>Ask about anything — ano, sino, saan, kailan, bakit, paano, alin, ilan, magkano, kanino.</p>
+                </div>
+            </a>
+            <a class="lesson-card" href="/tagalog_lesson_15.html">
+                <div class="lesson-num">15</div>
+                <div class="lesson-info">
+                    <h3>Colors, Weather &amp; Clothing</h3>
+                    <p>Describe the world around you — mga kulay, panahon, at damit.</p>
+                </div>
+            </a>
+            <a class="lesson-card" href="/tagalog_lesson_16.html">
+                <div class="lesson-num">16</div>
+                <div class="lesson-info">
+                    <h3>Body, Health &amp; Calendar</h3>
+                    <p>Say what hurts, ask for medicine, and name the days and months.</p>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="tier-title">A2 — Waystage (Elementary)</h2>
+        <p class="tier-sub">Real interaction and fuller grammar: conversations, parts of speech, modals, negation, and requests — plus AI-assisted learning and a vocabulary bank.</p>
+        <div class="lesson-grid">
             <a class="lesson-card" href="/tagalog_lesson_6.html">
                 <div class="lesson-num">6</div>
                 <div class="lesson-info">
@@ -242,20 +282,6 @@
                 <div class="lesson-info">
                     <h3>Parts of Speech</h3>
                     <p>Nouns, verbs, adjectives, adverbs, particles, and word-class flexibility.</p>
-                </div>
-            </a>
-            <a class="lesson-card" href="/tagalog_lesson_8.html">
-                <div class="lesson-num">8</div>
-                <div class="lesson-info">
-                    <h3>AI Language Learning</h3>
-                    <p>Using AI tools strategically — prompting, workflows, and the SMART framework.</p>
-                </div>
-            </a>
-            <a class="lesson-card" href="/tagalog_lesson_9.html">
-                <div class="lesson-num">9</div>
-                <div class="lesson-info">
-                    <h3>Vocabulary Reference</h3>
-                    <p>500+ searchable words across 8 categories with pronunciation and examples.</p>
                 </div>
             </a>
             <a class="lesson-card" href="/tagalog_lesson_10.html">
@@ -279,13 +305,6 @@
                     <p>The four ways to say no — hindi, wala, ayaw, and huwag — and exactly when to use each.</p>
                 </div>
             </a>
-            <a class="lesson-card" href="/tagalog_lesson_13.html">
-                <div class="lesson-num">13</div>
-                <div class="lesson-info">
-                    <h3>Question Words</h3>
-                    <p>Ask about anything — ano, sino, saan, kailan, bakit, paano, alin, ilan, magkano, kanino.</p>
-                </div>
-            </a>
             <a class="lesson-card" href="/tagalog_lesson_14.html">
                 <div class="lesson-num">14</div>
                 <div class="lesson-info">
@@ -293,20 +312,25 @@
                     <p>Ask people to do things — the paki- prefix and the politeness dial, from blunt to gracious.</p>
                 </div>
             </a>
-            <a class="lesson-card" href="/tagalog_lesson_15.html">
-                <div class="lesson-num">15</div>
+            <a class="lesson-card" href="/tagalog_lesson_8.html">
+                <div class="lesson-num">8</div>
                 <div class="lesson-info">
-                    <h3>Colors, Weather &amp; Clothing</h3>
-                    <p>Describe the world around you — mga kulay, panahon, at damit.</p>
+                    <h3>AI Language Learning</h3>
+                    <p>Using AI tools strategically — prompting, workflows, and the SMART framework.</p>
                 </div>
             </a>
-            <a class="lesson-card" href="/tagalog_lesson_16.html">
-                <div class="lesson-num">16</div>
+            <a class="lesson-card" href="/tagalog_lesson_9.html">
+                <div class="lesson-num">9</div>
                 <div class="lesson-info">
-                    <h3>Body, Health &amp; Calendar</h3>
-                    <p>Say what hurts, ask for medicine, and name the days and months.</p>
+                    <h3>Vocabulary Reference</h3>
+                    <p>500+ searchable words across 8 categories with pronunciation and examples.</p>
                 </div>
             </a>
+        </div>
+
+        <h2 class="tier-title">Study Tools</h2>
+        <p class="tier-sub">Reference and practice across the whole course.</p>
+        <div class="lesson-grid">
             <a class="lesson-card" href="/tagalog_reader.html">
                 <div class="lesson-num">🔊</div>
                 <div class="lesson-info">
