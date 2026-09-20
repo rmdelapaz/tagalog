@@ -260,5 +260,41 @@ window.TAGALOG_LESSON_INFO = {
       "Negative commands use huwag (Don't!), following the Lesson 12 rule",
       "How you ask matters in Filipino culture — climb the politeness dial to fit the person and close with salamat"
     ]
+  },
+  "15": {
+    "objectives": [
+      "Name the common colors and use them to describe things",
+      "Attach a color to a noun with the linker (berdeng damit, pulang kamiseta)",
+      "Talk about the weather with ma- adjectives and everyday terms",
+      "Recognize the Philippines' two seasons: tag-init and tag-ulan",
+      "Name basic clothing items and say what someone is wearing (suot)",
+      "Combine these bundles with grammar you know — may, gusto, and the linker"
+    ],
+    "summary": [
+      "Colors like pula, asul, dilaw, berde, puti, and itim describe things directly or with kulay in front",
+      "A color joins a noun with the linker: berdeng damit, pulang kamiseta",
+      "Weather words are mostly ma- adjectives (mainit, malamig, maaraw, maulan) plus umuulan and bagyo",
+      "The Philippines has two seasons — tag-init (dry) and tag-ulan (rainy)",
+      "Clothing basics include damit, kamiseta, pantalon, sapatos, and sombrero; suot means 'wearing'",
+      "These everyday words plug straight into may, gusto, and the linker to form many sentences"
+    ]
+  },
+  "16": {
+    "objectives": [
+      "Name the main parts of the body",
+      "Say what hurts with 'masakit ang [body part]'",
+      "Describe illness with 'may [ailment] ako' and ask for medicine or a doctor",
+      "Say the seven days of the week in Tagalog",
+      "Say the twelve months of the year",
+      "Ask and answer 'Anong araw ngayon?' and 'Kailan?' with days and months"
+    ],
+    "summary": [
+      "Body words include ulo, mata, ilong, bibig, tenga, kamay, paa, and tiyan",
+      "Use 'masakit ang [body part] ko' for 'my ___ hurts' and 'may lagnat/sakit ako' for illness",
+      "Health vocabulary covers gamot (medicine), doktor, ospital, and botika (pharmacy)",
+      "The days Lunes–Linggo come from Spanish; Linggo also means 'week'",
+      "The months Enero–Disyembre are Spanish-derived and easy to recognize",
+      "Days and months answer the everyday questions Anong araw ngayon? and Kailan?"
+    ]
   }
 };

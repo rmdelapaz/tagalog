@@ -23,7 +23,9 @@ window.TAGALOG_VOCAB = {
     "11": "Modals & Pseudo-verbs",
     "12": "Negation",
     "13": "Question Words",
-    "14": "Requests & Commands"
+    "14": "Requests & Commands",
+    "15": "Colors, Weather & Clothing",
+    "16": "Body, Health & Calendar"
   },
   "1": [
     {
@@ -2409,6 +2411,364 @@ window.TAGALOG_VOCAB = {
       "pron": "pah-SEN-sha nah",
       "en": "sorry / pardon me",
       "cat": "Courtesy"
+    }
+  ],
+  "15": [
+    {
+      "tl": "pula",
+      "pron": "poo-LAH",
+      "en": "red",
+      "cat": "Colors"
+    },
+    {
+      "tl": "asul",
+      "pron": "ah-SOOL",
+      "en": "blue",
+      "cat": "Colors"
+    },
+    {
+      "tl": "dilaw",
+      "pron": "dee-LOW",
+      "en": "yellow",
+      "cat": "Colors"
+    },
+    {
+      "tl": "berde",
+      "pron": "BEHR-deh",
+      "en": "green",
+      "cat": "Colors"
+    },
+    {
+      "tl": "puti",
+      "pron": "poo-TEE",
+      "en": "white",
+      "cat": "Colors"
+    },
+    {
+      "tl": "itim",
+      "pron": "ee-TEEM",
+      "en": "black",
+      "cat": "Colors"
+    },
+    {
+      "tl": "kahel",
+      "pron": "KAH-hel",
+      "en": "orange",
+      "cat": "Colors"
+    },
+    {
+      "tl": "kulay-rosas",
+      "pron": "KOO-lai ROH-sas",
+      "en": "pink",
+      "cat": "Colors"
+    },
+    {
+      "tl": "mainit",
+      "pron": "mah-EE-nit",
+      "en": "hot",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "malamig",
+      "pron": "mah-lah-MEEG",
+      "en": "cold / cool",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "maaraw",
+      "pron": "mah-AH-row",
+      "en": "sunny",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "maulan",
+      "pron": "mah-OO-lan",
+      "en": "rainy",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "umuulan",
+      "pron": "oo-moo-OO-lan",
+      "en": "it's raining",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "bagyo",
+      "pron": "BAG-yoh",
+      "en": "storm / typhoon",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "tag-init",
+      "pron": "tag-EE-nit",
+      "en": "hot/dry season",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "tag-ulan",
+      "pron": "tag-OO-lan",
+      "en": "rainy season",
+      "cat": "Weather & seasons"
+    },
+    {
+      "tl": "damit",
+      "pron": "dah-MEET",
+      "en": "clothes / dress",
+      "cat": "Clothing"
+    },
+    {
+      "tl": "kamiseta",
+      "pron": "kah-mee-SEH-tah",
+      "en": "shirt / t-shirt",
+      "cat": "Clothing"
+    },
+    {
+      "tl": "pantalon",
+      "pron": "pan-tah-LOHN",
+      "en": "pants / trousers",
+      "cat": "Clothing"
+    },
+    {
+      "tl": "sapatos",
+      "pron": "sah-PAH-tos",
+      "en": "shoes",
+      "cat": "Clothing"
+    },
+    {
+      "tl": "medyas",
+      "pron": "MED-yas",
+      "en": "socks",
+      "cat": "Clothing"
+    },
+    {
+      "tl": "sombrero",
+      "pron": "som-BREH-roh",
+      "en": "hat",
+      "cat": "Clothing"
+    },
+    {
+      "tl": "bestida",
+      "pron": "bes-TEE-dah",
+      "en": "dress",
+      "cat": "Clothing"
+    },
+    {
+      "tl": "palda",
+      "pron": "PAL-dah",
+      "en": "skirt",
+      "cat": "Clothing"
+    }
+  ],
+  "16": [
+    {
+      "tl": "ulo",
+      "pron": "OO-loh",
+      "en": "head",
+      "cat": "The body"
+    },
+    {
+      "tl": "mata",
+      "pron": "mah-TAH",
+      "en": "eye(s)",
+      "cat": "The body"
+    },
+    {
+      "tl": "ilong",
+      "pron": "ee-LOHNG",
+      "en": "nose",
+      "cat": "The body"
+    },
+    {
+      "tl": "bibig",
+      "pron": "bee-BEEG",
+      "en": "mouth",
+      "cat": "The body"
+    },
+    {
+      "tl": "tenga",
+      "pron": "TEH-ngah",
+      "en": "ear",
+      "cat": "The body"
+    },
+    {
+      "tl": "kamay",
+      "pron": "kah-MY",
+      "en": "hand",
+      "cat": "The body"
+    },
+    {
+      "tl": "paa",
+      "pron": "pah-AH",
+      "en": "foot / leg",
+      "cat": "The body"
+    },
+    {
+      "tl": "tiyan",
+      "pron": "tee-YAHN",
+      "en": "stomach",
+      "cat": "The body"
+    },
+    {
+      "tl": "masakit",
+      "pron": "mah-sah-KEET",
+      "en": "painful / it hurts",
+      "cat": "Health"
+    },
+    {
+      "tl": "sakit",
+      "pron": "sah-KEET",
+      "en": "pain / illness",
+      "cat": "Health"
+    },
+    {
+      "tl": "lagnat",
+      "pron": "LAG-nat",
+      "en": "fever",
+      "cat": "Health"
+    },
+    {
+      "tl": "ubo",
+      "pron": "oo-BOH",
+      "en": "cough",
+      "cat": "Health"
+    },
+    {
+      "tl": "sipon",
+      "pron": "SEE-pon",
+      "en": "cold / runny nose",
+      "cat": "Health"
+    },
+    {
+      "tl": "gamot",
+      "pron": "gah-MOHT",
+      "en": "medicine",
+      "cat": "Health"
+    },
+    {
+      "tl": "doktor",
+      "pron": "dok-TOHR",
+      "en": "doctor",
+      "cat": "Health"
+    },
+    {
+      "tl": "ospital",
+      "pron": "os-pee-TAHL",
+      "en": "hospital",
+      "cat": "Health"
+    },
+    {
+      "tl": "Lunes",
+      "pron": "LOO-nes",
+      "en": "Monday",
+      "cat": "Days of the week"
+    },
+    {
+      "tl": "Martes",
+      "pron": "MAR-tes",
+      "en": "Tuesday",
+      "cat": "Days of the week"
+    },
+    {
+      "tl": "Miyerkules",
+      "pron": "mee-YER-koo-les",
+      "en": "Wednesday",
+      "cat": "Days of the week"
+    },
+    {
+      "tl": "Huwebes",
+      "pron": "hoo-WEH-bes",
+      "en": "Thursday",
+      "cat": "Days of the week"
+    },
+    {
+      "tl": "Biyernes",
+      "pron": "bee-YER-nes",
+      "en": "Friday",
+      "cat": "Days of the week"
+    },
+    {
+      "tl": "Sabado",
+      "pron": "SAH-bah-doh",
+      "en": "Saturday",
+      "cat": "Days of the week"
+    },
+    {
+      "tl": "Linggo",
+      "pron": "LING-goh",
+      "en": "Sunday / week",
+      "cat": "Days of the week"
+    },
+    {
+      "tl": "Enero",
+      "pron": "eh-NEH-roh",
+      "en": "January",
+      "cat": "Months"
+    },
+    {
+      "tl": "Pebrero",
+      "pron": "peb-REH-roh",
+      "en": "February",
+      "cat": "Months"
+    },
+    {
+      "tl": "Marso",
+      "pron": "MAR-soh",
+      "en": "March",
+      "cat": "Months"
+    },
+    {
+      "tl": "Abril",
+      "pron": "ab-REEL",
+      "en": "April",
+      "cat": "Months"
+    },
+    {
+      "tl": "Mayo",
+      "pron": "MAH-yoh",
+      "en": "May",
+      "cat": "Months"
+    },
+    {
+      "tl": "Hunyo",
+      "pron": "HOON-yoh",
+      "en": "June",
+      "cat": "Months"
+    },
+    {
+      "tl": "Hulyo",
+      "pron": "HOOL-yoh",
+      "en": "July",
+      "cat": "Months"
+    },
+    {
+      "tl": "Agosto",
+      "pron": "ah-GOS-toh",
+      "en": "August",
+      "cat": "Months"
+    },
+    {
+      "tl": "Setyembre",
+      "pron": "set-YEM-breh",
+      "en": "September",
+      "cat": "Months"
+    },
+    {
+      "tl": "Oktubre",
+      "pron": "ok-TOO-breh",
+      "en": "October",
+      "cat": "Months"
+    },
+    {
+      "tl": "Nobyembre",
+      "pron": "nob-YEM-breh",
+      "en": "November",
+      "cat": "Months"
+    },
+    {
+      "tl": "Disyembre",
+      "pron": "dis-YEM-breh",
+      "en": "December",
+      "cat": "Months"
     }
   ]
 };
