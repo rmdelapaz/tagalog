@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals - kung, kapag & sakali (If, When, In Case)</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #6c5ce7, #00b894, #0984e3); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #6c5ce7; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #6c5ce7; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #6c5ce7; color: white; }
+        .conj { display: inline-block; font-weight: 700; padding: 0 4px; border-radius: 4px; background: rgba(108,92,231,.16); color: #4a3ec7; }
+        .marker { font-weight: 700; padding: 0 3px; border-radius: 4px; }
+        .m-cond { background: rgba(108,92,231,.18); color: #4a3ec7; }
+        .m-res { background: rgba(0,184,148,.22); color: #0a6b52; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Mga Kondisyonal — Conditionals</h1>
+        <p><em>kung</em>, <em>kapag</em>, and <em>sakali</em>: talking about <em>if</em>, <em>when</em>, and <em>in case</em></p>
+    </div>
+
+    <div class="section">
+        <p>Lesson 8 gave you the glue for joining ideas. One kind of link is important enough to deserve its own lesson: the <strong>conditional</strong> — the "if this, then that" that lets you talk about possibilities, plans, and rules. Tagalog splits this job across three words, and choosing the right one is mostly about <strong>how certain</strong> the condition is.</p>
+        <p>Get the <em>kung</em> / <em>kapag</em> / <em>sakali</em> distinction and you can promise, warn, plan, and speculate — the backbone of grown-up conversation.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Three Ways to Say "If / When"</h2>
+        <p>They overlap in English translation but differ in feel:</p>
+
+        <div class="pos-card">
+            <ul>
+                <li><span class="conj">kung</span> — <strong>if / whether</strong>: the condition is <em>uncertain</em> or hypothetical. (<em>Kung uulan…</em> = If it rains…)</li>
+                <li><span class="conj">kapag</span> (short: <span class="conj">pag</span>) — <strong>when / whenever</strong>: the condition is <em>expected, real, or habitual</em>. (<em>Kapag umuulan…</em> = When[ever] it rains…)</li>
+                <li><span class="conj">sakali</span> (<span class="conj">kung sakali</span>, <span class="conj">sakaling</span>) — <strong>in case / should it happen</strong>: a <em>contingency</em> you're preparing for. (<em>Sakaling umulan…</em> = In case it rains…)</li>
+            </ul>
+        </div>
+
+        <p>A conditional has two parts: the <span class="marker m-cond">condition</span> (the "if" clause) and the <span class="marker m-res">result</span> (what follows). Either can come first — the connector marks the condition clause.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. kung — If / Whether (uncertain)</h2>
+        <p>Use <span class="conj">kung</span> when you're <strong>not sure</strong> the condition will happen — it's hypothetical or open:</p>
+
+        <div class="example-box">
+            <ul>
+                <li><span class="marker m-cond">Kung uulan bukas</span>, <span class="marker m-res">hindi tayo aalis</span>. — If it rains tomorrow, we won't go.</li>
+                <li><span class="marker m-cond">Kung may pera ako</span>, <span class="marker m-res">bibili ako ng bagong telepono</span>. — If I had money, I'd buy a new phone.</li>
+                <li><span class="marker m-cond">Kung gusto mo</span>, <span class="marker m-res">samahan kita</span>. — If you want, I'll go with you.</li>
+            </ul>
+        </div>
+
+        <div class="cultural-note">
+            <strong>kung also means "whether."</strong> Beyond conditions, <em>kung</em> introduces embedded (indirect) questions: <em>Hindi ko alam <strong>kung</strong> darating siya.</em> ("I don't know <strong>whether/if</strong> he'll come.") <em>Tanungin mo <strong>kung</strong> bukas ba sila.</em> ("Ask <strong>if</strong> they're open.") Same word, closely related idea of an open possibility.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. kapag — When / Whenever (real, habitual)</h2>
+        <p>Use <span class="conj">kapag</span> when the condition is <strong>expected to happen</strong>, is a general truth, or repeats. It's closer to English "when(ever)" than "if":</p>
+
+        <div class="example-box">
+            <ul>
+                <li><span class="marker m-cond">Kapag umuulan</span>, <span class="marker m-res">nagbabaha sa amin</span>. — When(ever) it rains, it floods in our area. <em>(a regular truth)</em></li>
+                <li><span class="marker m-cond">Kapag natapos ako</span>, <span class="marker m-res">tatawag ako sa iyo</span>. — When I'm done, I'll call you. <em>(expected)</em></li>
+                <li><span class="marker m-cond">Pag uwi ko</span>, <span class="marker m-res">magluluto ako</span>. — When I get home, I'll cook. <em>(pag = casual short form)</em></li>
+            </ul>
+        </div>
+
+        <p>Because <em>kapag</em> conditions are treated as real/recurring, it pairs naturally with habitual imperfective verbs (<em>umuulan</em>, <em>nagbabaha</em>) — a direct callback to the habitual reading you learned in Lesson 7.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. kung vs. kapag: the Certainty Test</h2>
+        <p>Here's the whole decision in one move — <strong>how sure are you the condition will occur?</strong></p>
+
+        <table class="g-table">
+            <tr><th>Use <span class="conj">kung</span> (if) when…</th><th>Use <span class="conj">kapag</span> (when) when…</th></tr>
+            <tr><td>the condition is uncertain / hypothetical</td><td>the condition is expected or certain</td></tr>
+            <tr><td>it may or may not happen</td><td>it regularly happens (a habit / rule)</td></tr>
+            <tr><td><em>Kung mananalo ako sa lotto…</em> (unlikely)</td><td><em>Kapag Pasko…</em> (it will come)</td></tr>
+        </table>
+
+        <div class="mermaid">
+            graph TD
+                Q{"How certain is<br/>the condition?"}
+                Q -- "uncertain / hypothetical" --> KUNG["kung<br/>(if / whether)"]
+                Q -- "expected, real, or habitual" --> KAPAG["kapag / pag<br/>(when / whenever)"]
+                Q -- "a contingency you're<br/>preparing for" --> SAKALI["sakali / kung sakali<br/>(in case)"]
+                style KUNG fill:#6c5ce7,color:#fff
+                style KAPAG fill:#00b894,color:#fff
+                style SAKALI fill:#0984e3,color:#fff
+        </div>
+
+        <div class="cultural-note">
+            <strong>When either works.</strong> In casual speech Filipinos often blur the two, and both can be fine for a plain future condition. But the instinct holds: <em>kapag</em> leans "this will/does happen," <em>kung</em> leans "this might happen." Reach for <em>kapag</em> with sunrise-certain events (<em>Kapag umaga…</em>) and <em>kung</em> with genuine maybes.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. sakali — In Case / Should It Happen</h2>
+        <p><span class="conj">sakali</span> (usually <span class="conj">sakaling</span> or <span class="conj">kung sakali</span>) marks a <strong>just-in-case contingency</strong> — something you're preparing for even though it probably won't happen:</p>
+
+        <div class="example-box">
+            <ul>
+                <li><span class="marker m-cond">Sakaling umulan</span>, <span class="marker m-res">may dala akong payong</span>. — In case it rains, I'm carrying an umbrella.</li>
+                <li><span class="marker m-cond">Kung sakaling mahuli ako</span>, <span class="marker m-res">mauna na kayo</span>. — Should I be late, go ahead without me.</li>
+                <li><span class="marker m-res">Magtabi ka ng pera</span> <span class="marker m-cond">para sa sakaling emergency</span>. — Set aside money for a possible emergency.</li>
+            </ul>
+        </div>
+
+        <p>Think of <em>sakali</em> as the "contingency plan" connector: it flags that you've thought ahead about a possibility, however remote.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Verb Aspect in Conditionals</h2>
+        <p>Which aspect goes in each clause? A reliable default for future conditions:</p>
+
+        <table class="g-table">
+            <tr><th>Clause</th><th>Typical aspect</th><th>Example</th></tr>
+            <tr><td>Condition (kung/kapag/sakali)</td><td>contemplated (future) or imperfective (habitual)</td><td>Kung <strong>uulan</strong>… / Kapag <strong>umuulan</strong>…</td></tr>
+            <tr><td>Result</td><td>contemplated (future) or a command</td><td>…<strong>hindi tayo aalis</strong>. / …<strong>magdala ka</strong> ng payong.</td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>Rule of thumb.</strong> For "if X happens, Y will happen," put both verbs in the <strong>contemplated</strong> (future): <em>Kung <strong>aalis</strong> ka, <strong>sasama</strong> ako.</em> For a habit ("whenever X, Y"), use the <strong>imperfective</strong> in both: <em>Kapag <strong>umuulan</strong>, <strong>nagbabaha</strong>.</em> Match the aspect to whether you mean a one-time future or a repeating pattern — exactly the choice from Lesson 7.
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Work the Conditionals</h2>
+
+        <h3>Exercise 1: kung, kapag, or sakali?</h3>
+        <p>Fill the blank with the connector for the meaning in parentheses:</p>
+        <div class="example-box">
+            <ul>
+                <li>_____ mananalo ako sa lotto, bibili ako ng bahay. (if — unlikely) → (Answer: kung)</li>
+                <li>_____ Pasko, masaya ang lahat. (when — it will come) → (Answer: kapag|pag)</li>
+                <li>_____ umulan, may dala akong payong. (in case) → (Answer: sakali|sakaling|kung sakali)</li>
+                <li>_____ gutom ka na, kumain ka na. (whenever — real) → (Answer: kapag|pag)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Certain or uncertain?</h3>
+        <p>Answer <strong>kung</strong> (uncertain) or <strong>kapag</strong> (expected/habitual):</p>
+        <div class="example-box">
+            <ul>
+                <li>Whenever it's morning, the rooster crows. → _____ (Answer: kapag|pag)</li>
+                <li>If I somehow finish early (I might not). → _____ (Answer: kung)</li>
+                <li>When payday comes (it will). → _____ (Answer: kapag|pag)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: "whether" kung</h3>
+        <p>Fill in the word that introduces an embedded question:</p>
+        <div class="example-box">
+            <ul>
+                <li>Hindi ko alam _____ darating siya. (whether) → (Answer: kung)</li>
+                <li>Tanungin mo _____ bukas ba sila. (if / whether) → (Answer: kung)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Aspect in the clause</h3>
+        <p>Give the contemplated (future) form for a one-time future condition:</p>
+        <div class="example-box">
+            <ul>
+                <li>Kung (alis) _____ ka, sasama ako. — root: alis (umalis) → (Answer: aalis)</li>
+                <li>Kapag (tapos) _____ ako, tatawag ako. — root: tapos (matapos) → (Answer: matatapos)</li>
+                <li>Kung (ulan) _____ , hindi tayo aalis. — root: ulan (umulan) → (Answer: uulan)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Pick the natural connector</h3>
+        <p>Answer <strong>A</strong> or <strong>B</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>_____ araw, umiinit. &nbsp; A) Kapag &nbsp; B) Sakaling → (Answer: A|a|kapag)</li>
+                <li>_____ magkasakit ako, may bitamina ako sa bag. &nbsp; A) Kapag &nbsp; B) Sakaling → (Answer: B|b|sakaling)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>Conditionals turn on <strong>certainty</strong>: <span class="conj">kung</span> for the uncertain "if" (and "whether"), <span class="conj">kapag</span> for the expected or habitual "when," and <span class="conj">sakali</span> for a "just in case" contingency — with the clause aspect (contemplated for one-off futures, imperfective for habits) picked exactly as in Lesson 7. Next, we make your <em>descriptions</em> richer: <strong>relative clauses</strong> ("the person who…") and intensifiers like <em>napaka-</em> and <em>sobrang</em>.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/intermediate/tagalog_lesson_8.html" class="prev-lesson">&larr; Previous: Connecting Ideas</a>
+    <a href="/intermediate/index.html" class="home-link">&#127968; Intermediate Home</a>
+    <a href="/intermediate/tagalog_lesson_10.html" class="next-lesson">Next: Relative Clauses &amp; Rich Description &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/intermediate/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/intermediate/vocab-data.js"></script>
+<script src="/intermediate/lesson-content.js"></script>
+<script src="/intermediate/learn.js"></script>
+</body>
+</html>

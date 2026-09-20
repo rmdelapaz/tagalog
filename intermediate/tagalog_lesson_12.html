@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telling Stories - Narrating with Time & Sequence</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #d63031, #e17055, #fdcb6e); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #d63031; background: #f9f9f9; }
+        .example-box { background: #e8f5e8; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #d63031; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #d63031; color: white; }
+        .time { display: inline-block; font-weight: 700; padding: 0 4px; border-radius: 4px; background: rgba(214,48,49,.14); color: #b02020; }
+        .asp-tag { display: inline-block; font-size: .74rem; font-weight: 700; padding: 1px 7px; border-radius: 999px; color: #fff; }
+        .a-comp { background: #e17055; }
+        .a-inc { background: #00b894; }
+        .a-rec { background: #0984e3; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Pagkukuwento — Telling Stories</h1>
+        <p>Narrate what happened, in order, with the time words and aspects that make a story flow</p>
+    </div>
+
+    <div class="section">
+        <p>This is the B1 capstone. Everything you've built — aspect, connectors, conditionals, description, opinions — comes together in the most human skill of all: <strong>telling a story</strong>. What did you do this weekend? What happened on the trip? Narration needs two things you now have: <strong>time anchors</strong> to place events, and <strong>aspect</strong> to show which are done, ongoing, or just-happened. Let's assemble them.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. The Shape of a Story</h2>
+        <p>A spoken story has a simple arc. Each stage has its natural signal words:</p>
+
+        <div class="pos-card">
+            <ul>
+                <li><strong>Opening</strong> — set the scene: <em>Noong…</em> (back when…), <em>Isang araw…</em> (one day…), <em>Kanina…</em> (earlier).</li>
+                <li><strong>Events</strong> — one after another: <em>tapos</em> (then), <em>pagkatapos</em> (after that), <em>bigla</em> (suddenly).</li>
+                <li><strong>Ending</strong> — wrap up: <em>sa wakas</em> (finally), <em>sa huli</em> (in the end), <em>simula noon</em> (since then).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Time Anchors: noong, kanina, dati, minsan</h2>
+        <p>These fix <em>when</em> the story happens:</p>
+
+        <table class="g-table">
+            <tr><th>Word</th><th>Meaning</th><th>Example</th></tr>
+            <tr><td><span class="time">noong</span></td><td>back when / last (past point)</td><td><strong>Noong</strong> bata pa ako… — When I was still a child…</td></tr>
+            <tr><td><span class="time">kanina</span></td><td>earlier (today)</td><td><strong>Kanina</strong>, nakita ko siya sa tindahan. — Earlier, I saw her at the store.</td></tr>
+            <tr><td><span class="time">dati</span></td><td>before / used to</td><td><strong>Dati</strong>, nakatira kami sa probinsya. — We used to live in the province.</td></tr>
+            <tr><td><span class="time">minsan</span></td><td>once / one time</td><td><strong>Minsan</strong>, nawala ako sa Maynila. — Once, I got lost in Manila.</td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>noong vs. nung.</strong> In speech you'll constantly hear <em>noong</em> shortened to <em>nung</em> ("<em>nung</em> isang araw" = the other day). <em>Noong</em> takes a past time or a clause: <em>noong Lunes</em> (last Monday), <em>noong high school ako</em> (when I was in high school). It's your main "back then" anchor for storytelling.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Sequencing Words: from "first" to "finally"</h2>
+        <p>Chain events in order:</p>
+
+        <table class="g-table">
+            <tr><th>Stage</th><th>Word(s)</th></tr>
+            <tr><td>first</td><td><span class="time">una</span> / <span class="time">noong una</span></td></tr>
+            <tr><td>then / next</td><td><span class="time">tapos</span> / <span class="time">pagkatapos</span> / <span class="time">saka</span></td></tr>
+            <tr><td>suddenly</td><td><span class="time">bigla</span> / <span class="time">biglang</span></td></tr>
+            <tr><td>finally / in the end</td><td><span class="time">sa wakas</span> / <span class="time">sa huli</span></td></tr>
+        </table>
+
+        <div class="example-box">
+            <ul>
+                <li><strong>Una</strong>, naghanda kami. <strong>Tapos</strong>, umalis na kami. <strong>Sa wakas</strong>, nakarating kami. — First we got ready. Then we left. Finally we arrived.</li>
+                <li>Naglalakad ako nang <strong>biglang</strong> umulan. — I was walking when suddenly it rained.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Aspect Does the Heavy Lifting</h2>
+        <p>This is Lesson 7 in action. Good narration mixes aspects deliberately:</p>
+
+        <table class="g-table">
+            <tr><th>Job in the story</th><th>Aspect</th><th>Example</th></tr>
+            <tr><td>Set the scene / background</td><td><span class="asp-tag a-inc">incompleted</span> (was -ing)</td><td>Umuulan noong dumating siya. — It was raining when she arrived.</td></tr>
+            <tr><td>Main events (what happened)</td><td><span class="asp-tag a-comp">completed</span></td><td>Kumain kami, tapos umalis. — We ate, then left.</td></tr>
+            <tr><td>Fresh / vivid "just happened"</td><td><span class="asp-tag a-rec">recently-completed</span></td><td>Katatapos ko lang magluto nang kumatok siya. — I'd just finished cooking when she knocked.</td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong>The narrator's trick.</strong> Use the <strong>imperfective</strong> for the backdrop (what was going on) and the <strong>completed</strong> for the punch (what happened) — the contrast is what makes a story feel alive. "<em>Natutulog ako</em> [ongoing] <em>nang biglang tumunog</em> [event] <em>ang telepono.</em>" ("I was sleeping when suddenly the phone rang.")
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. A Worked Mini-Story</h2>
+        <p>Watch every tool click together — time anchors, sequencers, aspect, and a connector or two:</p>
+
+        <div class="example-box">
+            <p><em>"<span class="time">Noong</span> isang Sabado, <strong>nagpasya</strong> kaming mag-picnic. <span class="time">Una</span>, <strong>naghanda</strong> kami ng pagkain. <span class="time">Tapos</span>, <strong>sumakay</strong> kami ng jeep papuntang parke. <strong>Umuulan</strong> pala nang <strong>dumating</strong> kami, <span class="time">pero</span> hindi kami sumuko. <span class="time">Sa wakas</span>, <strong>tumigil</strong> ang ulan, at <strong>natuwa</strong> kami dahil ang ganda ng araw."</em></p>
+            <p>"One Saturday, we decided to have a picnic. First, we prepared food. Then we took a jeep to the park. It was raining when we arrived, but we didn't give up. Finally, the rain stopped, and we were delighted because the day was beautiful."</p>
+        </div>
+
+        <div class="mermaid">
+            graph LR
+                O["Opening<br/>Noong isang Sabado…"] --> E1["Event<br/>naghanda, sumakay"]
+                E1 --> E2["Twist<br/>umuulan pala…"]
+                E2 --> C["Ending<br/>Sa wakas, tumigil ang ulan"]
+                style O fill:#d63031,color:#fff
+                style E1 fill:#e17055,color:#fff
+                style E2 fill:#fdcb6e,color:#333
+                style C fill:#00b894,color:#fff
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Tell the Story</h2>
+
+        <h3>Exercise 1: Choose the time anchor</h3>
+        <p>Fill in the word for the meaning:</p>
+        <div class="example-box">
+            <ul>
+                <li>_____ bata pa ako, mahilig akong maglaro. (back when) → (Answer: noong|nung)</li>
+                <li>_____, nakita ko siya sa tindahan. (earlier today) → (Answer: kanina)</li>
+                <li>_____, nakatira kami sa probinsya. (before / used to) → (Answer: dati)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Sequence the events</h3>
+        <p>Fill in <strong>una</strong> (first), <strong>tapos</strong> (then), or <strong>sa wakas</strong> (finally):</p>
+        <div class="example-box">
+            <ul>
+                <li>_____, naghanda kami. (first) → (Answer: una)</li>
+                <li>_____, umalis na kami. (then) → (Answer: tapos)</li>
+                <li>_____, nakarating kami. (finally) → (Answer: sa wakas)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Which aspect?</h3>
+        <p>Answer <strong>completed</strong> (main event) or <strong>incompleted</strong> (background scene):</p>
+        <div class="example-box">
+            <ul>
+                <li>Umuulan nang dumating siya. — "Umuulan" (raining, backdrop) → _____ (Answer: incompleted)</li>
+                <li>Kumain kami, tapos umalis. — "Kumain" (what happened) → _____ (Answer: completed)</li>
+                <li>Natutulog ako nang tumunog ang telepono. — "Natutulog" (was sleeping) → _____ (Answer: incompleted)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Add the drama</h3>
+        <p>Fill in the word for "suddenly":</p>
+        <div class="example-box">
+            <ul>
+                <li>Naglalakad ako nang _____ umulan. (suddenly) → (Answer: biglang|bigla)</li>
+                <li>_____ may kumatok sa pinto. (suddenly) → (Answer: bigla|biglang)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Open or close the story?</h3>
+        <p>Answer <strong>opening</strong> or <strong>ending</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>Noong isang araw… → _____ (Answer: opening)</li>
+                <li>Sa wakas… → _____ (Answer: ending)</li>
+                <li>Simula noon… → _____ (Answer: ending)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Tapos na ang B1 — You've Finished B1!</h2>
+        <p>You can now <strong>narrate</strong>: anchor a story with <em>noong</em> / <em>kanina</em> / <em>dati</em>, march events with <em>una</em> / <em>tapos</em> / <em>sa wakas</em>, and use aspect the way native speakers do — <strong>imperfective</strong> for the backdrop, <strong>completed</strong> for the events, <strong>recently-completed</strong> for vividness. That's the whole B1 toolkit working as one: the extended focus system (Lessons 2–6), aspect (7), connectors and conditionals (8–9), rich description (10), and self-expression (11–12). <em>Binabati kita!</em> Congratulations — the B2 tier ahead takes you into register, nuance, argument, and the language of media. <em>Magaling!</em></p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/intermediate/tagalog_lesson_11.html" class="prev-lesson">&larr; Previous: Opinions, Feelings &amp; Reasons</a>
+    <a href="/intermediate/index.html" class="home-link">&#127968; Intermediate Home</a>
+    <a href="/intermediate/tagalog_lesson_13.html" class="next-lesson">Next: Register &amp; Formality (B2) &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/intermediate/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/intermediate/vocab-data.js"></script>
+<script src="/intermediate/lesson-content.js"></script>
+<script src="/intermediate/learn.js"></script>
+</body>
+</html>

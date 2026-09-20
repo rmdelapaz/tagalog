@@ -155,5 +155,77 @@ window.TAGALOG_LESSON_INFO = {
       "Register matters — pero and kasi are the everyday workhorses; save ngunit, subalit, and formal dahil for writing and speeches",
       "Watch placement and note that kaya also means 'can/able' — context tells the two apart; then chain connectors to produce fluent multi-clause sentences"
     ]
+  },
+  "9": {
+    "objectives": [
+      "Distinguish kung (if/whether — uncertain), kapag/pag (when/whenever — expected/habitual), and sakali (in case — contingency)",
+      "Use kung for hypothetical conditions and for embedded 'whether' questions",
+      "Use kapag for real, expected, or repeating conditions",
+      "Use sakali/kung sakali for a just-in-case contingency you're preparing for",
+      "Apply the certainty test to choose between kung and kapag",
+      "Pick verb aspect in each clause — contemplated for one-off futures, imperfective for habits"
+    ],
+    "summary": [
+      "Conditionals in Tagalog split by certainty: kung (if/whether, uncertain), kapag/pag (when/whenever, expected or habitual), sakali (in case, a contingency)",
+      "kung marks hypothetical 'if' conditions and also introduces embedded questions ('whether': Hindi ko alam kung darating siya)",
+      "kapag treats the condition as real or recurring and pairs naturally with habitual imperfective verbs (Kapag umuulan, nagbabaha)",
+      "sakali / sakaling / kung sakali flag a just-in-case possibility you plan for (Sakaling umulan, may payong ako)",
+      "The certainty test decides kung vs. kapag — 'might happen' → kung, 'will/does happen' → kapag",
+      "For a one-time future put both clauses in the contemplated aspect; for a habit use the imperfective in both (the Lesson 7 choice)"
+    ]
+  },
+  "10": {
+    "objectives": [
+      "Use the na/-ng linker to attach modifiers, and pick the right form (-ng after vowel/-n, na after other consonants)",
+      "Build relative clauses ('the person who…', 'the thing that…') with the linker + a verb phrase",
+      "Apply the focus rule: the noun being described must be the focus of the clause verb (actor focus for a doer, object focus for a thing)",
+      "Intensify with napaka-, sobrang, masyadong (too/excess), and soften with medyo",
+      "Distinguish the attitudes: napaka-/sobrang (strong positive) vs. masyadong (too much) vs. medyo (mild)",
+      "Stack a relative clause and an intensifier for rich, precise description"
+    ],
+    "summary": [
+      "The na/-ng linker is the engine of Tagalog description — -ng after a vowel or -n, na after other consonants — and it's reversible (magandang bahay = bahay na maganda)",
+      "Swap a single adjective for a verb phrase and the same linker builds a relative clause: ang babaeng kumakanta, ang librong binili ko",
+      "The focus rule (from Lesson 1): the described noun must be the clause verb's focus — actor focus to describe a doer (lalaking bumili), object focus to describe a thing (kotseng binili)",
+      "Intensifiers scale description: napaka- (prefixed, very), sobrang (extremely), masyadong (too — often a complaint), medyo (somewhat, softening)",
+      "napaka-/sobrang read as strong admiration; masyadong signals excess; medyo dials the adjective down",
+      "Chaining a relative clause with an intensifier lets you describe exactly what and how much"
+    ]
+  },
+  "11": {
+    "objectives": [
+      "Open an opinion with sa palagay ko, sa tingin ko, or para sa akin",
+      "Express degrees of conviction with naniniwala ako, sigurado ako, and hedges (mukhang, parang, siguro, baka)",
+      "Name core feelings using ma-/na- words (masaya, malungkot, natutuwa, nag-aalala)",
+      "Justify an opinion or feeling with the reason connectors kasi/dahil and kaya",
+      "Agree and disagree naturally (sang-ayon ako, tama ka; hindi ako sang-ayon, the naman pivot)",
+      "Combine opener + claim + reason into a complete opinion turn"
+    ],
+    "summary": [
+      "Open opinions with set phrases — sa palagay ko / sa tingin ko (I think), para sa akin (for me), sa pakiramdam ko (I feel)",
+      "Signal conviction with naniniwala ako na / sigurado ako na, and soften with hedges mukhang, parang, siguro, baka",
+      "Core feelings are mostly ma-/na- words: masaya, malungkot, natutuwa, nag-aalala/nababahala, natatakot",
+      "Back a view with a reason using kasi/dahil (because) or kaya (so) — the Lesson 8 connectors",
+      "Agree with sang-ayon ako / tama ka / totoo nga; disagree gently with hindi ako sang-ayon or the naman pivot",
+      "Hedging (parang, siguro) and the naman pivot keep opinions polite — the pakikisama value at work — and the full move is opener + claim + reason"
+    ]
+  },
+  "12": {
+    "objectives": [
+      "Structure a spoken story: opening (scene), events (sequence), and ending (wrap-up)",
+      "Anchor time with noong (back when), kanina (earlier), dati (used to), minsan (once)",
+      "Sequence events with una, tapos/pagkatapos, bigla(ng), and sa wakas/sa huli",
+      "Use aspect deliberately — imperfective for the backdrop, completed for main events, recently-completed for vividness",
+      "Add drama with bigla(ng) (suddenly) and connect clauses with pero/dahil",
+      "Combine all B1 tools to narrate a coherent experience"
+    ],
+    "summary": [
+      "A spoken story has an arc: an opening that sets the scene, a sequence of events, and an ending",
+      "Time anchors place the story — noong/nung (back when), kanina (earlier today), dati (used to), minsan (once)",
+      "Sequencing words march the events — una (first), tapos/pagkatapos/saka (then), bigla(ng) (suddenly), sa wakas/sa huli (finally)",
+      "Aspect carries the narration: imperfective for background (umuulan), completed for what happened (kumain), recently-completed for a fresh 'just happened'",
+      "Contrast a backdrop (imperfective) with a punch (completed) to make the story feel alive: Natutulog ako nang tumunog ang telepono",
+      "Telling stories weaves together the whole B1 toolkit — the extended focus system, aspect, connectors, conditionals, description, and self-expression — completing B1"
+    ]
   }
 };
