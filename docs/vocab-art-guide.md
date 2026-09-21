@@ -189,7 +189,14 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
   arrow), pamasahe (hand + coins + jeepney). For the relational pair, use a
   **contrast cue**: malapit = two map pins close together, malayo = two pins
   far apart. **Verify arrow directions after generating** (left/right/up).
-  **95 entries now carry img.**
+- **Weather & seasons** (L15) — 8 — committed `8623727`. Two near-synonym trios,
+  each member given a distinct cue: **maaraw** = cheerful sun, **mainit** =
+  blazing/sweating sun + heat waves, **tag-init** = sun over cracked earth
+  (dry-SEASON scene); **maulan** = rain-cloud icon, **umuulan** = person under
+  umbrella in the rain (the action), **tag-ulan** = flooded street (rainy-SEASON
+  scene). Plus malamig (snowflake) and bagyo (storm + lightning + bent palm).
+  Pattern: adjective/condition = icon, verb/ongoing = a person doing it, season
+  = a landscape scene. **103 entries now carry img.**
 
 ### Color-swatch generator (Colors category — no ChatGPT)
 
