@@ -1264,37 +1264,43 @@ window.TAGALOG_VOCAB = {
       "tl": "grabe",
       "pron": "GRA-be",
       "en": "wow! / intense!",
-      "cat": "Emotions & reactions"
+      "cat": "Emotions & reactions",
+      "img": "grabe"
     },
     {
       "tl": "hay naku",
       "pron": "hay na-KOO",
       "en": "oh my gosh! (exasperation)",
-      "cat": "Emotions & reactions"
+      "cat": "Emotions & reactions",
+      "img": "hay-naku"
     },
     {
       "tl": "hindi nga!",
       "pron": "hin-DEE nga",
       "en": "no way!",
-      "cat": "Emotions & reactions"
+      "cat": "Emotions & reactions",
+      "img": "hindi-nga"
     },
     {
       "tl": "kilig",
       "pron": "KI-lig",
       "en": "giddy / thrilled",
-      "cat": "Emotions & reactions"
+      "cat": "Emotions & reactions",
+      "img": "kilig"
     },
     {
       "tl": "sayang",
       "pron": "SA-yang",
       "en": "what a waste!",
-      "cat": "Emotions & reactions"
+      "cat": "Emotions & reactions",
+      "img": "sayang"
     },
     {
       "tl": "talaga?",
       "pron": "ta-la-GA",
       "en": "really?",
-      "cat": "Emotions & reactions"
+      "cat": "Emotions & reactions",
+      "img": "talaga"
     },
     {
       "tl": "gusto ko",
