@@ -1,0 +1,6 @@
+# Long-lived immutable caching for versioned vocabulary illustrations.
+# Cache-busting is done via the ?v= query param set by VOCAB_IMG_VER in learn.js,
+# so these files can be cached hard — repeat visitors never re-fetch until the
+# version (and thus the URL) changes. See docs/vocab-art-guide.md.
+/images/vocab/*
+  Cache-Control: public, max-age=31536000, immutable
