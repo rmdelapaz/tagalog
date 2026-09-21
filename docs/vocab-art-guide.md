@@ -203,6 +203,16 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
   (regretful), talaga (skeptical). **Slugs != tl here** (words have spaces/
   punctuation) → set `img` to a clean slug explicitly: hay-naku, hindi-nga, talaga.
   **109 entries now carry img; all 109 slugs verified to have a matching webp.**
+- **Describing & Adjectives** (L1/L2/L7/L9) — committed `8d258b4`. 13 new:
+  gutom (hungry), mabait (kind/helping), mabuti (thumbs up), maganda (beautiful),
+  mahal (diamond ring = expensive/love dual meaning), malaki (elephant),
+  maliit (tiny mouse — drawn small), malungkot (sad), masaya (happy), matalino
+  (idea bulb), matangkad (height contrast), matapang (hero stance), pangit
+  (comical goblin — **render "ugly" as a silly fantasy creature, never a real
+  person**). Heavy **reuse** via slug: color adjectives -> the color swatches
+  (incl. luntian -> berde), mainit, masarap; napakaganda -> maganda. Big/small
+  and tall use concrete contrast (elephant/mouse, tall-vs-short). **135 entries
+  now carry img; all verified to have a matching webp.**
 
 ### Color-swatch generator (Colors category — no ChatGPT)
 
