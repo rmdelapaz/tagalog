@@ -2543,49 +2543,57 @@ window.TAGALOG_VOCAB = {
       "tl": "mainit",
       "pron": "mah-EE-nit",
       "en": "hot",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "mainit"
     },
     {
       "tl": "malamig",
       "pron": "mah-lah-MEEG",
       "en": "cold / cool",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "malamig"
     },
     {
       "tl": "maaraw",
       "pron": "mah-AH-row",
       "en": "sunny",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "maaraw"
     },
     {
       "tl": "maulan",
       "pron": "mah-OO-lan",
       "en": "rainy",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "maulan"
     },
     {
       "tl": "umuulan",
       "pron": "oo-moo-OO-lan",
       "en": "it's raining",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "umuulan"
     },
     {
       "tl": "bagyo",
       "pron": "BAG-yoh",
       "en": "storm / typhoon",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "bagyo"
     },
     {
       "tl": "tag-init",
       "pron": "tag-EE-nit",
       "en": "hot/dry season",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "tag-init"
     },
     {
       "tl": "tag-ulan",
       "pron": "tag-OO-lan",
       "en": "rainy season",
-      "cat": "Weather & seasons"
+      "cat": "Weather & seasons",
+      "img": "tag-ulan"
     },
     {
       "tl": "damit",
