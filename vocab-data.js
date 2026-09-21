@@ -1122,37 +1122,43 @@ window.TAGALOG_VOCAB = {
       "tl": "diretso",
       "pron": "di-RET-so",
       "en": "straight ahead",
-      "cat": "Getting around"
+      "cat": "Getting around",
+      "img": "diretso"
     },
     {
       "tl": "kaliwa",
       "pron": "ka-li-WA",
       "en": "left",
-      "cat": "Getting around"
+      "cat": "Getting around",
+      "img": "kaliwa"
     },
     {
       "tl": "kanan",
       "pron": "KA-nan",
       "en": "right",
-      "cat": "Getting around"
+      "cat": "Getting around",
+      "img": "kanan"
     },
     {
       "tl": "malapit",
       "pron": "ma-LA-pit",
       "en": "near",
-      "cat": "Getting around"
+      "cat": "Getting around",
+      "img": "malapit"
     },
     {
       "tl": "malayo",
       "pron": "ma-LA-yo",
       "en": "far",
-      "cat": "Getting around"
+      "cat": "Getting around",
+      "img": "malayo"
     },
     {
       "tl": "pamasahe",
       "pron": "pa-ma-SA-he",
       "en": "fare",
-      "cat": "Getting around"
+      "cat": "Getting around",
+      "img": "pamasahe"
     },
     {
       "tl": "busog",
