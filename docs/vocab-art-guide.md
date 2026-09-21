@@ -182,8 +182,14 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
 - **Everyday nouns** (L2) — 11 — committed `c971904`. 7 new (bulaklak,
   eskwelahan, kusina, libro, mansanas, mesa, palengke); **4 reused** existing
   slugs (adobo, aso, kanin, sapatos) — no new files, just added `img`. Proof
-  the slug scheme reuses one image everywhere a word recurs. **89 entries now
-  carry img.** (Skip the L7 "Nouns" set — abstract: kindness/beauty/love/etc.)
+  the slug scheme reuses one image everywhere a word recurs.
+  (Skip the L7 "Nouns" set — abstract: kindness/beauty/love/etc.)
+- **Getting around** (L6) — 6 — committed `5fa268d`. Spatial/relational terms
+  as icon-style visuals: diretso (up arrow), kaliwa (left arrow), kanan (right
+  arrow), pamasahe (hand + coins + jeepney). For the relational pair, use a
+  **contrast cue**: malapit = two map pins close together, malayo = two pins
+  far apart. **Verify arrow directions after generating** (left/right/up).
+  **95 entries now carry img.**
 
 ### Color-swatch generator (Colors category — no ChatGPT)
 
