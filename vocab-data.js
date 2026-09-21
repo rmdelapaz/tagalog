@@ -168,13 +168,15 @@ window.TAGALOG_VOCAB = {
       "tl": "mabuti",
       "pron": "ma-BOO-ti",
       "en": "good / fine",
-      "cat": "Describing"
+      "cat": "Describing",
+      "img": "mabuti"
     },
     {
       "tl": "maganda",
       "pron": "ma-gan-DA",
       "en": "beautiful",
-      "cat": "Describing"
+      "cat": "Describing",
+      "img": "maganda"
     }
   ],
   "2": [
@@ -385,25 +387,29 @@ window.TAGALOG_VOCAB = {
       "tl": "gutom",
       "pron": "GOO-tom",
       "en": "hungry",
-      "cat": "Describing"
+      "cat": "Describing",
+      "img": "gutom"
     },
     {
       "tl": "mabait",
       "pron": "ma-BA-it",
       "en": "kind",
-      "cat": "Describing"
+      "cat": "Describing",
+      "img": "mabait"
     },
     {
       "tl": "malaki",
       "pron": "ma-la-KI",
       "en": "big",
-      "cat": "Describing"
+      "cat": "Describing",
+      "img": "malaki"
     },
     {
       "tl": "masaya",
       "pron": "ma-sa-YA",
       "en": "happy",
-      "cat": "Describing"
+      "cat": "Describing",
+      "img": "masaya"
     }
   ],
   "3": [
@@ -1392,79 +1398,92 @@ window.TAGALOG_VOCAB = {
       "tl": "asul",
       "pron": "a-SOOL",
       "en": "blue",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "asul"
     },
     {
       "tl": "dilaw",
       "pron": "di-LAW",
       "en": "yellow",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "dilaw"
     },
     {
       "tl": "itim",
       "pron": "ee-TIM",
       "en": "black",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "itim"
     },
     {
       "tl": "luntian",
       "pron": "loon-ti-YAN",
       "en": "green",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "berde"
     },
     {
       "tl": "maliit",
       "pron": "ma-li-IT",
       "en": "small",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "maliit"
     },
     {
       "tl": "malungkot",
       "pron": "ma-lung-KOT",
       "en": "sad",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "malungkot"
     },
     {
       "tl": "matalino",
       "pron": "ma-ta-LI-no",
       "en": "smart",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "matalino"
     },
     {
       "tl": "matangkad",
       "pron": "ma-tang-KAD",
       "en": "tall (person)",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "matangkad"
     },
     {
       "tl": "matapang",
       "pron": "ma-ta-PANG",
       "en": "brave",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "matapang"
     },
     {
       "tl": "napakaganda",
       "pron": "na-pa-ka-gan-DA",
       "en": "very beautiful",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "maganda"
     },
     {
       "tl": "pangit",
       "pron": "pa-NGIT",
       "en": "ugly",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "pangit"
     },
     {
       "tl": "pula",
       "pron": "poo-LA",
       "en": "red",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "pula"
     },
     {
       "tl": "puti",
       "pron": "poo-TI",
       "en": "white",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "puti"
     },
     {
       "tl": "bukas",
@@ -1946,43 +1965,50 @@ window.TAGALOG_VOCAB = {
       "tl": "mabait",
       "pron": "mah-bah-EET",
       "en": "kind",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "mabait"
     },
     {
       "tl": "maganda",
       "pron": "mah-gahn-DAH",
       "en": "beautiful",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "maganda"
     },
     {
       "tl": "mahal",
       "pron": "mah-HAHL",
       "en": "expensive / love",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "mahal"
     },
     {
       "tl": "mainit",
       "pron": "mah-ee-NEET",
       "en": "hot",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "mainit"
     },
     {
       "tl": "malaki",
       "pron": "mah-lah-KEE",
       "en": "big",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "malaki"
     },
     {
       "tl": "masarap",
       "pron": "mah-sah-RAHP",
       "en": "delicious",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "masarap"
     },
     {
       "tl": "masaya",
       "pron": "mah-sah-YAH",
       "en": "happy",
-      "cat": "Adjectives"
+      "cat": "Adjectives",
+      "img": "masaya"
     },
     {
       "tl": "bahay",
