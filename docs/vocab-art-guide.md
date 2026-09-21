@@ -196,7 +196,13 @@ The Food & drink pilot is fully wired and verified locally (Lessons 6 & 9):
   umbrella in the rain (the action), **tag-ulan** = flooded street (rainy-SEASON
   scene). Plus malamig (snowflake) and bagyo (storm + lightning + bent palm).
   Pattern: adjective/condition = icon, verb/ongoing = a person doing it, season
-  = a landscape scene. **103 entries now carry img.**
+  = a landscape scene.
+- **Emotions & reactions** (L6) — 6 — committed `64ceaa0`. Exclamations rendered
+  as expressive **manga reaction faces** (the style's sweet spot): grabe (amazed),
+  hay naku (facepalm), hindi nga (shock), kilig (giddy + hearts), sayang
+  (regretful), talaga (skeptical). **Slugs != tl here** (words have spaces/
+  punctuation) → set `img` to a clean slug explicitly: hay-naku, hindi-nga, talaga.
+  **109 entries now carry img; all 109 slugs verified to have a matching webp.**
 
 ### Color-swatch generator (Colors category — no ChatGPT)
 
