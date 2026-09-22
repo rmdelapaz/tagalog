@@ -427,30 +427,43 @@
 
 html.no-tts-voice .audio-btn { display: none; }
 
-.audio-notice {
+/* Both notices are injected right after the page's first <h1>, which on every
+   tier sits inside a saturated gradient hero. They therefore carry their own
+   OPAQUE background and a single uniform text colour — black on light, white
+   on dark — so the gradient cannot bleed through and the bold lead-in does not
+   read as a second, dimmer colour. The amber/blue split is kept: amber means
+   no voice at all, blue means a stand-in voice is speaking. */
+.audio-notice,
+.audio-fallback {
     display: none;
     font-size: .85rem;
-    color: var(--text-light);
-    background: var(--warning-bg);
-    border-left: 4px solid var(--warning-border);
+    color: #000;
     border-radius: var(--radius-sm);
     padding: .6rem .9rem;
     margin: 1rem 0;
+}
+/* !important because the dark theme sets `[data-theme="dark"] strong` with
+   !important; this keeps the bold lead-in the same colour as the body text. */
+.audio-notice strong,
+.audio-fallback strong { color: inherit !important; }
+
+.audio-notice {
+    background: #fffbeb;
+    border-left: 4px solid var(--warning-border);
 }
 html.no-tts-voice .audio-notice { display: block; }
 
 /* Shown only when a stand-in voice is speaking (e.g. Spanish reading Tagalog). */
 .audio-fallback {
-    display: none;
-    font-size: .85rem;
-    color: var(--text-light);
-    background: var(--info-bg, var(--primary-light));
+    background: #eff6ff;
     border-left: 4px solid var(--primary-color);
-    border-radius: var(--radius-sm);
-    padding: .6rem .9rem;
-    margin: 1rem 0;
 }
 html.tts-fallback .audio-fallback { display: block; }
+
+[data-theme="dark"] .audio-notice,
+[data-theme="dark"] .audio-fallback { color: #fff; }
+[data-theme="dark"] .audio-notice   { background: #2b2011; }
+[data-theme="dark"] .audio-fallback { background: #11203a; }
 
 /* ===========================
    Listener panel (voice + speed), injected by audio.js.
