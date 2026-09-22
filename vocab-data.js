@@ -952,8 +952,7 @@ window.TAGALOG_VOCAB = {
       "tl": "pinsan",
       "pron": "PIN-san",
       "en": "cousin",
-      "cat": "Extended family",
-      "img": "pinsan"
+      "cat": "Extended family"
     },
     {
       "tl": "tita",
