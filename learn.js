@@ -39,7 +39,16 @@
     var K_SRS      = 'tagalog-srs';        // { "salamat": {box,due,reps}, ... }
     var K_JOURNAL  = 'tagalog-journal:';   // + page slug
 
-    var TOTAL_LESSONS = 9;
+    // Derive the lesson count from the vocab titles map so the dashboard stays
+    // correct as lessons are added (this was hardcoded to 9 while the course
+    // grew to 16, so progress read "x/9" and could exceed 100%).
+    var TOTAL_LESSONS = (function () {
+        try {
+            var t = (window.TAGALOG_VOCAB && window.TAGALOG_VOCAB.titles) || {};
+            var n = Object.keys(t).filter(function (k) { return /^\d+$/.test(k); }).length;
+            return n || 16;
+        } catch (_) { return 16; }
+    })();
 
     /* ---------- page identity ---------- */
     var page = (location.pathname.split('/').pop() || 'index').replace('.html', '') || 'index';
