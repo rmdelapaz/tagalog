@@ -724,7 +724,7 @@
                 '</div>' +
                 '<div class="lx-track"><div class="lx-track-fill"></div></div>' +
                 '<div class="lx-toolbar">' +
-                    '<a class="lx-btn lx-btn-primary" href="/tagalog_lesson_' + resume + '.html">▶ ' + (visited ? 'Continue' : 'Start') + ': Lesson ' + resume + '</a>' +
+                    '<a class="lx-btn lx-btn-primary" href="tagalog_lesson_' + resume + '.html">▶ ' + (visited ? 'Continue' : 'Start') + ': Lesson ' + resume + '</a>' +
                     '<button type="button" class="lx-btn lx-review-due"' + (dueNow ? '' : ' disabled') + '>🔁 Review due words (' + dueNow + ')</button>' +
                     '<button type="button" class="lx-btn lx-review-known">🃏 Browse my review deck</button>' +
                     '<button type="button" class="lx-btn lx-export-journal">⬇ Export journal</button>' +
