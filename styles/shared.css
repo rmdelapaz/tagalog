@@ -237,10 +237,19 @@
   border-left-color: var(--accent) !important;
 }
 
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4 {
+/* Dark-mode recolour of the heading band that main.css paints on every h1-h4.
+   The :where() keeps this selector at the same specificity as main.css's own
+   `h1,h2,h3,h4` rule (0,0,1), so it still wins on source order (shared.css is
+   linked after main.css) but no longer out-specifies components that opt OUT
+   of the band -- .lx-cat-title, .cs-cat and the landing page's own reset all
+   declare `background:none!important` and were being silently overridden here,
+   so those headings were banded in dark mode but plain in light.
+   Do NOT drop the :where(): a bare [data-theme="dark"] h2 scores 0,1,1 and
+   re-breaks every one of those opt-outs. */
+:where([data-theme="dark"]) h1,
+:where([data-theme="dark"]) h2,
+:where([data-theme="dark"]) h3,
+:where([data-theme="dark"]) h4 {
   background-color: var(--table-header) !important;
   color: #e2e8f0 !important;
 }
@@ -252,6 +261,17 @@
 [data-theme="dark"] a {
   color: var(--accent) !important;
 }
+
+/* ...but a .lx-btn is a component, not a prose link. The blanket rule above
+   (0,1,1 + !important) out-ranks .lx-btn-primary's own `color:#fff` (0,1,0),
+   repainting the label var(--accent) -- the exact colour of that button's own
+   background -- so the Start/Continue CTA on all three landing pages rendered
+   as a blank slab in dark mode. Same specificity trap as the heading band.
+   These need to stay at 0,2,1+ to outrank it, hover states included. */
+[data-theme="dark"] a.lx-btn { color: var(--text-primary) !important; }
+[data-theme="dark"] a.lx-btn-primary { color: #fff !important; }
+[data-theme="dark"] a.lx-btn:hover { color: var(--accent) !important; }
+[data-theme="dark"] a.lx-btn-primary:hover { color: #fff !important; }
 
 [data-theme="dark"] table,
 [data-theme="dark"] td,
