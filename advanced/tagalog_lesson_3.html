@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ay-Inversion &amp; Marked Syntax</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #2c3e50, #8e44ad, #27ae60); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #8e44ad; background: #f9f9f9; }
+        .example-box { background: #f1ecf7; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #8e44ad; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #8e44ad; color: white; }
+        .verse { font-family: Georgia, 'Times New Roman', serif; font-size: 1.06rem; line-height: 1.9; padding-left: 12px; border-left: 3px solid #8e44ad; margin: 14px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Ang Kayariang <em>Ay</em></h1>
+        <p>The most misunderstood word in formal Tagalog — and the syntax it unlocks</p>
+    </div>
+
+    <div class="section">
+        <p>Nearly every beginner is told, at some point, that <em>ay</em> means "is". It does not. Tagalog has no verb "to be", and <em>ay</em> is not smuggling one in. <strong><em>Ay</em> is an inversion marker</strong>: a seam that appears when a sentence has been turned around from its natural order.</p>
+        <p>Get this right and two things follow. Your own formal Tagalog stops sounding translated, and the dense prose of textbooks, laws, and speeches suddenly parses.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Tagalog's Natural Order Is Predicate-First</h2>
+        <p>A Tagalog sentence normally leads with what it asserts, and names the subject afterwards. This is <strong>karaniwang ayos</strong> — usual order.</p>
+        <table class="g-table">
+            <tr><th>Karaniwang ayos (usual)</th><th>English</th><th>Structure</th></tr>
+            <tr><td>Mabait ang guro.</td><td>The teacher is kind.</td><td>panaguri + paksa</td></tr>
+            <tr><td>Doktor ang kapatid ko.</td><td>My sibling is a doctor.</td><td>panaguri + paksa</td></tr>
+            <tr><td>Umalis na ang bisita.</td><td>The guests have left.</td><td>panaguri + paksa</td></tr>
+        </table>
+        <p>Turn any of these around — put the <strong>paksa</strong> (subject) first — and Tagalog requires <em>ay</em> at the seam. This is <strong>di-karaniwang ayos</strong>, inverted order.</p>
+        <table class="g-table">
+            <tr><th>Di-karaniwang ayos (inverted)</th><th>English</th></tr>
+            <tr><td>Ang guro <strong>ay</strong> mabait.</td><td>The teacher is kind.</td></tr>
+            <tr><td>Ang kapatid ko <strong>ay</strong> doktor.</td><td>My sibling is a doctor.</td></tr>
+            <tr><td>Ang bisita <strong>ay</strong> umalis na.</td><td>The guests have left.</td></tr>
+        </table>
+        <div class="cultural-note">
+            <strong>Proof that <em>ay</em> isn't "is".</strong> Look at the third pair. <em>Ang bisita ay umalis na</em> has a full verb — <em>umalis</em> — already in it. If <em>ay</em> were "is", the sentence would read "the guests is have-left". It is not a verb. It is punctuation for a rearranged sentence.
+        </div>
+        <div class="mermaid">
+            graph LR
+                A["Mabait ang guro.&lt;br/&gt;PREDICATE first — no ay"] -->|invert| B["Ang guro ay mabait.&lt;br/&gt;SUBJECT first — ay marks the seam"]
+                style A fill:#16a085,color:#fff
+                style B fill:#8e44ad,color:#fff
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. When to Use It — and When It Sounds Wrong</h2>
+        <table class="g-table">
+            <tr><th>Context</th><th>ay?</th><th>Why</th></tr>
+            <tr><td>Textbooks, academic writing</td><td>Standard</td><td>Inversion front-loads the topic, which suits exposition</td></tr>
+            <tr><td>Laws, contracts, official notices</td><td>Standard</td><td>The subject must be unambiguous and stated first</td></tr>
+            <tr><td>Speeches and formal address</td><td>Common</td><td>Adds weight and deliberation</td></tr>
+            <tr><td>News writing</td><td>Mixed</td><td>Headlines drop it; body copy uses it</td></tr>
+            <tr><td>Everyday conversation</td><td>Rare</td><td>Sounds like you are reading aloud from a book</td></tr>
+        </table>
+        <div class="example-box">
+            <p>❌ <em>Ako ay pupunta sa tindahan.</em> — grammatical, but in a casual chat this lands like "I shall proceed to the shop."</p>
+            <p>✅ <em>Pupunta ako sa tindahan.</em> — what a person actually says.</p>
+            <p>✅ <em>Ang wika ay salamin ng kultura.</em> — an essay sentence, and inversion is right at home.</p>
+        </div>
+        <p>In speech, <em>ay</em> also appears as a contracted <strong>'y</strong> after a vowel: <em>Ako'y nagtataka</em>, <em>Siya'y umalis na</em>. That form is poetic and song-like rather than stiff, which is why lyrics are full of it.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Pseudo-Cleft — Spotlighting a Whole Clause</h2>
+        <p>Inversion's real power is that the fronted subject can be an entire clause wrapped in <em>ang</em>. This is how Tagalog does the English "What I did was…" construction.</p>
+        <table class="g-table">
+            <tr><th>Frame</th><th>Example</th><th>English</th></tr>
+            <tr><td>Ang ginawa ko ay…</td><td>Ang ginawa ko ay tumawag sa kanya.</td><td>What I did was call her.</td></tr>
+            <tr><td>Ang dahilan ay…</td><td>Ang dahilan ay wala siyang pera.</td><td>The reason is that he had no money.</td></tr>
+            <tr><td>Ang mahalaga ay…</td><td>Ang mahalaga ay ligtas kayo.</td><td>What matters is that you're safe.</td></tr>
+            <tr><td>Ang tanging…</td><td>Ang tanging hiling ko ay makauwi.</td><td>My only wish is to get home.</td></tr>
+        </table>
+        <div class="example-box">
+            <p>Neutral: <em>Tumawag ako sa kanya.</em> — I called her.</p>
+            <p>Spotlit: <em>Ang ginawa ko ay tumawag sa kanya.</em> — <strong>What I did</strong> was call her (as opposed to whatever you assumed).</p>
+        </div>
+        <p>This is the standard move for correcting an assumption, for answering an accusation, and for landing a thesis statement. You will use it constantly in Lesson 9.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. The Connectors That Travel With This Register</h2>
+        <p>Formal, inverted Tagalog brings its own conjunctions. These are rare in speech and everywhere in print:</p>
+        <table class="g-table">
+            <tr><th>Connector</th><th>Meaning</th><th>Example</th></tr>
+            <tr><td>kung kaya't</td><td>and so / which is why</td><td>Umulan nang malakas, kung kaya't kinansela ang klase.</td></tr>
+            <tr><td>na siyang</td><td>which is the one that</td><td>Ito ang batas na siyang nagtatakda ng patakaran.</td></tr>
+            <tr><td>na kung saan</td><td>in which / where</td><td>Ang lungsod na kung saan siya lumaki ay malayo.</td></tr>
+            <tr><td>bilang</td><td>as / in the capacity of</td><td>Bilang mamamayan, may tungkulin tayo.</td></tr>
+            <tr><td>ukol sa</td><td>concerning</td><td>May panukala ukol sa edukasyon.</td></tr>
+            <tr><td>hinggil sa</td><td>regarding</td><td>Nagsalita siya hinggil sa isyu.</td></tr>
+            <tr><td>gayundin</td><td>likewise / also</td><td>Gayundin ang naging resulta sa ibang lugar.</td></tr>
+        </table>
+        <div class="cultural-note">
+            <strong><em>Bilang</em> has two lives.</strong> As a noun it means "number" or "count" (<em>ilan ang bilang?</em>). As a preposition it means "as / in the capacity of". Context separates them cleanly, but the first time you meet <em>Bilang guro…</em> at the head of a sentence it can stop you.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Reading Practice — Parsing a Formal Sentence</h2>
+        <div class="example-box">
+            <p><em>"Ang edukasyon ay hindi lamang paghahanda sa trabaho, kung kaya't nararapat na ituring itong karapatan ng bawat bata."</em></p>
+            <p><strong>Step 1 — find <em>ay</em>.</strong> Everything before it is the fronted subject: <em>Ang edukasyon</em>.</p>
+            <p><strong>Step 2 — the predicate follows:</strong> <em>hindi lamang paghahanda sa trabaho</em> ("not merely preparation for work").</p>
+            <p><strong>Step 3 — <em>kung kaya't</em> starts the consequence:</strong> "and so it ought to be treated as every child's right".</p>
+            <p><strong>Plain reading:</strong> Education is not just job preparation, so it should be treated as every child's right.</p>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Inverting and Parsing</h2>
+
+        <h3>Exercise 1: Invert the sentence</h3>
+        <p>Rewrite in di-karaniwang ayos — give the <strong>one word</strong> that must appear at the seam:</p>
+        <div class="example-box">
+            <ul>
+                <li>Mabait ang guro. → Ang guro _____ mabait. (Answer: ay)</li>
+                <li>Umalis na ang bisita. → Ang bisita _____ umalis na. (Answer: ay)</li>
+                <li>Guro ako. → Ako _____ guro. (Answer: ay)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Name the order</h3>
+        <p>Answer <strong>karaniwan</strong> or <strong>di-karaniwan</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>Ang wika ay salamin ng kultura. → _____ (Answer: di-karaniwan)</li>
+                <li>Malaki ang bahay nila. → _____ (Answer: karaniwan)</li>
+                <li>Ang bata ay natutulog. → _____ (Answer: di-karaniwan)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Build a pseudo-cleft</h3>
+        <p>Complete the spotlighting frame:</p>
+        <div class="example-box">
+            <ul>
+                <li>Ang _____ ko ay tumawag sa kanya. (what I did) → (Answer: ginawa)</li>
+                <li>Ang _____ ay wala siyang pera. (the reason) → (Answer: dahilan)</li>
+                <li>Ang _____ ay ligtas kayo. (what matters) → (Answer: mahalaga)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Choose the formal connector</h3>
+        <p>Fill the blank with <strong>kung kaya't</strong>, <strong>bilang</strong>, <strong>hinggil sa</strong>, or <strong>na kung saan</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>_____ mamamayan, may tungkulin tayo. → (Answer: bilang)</li>
+                <li>Umulan nang malakas, _____ kinansela ang klase. → (Answer: kung kaya't)</li>
+                <li>Nagsalita siya _____ isyu ng edukasyon. → (Answer: hinggil sa)</li>
+                <li>Ang bayan _____ siya lumaki ay malayo. → (Answer: na kung saan)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Register judgement</h3>
+        <p>Answer <strong>natural</strong> or <strong>stilted</strong> for casual conversation:</p>
+        <div class="example-box">
+            <ul>
+                <li>Ako ay pupunta sa tindahan. → _____ (Answer: stilted)</li>
+                <li>Pupunta ako sa tindahan. → _____ (Answer: natural)</li>
+                <li>Ako'y nagtataka. (in a song lyric) → _____ (Answer: natural)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>You can now read the sentence shape that dominates written Filipino, and you know when using it will make you sound authoritative rather than stiff. But formal sentences are rarely short — they stack clause on clause. Lesson 4 gives you the tools to take those sentences apart without losing the thread.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/advanced/tagalog_lesson_2.html" class="prev-lesson">&larr; Previous: paN- Morphophonemics</a>
+    <a href="/advanced/index.html" class="home-link">&#127968; Advanced Home</a>
+    <a href="/advanced/tagalog_lesson_4.html" class="next-lesson">Next: Embedding &amp; Subordination &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/advanced/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/advanced/vocab-data.js"></script>
+<script src="/advanced/lesson-content.js"></script>
+<script src="/advanced/learn.js"></script>
+</body>
+</html>

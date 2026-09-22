@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidentiality &amp; Modality Gradients - How Sure, and How Do You Know?</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #2c3e50, #8e44ad, #7f8c8d); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #8e44ad; background: #f9f9f9; }
+        .example-box { background: #f1ecf7; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #8e44ad; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #8e44ad; color: white; }
+        .verse { font-family: Georgia, 'Times New Roman', serif; font-size: 1.06rem; line-height: 1.9; padding-left: 12px; border-left: 3px solid #8e44ad; margin: 14px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Gaano Ka Katiyak, at Paano Mo Nalaman?</h1>
+        <p>The certainty ladder, and marking where your information came from</p>
+    </div>
+
+    <div class="section">
+        <p>Most learners get to B2 with one word for uncertainty: <em>siguro</em>. Tagalog has at least ten, arranged on a fine scale, and a <strong>second, separate</strong> system for saying where you got the information. Careful Tagalog answers both questions at once, and news Tagalog is built almost entirely out of this machinery.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Two Different Questions</h2>
+        <table class="g-table">
+            <tr><th>System</th><th>The question it answers</th><th>Words</th></tr>
+            <tr><td><strong>Modality</strong></td><td>How confident am I?</td><td>tiyak, malamang, marahil, tila, maaaring, baka, siguro, yata</td></tr>
+            <tr><td><strong>Evidentiality</strong></td><td>How do I know?</td><td>daw/raw, ayon kay/sa, anang, diumano, sabi-sabi</td></tr>
+        </table>
+        <p>They are independent. You can be very sure of something you heard second-hand, or doubtful about something you saw yourself.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. The Certainty Ladder</h2>
+        <div class="mermaid">
+            graph TD
+                T["tiyak / walang duda&lt;br/&gt;certain"] --> M["malamang&lt;br/&gt;likely"]
+                M --> R["marahil&lt;br/&gt;probably (formal)"]
+                R --> TL["tila / wari&lt;br/&gt;it seems"]
+                TL --> MA["maaaring&lt;br/&gt;may / possibly"]
+                MA --> B["baka&lt;br/&gt;might (worried)"]
+                B --> S["siguro / yata&lt;br/&gt;a guess"]
+                style T fill:#16a085,color:#fff
+                style S fill:#c0392b,color:#fff
+        </div>
+
+        <table class="g-table">
+            <tr><th>Word</th><th>Strength</th><th>Register</th><th>Example</th></tr>
+            <tr><td>tiyak</td><td>certain</td><td>any</td><td>Tiyak na darating siya.</td></tr>
+            <tr><td>walang duda</td><td>certain</td><td>formal</td><td>Walang duda sa resulta.</td></tr>
+            <tr><td>malamang</td><td>likely</td><td>any</td><td>Malamang nasa bahay siya.</td></tr>
+            <tr><td>marahil</td><td>probably</td><td>formal / written</td><td>Marahil ay nagkamali ako.</td></tr>
+            <tr><td>tila</td><td>it seems</td><td>formal / neutral</td><td>Tila uulan mamaya.</td></tr>
+            <tr><td>wari / waring</td><td>it seems</td><td>literary</td><td>Wari'y natutulog ang bayan.</td></tr>
+            <tr><td>maaaring</td><td>may</td><td>formal</td><td>Maaaring totoo ito.</td></tr>
+            <tr><td>baka</td><td>might</td><td>casual</td><td>Baka mahulog ka!</td></tr>
+            <tr><td>siguro</td><td>probably</td><td>casual</td><td>Siguro pagod lang siya.</td></tr>
+            <tr><td>yata</td><td>I think</td><td>casual</td><td>Tama yata.</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>3. The Three That Trip People Up</h2>
+        <div class="pos-card">
+            <h3><em>baka</em> carries worry</h3>
+            <p><em>Baka</em> is not neutral. It leans toward something you would rather avoid, which is why it doubles as a warning.</p>
+            <div class="example-box">
+                <p><strong>Baka</strong> mahulog ka. — <em>You might fall.</em> (= careful!)</p>
+                <p><strong>Baka</strong> wala siya. — <em>He might not be there.</em> (= and that would be a problem)</p>
+            </div>
+            <p>For a neutral guess, use <em>siguro</em> or <em>malamang</em>.</p>
+        </div>
+
+        <div class="pos-card">
+            <h3><em>yata</em> is the softest hedge, and it sits after the word it doubts</h3>
+            <div class="example-box">
+                <p>Tama <strong>yata</strong>. — <em>I think that's right.</em></p>
+                <p>Umalis na <strong>yata</strong> siya. — <em>He's left already, I think.</em></p>
+            </div>
+            <p><em>Yata</em> is an enclitic: it follows the first full word of the phrase, exactly like <em>na</em>, <em>pa</em>, and <em>daw</em>.</p>
+        </div>
+
+        <div class="pos-card">
+            <h3><em>marahil</em> and <em>tila</em> belong to the page</h3>
+            <p>In a formal paragraph they read as measured. In casual chat they read as bookish — the difference between "perhaps" and "maybe" in English, but sharper.</p>
+            <div class="example-box">
+                <p>Essay: <em>Marahil ay nagmula ito sa lumang kaugalian.</em></p>
+                <p>Chat: <em>Siguro galing 'yan sa lumang ugali.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Marking Your Source</h2>
+        <table class="g-table">
+            <tr><th>Marker</th><th>Means</th><th>Register</th><th>Example</th></tr>
+            <tr><td>daw / raw</td><td>they say / reportedly</td><td>everyday</td><td>Umalis na raw siya.</td></tr>
+            <tr><td>ayon kay + person</td><td>according to (person)</td><td>neutral / formal</td><td>Ayon kay Dr. Cruz, ligtas ito.</td></tr>
+            <tr><td>ayon sa + source</td><td>according to (source)</td><td>neutral / formal</td><td>Ayon sa ulat, tumaas ang bilang.</td></tr>
+            <tr><td>anang</td><td>said (speech tag)</td><td>literary</td><td>"Tama ka," anang matanda.</td></tr>
+            <tr><td>diumano</td><td>allegedly</td><td>news</td><td>Diumano ay nagnakaw ang suspek.</td></tr>
+            <tr><td>sabi-sabi</td><td>rumour</td><td>casual</td><td>Sabi-sabi lang 'yan.</td></tr>
+            <tr><td>sa pagkakaalam ko</td><td>as far as I know</td><td>neutral</td><td>Sa pagkakaalam ko, sarado sila.</td></tr>
+        </table>
+
+        <div class="cultural-note">
+            <strong><em>Diumano</em> is a journalist's shield.</strong> Philippine news uses it to report an accusation without asserting it — the exact function of "allegedly". You will see it in almost every crime report. It is not a casual word: dropping it into conversation sounds like you are reading a police blotter aloud.
+        </div>
+        <div class="cultural-note">
+            <strong><em>Anang</em> is a literary speech tag.</strong> Older fiction and translations use <em>ani</em> / <em>anang</em> where modern prose would use <em>sabi ni</em>. You will meet it again in Lesson 12.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Stacking the Two Systems</h2>
+        <p>Because they answer different questions, both can appear in one sentence — a probability about a report.</p>
+        <div class="example-box">
+            <p><strong>Marahil</strong> ay umalis na <strong>raw</strong> siya. — <em>He has probably left, or so they say.</em></p>
+            <p><strong>Tila</strong> totoo ang <strong>diumano</strong>'y natuklasan nila. — <em>What they allegedly discovered seems to be true.</em></p>
+            <p><strong>Malamang</strong>, <strong>ayon sa ulat</strong>, tumaas ang presyo. — <em>According to the report, prices have most likely risen.</em></p>
+        </div>
+        <p>The order is flexible, but the enclitics (<em>daw/raw</em>, <em>yata</em>) always stay glued to the first full word of their phrase.</p>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Grading and Sourcing</h2>
+
+        <h3>Exercise 1: Rank the certainty</h3>
+        <p>Answer <strong>high</strong>, <strong>middle</strong>, or <strong>low</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>tiyak → _____ (Answer: high)</li>
+                <li>yata → _____ (Answer: low)</li>
+                <li>marahil → _____ (Answer: middle)</li>
+                <li>walang duda → _____ (Answer: high)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Formal or casual?</h3>
+        <div class="example-box">
+            <ul>
+                <li>marahil → _____ (Answer: formal)</li>
+                <li>siguro → _____ (Answer: casual)</li>
+                <li>tila → _____ (Answer: formal)</li>
+                <li>baka → _____ (Answer: casual)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Choose the marker</h3>
+        <p>Fill in <strong>baka</strong>, <strong>yata</strong>, or <strong>malamang</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>_____ mahulog ka! (warning) → (Answer: baka)</li>
+                <li>Tama _____. (soft hedge, after the word) → (Answer: yata)</li>
+                <li>_____ nasa bahay siya. (neutral, likely) → (Answer: malamang)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Source marking</h3>
+        <p>Fill in <strong>diumano</strong>, <strong>ayon kay</strong>, <strong>ayon sa</strong>, or <strong>raw</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>Umalis na _____ siya. (they say — enclitic) → (Answer: raw)</li>
+                <li>_____ Dr. Cruz, ligtas ito. (according to a person) → (Answer: ayon kay)</li>
+                <li>_____ ulat, tumaas ang bilang. (according to a report) → (Answer: ayon sa)</li>
+                <li>_____ ay nagnakaw ang suspek. (allegedly, news) → (Answer: diumano)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Which system?</h3>
+        <p>Answer <strong>modality</strong> or <strong>evidentiality</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>tila → _____ (Answer: modality)</li>
+                <li>diumano → _____ (Answer: evidentiality)</li>
+                <li>ayon sa → _____ (Answer: evidentiality)</li>
+                <li>maaaring → _____ (Answer: modality)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>You can now calibrate a claim rather than just make one — the single clearest marker of an advanced speaker in any language. Five lessons of grammar are behind you and the structural work of C1 is essentially done. What follows is register: Lesson 6 opens the deep native layer of the vocabulary, the Tagalog underneath the Spanish and the English.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/advanced/tagalog_lesson_4.html" class="prev-lesson">&larr; Previous: Embedding &amp; Subordination</a>
+    <a href="/advanced/index.html" class="home-link">&#127968; Advanced Home</a>
+    <a href="/advanced/tagalog_lesson_6.html" class="next-lesson">Next: Malalim na Tagalog &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/advanced/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/advanced/vocab-data.js"></script>
+<script src="/advanced/lesson-content.js"></script>
+<script src="/advanced/learn.js"></script>
+</body>
+</html>

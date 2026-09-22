@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paN- Morphophonemics &amp; Deep Derivation</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #2c3e50, #8e44ad, #2980b9); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #8e44ad; background: #f9f9f9; }
+        .example-box { background: #f1ecf7; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #8e44ad; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #8e44ad; color: white; }
+        .verse { font-family: Georgia, 'Times New Roman', serif; font-size: 1.06rem; line-height: 1.9; padding-left: 12px; border-left: 3px solid #8e44ad; margin: 14px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Ang Panlaping paN-</h1>
+        <p>Why <em>bili</em> becomes <em>mamili</em> — three rules that replace a hundred memorised words</p>
+    </div>
+
+    <div class="section">
+        <p>Lesson 1 left you with a puzzle: <em>sulat</em> gives <strong>panulat</strong>, but <em>hugas</em> gives <strong>panghugas</strong> and <em>bura</em> gives <strong>pambura</strong>. Three different prefixes? No — one prefix, written <strong>paN-</strong>, whose final nasal takes its shape from the sound that follows it. The same happens to <strong>maN-</strong> on verbs.</p>
+        <p>Learn the rule once and you stop memorising these forms. You generate them.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. The Assimilation Rule</h2>
+        <p>The nasal at the end of <em>paN-</em> / <em>maN-</em> moves to where the next sound is made in the mouth. This part is exceptionless:</p>
+        <table class="g-table">
+            <tr><th>If the root starts with…</th><th>paN- becomes</th><th>maN- becomes</th><th>Example</th></tr>
+            <tr><td>p, b, m <em>(lips)</em></td><td>pam-</td><td>mam-</td><td>bili → ma<strong>m</strong>ili</td></tr>
+            <tr><td>d, l, r, s, t, n <em>(tongue-tip)</em></td><td>pan-</td><td>man-</td><td>tahi → ma<strong>n</strong>ahi</td></tr>
+            <tr><td>a, e, i, o, u, k, g, h, w, y, ng <em>(back / open)</em></td><td>pang-</td><td>mang-</td><td>isda → ma<strong>ng</strong>isda</td></tr>
+        </table>
+        <div class="mermaid">
+            graph TD
+                R["paN- / maN- meets a root"] --> P["Root starts with p, b, m?"]
+                P -->|yes| M1["pam- / mam-&lt;br/&gt;pamutol, mamili"]
+                P -->|no| D["Root starts with d, l, r, s, t, n?"]
+                D -->|yes| M2["pan- / man-&lt;br/&gt;panulat, manahi"]
+                D -->|no| M3["pang- / mang-&lt;br/&gt;panghugas, mangisda"]
+                style M1 fill:#8e44ad,color:#fff
+                style M2 fill:#2980b9,color:#fff
+                style M3 fill:#16a085,color:#fff
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. The Second Half: the Root Loses a Consonant</h2>
+        <p>Assimilation is only half the story. In most words, the root's own first consonant then <strong>disappears</strong>:</p>
+        <table class="g-table">
+            <tr><th>Root</th><th>Literally</th><th>Actual form</th><th>Meaning</th></tr>
+            <tr><td>bili</td><td>maN + bili</td><td><strong>mamili</strong></td><td>to shop / to choose</td></tr>
+            <tr><td>punas</td><td>maN + punas</td><td><strong>mamunas</strong></td><td>to wipe (habitually)</td></tr>
+            <tr><td>putol</td><td>paN + putol</td><td><strong>pamutol</strong></td><td>a cutting tool</td></tr>
+            <tr><td>tahi</td><td>maN + tahi</td><td><strong>manahi</strong></td><td>to sew (as work)</td></tr>
+            <tr><td>sulat</td><td>paN + sulat</td><td><strong>panulat</strong></td><td>a pen</td></tr>
+            <tr><td>kuha</td><td>maN + kuha</td><td><strong>manguha</strong></td><td>to gather / collect</td></tr>
+        </table>
+        <p>Deletion is usual after <strong>p, b, t, s, k</strong>. It <strong>never</strong> happens after l, r, m, n, ng, h, w, y, g, or a vowel:</p>
+        <table class="g-table">
+            <tr><th>Root</th><th>Form</th><th>Why the consonant stays</th></tr>
+            <tr><td>hugas</td><td>panghugas</td><td>h never deletes</td></tr>
+            <tr><td>hiram</td><td>manghiram</td><td>h never deletes</td></tr>
+            <tr><td>gamot</td><td>manggamot</td><td>g never deletes</td></tr>
+            <tr><td>isda</td><td>mangisda</td><td>vowel-initial — nothing to delete</td></tr>
+        </table>
+        <div class="cultural-note">
+            <strong>The honest caveat.</strong> A handful of common words keep their consonant even though the rule predicts deletion: <em>pambura</em> (not <em>*pamura</em>, which would collide with <em>mura</em>), <em>pambayad</em>, <em>pambili</em> alongside <em>pamili</em>. Treat deletion as the default and these as learned exceptions — that is exactly how native speakers hold them.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. What the Prefixes Produce</h2>
+        <table class="g-table">
+            <tr><th>Pattern</th><th>Gives you</th><th>Examples</th></tr>
+            <tr><td>paN- + root</td><td>the <strong>tool</strong></td><td>panulat (pen), panghugas (dish soap), pamunas (rag), pantahi (needle &amp; thread)</td></tr>
+            <tr><td>maN- + root</td><td>the <strong>habitual / occupational</strong> verb</td><td>mamili (shop), mangisda (fish for a living), manahi (sew as work)</td></tr>
+            <tr><td>maN- + reduplication</td><td>the <strong>person who does it</strong></td><td>mangingisda (fisherman), manunulat (writer), manggagamot (healer), mandurukot (pickpocket)</td></tr>
+        </table>
+        <div class="example-box">
+            <p><strong>Mamimili</strong> ako sa palengke bukas. — <em>I'll do the shopping at the market tomorrow.</em></p>
+            <p>Ang tatay niya ay <strong>mangingisda</strong> sa Batangas. — <em>His father is a fisherman in Batangas.</em></p>
+            <p>Wala akong <strong>panulat</strong>; may <strong>pambura</strong> lang ako. — <em>I have no pen; I only have an eraser.</em></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. <em>ma-…-an</em> — Perception That Arrives</h2>
+        <p>This circumfix marks something you came to know, feel, or manage — not something you set out to do.</p>
+        <table class="g-table">
+            <tr><th>Root</th><th>Form</th><th>Completed</th><th>Meaning</th></tr>
+            <tr><td>tanda</td><td>matandaan</td><td>natandaan</td><td>to manage to remember</td></tr>
+            <tr><td>intindi</td><td>maintindihan</td><td>naintindihan</td><td>to grasp / understand</td></tr>
+            <tr><td>ramdam</td><td>maramdaman</td><td>naramdaman</td><td>to feel / perceive</td></tr>
+            <tr><td>alam</td><td>malaman</td><td>nalaman</td><td>to find out</td></tr>
+        </table>
+        <div class="example-box">
+            <p><strong>Naintindihan</strong> ko ang sinabi mo. — <em>I understood what you said.</em></p>
+            <p><strong>Naramdaman</strong> niya ang lindol. — <em>She felt the earthquake.</em></p>
+            <p>Hindi ko <strong>natandaan</strong> ang pangalan niya. — <em>I couldn't remember his name.</em></p>
+        </div>
+        <p>Compare the deliberate versions: <em>tandaan mo</em> ("make a point of remembering") is an instruction; <em>natandaan ko</em> is something that happened in your head.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. <em>pa-…-in</em> and <em>pa-…-an</em></h2>
+        <p>Intermediate Lesson 4 gave you <em>magpa-</em> and <em>ipa-</em> for having things done. These two are the close relatives:</p>
+        <table class="g-table">
+            <tr><th>Pattern</th><th>Meaning</th><th>Examples</th></tr>
+            <tr><td>pa- + root + -in</td><td>make someone <em>do</em> it</td><td>pakainin (feed), painumin (give a drink), patulugin (put to sleep), paupuin (seat someone)</td></tr>
+            <tr><td>pa- + root + -an</td><td>direct the action <em>at</em> someone</td><td>pahiraman (lend to), pabilhan (buy for/from), pautangan (extend credit to)</td></tr>
+        </table>
+        <div class="example-box">
+            <p><strong>Pakainin</strong> mo ang aso bago tayo umalis. — <em>Feed the dog before we go.</em></p>
+            <p><strong>Pinahiraman</strong> niya ako ng libro. — <em>She lent me a book.</em></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Becoming and Coming to Have</h2>
+        <table class="g-table">
+            <tr><th>Verb</th><th>Meaning</th><th>Aspects</th></tr>
+            <tr><td>maging</td><td>to become</td><td>naging / nagiging / magiging</td></tr>
+            <tr><td>magkaroon</td><td>to come to have</td><td>nagkaroon / nagkakaroon / magkakaroon</td></tr>
+            <tr><td>magka- + root</td><td>to fall into a state</td><td>magkasakit, magkapera, magkaanak</td></tr>
+        </table>
+        <div class="example-box">
+            <p><strong>Naging</strong> guro siya pagkatapos ng kolehiyo. — <em>He became a teacher after college.</em></p>
+            <p><strong>Nagkaroon</strong> kami ng pagkakataong magkita. — <em>We had a chance to meet.</em></p>
+            <p><strong>Nagkasakit</strong> ang nanay ko noong nakaraang taon. — <em>My mother fell ill last year.</em></p>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Generate, Don't Memorise</h2>
+
+        <h3>Exercise 1: Which shape of paN-?</h3>
+        <p>Write <strong>pam-</strong>, <strong>pan-</strong>, or <strong>pang-</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>before the root <em>putol</em> → _____ (Answer: pam-)</li>
+                <li>before the root <em>sulat</em> → _____ (Answer: pan-)</li>
+                <li>before the root <em>hugas</em> → _____ (Answer: pang-)</li>
+                <li>before the root <em>isda</em> → _____ (Answer: pang-)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Apply both halves of the rule</h3>
+        <p>Give the finished <em>maN-</em> verb:</p>
+        <div class="example-box">
+            <ul>
+                <li>maN + bili → _____ (Answer: mamili)</li>
+                <li>maN + tahi → _____ (Answer: manahi)</li>
+                <li>maN + hiram → _____ (Answer: manghiram)</li>
+                <li>maN + isda → _____ (Answer: mangisda)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Name the doer</h3>
+        <p>Give the <em>maN- + reduplication</em> noun:</p>
+        <div class="example-box">
+            <ul>
+                <li>one who fishes for a living → _____ (Answer: mangingisda)</li>
+                <li>one who writes → _____ (Answer: manunulat)</li>
+                <li>one who picks pockets → _____ (Answer: mandurukot)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: <em>ma-…-an</em></h3>
+        <p>Give the <strong>completed</strong> form:</p>
+        <div class="example-box">
+            <ul>
+                <li>intindi → _____ (Answer: naintindihan)</li>
+                <li>ramdam → _____ (Answer: naramdaman)</li>
+                <li>tanda → _____ (Answer: natandaan)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Causing and becoming</h3>
+        <p>Fill in the missing verb:</p>
+        <div class="example-box">
+            <ul>
+                <li>_____ mo ang bata bago matulog. (feed him) → (Answer: pakainin)</li>
+                <li>_____ siyang doktor noong 2019. (became) → (Answer: naging)</li>
+                <li>_____ kami ng bagong bahay. (came to have) → (Answer: nagkaroon)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>You have just traded a vocabulary list for a generator. Every <em>pang-</em> tool-name and <em>mang-</em> occupation you meet from here — and Filipino coins new ones constantly — decomposes into a root plus a rule you now own. Next, the sentence itself gets rearranged: Lesson 3 takes apart <em>ay</em>, the single most misunderstood word in formal Tagalog.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/advanced/tagalog_lesson_1.html" class="prev-lesson">&larr; Previous: The Complete Focus Inventory</a>
+    <a href="/advanced/index.html" class="home-link">&#127968; Advanced Home</a>
+    <a href="/advanced/tagalog_lesson_3.html" class="next-lesson">Next: The ay-Inversion &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/advanced/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/advanced/vocab-data.js"></script>
+<script src="/advanced/lesson-content.js"></script>
+<script src="/advanced/learn.js"></script>
+</body>
+</html>

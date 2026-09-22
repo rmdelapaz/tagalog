@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing &amp; Style - ng vs nang and the Ortograpiyang Pambansa</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #8e44ad, #c0392b, #27ae60); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #c0392b; background: #f9f9f9; }
+        .example-box { background: #f1ecf7; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #c0392b; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #c0392b; color: white; }
+        .verse { font-family: Georgia, 'Times New Roman', serif; font-size: 1.06rem; line-height: 1.9; padding-left: 12px; border-left: 3px solid #c0392b; margin: 14px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Pagwawasto at Estilo</h1>
+        <p><em>Ng</em> vs <em>nang</em>, the linker, and the errors that survive fluency</p>
+    </div>
+
+    <div class="section">
+        <p>There is a set of mistakes that fluent speakers — including native ones — make constantly in writing. They are not comprehension failures; everyone understands the sentence either way. They are the things a <em>patnugot</em> (editor) marks, and being able to catch them in your own draft is what separates fluent Tagalog from polished Tagalog.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. <em>Ng</em> vs <em>Nang</em> — the Big One</h2>
+        <p>They sound identical. Both are pronounced <em>nang</em>. They are completely different words.</p>
+
+        <div class="pos-card">
+            <h3>Use <strong>ng</strong> when it is a marker</h3>
+            <table class="g-table">
+                <tr><th>Job</th><th>Example</th><th>Test</th></tr>
+                <tr><td>Possessor</td><td>bahay <strong>ng</strong> kapitbahay</td><td>"of" works</td></tr>
+                <tr><td>Doer of an object-focus verb</td><td>Kinain <strong>ng</strong> bata ang tinapay.</td><td>"by" works</td></tr>
+                <tr><td>Indefinite object</td><td>Kumain siya <strong>ng</strong> tinapay.</td><td>"some" works</td></tr>
+            </table>
+        </div>
+
+        <div class="pos-card">
+            <h3>Use <strong>nang</strong> for everything else</h3>
+            <table class="g-table">
+                <tr><th>Job</th><th>Example</th><th>English</th></tr>
+                <tr><td>"when" (past)</td><td><strong>Nang</strong> dumating siya, wala na kami.</td><td>When she arrived…</td></tr>
+                <tr><td>"so that / in order to"</td><td>Nagmadali ako <strong>nang</strong> hindi mahuli.</td><td>…so I wouldn't be late</td></tr>
+                <tr><td>Before a manner word</td><td>Tumakbo siya <strong>nang</strong> mabilis.</td><td>…quickly</td></tr>
+                <tr><td>Intensifying repetition</td><td>Kain <strong>nang</strong> kain</td><td>ate and ate</td></tr>
+            </table>
+        </div>
+
+        <div class="mermaid">
+            graph TD
+                Q["Is it nang or ng?"] --> A["Can you say 'of' or 'by'?"]
+                A -->|yes| NG["ng&lt;br/&gt;bahay ng kapitbahay"]
+                A -->|no| B["Does it mean 'when' or 'so that'?"]
+                B -->|yes| N1["nang&lt;br/&gt;Nang dumating siya"]
+                B -->|no| C["Does an adverb follow?"]
+                C -->|yes| N2["nang&lt;br/&gt;tumakbo nang mabilis"]
+                C -->|no| NG
+                style NG fill:#8e44ad,color:#fff
+                style N1 fill:#c0392b,color:#fff
+                style N2 fill:#c0392b,color:#fff
+        </div>
+
+        <div class="example-box">
+            <p>❌ <em>Tumakbo siya ng mabilis.</em> &nbsp;→&nbsp; ✅ <em>Tumakbo siya <strong>nang</strong> mabilis.</em></p>
+            <p>❌ <em>Kinain nang bata ang tinapay.</em> &nbsp;→&nbsp; ✅ <em>Kinain <strong>ng</strong> bata ang tinapay.</em></p>
+            <p>❌ <em>Ng dumating siya…</em> &nbsp;→&nbsp; ✅ <em><strong>Nang</strong> dumating siya…</em></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. <em>Rin</em> / <em>Din</em> and <em>Raw</em> / <em>Daw</em></h2>
+        <p>One rule covers both pairs, and it depends entirely on the <strong>preceding sound</strong>:</p>
+        <table class="g-table">
+            <tr><th>Preceding sound</th><th>Use</th><th>Example</th></tr>
+            <tr><td>A vowel, or w / y</td><td>rin, raw</td><td>Ako <strong>rin</strong>. &nbsp; Siya <strong>raw</strong>. &nbsp; Ikaw <strong>rin</strong>.</td></tr>
+            <tr><td>Any other consonant</td><td>din, daw</td><td>Mabait <strong>din</strong>. &nbsp; Umalis <strong>daw</strong>. &nbsp; Malakas <strong>din</strong>.</td></tr>
+        </table>
+        <div class="cultural-note">
+            <strong>Speech vs writing.</strong> In casual speech many Manila speakers say <em>din</em> everywhere. In writing the rule is expected, and a <em>patnugot</em> will correct it. This is a written-standard rule, not a pronunciation rule.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. The Linker — Three Cases, Not Two</h2>
+        <p>Most courses teach two cases. There are three:</p>
+        <table class="g-table">
+            <tr><th>Word ends in…</th><th>Linker</th><th>Example</th></tr>
+            <tr><td>A vowel</td><td>add <strong>-ng</strong></td><td>maganda → maganda<strong>ng</strong> bahay</td></tr>
+            <tr><td><strong>n</strong></td><td>add <strong>-g</strong></td><td>sanlibutan → sanlibutan<strong>g</strong> ito</td></tr>
+            <tr><td>Any other consonant</td><td>separate <strong>na</strong></td><td>malakas → malakas <strong>na</strong> hangin</td></tr>
+        </table>
+        <p>The forgotten middle case is the most common written error in Tagalog after <em>ng</em>/<em>nang</em>: writing <em>buwan na ito</em> where <em>buwang ito</em> is correct.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. The Other Perennials</h2>
+        <table class="g-table">
+            <tr><th>Confusion</th><th>Rule</th><th>Example</th></tr>
+            <tr><td>kung vs kapag</td><td><em>kung</em> = if / whether (uncertain); <em>kapag</em> = when / whenever (real, repeated)</td><td><em>Kung</em> uulan, hindi ako aalis. / <em>Kapag</em> umuulan, nagbabaha.</td></tr>
+            <tr><td>pagitan vs pag-itan</td><td>Hyphen after <em>pag-</em> before a vowel</td><td>pag-aaral, pag-ibig, pag-asa</td></tr>
+            <tr><td>Pronoun agreement</td><td>Plural subject → plural pronoun</td><td>Ang mga bata ay <em>naglalaro</em>, hindi <em>naglaro siya</em></td></tr>
+            <tr><td>Doubled markers</td><td>Never <em>ang ang</em> or <em>ng ng</em></td><td>❌ Kinain ng ng bata</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>5. The Punctuation Marks, Named</h2>
+        <table class="g-table">
+            <tr><th>Mark</th><th>Filipino</th></tr>
+            <tr><td>.</td><td>tuldok</td></tr>
+            <tr><td>,</td><td>kuwit</td></tr>
+            <tr><td>:</td><td>tutuldok</td></tr>
+            <tr><td>;</td><td>tuldok-kuwit</td></tr>
+            <tr><td>?</td><td>tandang pananong</td></tr>
+            <tr><td>!</td><td>tandang padamdam</td></tr>
+            <tr><td>-</td><td>gitling</td></tr>
+            <tr><td>'</td><td>kudlit</td></tr>
+            <tr><td>" "</td><td>panipi</td></tr>
+            <tr><td>( )</td><td>panaklong</td></tr>
+        </table>
+        <p>The umbrella term is <strong>bantas</strong> (punctuation). Knowing these is part of being able to discuss writing <em>in</em> Filipino — the same move Lesson 1 made with grammar terms.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. The Standard-Setter</h2>
+        <p>The <strong>Komisyon sa Wikang Filipino (KWF)</strong> is the government body for the national language. Its <strong>Ortograpiyang Pambansa</strong> is the current authority on spelling — including the treatment of loanwords, which is the part that generates the most argument.</p>
+        <div class="cultural-note">
+            <strong>What the KWF does and does not do.</strong> It sets orthography, publishes terminology and dictionaries, and supports the language's development. It does not police speech, and it has no authority over how anyone talks. Its rulings matter for formal writing, textbooks, and government documents — which is exactly where you now operate.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. A Proofreading Routine</h2>
+        <div class="example-box">
+            <p>Read your own Tagalog three times, each time for one thing only:</p>
+            <ol>
+                <li><strong>Pass one — ng / nang.</strong> Stop at every one. Apply the "of / by" test.</li>
+                <li><strong>Pass two — linkers.</strong> Check every adjective-noun pair. Vowel → <em>-ng</em>. Final <em>n</em> → <em>-g</em>. Otherwise → <em>na</em>.</li>
+                <li><strong>Pass three — aspect.</strong> Does each verb's aspect match what the sentence actually means, or did an English tense leak through?</li>
+            </ol>
+            <p>Three narrow passes catch more than one careful read-through, because each pass has only one thing to look for.</p>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Catching Your Own Errors</h2>
+
+        <h3>Exercise 1: <em>ng</em> or <em>nang</em>?</h3>
+        <div class="example-box">
+            <ul>
+                <li>Tumakbo siya _____ mabilis. → (Answer: nang)</li>
+                <li>Kinain _____ bata ang tinapay. → (Answer: ng)</li>
+                <li>_____ dumating siya, wala na kami. → (Answer: nang)</li>
+                <li>bahay _____ kapitbahay → (Answer: ng)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: <em>rin</em> or <em>din</em>?</h3>
+        <div class="example-box">
+            <ul>
+                <li>Ako _____. → (Answer: rin)</li>
+                <li>Mabait _____. → (Answer: din)</li>
+                <li>Ikaw _____. → (Answer: rin)</li>
+                <li>Malakas _____. → (Answer: din)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Which linker?</h3>
+        <p>Write <strong>-ng</strong>, <strong>-g</strong>, or <strong>na</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>maganda + bahay → _____ (Answer: -ng)</li>
+                <li>malakas + hangin → _____ (Answer: na)</li>
+                <li>buwan + ito → _____ (Answer: -g)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: <em>kung</em> or <em>kapag</em>?</h3>
+        <div class="example-box">
+            <ul>
+                <li>_____ uulan bukas, hindi ako aalis. (uncertain) → (Answer: kung)</li>
+                <li>_____ umuulan, nagbabaha dito. (whenever) → (Answer: kapag)</li>
+                <li>Hindi ko alam _____ darating siya. (whether) → (Answer: kung)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Name the mark</h3>
+        <div class="example-box">
+            <ul>
+                <li>, → _____ (Answer: kuwit)</li>
+                <li>- → _____ (Answer: gitling)</li>
+                <li>" " → _____ (Answer: panipi)</li>
+                <li>the umbrella term for punctuation → _____ (Answer: bantas)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>Your written Tagalog can now survive an editor. Lesson 17 puts you on your feet in front of an audience — the one register where everything in this course, from the deep vocabulary of Lesson 6 to the parallelism of Lesson 9, is used at once and out loud.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/advanced/tagalog_lesson_15.html" class="prev-lesson">&larr; Previous: Translation Craft</a>
+    <a href="/advanced/index.html" class="home-link">&#127968; Advanced Home</a>
+    <a href="/advanced/tagalog_lesson_17.html" class="next-lesson">Next: Oratory - Talumpati &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/advanced/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/advanced/vocab-data.js"></script>
+<script src="/advanced/lesson-content.js"></script>
+<script src="/advanced/learn.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Craft &amp; the Untranslatables</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/learn.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #8e44ad, #c0392b, #16a085); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #c0392b; background: #f9f9f9; }
+        .example-box { background: #f1ecf7; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .practice-box { background: #fff3cd; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #ffc107; }
+        .cultural-note { background: #e1f5fe; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; }
+        .pos-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 4px solid #c0392b; margin: 15px 0; }
+        .g-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .g-table th, .g-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .g-table th { background: #c0392b; color: white; }
+        .verse { font-family: Georgia, 'Times New Roman', serif; font-size: 1.06rem; line-height: 1.9; padding-left: 12px; border-left: 3px solid #c0392b; margin: 14px 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Pagsasalin at ang Di-Maisasalin</h1>
+        <p>The craft of translation — and the words that refuse to cross</p>
+    </div>
+
+    <div class="section">
+        <p>Translation is the most demanding thing you can do with two languages, because it forces you to be exact about what you actually understood. At C2 the skill is not producing a translation — it is <strong>naming the compromise</strong> you made and defending it.</p>
+        <p>This lesson covers the two structural traps that catch every English-speaking translator of Tagalog, then the words that have no English at all.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. The Terms</h2>
+        <table class="g-table">
+            <tr><th>Tagalog</th><th>English</th></tr>
+            <tr><td>pagsasalin</td><td>translation (the act)</td></tr>
+            <tr><td>salin</td><td>a translation (the product)</td></tr>
+            <tr><td>tagasalin</td><td>translator</td></tr>
+            <tr><td>wikang pinagmulan</td><td>source language</td></tr>
+            <tr><td>wikang pinagsalinan</td><td>target language</td></tr>
+            <tr><td>literal na salin</td><td>literal translation</td></tr>
+            <tr><td>malayang salin</td><td>free translation</td></tr>
+            <tr><td>katumbas</td><td>equivalent</td></tr>
+        </table>
+        <div class="mermaid">
+            graph TD
+                Q["What is this translation for?"] --> L["A legal or technical document"]
+                Q --> F["A poem, a story, a speech"]
+                L --> L1["Literal na salin&lt;br/&gt;precision over fluency"]
+                F --> F1["Malayang salin&lt;br/&gt;effect over wording"]
+                style L1 fill:#8e44ad,color:#fff
+                style F1 fill:#c0392b,color:#fff
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Trap One — Focus Is Not Voice</h2>
+        <p>English has active and passive. Tagalog has focus. They are <strong>not</strong> the same system, and treating object focus as a passive produces stiff, wrong English.</p>
+        <div class="example-box">
+            <p><em>Kinain ko ang tinapay.</em></p>
+            <p>❌ "The bread was eaten by me." — grammatical English, terrible translation. Tagalog object focus is not a passive; it is the ordinary, unmarked way to say this when the bread is known.</p>
+            <p>✅ "I ate the bread." — the definite article carries what <em>ang</em> was carrying.</p>
+        </div>
+        <table class="g-table">
+            <tr><th>Tagalog</th><th>Bad (mirrors the structure)</th><th>Good (carries the meaning)</th></tr>
+            <tr><td>Kumain ako ng tinapay.</td><td>I ate bread.</td><td>I ate some bread. / I had bread.</td></tr>
+            <tr><td>Kinain ko ang tinapay.</td><td>The bread was eaten by me.</td><td>I ate the bread.</td></tr>
+            <tr><td>Ipinanghiwa ko ang kutsilyo.</td><td>The knife was cut-with by me.</td><td>I used the knife to cut it.</td></tr>
+        </table>
+        <p>Going the other way is just as treacherous: an English passive usually wants Tagalog object focus, but an English active with a definite object <em>also</em> wants object focus. Voice does not map onto focus at all — <strong>definiteness</strong> does.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Trap Two — Tense Is Not Aspect</h2>
+        <p>English marks <em>when</em>. Tagalog marks <em>how complete</em>. The overlap is partial and the gaps are where translations go wrong.</p>
+        <table class="g-table">
+            <tr><th>English</th><th>Tagalog</th><th>Note</th></tr>
+            <tr><td>I ate.</td><td>Kumain ako.</td><td>Completed — clean match</td></tr>
+            <tr><td>I was eating.</td><td>Kumakain ako.</td><td>Incompleted — clean match</td></tr>
+            <tr><td>I eat (habitually).</td><td>Kumakain ako.</td><td>Same form as "was eating" — English splits, Tagalog doesn't</td></tr>
+            <tr><td>I had eaten.</td><td>Kumain na ako. / Katatapos ko lang kumain.</td><td>No perfect aspect — you need <em>na</em> or a time anchor</td></tr>
+            <tr><td>I have just eaten.</td><td>Katatapos ko lang kumain.</td><td>The recently-completed form (B1 Lesson 7)</td></tr>
+        </table>
+        <div class="cultural-note">
+            <strong>The translator's habit:</strong> when English uses a perfect tense, stop and ask what the Tagalog needs — usually <em>na</em>, <em>pa</em>, a <em>katatapos</em>, or an explicit time word. Copying the tense produces Tagalog that is grammatical and subtly wrong.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. The Untranslatables</h2>
+        <p>These are not merely "hard" words. Each packages a feeling plus a social situation, and English has to unpack both.</p>
+        <table class="g-table">
+            <tr><th>Word</th><th>Closest English</th><th>What English loses</th></tr>
+            <tr><td><strong>kilig</strong></td><td>giddy thrill</td><td>It is physical — a shiver — and specifically romantic.</td></tr>
+            <tr><td><strong>tampo</strong></td><td>sulking</td><td>"Sulking" is childish and unattractive. <em>Tampo</em> is legitimate withdrawal that <em>invites</em> coaxing (<em>lambing</em>) — it is part of how affection works, not a failure of it.</td></tr>
+            <tr><td><strong>gigil</strong></td><td>—</td><td>The clenched, almost aggressive urge produced by something unbearably cute.</td></tr>
+            <tr><td><strong>lambing</strong></td><td>affection</td><td>Affection actively <em>shown</em>, often to dissolve someone's tampo.</td></tr>
+            <tr><td><strong>hiya</strong></td><td>shame / embarrassment</td><td>Also propriety and social face. Which English word fits depends entirely on the sentence.</td></tr>
+            <tr><td><strong>utang na loob</strong></td><td>debt of gratitude</td><td>The English is transactional and settleable. The Tagalog is relational, open-ended, and binds both parties.</td></tr>
+            <tr><td><strong>sayang</strong></td><td>what a waste / what a shame</td><td>A single interjection in Tagalog, a whole phrase in English — and it covers regret for a lost opportunity specifically.</td></tr>
+            <tr><td><strong>bahala na</strong></td><td>come what may</td><td>Not fatalism and not recklessness: it is committing to act despite uncertainty, having done what you could.</td></tr>
+            <tr><td><strong>pakikiramdam</strong></td><td>sensing / reading the room</td><td>A deliberate social skill — feeling out a situation before speaking. The whole apparatus of Lesson 14 sits inside this word.</td></tr>
+        </table>
+        <div class="cultural-note">
+            <strong>What to actually do with them.</strong> Three options, and the choice is yours to defend: <strong>borrow</strong> the word and gloss it once ("<em>tampo</em> — a kind of affectionate withdrawal"); <strong>unpack</strong> it into a phrase; or <strong>substitute</strong> the nearest English and accept the loss. For literature, borrow. For subtitles, substitute. For scholarship, unpack.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. A Worked Translation</h2>
+        <div class="example-box">
+            <p><strong>Tagalog:</strong> <em>"Nagtampo siya noong hindi ko siya sinundo, pero katatapos ko lang mag-lambing kaya ayos na kami. Utang na loob ko naman sa kanya ang lahat."</em></p>
+            <p><strong>Literal na salin:</strong> "She sulked when I did not fetch her, but I just finished being affectionate so we are fine. My debt of gratitude to her is everything."</p>
+            <p><strong>Malayang salin:</strong> "She went quiet on me when I didn't pick her up, but I've just made it up to her and we're fine now. I owe her everything, really."</p>
+            <p><strong>The compromises:</strong> <em>nagtampo</em> → "went quiet on me" (keeps the relational flavour, loses the invitation to be coaxed); <em>mag-lambing</em> → "made it up to her" (loses the tenderness); <em>katatapos ko lang</em> → "I've just" (the recently-completed aspect maps cleanly here); <em>utang na loob</em> → "I owe her everything" (loses the bindingness, keeps the weight).</p>
+        </div>
+    </div>
+
+    <div class="practice-box">
+        <h2>Practice — Carrying Meaning Across</h2>
+
+        <h3>Exercise 1: Translation terms</h3>
+        <div class="example-box">
+            <ul>
+                <li>source language → wikang _____ (Answer: pinagmulan)</li>
+                <li>target language → wikang _____ (Answer: pinagsalinan)</li>
+                <li>translator → _____ (Answer: tagasalin)</li>
+                <li>equivalent → _____ (Answer: katumbas)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 2: Fix the bad translation</h3>
+        <p>"Kinain ko ang tinapay." Answer <strong>good</strong> or <strong>bad</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>"The bread was eaten by me." → _____ (Answer: bad)</li>
+                <li>"I ate the bread." → _____ (Answer: good)</li>
+                <li>"I ate some bread." → _____ (Answer: bad)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 3: Which trap?</h3>
+        <p>Answer <strong>focus</strong> or <strong>aspect</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>Translating "I had eaten" as a plain "kumain ako" → _____ (Answer: aspect)</li>
+                <li>Translating "kinain ko" as an English passive → _____ (Answer: focus)</li>
+                <li>Forgetting that "kumakain ako" covers both "I eat" and "I was eating" → _____ (Answer: aspect)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 4: Name the untranslatable</h3>
+        <div class="example-box">
+            <ul>
+                <li>affectionate withdrawal that invites coaxing → _____ (Answer: tampo)</li>
+                <li>the clenched urge caused by something too cute → _____ (Answer: gigil)</li>
+                <li>a binding, open-ended debt of gratitude → _____ (Answer: utang na loob)</li>
+                <li>reading a situation by feel before speaking → _____ (Answer: pakikiramdam)</li>
+            </ul>
+        </div>
+
+        <h3>Exercise 5: Choose the strategy</h3>
+        <p>Answer <strong>borrow</strong>, <strong>unpack</strong>, or <strong>substitute</strong>:</p>
+        <div class="example-box">
+            <ul>
+                <li>A novel where "tampo" is the theme → _____ (Answer: borrow)</li>
+                <li>A two-second film subtitle → _____ (Answer: substitute)</li>
+                <li>An academic paper on Filipino values → _____ (Answer: unpack)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cultural-note">
+        <h2>Where This Takes You</h2>
+        <p>Translating forces you to look hard at your own Tagalog. Lesson 16 turns that scrutiny into a routine: the errors that survive into fluency, and how to catch them in your own writing before anyone else does.</p>
+    </div>
+
+<!-- BEGIN footer-nav -->
+<nav class="lesson-nav" aria-label="Lesson Navigation">
+    <a href="/advanced/tagalog_lesson_14.html" class="prev-lesson">&larr; Previous: Talinghaga</a>
+    <a href="/advanced/index.html" class="home-link">&#127968; Advanced Home</a>
+    <a href="/advanced/tagalog_lesson_16.html" class="next-lesson">Next: Editing &amp; Style &rarr;</a>
+</nav>
+
+<footer class="site-footer">
+    <p>&copy; 2026 All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://rays-home.netlify.app/">Ray's House of Fun</a>
+        <a href="https://rays-home.netlify.app/contact">Contact</a>
+        <a href="#" onclick="window.print(); return false;">Print Page</a>
+    </div>
+</footer>
+<!-- END footer-nav -->
+
+    <script src="/advanced/nav.js"></script>
+<script src="/audio.js"></script>
+<script src="/advanced/vocab-data.js"></script>
+<script src="/advanced/lesson-content.js"></script>
+<script src="/advanced/learn.js"></script>
+</body>
+</html>
