@@ -138,7 +138,8 @@ window.TAGALOG_VOCAB = {
       "tl": "bahay",
       "pron": "bah-HAY",
       "en": "house",
-      "cat": "Everyday words"
+      "cat": "Everyday words",
+      "img": "bahay"
     },
     {
       "tl": "pagkain",
@@ -156,7 +157,8 @@ window.TAGALOG_VOCAB = {
       "tl": "tubig",
       "pron": "TOO-big",
       "en": "water",
-      "cat": "Everyday words"
+      "cat": "Everyday words",
+      "img": "tubig"
     },
     {
       "tl": "ulan",
@@ -567,7 +569,8 @@ window.TAGALOG_VOCAB = {
       "tl": "estudyante",
       "pron": "es-tood-YAN-te",
       "en": "student",
-      "cat": "People & things"
+      "cat": "People & things",
+      "img": "estudyante"
     },
     {
       "tl": "gulay",
@@ -579,7 +582,8 @@ window.TAGALOG_VOCAB = {
       "tl": "guro",
       "pron": "GOO-ro",
       "en": "teacher",
-      "cat": "People & things"
+      "cat": "People & things",
+      "img": "guro"
     },
     {
       "tl": "magnanakaw",
@@ -591,13 +595,15 @@ window.TAGALOG_VOCAB = {
       "tl": "matematika",
       "pron": "ma-te-MA-ti-ka",
       "en": "mathematics",
-      "cat": "People & things"
+      "cat": "People & things",
+      "img": "matematika"
     },
     {
       "tl": "pera",
       "pron": "PE-ra",
       "en": "money",
-      "cat": "People & things"
+      "cat": "People & things",
+      "img": "pera"
     },
     {
       "tl": "silid-aralan",
@@ -946,7 +952,8 @@ window.TAGALOG_VOCAB = {
       "tl": "pinsan",
       "pron": "PIN-san",
       "en": "cousin",
-      "cat": "Extended family"
+      "cat": "Extended family",
+      "img": "pinsan"
     },
     {
       "tl": "tita",
@@ -1344,7 +1351,8 @@ window.TAGALOG_VOCAB = {
       "tl": "bahay",
       "pron": "BA-hay",
       "en": "house (noun)",
-      "cat": "Nouns"
+      "cat": "Nouns",
+      "img": "bahay"
     },
     {
       "tl": "kabaitan",
@@ -2014,7 +2022,8 @@ window.TAGALOG_VOCAB = {
       "tl": "bahay",
       "pron": "bah-HIGH",
       "en": "house",
-      "cat": "Places & things"
+      "cat": "Places & things",
+      "img": "bahay"
     },
     {
       "tl": "kotse",
@@ -2038,7 +2047,8 @@ window.TAGALOG_VOCAB = {
       "tl": "pera",
       "pron": "peh-RAH",
       "en": "money",
-      "cat": "Places & things"
+      "cat": "Places & things",
+      "img": "pera"
     }
   ],
   "10": [
@@ -2294,7 +2304,8 @@ window.TAGALOG_VOCAB = {
       "tl": "tubig",
       "pron": "TOO-big",
       "en": "water",
-      "cat": "Useful words"
+      "cat": "Useful words",
+      "img": "tubig"
     }
   ],
   "12": [
