@@ -80,7 +80,9 @@ def main():
         if source:
             n["tags"].add(source)
 
-    for k in [str(i) for i in range(1, 17)]:
+    # Enumerate lesson keys dynamically so adding a lesson needs no edit here.
+    lesson_keys = sorted((k for k in vocab if k.isdigit()), key=int)
+    for k in lesson_keys:
         for w in vocab[k]:
             add(w["tl"], w.get("pron"), w["en"], lesson=k, cat=w.get("cat"), source="vocabulary")
     for cat in sheet:
